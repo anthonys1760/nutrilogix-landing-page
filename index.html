@@ -75,6 +75,14 @@
         .logo {
             font-size: 28px;
             font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+            margin-right: 10px;
         }
 
         .logo span {
@@ -126,6 +134,29 @@
             font-size: 18px;
             margin-bottom: 32px;
             color: #666;
+        }
+
+        .pills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 32px;
+        }
+
+        .pill {
+            display: inline-block;
+            padding: 6px 14px;
+            background-color: rgba(13, 198, 139, 0.1);
+            color: #0DC68B;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 500px) {
+            .pills-container {
+                justify-content: center;
+            }
         }
 
         /* Features section */
@@ -303,6 +334,14 @@
         .footer-logo h3 {
             font-size: 24px;
             margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-logo img {
+            height: 40px;
+            width: auto;
+            margin-right: 10px;
         }
 
         .footer-logo p {
@@ -351,8 +390,13 @@
                 flex-direction: column;
             }
             
-            .hero-image {
+            .hero-text {
                 order: -1;
+            }
+            
+            .hero-image {
+                order: 0;
+                margin-top: 40px;
             }
             
             .step:not(:last-child)::after {
@@ -1073,7 +1117,10 @@
     <!-- Header -->
     <header>
         <div class="container header-content">
-            <div class="logo">Nutri<span>Logix</span></div>
+            <div class="logo">
+                <img src="assets/images/2.jpg" alt="Nutrilogix Logo">
+                Nutri<span>Logix</span>
+            </div>
             <nav class="header-nav">
                 <a href="#features">Features</a>
                 <a href="#how-it-works">How It Works</a>
@@ -1098,6 +1145,11 @@
             <div class="hero-text">
                 <h1>Track Your Nutrition with AI-Powered Food Analysis</h1>
                 <p>Use your phone's camera to instantly analyze what you eat. Get detailed nutritional information, track your daily intake, and make healthier food choices with Nutrilogix.</p>
+                <div class="pills-container">
+                    <div class="pill">Track Calories</div>
+                    <div class="pill">Monitor Macros</div>
+                    <div class="pill">Search Database</div>
+                </div>
                 <a href="#signup" class="btn">Get Early Access</a>
             </div>
             <div class="hero-image">
@@ -1172,163 +1224,19 @@
                     <div class="step-number">1</div>
                     <h3>Snap a Photo</h3>
                     <p>Take a picture of your food or scan a barcode using the app.</p>
-                    <div class="phone-mockup">
-                        <div class="phone-frame">
-                            <div class="phone-screen">
-                                <div class="mockup-content camera-screen">
-                                    <div class="camera-ui">
-                                        <div class="camera-viewfinder"></div>
-                                        <div class="camera-button"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="assets/images/analyze-food.png" alt="Food analysis screen" style="width: 400px; max-width: 100%; border-radius: 16px; margin: 20px auto 0; display: block;">
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
                     <h3>AI Analysis</h3>
                     <p>Our AI analyzes the image and identifies nutritional content.</p>
-                    <div class="phone-mockup">
-                        <div class="phone-frame">
-                            <div class="phone-screen">
-                                <div class="mockup-content analysis-screen">
-                                    <div class="analysis-header">Analyzing...</div>
-                                    <div class="analysis-loader"></div>
-                                    <div class="analysis-result">
-                                        <div class="food-name">Chicken Salad</div>
-                                        <div class="nutrition-data">
-                                            <div class="nutrition-row">
-                                                <span>Calories:</span>
-                                                <span>320 kcal</span>
-                                            </div>
-                                            <div class="nutrition-row">
-                                                <span>Protein:</span>
-                                                <span>28g</span>
-                                            </div>
-                                            <div class="nutrition-row">
-                                                <span>Carbs:</span>
-                                                <span>12g</span>
-                                            </div>
-                                            <div class="nutrition-row">
-                                                <span>Fat:</span>
-                                                <span>18g</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="assets/images/imagess.png" alt="Food analysis screen" style="width: 400px; max-width: 100%; border-radius: 16px; margin: 20px auto 0; display: block;">
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
                     <h3>Track Progress</h3>
                     <p>View detailed breakdowns and track your nutrition goals.</p>
-                    <div class="phone-mockup">
-                        <div class="phone-frame">
-                            <div class="phone-screen">
-                                <div class="mockup-content dashboard-screen">
-                                    <div class="phone-status-bar">
-                                        <div class="time">3:34</div>
-                                        <div class="status-icons">
-                                            <div class="wifi"></div>
-                                            <div class="battery"></div>
-                                        </div>
-                                    </div>
-                                    <div class="app-header">
-                                        <div class="user-greeting">
-                                            <div class="avatar"></div>
-                                            <div class="greeting-text">
-                                                <div class="welcome">Welcome back</div>
-                                                <div class="username">Sarah</div>
-                                            </div>
-                                        </div>
-                                        <div class="notification-bell"></div>
-                                    </div>
-                                    <div class="section-heading">Track your nutrition</div>
-                                    <div class="action-cards">
-                                        <div class="action-card snap">
-                                            <div class="card-icon camera-icon"></div>
-                                            <div class="card-label">Snap Photo</div>
-                                        </div>
-                                        <div class="action-card scan">
-                                            <div class="card-icon barcode-icon"></div>
-                                            <div class="card-label">Scan Barcode</div>
-                                        </div>
-                                    </div>
-                                    <div class="search-bar">
-                                        <div class="search-icon"></div>
-                                        <div class="search-placeholder">Search food database</div>
-                                    </div>
-                                    <div class="dashboard-header">Today's Summary</div>
-                                    <div class="set-macros-button">Set Macros</div>
-                                    <div class="dashboard-date">April 19, 2025</div>
-                                    <div class="calorie-goal">
-                                        <div class="goal-icon"></div>
-                                        <div>
-                                            <div class="goal-label">Daily Calorie Goal</div>
-                                            <div class="goal-value">2,000 calories</div>
-                                        </div>
-                                        <div class="edit-icon"></div>
-                                    </div>
-                                    <div class="macros-section">
-                                        <div class="macros-header">
-                                            <div>Macronutrients</div>
-                                            <div class="edit-icon"></div>
-                                        </div>
-                                        <div class="macro-items">
-                                            <div class="macro-item">
-                                                <div class="macro-progress protein">
-                                                    <div class="progress-bar"></div>
-                                                </div>
-                                                <div class="macro-value">75g</div>
-                                                <div class="macro-label">Protein</div>
-                                                <div class="macro-remaining">45g left</div>
-                                            </div>
-                                            <div class="macro-item">
-                                                <div class="macro-progress carbs">
-                                                    <div class="progress-bar"></div>
-                                                </div>
-                                                <div class="macro-value">180g</div>
-                                                <div class="macro-label">Carbs</div>
-                                                <div class="macro-remaining">70g left</div>
-                                            </div>
-                                            <div class="macro-item">
-                                                <div class="macro-progress fat">
-                                                    <div class="progress-bar"></div>
-                                                </div>
-                                                <div class="macro-value">45g</div>
-                                                <div class="macro-label">Fat</div>
-                                                <div class="macro-remaining">25g left</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="app-nav">
-                                        <div class="nav-item active">
-                                            <div class="nav-icon home"></div>
-                                            <div class="nav-label">Home</div>
-                                        </div>
-                                        <div class="nav-item">
-                                            <div class="nav-icon stats"></div>
-                                            <div class="nav-label">Stats</div>
-                                        </div>
-                                        <div class="nav-item add">
-                                            <div class="nav-icon add-icon"></div>
-                                        </div>
-                                        <div class="nav-item">
-                                            <div class="nav-icon meals"></div>
-                                            <div class="nav-label">Meals</div>
-                                        </div>
-                                        <div class="nav-item">
-                                            <div class="nav-icon profile"></div>
-                                            <div class="nav-label">Profile</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="assets/images/process-image.png" alt="Food analysis screen" style="width: 400px; max-width: 100%; border-radius: 16px; margin: 20px auto 0; display: block;">
                 </div>
             </div>
         </div>
@@ -1342,9 +1250,9 @@
                 <p>Be among the first to experience Nutrilogix. Sign up now for exclusive early access.</p>
             </div>
             <div class="signup-form">
-                <form id="early-access-form">
+                <form id="early-access-form" action="https://formspree.io/f/xkgjdpyd" method="POST">
                     <div class="form-group">
-                        <input type="email" placeholder="Enter your email address" required>
+                        <input type="email" name="email" placeholder="Enter your email address" required>
                         <button type="submit" class="btn">Sign Up</button>
                     </div>
                     <div id="signup-message" class="signup-message"></div>
@@ -1358,7 +1266,10 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <h3>Nutrilogix</h3>
+                    <h3>
+                        <img src="assets/images/2.jpg" alt="Nutrilogix Logo">
+                        Nutrilogix
+                    </h3>
                     <p>Track your nutrition with AI-powered food analysis. Make healthier choices with accurate data at your fingertips.</p>
                 </div>
                 <div class="footer-links">
@@ -1395,20 +1306,16 @@
     <script>
         // Enhanced form submission handler
         document.getElementById('early-access-form').addEventListener('submit', function(e) {
-            e.preventDefault();
+            // Don't prevent default - allow form to submit to Formspree
             
-            const email = this.querySelector('input[type="email"]').value;
+            const email = this.querySelector('input[name="email"]').value;
             const messageEl = document.getElementById('signup-message');
             
-            // Simulate API call with timeout
+            // Show processing message
             messageEl.textContent = "Processing...";
             messageEl.className = "signup-message";
             
-            setTimeout(() => {
-                messageEl.textContent = `Thank you! We've added ${email} to our early access list.`;
-                messageEl.className = "signup-message success";
-                this.reset();
-            }, 1000);
+            // Success will be handled by redirect from Formspree
         });
 
         // Make sure the mobile menu toggle is working correctly
