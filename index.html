@@ -1132,6 +1132,83 @@
             max-width: 100%;
             border-radius: 20px;
         }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 100px 0;
+            background: linear-gradient(rgba(13, 198, 139, 0.05), rgba(13, 198, 139, 0.02));
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+
+        .testimonial-info h4 {
+            font-size: 18px;
+            margin-bottom: 4px;
+            color: #333;
+        }
+
+        .testimonial-info p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+
+        .testimonial-rating {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .star {
+            color: #0DC68B;
+            margin-right: 2px;
+        }
+
+        .testimonial-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        @media (max-width: 768px) {
+            .testimonials {
+                padding: 60px 0;
+            }
+
+            .testimonials-grid {
+                margin-top: 40px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1275,6 +1352,71 @@
                     <h3>Track Progress</h3>
                     <p>View detailed breakdowns and track your nutrition goals.</p>
                     <img src="assets/images/process-image.png" alt="Food analysis screen" style="width: 400px; max-width: 100%; border-radius: 16px; margin: 20px auto 0; display: block;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Beta Testers Are Saying</h2>
+                <p>Real feedback from our early access users who are already transforming their nutrition journey</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="assets/images/2.jpg" alt="Sarah M." class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>Sarah M.</h4>
+                            <p>Fitness Enthusiast</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"Game-changer for tracking macros! The AI is incredibly accurate at identifying foods from photos. I've tried other apps, but Nutrilogix makes it so much easier to stay consistent with my nutrition goals."</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="assets/images/2.jpg" alt="James R." class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>James R.</h4>
+                            <p>Amateur Athlete</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"The meal planning features are fantastic. I can quickly check if my planned meals meet my macro targets, and the AI suggestions help me make better choices. Highly recommend!"</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="assets/images/2.jpg" alt="Lisa K." class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>Lisa K.</h4>
+                            <p>Busy Professional</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"Finally, an app that makes nutrition tracking effortless! Just snap a photo and it does all the work. The interface is beautiful and intuitive. It's transformed how I think about my daily meals."</p>
                 </div>
             </div>
         </div>
