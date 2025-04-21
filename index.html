@@ -121,12 +121,14 @@
         .hero-image {
             flex: 1;
             text-align: center;
+            max-width: 500px;
+            margin-left: auto;
         }
 
         .hero-image img {
             max-width: 100%;
             border-radius: 20px;
-            
+            width: 450px;
         }
 
         .hero h1 {
@@ -161,7 +163,7 @@
         
         @media (max-width: 500px) {
             .pills-container {
-                justify-content: center;
+                justify-content: flex-start;
             }
         }
 
@@ -403,6 +405,7 @@
             .hero-image {
                 order: 0;
                 margin-top: 40px;
+                max-width: 100%;
             }
             
             .step:not(:last-child)::after {
@@ -431,6 +434,10 @@
             
             .step:last-child .phone-mockup {
                 margin-bottom: 0;
+            }
+
+            .hero-image img {
+                width: 100%;
             }
         }
 
@@ -1130,6 +1137,7 @@
             <nav class="header-nav">
                 <a href="#features">Features</a>
                 <a href="#how-it-works">How It Works</a>
+                <a href="blog.html">Blog</a>
                 <a href="#signup">Early Access</a>
             </nav>
             <button class="mobile-menu-button" aria-label="Toggle menu">
@@ -1141,6 +1149,7 @@
         <div class="mobile-menu">
             <a href="#features">Features</a>
             <a href="#how-it-works">How It Works</a>
+            <a href="blog.html">Blog</a>
             <a href="#signup">Early Access</a>
         </div>
     </header>
@@ -1283,6 +1292,7 @@
                     <ul>
                         <li><a href="#features">Features</a></li>
                         <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="#signup">Early Access</a></li>
                     </ul>
                 </div>

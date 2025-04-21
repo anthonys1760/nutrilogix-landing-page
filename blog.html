@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nutrilogix Blog - Articles about nutrition, healthy eating, and food tracking">
+    <title>Nutrilogix Blog - Nutrition & Health Articles</title>
+    <link rel="icon" href="assets/images/2.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="assets/images/2.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Inherit base styles from main page */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #0DC68B;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+            margin-right: 10px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            padding: 4px;
+        }
+
+        .logo span {
+            color: #E4F9F2;
+        }
+
+        .header-nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 24px;
+            font-weight: 500;
+        }
+
+        /* Blog specific styles */
+        .blog-header {
+            text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(rgba(13, 198, 139, 0.1), rgba(13, 198, 139, 0.05));
+        }
+
+        .blog-header h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .blog-header p {
+            font-size: 18px;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .blog-grid {
+            padding: 60px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-card-content {
+            padding: 20px;
+        }
+
+        .blog-category {
+            display: inline-block;
+            padding: 4px 12px;
+            background-color: rgba(13, 198, 139, 0.1);
+            color: #0DC68B;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .blog-card h2 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .blog-card p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+
+        .blog-meta {
+            display: flex;
+            align-items: center;
+            color: #888;
+            font-size: 14px;
+        }
+
+        .blog-meta img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .read-more {
+            color: #0DC68B;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #444;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+                padding: 40px 0;
+            }
+
+            .blog-header {
+                padding: 40px 0;
+            }
+
+            .blog-header h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="assets/images/2.jpg" alt="Nutrilogix Logo">
+                Nutri<span>Logix</span>
+            </a>
+            <nav class="header-nav">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="blog.html">Blog</a>
+                <a href="index.html#signup">Early Access</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Blog Header -->
+    <section class="blog-header">
+        <div class="container">
+            <h1>Nutrition & Health Insights</h1>
+            <p>Discover articles about nutrition, healthy eating habits, and making the most of your food tracking journey.</p>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="container blog-grid">
+        <!-- Blog Post 1 -->
+        <article class="blog-card">
+            <a href="blog-post.html" style="text-decoration: none; color: inherit;">
+                <img src="assets/images/analyze-food.png" alt="Understanding Macros">
+                <div class="blog-card-content">
+                    <span class="blog-category">Nutrition Basics</span>
+                    <h2>Understanding Macros: A Beginner's Guide</h2>
+                    <p>Learn about the three main macronutrients - proteins, carbohydrates, and fats - and why they matter for your health.</p>
+                    <div class="blog-meta">
+                        <img src="assets/images/2.jpg" alt="Author">
+                        <span>By Sarah Johnson • 5 min read</span>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+        <!-- Blog Post 2 -->
+        <article class="blog-card">
+            <a href="blog-post-ai.html" style="text-decoration: none; color: inherit;">
+                <img src="assets/images/imagess.png" alt="AI in Nutrition">
+                <div class="blog-card-content">
+                    <span class="blog-category">Technology</span>
+                    <h2>How AI is Revolutionizing Nutrition Tracking</h2>
+                    <p>Discover how artificial intelligence is making it easier than ever to track your daily nutrition and make healthier choices.</p>
+                    <div class="blog-meta">
+                        <img src="assets/images/2.jpg" alt="Author">
+                        <span>By Mike Chen • 4 min read</span>
+                    </div>
+                </div>
+            </a>
+        </article>
+
+        <!-- Blog Post 3 -->
+        <article class="blog-card">
+            <a href="blog-post-meal-planning.html" style="text-decoration: none; color: inherit;">
+                <img src="assets/images/process-image.png" alt="Meal Planning">
+                <div class="blog-card-content">
+                    <span class="blog-category">Tips & Tricks</span>
+                    <h2>5 Simple Steps to Effective Meal Planning</h2>
+                    <p>Master the art of meal planning with these practical tips that will save you time and help you stay on track.</p>
+                    <div class="blog-meta">
+                        <img src="assets/images/2.jpg" alt="Author">
+                        <span>By Emily Davis • 6 min read</span>
+                    </div>
+                </div>
+            </a>
+        </article>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                &copy; 2025 Nutrilogix. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
