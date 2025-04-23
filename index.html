@@ -1209,6 +1209,76 @@
                 margin-top: 40px;
             }
         }
+
+        /* FAQ Section */
+        .faq {
+            padding: 100px 0;
+            background-color: white;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 60px auto 0;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border: 1px solid #f0f0f0;
+        }
+
+        .faq-question {
+            padding: 20px 30px;
+            background-color: #f9f9f9;
+            font-weight: 600;
+            color: #333;
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background-color: #f3f3f3;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 24px;
+            color: #0DC68B;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question {
+            background-color: #f0f8f4;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '−';
+            transform: rotate(0deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            background-color: white;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            padding: 20px 30px;
+        }
+
+        .faq-answer p {
+            margin: 0;
+            color: #555;
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
@@ -1422,6 +1492,59 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Get answers to common questions about Nutrilogix</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">How accurate is the AI food recognition?</div>
+                    <div class="faq-answer">
+                        <p>Our AI food recognition system has been trained on millions of food images and can identify thousands of different foods and dishes. It has an accuracy rate of over 90% for common foods. For complex dishes, it breaks down components and provides detailed nutritional information for each ingredient. We're continuously improving the model with user feedback.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Is Nutrilogix available on both iOS and Android?</div>
+                    <div class="faq-answer">
+                        <p>Yes! Nutrilogix will be available for both iOS and Android devices when we launch. We're currently developing and testing both versions to ensure a seamless experience regardless of your device preference.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Can I track meals eaten at restaurants?</div>
+                    <div class="faq-answer">
+                        <p>Absolutely! One of Nutrilogix's key features is the ability to analyze restaurant meals. Simply take a photo of your meal, and our AI will identify the food and provide accurate nutritional estimates based on portion size. For chain restaurants, we also have a database of menu items for even more precise tracking.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I set personalized nutrition goals?</div>
+                    <div class="faq-answer">
+                        <p>When you first set up your Nutrilogix account, you'll complete a brief questionnaire about your age, weight, height, activity level, and goals (weight loss, maintenance, muscle gain, etc.). Based on this information, we'll calculate recommended daily targets for calories and macronutrients. You can further customize these targets in the app settings at any time.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Is there a subscription fee?</div>
+                    <div class="faq-answer">
+                        <p>Nutrilogix will offer both free and premium subscription options. The free version includes basic food tracking and nutritional information. The premium subscription unlocks advanced features like meal planning, detailed nutritional insights, progress analytics, and unlimited food recognition. Early access users will receive a special discount on premium subscriptions.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How does the barcode scanning feature work?</div>
+                    <div class="faq-answer">
+                        <p>Our barcode scanning feature allows you to quickly log packaged foods. Simply use your phone's camera to scan the barcode, and Nutrilogix will retrieve the nutritional information from our extensive database of over 1 million products. This feature works offline too, so you can scan products even without an internet connection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Signup Section -->
     <section class="signup" id="signup">
         <div class="container">
@@ -1525,6 +1648,25 @@
                     menuButton.classList.remove('active');
                     mobileMenu.classList.remove('active');
                 }
+            });
+
+            // FAQ accordion functionality
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // Close all other open items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
             });
         });
     </script>
