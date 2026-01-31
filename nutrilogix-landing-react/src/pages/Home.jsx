@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
 
 export default function Home() {
+  const scrollToSignup = (e) => {
+    if (e) e.preventDefault();
+    const el = document.getElementById('signup');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -33,8 +39,8 @@ export default function Home() {
               Stop typing. Start snapping. Nutrilogix analyzes your food photos instantly and tracks your workouts to give you accurate calories, macros, and insights.
             </p>
             <div className="hero-actions">
-              <a href="#signup" className="btn btn-primary">Get Early Access</a>
-              <a href="#how-it-works" className="btn btn-secondary">See how it works</a>
+              <button onClick={scrollToSignup} className="btn btn-primary">Get Early Access</button>
+              <button onClick={scrollToSignup} className="btn btn-secondary">See how it works</button>
             </div>
             <div className="hero-stats">
               <div className="stat">

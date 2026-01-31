@@ -120,7 +120,7 @@ export default function BlogPost() {
           </p>
 
           <div style={{ textAlign: 'center', margin: '60px 0' }}>
-            <a href="/#signup" className="btn btn-primary">Experience the Future</a>
+            <Link to="/" className="btn btn-primary">Experience the Future</Link>
           </div>
 
           <p>
