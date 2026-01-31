@@ -17,6 +17,22 @@ export default function Blog() {
         <div className="container">
           <div className="features-grid"> {/* Reusing grid layout */}
             
+            {/* New Post: The End of Manual Logging */}
+            <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
+              <Link to="/blog/the-end-of-manual-logging" style={{ display: 'block' }}>
+                <img src="/assets/images/analyze-food.png" alt="AI Food Analysis" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                <div style={{ padding: '24px' }}>
+                  <span className="badge" style={{ marginBottom: '12px' }}>Technology</span>
+                  <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>The End of Manual Logging: Why AI is the Future</h3>
+                  <p style={{ fontSize: '0.95rem', marginBottom: '16px' }}>Discover how computer vision is replacing tedious food logging with instant, accurate photo analysis.</p>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                    <div className="avatar" style={{ width: 24, height: 24, fontSize: '0.7rem' }}>A</div>
+                    <span>Dr. Alex Rivera • 6 min read</span>
+                  </div>
+                </div>
+              </Link>
+            </article>
+
             {/* Post 1 */}
             <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
               <Link to="/blog/understanding-macros" style={{ display: 'block' }}>

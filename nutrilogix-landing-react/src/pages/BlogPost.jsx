@@ -44,6 +44,88 @@ export default function BlogPost() {
     color: '#374151'
   }
 
+  if (slug === 'the-end-of-manual-logging') {
+    const blogPostingLd = {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline: 'The End of Manual Logging: Why AI is the Future of Nutrition Tracking',
+      description: 'Discover how AI and computer vision are replacing tedious manual food logging, making nutrition tracking faster, more accurate, and sustainable.',
+      image: ['/assets/images/analyze-food.png'],
+      author: { '@type': 'Person', name: 'Dr. Alex Rivera' },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Nutrilogix',
+        logo: { '@type': 'ImageObject', url: '/assets/images/2.jpg' },
+      },
+      datePublished: '2026-01-15',
+      mainEntityOfPage: { '@type': 'WebPage', '@id': '/blog/the-end-of-manual-logging' },
+    }
+
+    return (
+      <div style={contentStyle}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
+        />
+        
+        <img src="/assets/images/analyze-food.png" alt="AI Food Analysis" style={imgStyle} />
+        
+        <div style={metaStyle}>
+          <span className="badge">Technology</span>
+          <span>January 15, 2026</span>
+          <span>6 min read</span>
+        </div>
+
+        <h1 style={h1Style}>The End of Manual Logging: Why AI is the Future of Nutrition Tracking</h1>
+        
+        <div style={bodyStyle}>
+          <p style={{marginBottom: '24px'}}>
+            For decades, "tracking your macros" meant one thing: staring at a food label, searching a clunky database, estimating portion sizes, and manually typing numbers into an app. It was tedious, prone to error, and the #1 reason people quit their nutrition goals.
+          </p>
+
+          <p style={{marginBottom: '24px'}}>
+            But the era of manual logging is over. <strong>Computer Vision</strong> and <strong>Generative AI</strong> have matured to the point where your phone camera can now "see" food just like you do—but with the nutritional precision of a lab technician.
+          </p>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>The Friction of Traditional Tracking</h2>
+          <p style={{marginBottom: '24px'}}>
+            Studies show that users underestimate their calorie intake by up to 30% when logging manually. Why? Because we are terrible at guessing portion sizes. Is that 4oz of chicken or 6oz? Is that tablespoon of oil or two?
+          </p>
+          <p style={{marginBottom: '24px'}}>
+            Beyond accuracy, the sheer <em>friction</em> is a killer. Spending 15 minutes a day logging food feels like a part-time job. AI reduces this to seconds.
+          </p>
+
+          <div style={{ background: 'var(--primary-light)', padding: '24px', borderRadius: '12px', borderLeft: '4px solid var(--primary)', marginBottom: '32px' }}>
+             <strong>The Nutrilogix Difference:</strong> We don't just match keywords. Our AI analyzes the visual texture, volume, and composition of your meal to calculate density and mass instantly.
+          </div>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>How AI "See's" Your Food</h2>
+          <p style={{marginBottom: '24px'}}>
+            When you snap a photo with Nutrilogix, a complex pipeline triggers in milliseconds:
+          </p>
+          <ul style={{ paddingLeft: '24px', marginBottom: '24px' }}>
+            <li style={{marginBottom: '12px'}}><strong>Segmentation:</strong> The AI separates the steak from the broccoli and the rice.</li>
+            <li style={{marginBottom: '12px'}}><strong>Volumetric Analysis:</strong> It estimates the 3D volume of each item based on depth and reference points.</li>
+            <li style={{marginBottom: '12px'}}><strong>Density Calculation:</strong> It identifies the food type (e.g., "Grilled Salmon") to apply the correct caloric density.</li>
+          </ul>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>Beyond Calories: Quality Scores</h2>
+          <p style={{marginBottom: '24px'}}>
+            The future isn't just about <em>how much</em> you eat, but <em>what</em> you eat. AI can detect processing levels, identifying ultra-processed foods vs. whole foods instantly. This empowers you to optimize for longevity, not just weight loss.
+          </p>
+
+          <div style={{ textAlign: 'center', margin: '60px 0' }}>
+            <a href="/#signup" className="btn btn-primary">Experience the Future</a>
+          </div>
+
+          <p>
+            Ready to stop typing and start living? <a href="/#signup" style={{color: 'var(--primary)', fontWeight: 600}}>Join the Nutrilogix waitlist</a> today.
+          </p>
+        </div>
+      </div>
+    )
+  }
+
   if (slug === '7-minute-meal-prep') {
     return (
       <div style={contentStyle}>
