@@ -673,21 +673,9 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1001;
   }
 
-  /* Adjust cards for mobile */
-  .card-1 {
-    display: flex;
-    top: 15%;
-    left: -15%; /* Push further out to the left */
-    transform: scale(0.65);
-    transform-origin: center;
-  }
-
-  .card-2 {
-    display: flex;
-    bottom: 20%;
-    right: -15%; /* Push further out to the right */
-    transform: scale(0.65);
-    transform-origin: center;
+  /* Hide cards for mobile as requested */
+  .card-1, .card-2 {
+    display: none;
   }
 
   .floating-card {
