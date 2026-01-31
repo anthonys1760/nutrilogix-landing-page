@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import SEO from '../components/SEO'
 
 export default function BlogPost() {
   const { slug } = useParams()
@@ -63,6 +64,10 @@ export default function BlogPost() {
 
     return (
       <div style={contentStyle}>
+        <SEO 
+          title="The End of Manual Logging - Nutrilogix" 
+          description="Discover how AI and computer vision are replacing tedious manual food logging, making nutrition tracking faster, more accurate, and sustainable."
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
@@ -129,6 +134,10 @@ export default function BlogPost() {
   if (slug === '7-minute-meal-prep') {
     return (
       <div style={contentStyle}>
+        <SEO 
+          title="7-Minute Meal Prep for Busy Professionals - Nutrilogix" 
+          description="A quick meal prep system using protein, veg, and smart carbs, integrated with an AI photo app for instant macro tracking."
+        />
         <img src="/assets/images/veggies.jpg" alt="7-Minute Meal Prep" style={imgStyle} />
         
         <div style={metaStyle}>
@@ -186,6 +195,10 @@ export default function BlogPost() {
   if (slug === 'ai-in-nutrition') {
     return (
       <div style={contentStyle}>
+        <SEO 
+          title="How AI is Revolutionizing Nutrition Tracking - Nutrilogix" 
+          description="Artificial Intelligence is transforming nutrition tracking. Learn how computer vision and machine learning make logging meals instant and accurate."
+        />
         <img src="/assets/images/veggies.jpg" alt="AI in Nutrition" style={imgStyle} />
         
         <div style={metaStyle}>
@@ -213,6 +226,7 @@ export default function BlogPost() {
   // Fallback for other posts (simplified for brevity of this task)
   return (
     <div className="container" style={{ padding: '80px 20px', textAlign: 'center' }}>
+      <SEO title="Post Not Found - Nutrilogix" description="The requested blog post could not be found." />
       <h1>Post Coming Soon</h1>
       <p>We are still migrating this content. Check back shortly!</p>
       <Link to="/blog" className="btn btn-secondary" style={{ marginTop: '20px' }}>Back to Blog</Link>

@@ -1,9 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 
 export default function Blog() {
   return (
     <>
+      <SEO 
+        title="Nutrilogix Blog - Nutrition Science & AI Tech"
+        description="Expert articles on nutrition tracking, AI food analysis, and healthy living tips."
+      />
       {/* Blog Header */}
       <section className="section bg-light" style={{ paddingBottom: '40px' }}>
         <div className="container section-header">

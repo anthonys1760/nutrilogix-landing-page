@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 
 export default function Home() {
   useEffect(() => {
@@ -18,6 +19,10 @@ export default function Home() {
 
   return (
     <>
+      <SEO 
+        title="Nutrilogix - AI Nutrition Tracking & Smart Kitchen"
+        description="Track calories by photo, scan your fridge for recipes, and sync with Apple Health. No manual logging required."
+      />
       {/* Hero Section */}
       <section className="hero">
         <div className="container hero-inner">
