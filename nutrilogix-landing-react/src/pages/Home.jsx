@@ -483,6 +483,20 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            <div className="testimonial-card reveal reveal-delay-3">
+              <div style={{ color: '#FFD700', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
+              <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: '#444' }}>
+                "The speed is what got me. I can log an entire meal during a 30-second break between meetings. No searching, no typing, just a photo. It's brilliant engineering."
+              </p>
+              <div className="user">
+                <div className="avatar" style={{ background: '#F3F4F6', color: '#374151' }}>D</div>
+                <div>
+                  <strong style={{ display: 'block', color: 'var(--text-main)' }}>David L.</strong>
+                  <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Software Engineer • Busy Professional</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
