@@ -36,7 +36,6 @@ export default function Footer() {
       </div>
       <div className="container footer-bottom">
         <p>&copy; {new Date().getFullYear()} Nutrilogix. All rights reserved.</p>
-        <p style={{fontSize: '0.8rem', opacity: 0.6, marginTop: '8px'}}>Powered by Anthropic AI & Supabase</p>
       </div>
     </footer>
   );
