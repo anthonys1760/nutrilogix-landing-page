@@ -1,13 +1,27 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Home() {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       {/* Hero Section */}
       <section className="hero">
         <div className="container hero-inner">
-          <div className="hero-content">
+          <div className="hero-content reveal">
             <span className="badge">🚀 Coming Soon to iOS & Android</span>
             <h1>Nutrition Tracking,<br />Reimagined with AI.</h1>
             <p className="hero-sub">
@@ -32,7 +46,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="hero-visual">
+          <div className="hero-visual reveal reveal-delay-2">
             <div className="phone-mockup-wrapper">
               <img src="/assets/images/nutrionix.png" alt="Nutrilogix App Interface" className="phone-mockup" />
               <div className="floating-card card-1">
@@ -57,38 +71,38 @@ export default function Home() {
       {/* Features Grid */}
       <section id="features" className="section features-section">
         <div className="container">
-          <div className="section-header">
+          <div className="section-header reveal">
             <h2>Everything you need to <span className="text-highlight">eat better</span>.</h2>
             <p>We combine advanced computer vision with simple design to make tracking effortless.</p>
           </div>
           
           <div className="features-grid">
-            <div className="feature-card">
+            <div className="feature-card reveal reveal-delay-1">
               <div className="icon-box">📸</div>
               <h3>Instant Photo Analysis</h3>
               <p>Just point your camera. Our AI identifies ingredients and portions in milliseconds.</p>
             </div>
-            <div className="feature-card">
+            <div className="feature-card reveal reveal-delay-2">
               <div className="icon-box">📊</div>
               <h3>Smart Macro Targets</h3>
               <p>Dynamic goals that adjust based on your activity, weight, and progress.</p>
             </div>
-            <div className="feature-card">
+            <div className="feature-card reveal reveal-delay-3">
               <div className="icon-box">🍎</div>
               <h3>Verified Database</h3>
               <p>Access millions of verified foods, from grocery staples to restaurant meals.</p>
             </div>
-            <div className="feature-card">
+            <div className="feature-card reveal reveal-delay-1">
               <div className="icon-box">🥬</div>
               <h3>Smart Kitchen</h3>
               <p>Scan your fridge to generate recipes instantly and auto-create shopping lists.</p>
             </div>
-            <div className="feature-card">
+            <div className="feature-card reveal reveal-delay-2">
               <div className="icon-box">🏃‍♂️</div>
               <h3>Smart Workout Sync</h3>
               <p>Connect with Apple Health & Google Fit to automatically track calories burned.</p>
             </div>
-            <div className="feature-card">
+            <div className="feature-card reveal reveal-delay-3">
               <div className="icon-box">📈</div>
               <h3>Progress & Weight</h3>
               <p>Track your weight history, body composition, and nutrition trends over time.</p>
@@ -101,7 +115,7 @@ export default function Home() {
       <section className="section bg-light">
         <div className="container">
           <div className="hero-inner" style={{ alignItems: 'center' }}>
-            <div className="kitchen-content">
+            <div className="kitchen-content reveal">
               <h2>Your AI-powered <span className="text-highlight">Sous Chef</span>.</h2>
               <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '32px', lineHeight: '1.6' }}>
                 Don't know what to cook? Scan your fridge or pantry, and Nutrilogix will instantly generate recipes based on what you have—while keeping you on track with your macros.
@@ -120,7 +134,7 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="kitchen-visual" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div className="kitchen-visual reveal reveal-delay-2" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <div className="step-card" style={{ padding: '24px', width: '100%', maxWidth: '350px', position: 'relative', zIndex: 2, border: '1px solid #eee' }}>
                 <div style={{ marginBottom: '20px' }}>
                   <span style={{ fontSize: '0.85rem', color: '#636E72', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Scanned Ingredients</span>
@@ -152,7 +166,7 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <div className="hero-inner" style={{ alignItems: 'center' }}>
-            <div className="shopping-visual" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center', order: window.innerWidth > 900 ? 0 : 1 }}>
+            <div className="shopping-visual reveal" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center', order: window.innerWidth > 900 ? 0 : 1 }}>
               <div className="step-card" style={{ padding: '0', width: '100%', maxWidth: '320px', position: 'relative', zIndex: 2, overflow: 'hidden', border: '1px solid #eee' }}>
                 <div style={{ background: '#0DC68B', padding: '20px', color: 'white' }}>
                   <h4 style={{ margin: 0, fontSize: '1.1rem' }}>Smart Grocery List</h4>
@@ -181,7 +195,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="shopping-content" style={{ order: window.innerWidth > 900 ? 1 : 0 }}>
+            <div className="shopping-content reveal reveal-delay-2" style={{ order: window.innerWidth > 900 ? 1 : 0 }}>
               <h2>Shop smarter with <span className="text-highlight">Auto-Lists</span>.</h2>
               <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '32px', lineHeight: '1.6' }}>
                 Never forget an ingredient again. Nutrilogix automatically builds your grocery list based on your meal plan and what's already in your fridge.
@@ -213,7 +227,7 @@ export default function Home() {
       <section className="section bg-light">
         <div className="container">
           <div className="hero-inner" style={{ alignItems: 'center' }}>
-            <div className="health-visual" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div className="health-visual reveal" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <div className="step-card" style={{ padding: '32px', width: '100%', maxWidth: '350px', position: 'relative', zIndex: 2 }}>
                 <div style={{ textAlign: 'center', marginBottom: '24px' }}>
                   <span style={{ fontSize: '4rem', fontWeight: 800, color: '#0DC68B', lineHeight: 1 }}>92</span>
@@ -237,7 +251,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="health-content">
+            <div className="health-content reveal reveal-delay-2">
               <h2>Go beyond calories with <span className="text-highlight">Health Scores</span>.</h2>
               <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '32px', lineHeight: '1.6' }}>
                 Not all calories are created equal. Nutrilogix analyzes the quality of your food to help you make smarter choices, not just lighter ones.
@@ -263,7 +277,7 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <div className="hero-inner" style={{ alignItems: 'center' }}>
-            <div className="fitness-content">
+            <div className="fitness-content reveal">
               <h2>Track the full picture: <span className="text-highlight">Energy In & Out</span>.</h2>
               <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '32px', lineHeight: '1.6' }}>
                 Nutrition is only half the equation. Nutrilogix syncs seamlessly with your favorite fitness apps to track your calorie burn and adjust your daily targets in real-time.
@@ -288,7 +302,7 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="fitness-visual" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div className="fitness-visual reveal reveal-delay-2" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at center, rgba(13, 198, 139, 0.1), transparent 70%)' }}></div>
               <div className="step-card" style={{ padding: '32px', width: '100%', maxWidth: '350px', position: 'relative', zIndex: 2 }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '24px', alignItems: 'center' }}>
@@ -338,11 +352,11 @@ export default function Home() {
       {/* How It Works */}
       <section id="how-it-works" className="section bg-light">
         <div className="container">
-          <div className="section-header">
+          <div className="section-header reveal">
             <h2>Three steps to <span className="text-highlight">success</span>.</h2>
           </div>
           <div className="steps-container">
-            <div className="step-item step-card">
+            <div className="step-item step-card reveal reveal-delay-1">
               <div className="step-image">
                 <img src="/assets/images/analyze-food.png" alt="Snap a photo" />
                 <div className="step-badge">1</div>
@@ -352,7 +366,7 @@ export default function Home() {
                 <p>Take a quick photo of your breakfast, lunch, or dinner.</p>
               </div>
             </div>
-            <div className="step-item step-card">
+            <div className="step-item step-card reveal reveal-delay-2">
               <div className="step-image">
                 <img src="/assets/images/imagess.png" alt="AI Analysis" />
                 <div className="step-badge">2</div>
@@ -362,7 +376,7 @@ export default function Home() {
                 <p>Watch as AI instantly breaks down calories and nutrients.</p>
               </div>
             </div>
-            <div className="step-item step-card">
+            <div className="step-item step-card reveal reveal-delay-3">
               <div className="step-image">
                 <img src="/assets/images/process-image.png" alt="Track Progress" />
                 <div className="step-badge">3</div>
@@ -379,11 +393,11 @@ export default function Home() {
       {/* Testimonials */}
       <section className="section testimonials-section">
         <div className="container">
-          <div className="section-header">
+          <div className="section-header reveal">
             <h2>Trusted by <span className="text-highlight">beta testers</span>.</h2>
           </div>
           <div className="testimonials-grid">
-            <div className="testimonial-card">
+            <div className="testimonial-card reveal reveal-delay-1">
               <p>"I never tracked because it was too tedious. Nutrilogix changed that completely. It's actually fun."</p>
               <div className="user">
                 <div className="avatar">S</div>
@@ -393,7 +407,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="testimonial-card">
+            <div className="testimonial-card reveal reveal-delay-2">
               <p>"The AI is scary good. It recognized my homemade lasagna ingredients perfectly."</p>
               <div className="user">
                 <div className="avatar">M</div>
@@ -408,7 +422,7 @@ export default function Home() {
       </section>
 
       {/* CTA / Signup */}
-      <section id="signup" className="section cta-section">
+      <section id="signup" className="section cta-section reveal">
         <div className="container">
           <div className="cta-box">
             <div className="cta-content">
