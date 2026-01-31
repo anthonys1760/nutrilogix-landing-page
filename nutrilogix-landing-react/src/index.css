@@ -634,12 +634,28 @@ h1, h2, h3, h4, h5, h6 {
   .hero-inner {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 48px; /* Slightly tighter gap on mobile */
   }
 
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.75rem; /* Better scaling for mobile */
   }
-  
+
+  .hero-visual {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .phone-mockup-wrapper {
+    max-width: 100%; /* Allow it to fill the container */
+    width: 110%; /* Slightly bleed out for a "larger" effect */
+    margin-left: -5%; /* Center the bleed */
+  }
+
+  .phone-mockup {
+    transform: scale(1.05); /* Slight scale up for impact */
+  }
+
   .hero-actions {
     justify-content: center;
   }
