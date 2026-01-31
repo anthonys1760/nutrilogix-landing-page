@@ -356,35 +356,29 @@ export default function Home() {
             <h2>Three steps to <span className="text-highlight">success</span>.</h2>
           </div>
           <div className="steps-container">
-            <div className="step-item step-card reveal reveal-delay-1">
+            <div className="step-item reveal reveal-delay-1">
               <div className="step-image">
                 <img src="/assets/images/analyze-food.png" alt="Snap a photo" />
                 <div className="step-badge">1</div>
               </div>
-              <div className="step-content">
-                <h3>Snap</h3>
-                <p>Take a quick photo of your breakfast, lunch, or dinner.</p>
-              </div>
+              <h3>Snap</h3>
+              <p>Take a quick photo of your breakfast, lunch, or dinner.</p>
             </div>
-            <div className="step-item step-card reveal reveal-delay-2">
+            <div className="step-item reveal reveal-delay-2">
               <div className="step-image">
                 <img src="/assets/images/imagess.png" alt="AI Analysis" />
                 <div className="step-badge">2</div>
               </div>
-              <div className="step-content">
-                <h3>Analyze</h3>
-                <p>Watch as AI instantly breaks down calories and nutrients.</p>
-              </div>
+              <h3>Analyze</h3>
+              <p>Watch as AI instantly breaks down calories and nutrients.</p>
             </div>
-            <div className="step-item step-card reveal reveal-delay-3">
+            <div className="step-item reveal reveal-delay-3">
               <div className="step-image">
                 <img src="/assets/images/process-image.png" alt="Track Progress" />
                 <div className="step-badge">3</div>
               </div>
-              <div className="step-content">
-                <h3>Thrive</h3>
-                <p>Hit your goals and feel the difference in your energy.</p>
-              </div>
+              <h3>Thrive</h3>
+              <p>Hit your goals and feel the difference in your energy.</p>
             </div>
           </div>
         </div>
