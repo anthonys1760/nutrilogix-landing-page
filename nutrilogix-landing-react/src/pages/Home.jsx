@@ -437,6 +437,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="section-header reveal">
+            <h2>Frequently Asked <span className="text-highlight">Questions</span>.</h2>
+          </div>
+          
+          <div className="features-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))' }}>
+            <div className="feature-card reveal reveal-delay-1" style={{ textAlign: 'left' }}>
+              <h4 style={{ fontSize: '1.2rem', marginBottom: '12px', color: '#2D3436' }}>How accurate is the AI calorie tracking?</h4>
+              <p style={{ color: 'var(--text-muted)' }}>Our AI is trained on millions of food images and has a 95%+ accuracy rate for identifying foods and estimating portions. It's often more accurate than human estimation!</p>
+            </div>
+            
+            <div className="feature-card reveal reveal-delay-2" style={{ textAlign: 'left' }}>
+              <h4 style={{ fontSize: '1.2rem', marginBottom: '12px', color: '#2D3436' }}>Do I need to weigh my food?</h4>
+              <p style={{ color: 'var(--text-muted)' }}>No! That's the beauty of Nutrilogix. Our volumetric analysis estimates weight based on visual depth and reference points in the photo.</p>
+            </div>
+            
+            <div className="feature-card reveal reveal-delay-3" style={{ textAlign: 'left' }}>
+              <h4 style={{ fontSize: '1.2rem', marginBottom: '12px', color: '#2D3436' }}>Does it work with Apple Health & Fitbit?</h4>
+              <p style={{ color: 'var(--text-muted)' }}>Yes. We have 2-way sync with Apple Health and Google Fit, so your workouts automatically increase your calorie budget.</p>
+            </div>
+            
+            <div className="feature-card reveal reveal-delay-1" style={{ textAlign: 'left' }}>
+              <h4 style={{ fontSize: '1.2rem', marginBottom: '12px', color: '#2D3436' }}>Is there a free version?</h4>
+              <p style={{ color: 'var(--text-muted)' }}>Yes, the core tracking features are free forever. Premium features like advanced Health Scores and Smart Shopping Lists are available with a subscription.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA / Signup */}
       <section id="signup" className="section cta-section reveal">
         <div className="container">
