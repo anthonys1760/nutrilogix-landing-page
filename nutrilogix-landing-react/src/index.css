@@ -643,17 +643,21 @@ h1, h2, h3, h4, h5, h6 {
 
   .hero-visual {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
   }
 
   .phone-mockup-wrapper {
-    max-width: 100%; /* Allow it to fill the container */
-    width: 110%; /* Slightly bleed out for a "larger" effect */
-    margin-left: -5%; /* Center the bleed */
+    max-width: 100%;
+    width: 120%; /* Even wider bleed for mobile impact */
+    margin-left: -10%; 
   }
 
   .phone-mockup {
-    transform: scale(1.05); /* Slight scale up for impact */
+    transform: scale(1.15); /* More aggressive scaling */
+    width: 100%;
+    height: auto;
   }
 
   .hero-actions {
