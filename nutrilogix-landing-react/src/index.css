@@ -669,11 +669,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .mobile-toggle {
-    display: flex;
-    z-index: 1001;
-    margin-left: auto;
-    flex-shrink: 0; /* Prevent shrinking */
-    background: transparent;
+    display: none;
   }
 
   .brand-logo {
