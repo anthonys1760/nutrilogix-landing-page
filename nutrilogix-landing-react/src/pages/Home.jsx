@@ -1,13 +1,24 @@
 import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import SEO from '../components/SEO'
 
 export default function Home() {
+  const location = useLocation();
+
   const scrollToSignup = (e) => {
     if (e) e.preventDefault();
     const el = document.getElementById('signup');
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
+
+  useEffect(() => {
+    if (location.state?.scrollTo === 'signup') {
+      // Small timeout to ensure page content is rendered before scrolling
+      setTimeout(() => {
+        scrollToSignup();
+      }, 100);
+    }
+  }, [location]);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {

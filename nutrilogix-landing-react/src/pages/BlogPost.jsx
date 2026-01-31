@@ -120,7 +120,7 @@ export default function BlogPost() {
           </p>
 
           <div style={{ textAlign: 'center', margin: '60px 0' }}>
-            <Link to="/" className="btn btn-primary">Experience the Future</Link>
+            <Link to="/" state={{ scrollTo: 'signup' }} className="btn btn-primary">Experience the Future</Link>
           </div>
 
           <p>
