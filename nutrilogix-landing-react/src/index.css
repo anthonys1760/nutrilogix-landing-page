@@ -671,7 +671,14 @@ h1, h2, h3, h4, h5, h6 {
   .mobile-toggle {
     display: flex;
     z-index: 1001;
-    margin-left: auto; /* Force to right */
+    margin-left: auto;
+    flex-shrink: 0; /* Prevent shrinking */
+    background: transparent;
+  }
+
+  .brand-logo {
+    flex: 1; /* Allow logo to take available space */
+    max-width: 80%; /* Leave space for the toggle */
   }
 
   /* Hide cards for mobile as requested */
