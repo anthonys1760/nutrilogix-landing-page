@@ -697,10 +697,15 @@ h1, h2, h3, h4, h5, h6 {
     --header-height: 60px;
   }
   
+  /* Hero adjustments */
+  .hero {
+    padding-bottom: 140px; /* Extra space for the scaled phone image */
+  }
+
   .hero-inner {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 48px; /* Slightly tighter gap on mobile */
+    gap: 48px;
   }
 
   .hero h1 {
