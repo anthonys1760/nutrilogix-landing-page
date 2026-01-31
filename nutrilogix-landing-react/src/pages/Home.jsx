@@ -79,9 +79,9 @@ export default function Home() {
               <p>Access millions of verified foods, from grocery staples to restaurant meals.</p>
             </div>
             <div className="feature-card">
-              <div className="icon-box">🥣</div>
-              <h3>Meal Suggestions</h3>
-              <p>Stuck? Get personalized meal ideas that fit your remaining macros perfectly.</p>
+              <div className="icon-box">🥬</div>
+              <h3>Smart Kitchen</h3>
+              <p>Scan your fridge to generate recipes instantly and auto-create shopping lists.</p>
             </div>
             <div className="feature-card">
               <div className="icon-box">🏃‍♂️</div>
@@ -90,8 +90,8 @@ export default function Home() {
             </div>
             <div className="feature-card">
               <div className="icon-box">📈</div>
-              <h3>Progress Insights</h3>
-              <p>Visualize your journey with beautiful charts and weekly reports.</p>
+              <h3>Progress & Weight</h3>
+              <p>Track your weight history, body composition, and nutrition trends over time.</p>
             </div>
           </div>
         </div>
