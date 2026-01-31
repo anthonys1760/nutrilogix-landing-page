@@ -11,7 +11,7 @@ export default function Home() {
             <span className="badge">🚀 Coming Soon to iOS & Android</span>
             <h1>Nutrition Tracking,<br />Reimagined with AI.</h1>
             <p className="hero-sub">
-              Stop typing. Start snapping. Nutrilogix analyzes your food photos instantly to give you accurate calories, macros, and insights.
+              Stop typing. Start snapping. Nutrilogix analyzes your food photos instantly and tracks your workouts to give you accurate calories, macros, and insights.
             </p>
             <div className="hero-actions">
               <a href="#signup" className="btn btn-primary">Get Early Access</a>
@@ -84,14 +84,85 @@ export default function Home() {
               <p>Stuck? Get personalized meal ideas that fit your remaining macros perfectly.</p>
             </div>
             <div className="feature-card">
-              <div className="icon-box">⚡️</div>
-              <h3>Barcode Scanner</h3>
-              <p>Scan packaged goods instantly for 100% accurate logging.</p>
+              <div className="icon-box">🏃‍♂️</div>
+              <h3>Smart Workout Sync</h3>
+              <p>Connect with Apple Health & Google Fit to automatically track calories burned.</p>
             </div>
             <div className="feature-card">
               <div className="icon-box">📈</div>
               <h3>Progress Insights</h3>
               <p>Visualize your journey with beautiful charts and weekly reports.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Fitness Section */}
+      <section className="section">
+        <div className="container">
+          <div className="hero-inner" style={{ alignItems: 'center' }}>
+            <div className="fitness-content">
+              <h2>Track the full picture: <span className="text-highlight">Energy In & Out</span>.</h2>
+              <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '32px', lineHeight: '1.6' }}>
+                Nutrition is only half the equation. Nutrilogix syncs seamlessly with your favorite fitness apps to track your calorie burn and adjust your daily targets in real-time.
+              </p>
+              
+              <div style={{ display: 'grid', gap: '24px' }}>
+                <div style={{ display: 'flex', gap: '16px' }}>
+                  <div style={{ background: 'var(--primary-light)', color: 'var(--primary)', width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', flexShrink: 0 }}>🔥</div>
+                  <div>
+                    <h4 style={{ marginBottom: '4px', fontSize: '1.1rem' }}>Automatic Calorie Adjustments</h4>
+                    <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Your daily calorie budget increases automatically when you work out.</p>
+                  </div>
+                </div>
+                
+                <div style={{ display: 'flex', gap: '16px' }}>
+                  <div style={{ background: 'var(--primary-light)', color: 'var(--primary)', width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', flexShrink: 0 }}>⌚️</div>
+                  <div>
+                    <h4 style={{ marginBottom: '4px', fontSize: '1.1rem' }}>Wearable Integration</h4>
+                    <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Works with Apple Watch, Fitbit, Garmin, and more via Apple Health & Google Fit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="fitness-visual" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at center, rgba(13, 198, 139, 0.1), transparent 70%)' }}></div>
+              <div className="step-card" style={{ padding: '32px', width: '100%', maxWidth: '350px', position: 'relative', zIndex: 2 }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '24px', alignItems: 'center' }}>
+                  <span style={{ fontWeight: 700, fontSize: '1.1rem' }}>Activity Summary</span>
+                  <span style={{ background: '#E4F9F2', color: '#0DC68B', padding: '4px 8px', borderRadius: '6px', fontSize: '0.8rem', fontWeight: 600 }}>Today</span>
+                </div>
+                
+                <div style={{ display: 'grid', gap: '16px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '12px', background: '#F9FAFB', borderRadius: '12px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                      <span style={{ fontSize: '1.5rem' }}>🏃</span>
+                      <div>
+                        <div style={{ fontWeight: 600, fontSize: '0.9rem' }}>Morning Run</div>
+                        <div style={{ fontSize: '0.8rem', color: '#636E72' }}>5.2 km • 32 min</div>
+                      </div>
+                    </div>
+                    <div style={{ fontWeight: 700, color: '#0DC68B' }}>+340 kcal</div>
+                  </div>
+
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '12px', background: '#F9FAFB', borderRadius: '12px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                      <span style={{ fontSize: '1.5rem' }}>🏋️‍♀️</span>
+                      <div>
+                        <div style={{ fontWeight: 600, fontSize: '0.9rem' }}>Strength Training</div>
+                        <div style={{ fontSize: '0.8rem', color: '#636E72' }}>Upper Body • 45 min</div>
+                      </div>
+                    </div>
+                    <div style={{ fontWeight: 700, color: '#0DC68B' }}>+210 kcal</div>
+                  </div>
+                  
+                  <div style={{ marginTop: '12px', borderTop: '1px solid #eee', paddingTop: '16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <span style={{ color: '#636E72' }}>Extra Calories Earned</span>
+                    <span style={{ fontSize: '1.25rem', fontWeight: 800 }}>550 kcal</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
