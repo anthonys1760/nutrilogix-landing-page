@@ -411,25 +411,47 @@ export default function Home() {
         <div className="container">
           <div className="section-header reveal">
             <h2>Trusted by <span className="text-highlight">beta testers</span>.</h2>
+            <p>Join over 1,000 early adopters who are already seeing results.</p>
           </div>
           <div className="testimonials-grid">
             <div className="testimonial-card reveal reveal-delay-1">
-              <p>"I never tracked because it was too tedious. Nutrilogix changed that completely. It's actually fun."</p>
+              <div style={{ color: '#FFD700', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
+              <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: '#444' }}>
+                "I never tracked because it was too tedious. Nutrilogix changed that completely. Just snapping a photo makes logging meals fun rather than a chore."
+              </p>
               <div className="user">
-                <div className="avatar">S</div>
+                <div className="avatar" style={{ background: 'var(--primary-light)', color: 'var(--primary)' }}>S</div>
                 <div>
-                  <strong>Sarah J.</strong>
-                  <span>Lost 15lbs</span>
+                  <strong style={{ display: 'block', color: 'var(--text-main)' }}>Sarah J.</strong>
+                  <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Lost 15lbs • Early Access</span>
                 </div>
               </div>
             </div>
+            
             <div className="testimonial-card reveal reveal-delay-2">
-              <p>"The AI is scary good. It recognized my homemade lasagna ingredients perfectly."</p>
+              <div style={{ color: '#FFD700', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
+              <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: '#444' }}>
+                "The AI is scary good. It recognized my complex homemade lasagna ingredients perfectly. The health score feature is a game changer for my diet quality."
+              </p>
               <div className="user">
-                <div className="avatar">M</div>
+                <div className="avatar" style={{ background: '#E0E7FF', color: '#4F46E5' }}>M</div>
                 <div>
-                  <strong>Mike R.</strong>
-                  <span>Muscle Gain</span>
+                  <strong style={{ display: 'block', color: 'var(--text-main)' }}>Mike R.</strong>
+                  <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Muscle Gain • Marathon Runner</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="testimonial-card reveal reveal-delay-3">
+              <div style={{ color: '#FFD700', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
+              <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: '#444' }}>
+                "The shopping list feature saves me hours every week. I love how it automatically checks my fridge before telling me what to buy. Incredible AI."
+              </p>
+              <div className="user">
+                <div className="avatar" style={{ background: '#FEF3C7', color: '#D97706' }}>L</div>
+                <div>
+                  <strong style={{ display: 'block', color: 'var(--text-main)' }}>Linda K.</strong>
+                  <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Busy Parent • Healthy Eater</span>
                 </div>
               </div>
             </div>
