@@ -455,6 +455,34 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            <div className="testimonial-card reveal reveal-delay-1">
+              <div style={{ color: '#FFD700', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
+              <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: '#444' }}>
+                "Finally, an app that syncs correctly with Apple Health! My workout burn is instantly credited to my daily goals. It's the most seamless setup I've used."
+              </p>
+              <div className="user">
+                <div className="avatar" style={{ background: '#DCFCE7', color: '#166534' }}>J</div>
+                <div>
+                  <strong style={{ display: 'block', color: 'var(--text-main)' }}>James W.</strong>
+                  <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Crossfit Athlete • Techie</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="testimonial-card reveal reveal-delay-2">
+              <div style={{ color: '#FFD700', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
+              <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: '#444' }}>
+                "I was shocked at my favorite snacks' health scores. Nutrilogix has helped me cut out inflammatory foods I didn't even know I was eating. Worth every penny."
+              </p>
+              <div className="user">
+                <div className="avatar" style={{ background: '#FCE7F3', color: '#9D174D' }}>E</div>
+                <div>
+                  <strong style={{ display: 'block', color: 'var(--text-main)' }}>Emily S.</strong>
+                  <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Health Coach • Foodie</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
