@@ -97,6 +97,56 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Health Score Section */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="hero-inner" style={{ alignItems: 'center' }}>
+            <div className="health-visual" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div className="step-card" style={{ padding: '32px', width: '100%', maxWidth: '350px', position: 'relative', zIndex: 2 }}>
+                <div style={{ textAlign: 'center', marginBottom: '24px' }}>
+                  <span style={{ fontSize: '4rem', fontWeight: 800, color: '#0DC68B', lineHeight: 1 }}>92</span>
+                  <div style={{ fontSize: '1.2rem', fontWeight: 600, color: '#2D3436' }}>Excellent Choice!</div>
+                </div>
+                
+                <div style={{ display: 'grid', gap: '12px' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid #eee' }}>
+                    <span style={{ color: '#636E72' }}>Nutrient Density</span>
+                    <span style={{ color: '#0DC68B', fontWeight: 600 }}>High</span>
+                  </div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid #eee' }}>
+                    <span style={{ color: '#636E72' }}>Processing Level</span>
+                    <span style={{ color: '#0DC68B', fontWeight: 600 }}>Minimally Processed</span>
+                  </div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0' }}>
+                    <span style={{ color: '#636E72' }}>Additives</span>
+                    <span style={{ color: '#0DC68B', fontWeight: 600 }}>None Detected</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="health-content">
+              <h2>Go beyond calories with <span className="text-highlight">Health Scores</span>.</h2>
+              <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '32px', lineHeight: '1.6' }}>
+                Not all calories are created equal. Nutrilogix analyzes the quality of your food to help you make smarter choices, not just lighter ones.
+              </p>
+              
+              <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gap: '16px' }}>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.05rem', color: '#2D3436' }}>
+                  <span style={{ color: 'var(--primary)', fontWeight: 800 }}>✓</span> Instant quality rating (0-100)
+                </li>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.05rem', color: '#2D3436' }}>
+                  <span style={{ color: 'var(--primary)', fontWeight: 800 }}>✓</span> Processing level detection
+                </li>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.05rem', color: '#2D3436' }}>
+                  <span style={{ color: 'var(--primary)', fontWeight: 800 }}>✓</span> Inflammatory ingredient alerts
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Fitness Section */}
       <section className="section">
         <div className="container">
@@ -158,7 +208,12 @@ export default function Home() {
                   </div>
                   
                   <div style={{ marginTop: '12px', borderTop: '1px solid #eee', paddingTop: '16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <span style={{ color: '#636E72' }}>Extra Calories Earned</span>
+                    <span style={{ color: '#636E72' }}>Weekly Energy & Expenditure</span>
+                    <span style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--primary)' }}>Tracked</span>
+                  </div>
+                  
+                  <div style={{ marginTop: '0', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <span style={{ color: '#636E72', fontSize: '0.9rem' }}>Extra Calories Earned</span>
                     <span style={{ fontSize: '1.25rem', fontWeight: 800 }}>550 kcal</span>
                   </div>
                 </div>
