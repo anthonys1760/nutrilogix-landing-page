@@ -700,4 +700,15 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: 1fr;
     gap: 32px;
   }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .footer-brand p {
+    margin: 16px auto;
+  }
 }
