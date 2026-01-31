@@ -25,7 +25,7 @@ export default function Blog() {
             {/* New Post: The End of Manual Logging */}
             <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
               <Link to="/blog/the-end-of-manual-logging" style={{ display: 'block' }}>
-                <img src="/assets/images/analyze-food.png" alt="AI Food Analysis" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                <img src="/assets/images/ai-blog-logging.jpg" alt="AI Food Analysis" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
                 <div style={{ padding: '24px' }}>
                   <span className="badge" style={{ marginBottom: '12px' }}>Technology</span>
                   <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>The End of Manual Logging: Why AI is the Future</h3>

@@ -51,7 +51,7 @@ export default function BlogPost() {
       '@type': 'BlogPosting',
       headline: 'The End of Manual Logging: Why AI is the Future of Nutrition Tracking',
       description: 'Discover how AI and computer vision are replacing tedious manual food logging, making nutrition tracking faster, more accurate, and sustainable.',
-      image: ['/assets/images/analyze-food.png'],
+      image: ['/assets/images/ai-blog-logging.jpg'],
       author: { '@type': 'Person', name: 'Dr. Alex Rivera' },
       publisher: {
         '@type': 'Organization',
@@ -73,7 +73,7 @@ export default function BlogPost() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
         />
         
-        <img src="/assets/images/analyze-food.png" alt="AI Food Analysis" style={imgStyle} />
+        <img src="/assets/images/ai-blog-logging.jpg" alt="AI Food Analysis" style={imgStyle} />
         
         <div style={metaStyle}>
           <span className="badge">Technology</span>
