@@ -27,8 +27,8 @@ export default function Home() {
                 <span>Foods</span>
               </div>
               <div className="stat">
-                <strong>0</strong>
-                <span>Manual Entries</span>
+                <strong>100%</strong>
+                <span>Automated</span>
               </div>
             </div>
           </div>
