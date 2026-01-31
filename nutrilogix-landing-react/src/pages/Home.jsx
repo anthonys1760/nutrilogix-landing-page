@@ -97,6 +97,118 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Smart Kitchen Section */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="hero-inner" style={{ alignItems: 'center' }}>
+            <div className="kitchen-content">
+              <h2>Your AI-powered <span className="text-highlight">Sous Chef</span>.</h2>
+              <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '32px', lineHeight: '1.6' }}>
+                Don't know what to cook? Scan your fridge or pantry, and Nutrilogix will instantly generate recipes based on what you have—while keeping you on track with your macros.
+              </p>
+              
+              <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gap: '16px' }}>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.05rem', color: '#2D3436' }}>
+                  <span style={{ color: 'var(--primary)', fontWeight: 800 }}>✓</span> Scan fridge ingredients in seconds
+                </li>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.05rem', color: '#2D3436' }}>
+                  <span style={{ color: 'var(--primary)', fontWeight: 800 }}>✓</span> Generate macro-friendly recipes
+                </li>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.05rem', color: '#2D3436' }}>
+                  <span style={{ color: 'var(--primary)', fontWeight: 800 }}>✓</span> Auto-create shopping lists
+                </li>
+              </ul>
+            </div>
+
+            <div className="kitchen-visual" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div className="step-card" style={{ padding: '24px', width: '100%', maxWidth: '350px', position: 'relative', zIndex: 2, border: '1px solid #eee' }}>
+                <div style={{ marginBottom: '20px' }}>
+                  <span style={{ fontSize: '0.85rem', color: '#636E72', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Scanned Ingredients</span>
+                  <div style={{ display: 'flex', gap: '8px', marginTop: '8px', flexWrap: 'wrap' }}>
+                    {['Chicken Breast', 'Spinach', 'Bell Peppers', 'Quinoa'].map(item => (
+                      <span key={item} style={{ background: '#F0F2F5', padding: '6px 12px', borderRadius: '20px', fontSize: '0.85rem', color: '#2D3436' }}>{item}</span>
+                    ))}
+                  </div>
+                </div>
+                
+                <div style={{ textAlign: 'center', padding: '16px 0', color: 'var(--primary)', fontSize: '1.5rem' }}>⬇</div>
+
+                <div style={{ background: '#F9FAFB', borderRadius: '16px', padding: '16px', border: '1px solid #EAEAEA' }}>
+                  <span style={{ fontSize: '0.85rem', color: '#0DC68B', fontWeight: 700 }}>AI Suggested Meal</span>
+                  <h4 style={{ margin: '8px 0 4px', fontSize: '1.1rem' }}>Quinoa & Chicken Power Bowl</h4>
+                  <p style={{ fontSize: '0.9rem', color: '#636E72', marginBottom: '12px' }}>With sautéed spinach and roasted peppers.</p>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem', fontWeight: 600, color: '#2D3436', background: 'white', padding: '8px 12px', borderRadius: '8px' }}>
+                    <span>420 kcal</span>
+                    <span>35g Protein</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Smart Shopping Section */}
+      <section className="section">
+        <div className="container">
+          <div className="hero-inner" style={{ alignItems: 'center' }}>
+            <div className="shopping-visual" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center', order: window.innerWidth > 900 ? 0 : 1 }}>
+              <div className="step-card" style={{ padding: '0', width: '100%', maxWidth: '320px', position: 'relative', zIndex: 2, overflow: 'hidden', border: '1px solid #eee' }}>
+                <div style={{ background: '#0DC68B', padding: '20px', color: 'white' }}>
+                  <h4 style={{ margin: 0, fontSize: '1.1rem' }}>Smart Grocery List</h4>
+                  <p style={{ margin: '4px 0 0', opacity: 0.9, fontSize: '0.85rem' }}>3 Recipes • 12 Items</p>
+                </div>
+                <div style={{ padding: '20px' }}>
+                  <div style={{ marginBottom: '16px' }}>
+                    <div style={{ fontSize: '0.8rem', color: '#636E72', fontWeight: 700, marginBottom: '8px', textTransform: 'uppercase' }}>Produce</div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '8px 0', borderBottom: '1px solid #f5f5f5' }}>
+                      <div style={{ width: '20px', height: '20px', border: '2px solid #ddd', borderRadius: '6px' }}></div>
+                      <span>Avocados (2)</span>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '8px 0', borderBottom: '1px solid #f5f5f5' }}>
+                      <div style={{ width: '20px', height: '20px', background: '#E4F9F2', border: '2px solid #0DC68B', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#0DC68B', fontSize: '12px' }}>✓</div>
+                      <span style={{ textDecoration: 'line-through', color: '#aaa' }}>Baby Spinach</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div style={{ fontSize: '0.8rem', color: '#636E72', fontWeight: 700, marginBottom: '8px', textTransform: 'uppercase' }}>Pantry</div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '8px 0' }}>
+                      <div style={{ width: '20px', height: '20px', border: '2px solid #ddd', borderRadius: '6px' }}></div>
+                      <span>Olive Oil</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="shopping-content" style={{ order: window.innerWidth > 900 ? 1 : 0 }}>
+              <h2>Shop smarter with <span className="text-highlight">Auto-Lists</span>.</h2>
+              <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '32px', lineHeight: '1.6' }}>
+                Never forget an ingredient again. Nutrilogix automatically builds your grocery list based on your meal plan and what's already in your fridge.
+              </p>
+              
+              <div style={{ display: 'grid', gap: '24px' }}>
+                <div style={{ display: 'flex', gap: '16px' }}>
+                  <div style={{ background: 'var(--primary-light)', color: 'var(--primary)', width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', flexShrink: 0 }}>🛒</div>
+                  <div>
+                    <h4 style={{ marginBottom: '4px', fontSize: '1.1rem' }}>Organized by Aisle</h4>
+                    <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Items are automatically sorted by category (Produce, Dairy, etc.) to save you time.</p>
+                  </div>
+                </div>
+                
+                <div style={{ display: 'flex', gap: '16px' }}>
+                  <div style={{ background: 'var(--primary-light)', color: 'var(--primary)', width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', flexShrink: 0 }}>🧠</div>
+                  <div>
+                    <h4 style={{ marginBottom: '4px', fontSize: '1.1rem' }}>Waste Reduction AI</h4>
+                    <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>We check what you already have so you don't overbuy. Save money and food.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Health Score Section */}
       <section className="section bg-light">
         <div className="container">
