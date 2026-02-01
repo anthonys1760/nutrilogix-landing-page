@@ -795,6 +795,14 @@ h1, h2, h3, h4, h5, h6 {
   .footer-brand p {
     margin: 16px auto;
   }
+
+  /* Spacing after large images */
+  .kitchen-content,
+  .shopping-content,
+  .health-content,
+  .fitness-content {
+    margin-top: 80px;
+  }
 }
 
 /* Scroll Reveal Animation */
