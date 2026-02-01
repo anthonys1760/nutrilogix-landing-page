@@ -204,27 +204,7 @@ export default function Home() {
         <div className="container">
           <div className="hero-inner" style={{ alignItems: 'center' }}>
             <div className="health-visual reveal" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <div className="step-card" style={{ padding: '32px', width: '100%', maxWidth: '350px', position: 'relative', zIndex: 2 }}>
-                <div style={{ textAlign: 'center', marginBottom: '24px' }}>
-                  <span style={{ fontSize: '4rem', fontWeight: 800, color: '#0DC68B', lineHeight: 1 }}>92</span>
-                  <div style={{ fontSize: '1.2rem', fontWeight: 600, color: '#2D3436' }}>Excellent Choice!</div>
-                </div>
-                
-                <div style={{ display: 'grid', gap: '12px' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid #eee' }}>
-                    <span style={{ color: '#636E72' }}>Nutrient Density</span>
-                    <span style={{ color: '#0DC68B', fontWeight: 600 }}>High</span>
-                  </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid #eee' }}>
-                    <span style={{ color: '#636E72' }}>Processing Level</span>
-                    <span style={{ color: '#0DC68B', fontWeight: 600 }}>Minimally Processed</span>
-                  </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0' }}>
-                    <span style={{ color: '#636E72' }}>Additives</span>
-                    <span style={{ color: '#0DC68B', fontWeight: 600 }}>None Detected</span>
-                  </div>
-                </div>
-              </div>
+              <img src="/assets/images/health-score.png" alt="Nutrilogix Health Score" style={{ width: '100%', maxWidth: '550px', height: 'auto', zIndex: 2 }} />
             </div>
 
             <div className="health-content reveal reveal-delay-2">
