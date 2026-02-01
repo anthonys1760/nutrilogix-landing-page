@@ -189,32 +189,7 @@ export default function Home() {
         <div className="container">
           <div className="hero-inner" style={{ alignItems: 'center' }}>
             <div className="shopping-visual reveal" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center', order: window.innerWidth > 900 ? 0 : 1 }}>
-              <div className="step-card" style={{ padding: '0', width: '100%', maxWidth: '320px', position: 'relative', zIndex: 2, overflow: 'hidden', border: '1px solid #eee' }}>
-                <div style={{ background: '#0DC68B', padding: '20px', color: 'white' }}>
-                  <h4 style={{ margin: 0, fontSize: '1.1rem' }}>Smart Grocery List</h4>
-                  <p style={{ margin: '4px 0 0', opacity: 0.9, fontSize: '0.85rem' }}>3 Recipes • 12 Items</p>
-                </div>
-                <div style={{ padding: '20px' }}>
-                  <div style={{ marginBottom: '16px' }}>
-                    <div style={{ fontSize: '0.8rem', color: '#636E72', fontWeight: 700, marginBottom: '8px', textTransform: 'uppercase' }}>Produce</div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '8px 0', borderBottom: '1px solid #f5f5f5' }}>
-                      <div style={{ width: '20px', height: '20px', border: '2px solid #ddd', borderRadius: '6px' }}></div>
-                      <span>Avocados (2)</span>
-                    </div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '8px 0', borderBottom: '1px solid #f5f5f5' }}>
-                      <div style={{ width: '20px', height: '20px', background: '#E4F9F2', border: '2px solid #0DC68B', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#0DC68B', fontSize: '12px' }}>✓</div>
-                      <span style={{ textDecoration: 'line-through', color: '#aaa' }}>Baby Spinach</span>
-                    </div>
-                  </div>
-                  <div>
-                    <div style={{ fontSize: '0.8rem', color: '#636E72', fontWeight: 700, marginBottom: '8px', textTransform: 'uppercase' }}>Pantry</div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '8px 0' }}>
-                      <div style={{ width: '20px', height: '20px', border: '2px solid #ddd', borderRadius: '6px' }}></div>
-                      <span>Olive Oil</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <img src="/assets/images/smart-list.png" alt="Nutrilogix Smart List" style={{ width: '100%', maxWidth: '350px', height: 'auto', zIndex: 2 }} />
             </div>
 
             <div className="shopping-content reveal reveal-delay-2" style={{ order: window.innerWidth > 900 ? 1 : 0 }}>
