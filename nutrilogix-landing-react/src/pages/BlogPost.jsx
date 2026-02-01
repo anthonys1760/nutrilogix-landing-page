@@ -42,7 +42,7 @@ export default function BlogPost() {
   const bodyStyle = {
     fontSize: '1.125rem',
     lineHeight: 1.8,
-    color: '#374151'
+    color: 'var(--text-main)'
   }
 
   if (slug === 'the-end-of-manual-logging') {

@@ -144,13 +144,13 @@ export default function Home() {
               </p>
               
               <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gap: '16px' }}>
-                <li style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.05rem', color: '#2D3436' }}>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.05rem', color: 'var(--text-main)' }}>
                   <span style={{ color: 'var(--primary)', fontWeight: 800 }}>✓</span> Scan fridge ingredients in seconds
                 </li>
-                <li style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.05rem', color: '#2D3436' }}>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.05rem', color: 'var(--text-main)' }}>
                   <span style={{ color: 'var(--primary)', fontWeight: 800 }}>✓</span> Generate macro-friendly recipes
                 </li>
-                <li style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.05rem', color: '#2D3436' }}>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.05rem', color: 'var(--text-main)' }}>
                   <span style={{ color: 'var(--primary)', fontWeight: 800 }}>✓</span> Auto-create shopping lists
                 </li>
               </ul>
@@ -214,13 +214,13 @@ export default function Home() {
               </p>
               
               <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gap: '16px' }}>
-                <li style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.05rem', color: '#2D3436' }}>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.05rem', color: 'var(--text-main)' }}>
                   <span style={{ color: 'var(--primary)', fontWeight: 800 }}>✓</span> Instant quality rating (0-100)
                 </li>
-                <li style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.05rem', color: '#2D3436' }}>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.05rem', color: 'var(--text-main)' }}>
                   <span style={{ color: 'var(--primary)', fontWeight: 800 }}>✓</span> Processing level detection
                 </li>
-                <li style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.05rem', color: '#2D3436' }}>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.05rem', color: 'var(--text-main)' }}>
                   <span style={{ color: 'var(--primary)', fontWeight: 800 }}>✓</span> Inflammatory ingredient alerts
                 </li>
               </ul>
@@ -310,7 +310,7 @@ export default function Home() {
           <div className="testimonials-grid">
             <div className="testimonial-card reveal reveal-delay-1">
               <div style={{ color: '#FFD700', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
-              <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: '#444' }}>
+              <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: 'var(--text-main)' }}>
                 "I never tracked because it was too tedious. Nutrilogix changed that completely. Just snapping a photo makes logging meals fun rather than a chore."
               </p>
               <div className="user">
@@ -324,7 +324,7 @@ export default function Home() {
             
             <div className="testimonial-card reveal reveal-delay-2">
               <div style={{ color: '#FFD700', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
-              <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: '#444' }}>
+              <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: 'var(--text-main)' }}>
                 "The AI is scary good. It recognized my complex homemade lasagna ingredients perfectly. The health score feature is a game changer for my diet quality."
               </p>
               <div className="user">
@@ -338,7 +338,7 @@ export default function Home() {
 
             <div className="testimonial-card reveal reveal-delay-3">
               <div style={{ color: '#FFD700', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
-              <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: '#444' }}>
+              <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: 'var(--text-main)' }}>
                 "The shopping list feature saves me hours every week. I love how it automatically checks my fridge before telling me what to buy. Incredible AI."
               </p>
               <div className="user">
@@ -352,7 +352,7 @@ export default function Home() {
 
             <div className="testimonial-card reveal reveal-delay-1">
               <div style={{ color: '#FFD700', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
-              <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: '#444' }}>
+              <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: 'var(--text-main)' }}>
                 "Finally, an app that syncs correctly with Apple Health! My workout burn is instantly credited to my daily goals. It's the most seamless setup I've used."
               </p>
               <div className="user">
@@ -366,7 +366,7 @@ export default function Home() {
 
             <div className="testimonial-card reveal reveal-delay-2">
               <div style={{ color: '#FFD700', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
-              <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: '#444' }}>
+              <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: 'var(--text-main)' }}>
                 "I was shocked at my favorite snacks' health scores. Nutrilogix has helped me cut out inflammatory foods I didn't even know I was eating. Worth every penny."
               </p>
               <div className="user">
@@ -380,7 +380,7 @@ export default function Home() {
 
             <div className="testimonial-card reveal reveal-delay-3">
               <div style={{ color: '#FFD700', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
-              <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: '#444' }}>
+              <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: 'var(--text-main)' }}>
                 "The speed is what got me. I can log an entire meal during a 30-second break between meetings. No searching, no typing, just a photo. It's brilliant engineering."
               </p>
               <div className="user">
@@ -404,22 +404,22 @@ export default function Home() {
           
           <div className="features-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))' }}>
             <div className="feature-card reveal reveal-delay-1" style={{ textAlign: 'left' }}>
-              <h4 style={{ fontSize: '1.2rem', marginBottom: '12px', color: '#2D3436' }}>How accurate is the AI calorie tracking?</h4>
+              <h4 style={{ fontSize: '1.2rem', marginBottom: '12px', color: 'var(--text-main)' }}>How accurate is the AI calorie tracking?</h4>
               <p style={{ color: 'var(--text-muted)' }}>Our AI is trained on millions of food images and has a 95%+ accuracy rate for identifying foods and estimating portions. It's often more accurate than human estimation!</p>
             </div>
             
             <div className="feature-card reveal reveal-delay-2" style={{ textAlign: 'left' }}>
-              <h4 style={{ fontSize: '1.2rem', marginBottom: '12px', color: '#2D3436' }}>Do I need to weigh my food?</h4>
+              <h4 style={{ fontSize: '1.2rem', marginBottom: '12px', color: 'var(--text-main)' }}>Do I need to weigh my food?</h4>
               <p style={{ color: 'var(--text-muted)' }}>No! That's the beauty of Nutrilogix. Our volumetric analysis estimates weight based on visual depth and reference points in the photo.</p>
             </div>
             
             <div className="feature-card reveal reveal-delay-3" style={{ textAlign: 'left' }}>
-              <h4 style={{ fontSize: '1.2rem', marginBottom: '12px', color: '#2D3436' }}>Does it work with Apple Health & Fitbit?</h4>
+              <h4 style={{ fontSize: '1.2rem', marginBottom: '12px', color: 'var(--text-main)' }}>Does it work with Apple Health & Fitbit?</h4>
               <p style={{ color: 'var(--text-muted)' }}>Yes. We have 2-way sync with Apple Health and Google Fit, so your workouts automatically increase your calorie budget.</p>
             </div>
             
             <div className="feature-card reveal reveal-delay-1" style={{ textAlign: 'left' }}>
-              <h4 style={{ fontSize: '1.2rem', marginBottom: '12px', color: '#2D3436' }}>Is there a free version?</h4>
+              <h4 style={{ fontSize: '1.2rem', marginBottom: '12px', color: 'var(--text-main)' }}>Is there a free version?</h4>
               <p style={{ color: 'var(--text-muted)' }}>Yes, the core tracking features are free forever. Premium features like advanced Health Scores and Smart Shopping Lists are available with a subscription.</p>
             </div>
           </div>
