@@ -168,7 +168,7 @@ export default function Home() {
         <div className="container">
           <div className="hero-inner" style={{ alignItems: 'center' }}>
             <div className="shopping-visual reveal" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center', order: window.innerWidth > 900 ? 0 : 1 }}>
-              <img src="/assets/images/smart-list.png" alt="Nutrilogix Smart List" style={{ width: '100%', maxWidth: '550px', height: 'auto', zIndex: 2 }} />
+              <img src="/assets/images/smart-list.png" alt="Nutrilogix Smart List" style={{ width: '100%', maxWidth: '650px', height: 'auto', zIndex: 2 }} />
             </div>
 
             <div className="shopping-content reveal reveal-delay-2" style={{ order: window.innerWidth > 900 ? 1 : 0 }}>
@@ -204,7 +204,7 @@ export default function Home() {
         <div className="container">
           <div className="hero-inner" style={{ alignItems: 'center' }}>
             <div className="health-visual reveal" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <img src="/assets/images/scores.png" alt="Nutrilogix Health Score" style={{ width: '100%', maxWidth: '550px', height: 'auto', zIndex: 2 }} />
+              <img src="/assets/images/scores.png" alt="Nutrilogix Health Score" style={{ width: '100%', maxWidth: '650px', height: 'auto', zIndex: 2 }} />
             </div>
 
             <div className="health-content reveal reveal-delay-2">
@@ -259,7 +259,7 @@ export default function Home() {
             </div>
             
             <div className="fitness-visual reveal reveal-delay-2" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <img src="/assets/images/expenditure.png" alt="Nutrilogix Weekly Energy Expenditure" style={{ width: '100%', maxWidth: '550px', height: 'auto', zIndex: 2 }} />
+              <img src="/assets/images/expenditure.png" alt="Nutrilogix Weekly Energy Expenditure" style={{ width: '100%', maxWidth: '650px', height: 'auto', zIndex: 2 }} />
             </div>
           </div>
         </div>
@@ -270,31 +270,56 @@ export default function Home() {
         <div className="container">
           <div className="section-header reveal">
             <h2>Three steps to <span className="text-highlight">success</span>.</h2>
+            <p>From snap to stats in seconds. Here's how Nutrilogix transforms your journey.</p>
           </div>
-          <div className="steps-container">
-            <div className="step-item reveal reveal-delay-1">
-              <div className="step-image">
-                <img src="/assets/images/analyze-food.png" alt="Snap a photo" />
-                <div className="step-badge">1</div>
+
+          <div style={{ display: 'grid', gap: '100px' }}>
+            {/* Step 1 */}
+            <div className="hero-inner" style={{ alignItems: 'center' }}>
+              <div className="step-image-container reveal">
+                <div style={{ position: 'relative' }}>
+                  <img src="/assets/images/snap.png" alt="Snap a photo" style={{ width: '100%', maxWidth: '650px', height: 'auto', zIndex: 2 }} />
+                  <div className="step-badge" style={{ top: '20px', left: '20px', right: 'auto' }}>1</div>
+                </div>
               </div>
-              <h3>Snap</h3>
-              <p>Take a quick photo of your breakfast, lunch, or dinner.</p>
+              <div className="step-text-content reveal reveal-delay-2">
+                <h3>Snap</h3>
+                <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: '1.6' }}>
+                  Simply take a quick photo of your breakfast, lunch, or dinner. No more searching through endless databases or reading tiny labels.
+                </p>
+              </div>
             </div>
-            <div className="step-item reveal reveal-delay-2">
-              <div className="step-image">
-                <img src="/assets/images/imagess.png" alt="AI Analysis" />
-                <div className="step-badge">2</div>
+
+            {/* Step 2 */}
+            <div className="hero-inner" style={{ alignItems: 'center' }}>
+              <div className="step-text-content reveal reveal-delay-2" style={{ order: window.innerWidth > 900 ? 0 : 1 }}>
+                <h3>Analyze</h3>
+                <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: '1.6' }}>
+                  Our advanced AI identifies every ingredient and estimates portion sizes with incredible accuracy. See your calories and macros in milliseconds.
+                </p>
               </div>
-              <h3>Analyze</h3>
-              <p>Watch as AI instantly breaks down calories and nutrients.</p>
+              <div className="step-image-container reveal" style={{ order: window.innerWidth > 900 ? 1 : 0 }}>
+                <div style={{ position: 'relative' }}>
+                  <img src="/assets/images/analyze.png" alt="AI Analysis" style={{ width: '100%', maxWidth: '650px', height: 'auto', zIndex: 2 }} />
+                  <div className="step-badge" style={{ top: '20px', right: '20px' }}>2</div>
+                </div>
+              </div>
             </div>
-            <div className="step-item reveal reveal-delay-3">
-              <div className="step-image">
-                <img src="/assets/images/process-image.png" alt="Track Progress" />
-                <div className="step-badge">3</div>
+
+            {/* Step 3 */}
+            <div className="hero-inner" style={{ alignItems: 'center' }}>
+              <div className="step-image-container reveal">
+                <div style={{ position: 'relative' }}>
+                  <img src="/assets/images/health-score.png" alt="Track Progress" style={{ width: '100%', maxWidth: '650px', height: 'auto', zIndex: 2 }} />
+                  <div className="step-badge" style={{ top: '20px', left: '20px', right: 'auto' }}>3</div>
+                </div>
               </div>
-              <h3>Thrive</h3>
-              <p>Hit your goals and feel the difference in your energy.</p>
+              <div className="step-text-content reveal reveal-delay-2">
+                <h3>Thrive</h3>
+                <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: '1.6' }}>
+                  Hit your personalized goals and watch your progress unfold. With frictionless tracking, staying consistent has never been easier.
+                </p>
+              </div>
             </div>
           </div>
         </div>
