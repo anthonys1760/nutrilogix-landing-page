@@ -204,7 +204,7 @@ export default function Home() {
         <div className="container">
           <div className="hero-inner" style={{ alignItems: 'center' }}>
             <div className="health-visual reveal" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <img src="/assets/images/health-score.png" alt="Nutrilogix Health Score" style={{ width: '100%', maxWidth: '550px', height: 'auto', zIndex: 2 }} />
+              <img src="/assets/images/scores.png" alt="Nutrilogix Health Score" style={{ width: '100%', maxWidth: '550px', height: 'auto', zIndex: 2 }} />
             </div>
 
             <div className="health-content reveal reveal-delay-2">
