@@ -385,7 +385,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-1 {
-  top: 15%;
+  top: 18%;
   left: -60px;
   animation-delay: 0s;
 }
@@ -754,6 +754,17 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.5);
     width: 100%;
     height: auto;
+  }
+
+  /* Make all section screenshots larger on mobile */
+  .kitchen-visual img, 
+  .shopping-visual img, 
+  .health-visual img, 
+  .fitness-visual img,
+  .step-image-container img {
+    max-width: 100% !important;
+    transform: scale(1.5); /* Matching the hero impact */
+    margin: 40px 0;
   }
 
   .hero-actions {
