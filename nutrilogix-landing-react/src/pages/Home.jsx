@@ -157,28 +157,7 @@ export default function Home() {
             </div>
 
             <div className="kitchen-visual reveal reveal-delay-2" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <div className="step-card" style={{ padding: '24px', width: '100%', maxWidth: '350px', position: 'relative', zIndex: 2, border: '1px solid #eee' }}>
-                <div style={{ marginBottom: '20px' }}>
-                  <span style={{ fontSize: '0.85rem', color: '#636E72', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Scanned Ingredients</span>
-                  <div style={{ display: 'flex', gap: '8px', marginTop: '8px', flexWrap: 'wrap' }}>
-                    {['Chicken Breast', 'Spinach', 'Bell Peppers', 'Quinoa'].map(item => (
-                      <span key={item} style={{ background: '#F0F2F5', padding: '6px 12px', borderRadius: '20px', fontSize: '0.85rem', color: '#2D3436' }}>{item}</span>
-                    ))}
-                  </div>
-                </div>
-                
-                <div style={{ textAlign: 'center', padding: '16px 0', color: 'var(--primary)', fontSize: '1.5rem' }}>⬇</div>
-
-                <div style={{ background: '#F9FAFB', borderRadius: '16px', padding: '16px', border: '1px solid #EAEAEA' }}>
-                  <span style={{ fontSize: '0.85rem', color: '#0DC68B', fontWeight: 700 }}>AI Suggested Meal</span>
-                  <h4 style={{ margin: '8px 0 4px', fontSize: '1.1rem' }}>Quinoa & Chicken Power Bowl</h4>
-                  <p style={{ fontSize: '0.9rem', color: '#636E72', marginBottom: '12px' }}>With sautéed spinach and roasted peppers.</p>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem', fontWeight: 600, color: '#2D3436', background: 'white', padding: '8px 12px', borderRadius: '8px' }}>
-                    <span>420 kcal</span>
-                    <span>35g Protein</span>
-                  </div>
-                </div>
-              </div>
+              <img src="/assets/images/fridge-scan.png" alt="Nutrilogix Fridge Scan" style={{ width: '100%', maxWidth: '550px', height: 'auto', zIndex: 2 }} />
             </div>
           </div>
         </div>
