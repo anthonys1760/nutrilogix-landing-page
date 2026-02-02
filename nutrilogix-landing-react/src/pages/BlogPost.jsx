@@ -45,6 +45,85 @@ export default function BlogPost() {
     color: 'var(--text-main)'
   }
 
+  if (slug === 'hidden-dangers-ultra-processed') {
+    const blogPostingLd = {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline: 'The Hidden Dangers of Ultra-Processed Foods (and How AI Spots Them)',
+      description: 'Learn why ultra-processed foods are sabotaging your health and how Nutrilogix AI helps you identify and swap them out instantly.',
+      image: ['/assets/images/processed-vs-whole.jpg'],
+      author: { '@type': 'Person', name: 'Dr. Sarah Miller' },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Nutrilogix',
+        logo: { '@type': 'ImageObject', url: '/assets/images/2.jpg' },
+      },
+      datePublished: '2026-02-10',
+      mainEntityOfPage: { '@type': 'WebPage', '@id': '/blog/hidden-dangers-ultra-processed' },
+    }
+
+    return (
+      <div style={contentStyle}>
+        <SEO 
+          title="Ultra-Processed Foods: The Hidden Danger - Nutrilogix" 
+          description="Learn why ultra-processed foods are sabotaging your health and how Nutrilogix AI helps you identify and swap them out instantly."
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
+        />
+        
+        <img src="/assets/images/processed-vs-whole.jpg" alt="Whole vs Processed Foods" style={imgStyle} />
+        
+        <div style={metaStyle}>
+          <span className="badge">Health Science</span>
+          <span>February 10, 2026</span>
+          <span>5 min read</span>
+        </div>
+
+        <h1 style={h1Style}>The Hidden Dangers of Ultra-Processed Foods (and How AI Spots Them)</h1>
+        
+        <div style={bodyStyle}>
+          <p style={{marginBottom: '24px'}}>
+            We've all heard the advice: "Eat real food." But in a modern supermarket, that's harder than it sounds. <strong>Ultra-Processed Foods (UPFs)</strong> now make up over 60% of the average calorie intake in many countries. They are engineered to be hyper-palatable, cheap, and convenient—but they come at a cost.
+          </p>
+
+          <p style={{marginBottom: '24px'}}>
+            UPFs aren't just "junk food" like chips. They hide in "healthy" granola bars, flavored yogurts, and even store-bought bread. They contain industrial formulations like high-fructose corn syrup, hydrogenated oils, and emulsifiers that your body doesn't recognize as food.
+          </p>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>Why You Should Care</h2>
+          <p style={{marginBottom: '24px'}}>
+            Recent studies link high UPF consumption to increased risks of obesity, type 2 diabetes, and cardiovascular disease. The problem isn't just the sugar or fat—it's the <strong>processing matrix</strong>. These foods are digested too quickly, spiking blood sugar and failing to trigger satiety hormones.
+          </p>
+
+          <div style={{ background: 'var(--primary-light)', padding: '24px', borderRadius: '12px', borderLeft: '4px solid var(--primary)', marginBottom: '32px' }}>
+             <strong>The Nutrilogix Advantage:</strong> Our AI doesn't just count calories. It calculates a <strong>Health Score</strong> by scanning for markers of ultra-processing, giving you a quality rating from 0-100 instantly.
+          </div>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>How AI Detects the Hidden Junk</h2>
+          <p style={{marginBottom: '24px'}}>
+            Nutrilogix uses computer vision to analyze your food's visual texture and composition. It can distinguish between:
+          </p>
+          <ul style={{ paddingLeft: '24px', marginBottom: '24px' }}>
+            <li style={{marginBottom: '12px'}}><strong>Whole Foods:</strong> An apple, a steak, raw almonds (High Score).</li>
+            <li style={{marginBottom: '12px'}}><strong>Processed Foods:</strong> Canned beans, cheese, fresh bread (Medium Score).</li>
+            <li style={{marginBottom: '12px'}}><strong>Ultra-Processed:</strong> Soda, nuggets, mass-produced cakes (Low Score).</li>
+          </ul>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>Small Swaps, Big Impact</h2>
+          <p style={{marginBottom: '24px'}}>
+            You don't have to be perfect. Use the Nutrilogix Health Score to make <strong>1% improvements</strong> daily. Swap that flavored yogurt (Score: 40) for plain Greek yogurt with fresh berries (Score: 95). Swap the white bread for sourdough. The AI guides you to these better choices automatically.
+          </p>
+
+          <div style={{ textAlign: 'center', margin: '60px 0' }}>
+            <Link to="/" state={{ scrollTo: 'signup' }} className="btn btn-primary">Scan Your Fridge Now</Link>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   if (slug === 'the-end-of-manual-logging') {
     const blogPostingLd = {
       '@context': 'https://schema.org',
@@ -141,9 +220,9 @@ export default function BlogPost() {
         <img src="/assets/images/veggies.jpg" alt="7-Minute Meal Prep" style={imgStyle} />
         
         <div style={metaStyle}>
-          <span className="badge">Meal Prep</span>
-          <span>September 4, 2025</span>
-          <span>8 min read</span>
+          <span className="badge">Tips & Tricks</span>
+          <span>March 12, 2026</span>
+          <span>6 min read</span>
         </div>
 
         <h1 style={h1Style}>7-Minute Meal Prep for Busy Professionals</h1>
@@ -203,7 +282,7 @@ export default function BlogPost() {
         
         <div style={metaStyle}>
           <span className="badge">Technology</span>
-          <span>March 18, 2025</span>
+          <span>February 28, 2026</span>
           <span>4 min read</span>
         </div>
 
