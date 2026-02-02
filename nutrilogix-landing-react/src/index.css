@@ -784,7 +784,6 @@ h1, h2, h3, h4, h5, h6 {
   .steps-container {
     grid-template-columns: 1fr;
     gap: 140px; /* Increased gap further */
-    margin-top: 100px; /* Push first image down from header */
   }
 
   .step-item h3 {
