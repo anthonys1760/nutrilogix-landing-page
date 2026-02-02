@@ -49,9 +49,24 @@ export default function Home() {
             <p className="hero-sub">
               Stop typing. Start snapping. Nutrilogix analyzes your food and tracks your workouts instantly to give you precise calories, macros, and insights.
             </p>
-            <div className="hero-actions">
-              <button onClick={scrollToSignup} className="btn btn-primary">Get Early Access</button>
-              <button onClick={scrollToSignup} className="btn btn-secondary">See how it works</button>
+            <div className="hero-actions" style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+              <a href="#" onClick={scrollToSignup} style={{ display: 'inline-block', height: '48px' }}>
+                <svg viewBox="0 0 135 40" height="48" style={{ display: 'block' }}>
+                  <rect width="135" height="40" rx="6" fill="#000" />
+                  <path d="M16.96 23.366c.205 2.503 2.196 3.425 2.22 3.435-.018.06-0.347 1.187-1.15 2.36-0.692 1.013-1.413 2.022-2.548 2.042-1.116.02-1.474-0.66-2.75-0.66-1.296 0-1.702 0.64-2.73 0.68-1.096.04-1.928-1.096-2.625-2.106-1.428-2.066-2.52-5.852-1.054-8.396 0.728-1.264 2.028-2.064 3.44-2.084 1.08-.02 2.1.728 2.76.728 0.658 0 1.9-0.9 3.203-0.768 0.545.023 2.074.22 3.05 1.656-.076.047-1.82 1.06-1.796 3.113M14.93 17.5c0.59-0.716 0.988-1.71 0.88-2.704-0.85.034-1.878.566-2.488 1.28-.546.63-1.025 1.642-0.895 2.613 0.95.074 1.914-0.48 2.504-1.19" fill="#fff"/>
+                  <text x="34" y="16" fill="#fff" fontSize="8" fontFamily="Arial">Download on the</text>
+                  <text x="34" y="29" fill="#fff" fontSize="14" fontFamily="Arial" fontWeight="bold">App Store</text>
+                </svg>
+              </a>
+              <a href="#" onClick={scrollToSignup} style={{ display: 'inline-block', height: '48px' }}>
+                <svg viewBox="0 0 135 40" height="48" style={{ display: 'block' }}>
+                  <rect width="135" height="40" rx="6" fill="#000" />
+                  <path d="M16.3 12.5L14.4 14.5L16.3 16.5L19.4 14.7C20.1 14.3 20.1 13.3 19.4 12.9L16.3 12.5ZM13.2 15.7L22.9 25.4L24.8 23.5L13.2 15.7ZM11.6 15.7V25.5L13.2 25.5L13.2 15.7H11.6ZM22.9 15.7L13.2 25.4L11.6 23.5L22.9 15.7Z" transform="translate(0, 4) scale(0.9)" /> 
+                  <path fill="#fff" d="M11 20.5l-0.6-6.6c-0.1-0.6 0.1-1.3 0.5-1.7l6.9 3.8l-6.8 4.5zM22.2 16l3.9 2.2c1.1 0.6 1.1 1.7 0 2.3l-3.9 2.2l-4.5-4.5l4.5-2.2zM21.1 23.9l-5.6-5.6l-5.6 5.6l5.3 3c0.6 0.3 1.2 0.3 1.8 0l4.1-3zM9.9 11.2l5.6 3.1l-5.6 5.6l0-8.7z"/>
+                  <text x="38" y="16" fill="#fff" fontSize="8" fontFamily="Arial">GET IT ON</text>
+                  <text x="38" y="29" fill="#fff" fontSize="14" fontFamily="Arial" fontWeight="bold">Google Play</text>
+                </svg>
+              </a>
             </div>
             <div className="hero-stats">
               <div className="stat">

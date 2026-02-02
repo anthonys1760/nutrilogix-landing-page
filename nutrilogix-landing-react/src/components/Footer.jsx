@@ -23,8 +23,8 @@ export default function Footer() {
         <div className="footer-links-group">
           <h4>Resources</h4>
           <Link to="/blog">Blog</Link>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <Link to="/privacy">Privacy Policy</Link>
+          <Link to="/terms">Terms of Service</Link>
         </div>
 
         <div className="footer-links-group">
