@@ -157,7 +157,7 @@ export default function Home() {
             </div>
 
             <div className="kitchen-visual reveal reveal-delay-2" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <img src="/assets/images/fridge-scan.png" alt="Nutrilogix Fridge Scan" style={{ width: '100%', maxWidth: '550px', height: 'auto', zIndex: 2 }} />
+              <img src="/assets/images/fridge-scan.png" alt="Nutrilogix Fridge Scan" style={{ width: '100%', maxWidth: '750px', height: 'auto', zIndex: 2 }} />
             </div>
           </div>
         </div>
@@ -168,7 +168,7 @@ export default function Home() {
         <div className="container">
           <div className="hero-inner" style={{ alignItems: 'center' }}>
             <div className="shopping-visual reveal" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center', order: window.innerWidth > 900 ? 0 : 1 }}>
-              <img src="/assets/images/smart-list.png" alt="Nutrilogix Smart List" style={{ width: '100%', maxWidth: '450px', height: 'auto', zIndex: 2 }} />
+              <img src="/assets/images/smart-list.png" alt="Nutrilogix Smart List" style={{ width: '100%', maxWidth: '750px', height: 'auto', zIndex: 2 }} />
             </div>
 
             <div className="shopping-content reveal reveal-delay-2" style={{ order: window.innerWidth > 900 ? 1 : 0 }}>
@@ -204,7 +204,7 @@ export default function Home() {
         <div className="container">
           <div className="hero-inner" style={{ alignItems: 'center' }}>
             <div className="health-visual reveal" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <img src="/assets/images/scores.png" alt="Nutrilogix Health Score" style={{ width: '100%', maxWidth: '450px', height: 'auto', zIndex: 2 }} />
+              <img src="/assets/images/scores.png" alt="Nutrilogix Health Score" style={{ width: '100%', maxWidth: '750px', height: 'auto', zIndex: 2 }} />
             </div>
 
             <div className="health-content reveal reveal-delay-2">
@@ -259,7 +259,7 @@ export default function Home() {
             </div>
             
             <div className="fitness-visual reveal reveal-delay-2" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <img src="/assets/images/expenditure.png" alt="Nutrilogix Weekly Energy Expenditure" style={{ width: '100%', maxWidth: '450px', height: 'auto', zIndex: 2 }} />
+              <img src="/assets/images/expenditure.png" alt="Nutrilogix Weekly Energy Expenditure" style={{ width: '100%', maxWidth: '750px', height: 'auto', zIndex: 2 }} />
             </div>
           </div>
         </div>
@@ -276,8 +276,8 @@ export default function Home() {
           <div className="steps-container">
             <div className="step-item reveal reveal-delay-1" style={{ textAlign: 'center' }}>
               <div className="step-image" style={{ marginBottom: '24px' }}>
-                <img src="/assets/images/snap.png" alt="Snap a photo" style={{ width: '100%', maxWidth: '380px', height: 'auto', margin: '0 auto', display: 'block' }} />
-                <div className="step-badge" style={{ position: 'absolute', top: '10px', left: '50%', transform: 'translateX(-50%)', marginLeft: '-170px' }}>1</div>
+                <img src="/assets/images/snap.png" alt="Snap a photo" style={{ width: '100%', maxWidth: '550px', height: 'auto', margin: '0 auto', display: 'block' }} />
+                <div className="step-badge" style={{ position: 'absolute', top: '10px', left: '50%', transform: 'translateX(-50%)', marginLeft: '-250px' }}>1</div>
               </div>
               <h3 style={{ fontSize: '1.5rem', marginBottom: '12px' }}>Snap</h3>
               <p style={{ color: 'var(--text-muted)' }}>Take a quick photo of your breakfast, lunch, or dinner.</p>
@@ -285,8 +285,8 @@ export default function Home() {
 
             <div className="step-item reveal reveal-delay-2" style={{ textAlign: 'center' }}>
               <div className="step-image" style={{ marginBottom: '24px' }}>
-                <img src="/assets/images/analyze.png" alt="AI Analysis" style={{ width: '100%', maxWidth: '380px', height: 'auto', margin: '0 auto', display: 'block' }} />
-                <div className="step-badge" style={{ position: 'absolute', top: '10px', left: '50%', transform: 'translateX(-50%)', marginLeft: '-170px' }}>2</div>
+                <img src="/assets/images/analyze.png" alt="AI Analysis" style={{ width: '100%', maxWidth: '550px', height: 'auto', margin: '0 auto', display: 'block' }} />
+                <div className="step-badge" style={{ position: 'absolute', top: '10px', left: '50%', transform: 'translateX(-50%)', marginLeft: '-250px' }}>2</div>
               </div>
               <h3 style={{ fontSize: '1.5rem', marginBottom: '12px' }}>Analyze</h3>
               <p style={{ color: 'var(--text-muted)' }}>Watch as AI instantly breaks down calories and nutrients.</p>
@@ -294,8 +294,8 @@ export default function Home() {
 
             <div className="step-item reveal reveal-delay-3" style={{ textAlign: 'center' }}>
               <div className="step-image" style={{ marginBottom: '24px' }}>
-                <img src="/assets/images/health-score.png" alt="Track Progress" style={{ width: '100%', maxWidth: '380px', height: 'auto', margin: '0 auto', display: 'block' }} />
-                <div className="step-badge" style={{ position: 'absolute', top: '10px', left: '50%', transform: 'translateX(-50%)', marginLeft: '-170px' }}>3</div>
+                <img src="/assets/images/health-score.png" alt="Track Progress" style={{ width: '100%', maxWidth: '550px', height: 'auto', margin: '0 auto', display: 'block' }} />
+                <div className="step-badge" style={{ position: 'absolute', top: '10px', left: '50%', transform: 'translateX(-50%)', marginLeft: '-250px' }}>3</div>
               </div>
               <h3 style={{ fontSize: '1.5rem', marginBottom: '12px' }}>Thrive</h3>
               <p style={{ color: 'var(--text-muted)' }}>Hit your goals and feel the difference in your energy.</p>
