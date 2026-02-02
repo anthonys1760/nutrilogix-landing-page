@@ -45,9 +45,9 @@ export default function Home() {
         <div className="container hero-inner">
           <div className="hero-content reveal">
             <span className="badge">🚀 Coming Soon to iOS & Android</span>
-            <h1>Nutrition Tracking,<br />Reimagined with AI.</h1>
+            <h1>Nutrition Tracking<br />Reimagined with AI</h1>
             <p className="hero-sub">
-              Stop typing. Start snapping. Nutrilogix analyzes your food photos instantly and tracks your workouts to give you accurate calories, macros, and insights.
+              Stop typing. Start snapping. Nutrilogix analyzes your food and tracks your workouts instantly to give you precise calories, macros, and insights.
             </p>
             <div className="hero-actions">
               <button onClick={scrollToSignup} className="btn btn-primary">Get Early Access</button>
