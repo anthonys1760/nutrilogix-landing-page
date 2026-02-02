@@ -761,7 +761,8 @@ h1, h2, h3, h4, h5, h6 {
   .shopping-visual img, 
   .health-visual img, 
   .fitness-visual img,
-  .step-image-container img {
+  .step-image-container img,
+  .step-image img {
     max-width: 100% !important;
     transform: scale(1.5); /* Matching the hero impact */
     margin: 40px 0;
@@ -782,7 +783,12 @@ h1, h2, h3, h4, h5, h6 {
 
   .steps-container {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 140px; /* Increased gap further */
+    margin-top: 100px; /* Push first image down from header */
+  }
+
+  .step-item h3 {
+    margin-top: 160px; /* Push text down further */
   }
 
   .footer-content {
