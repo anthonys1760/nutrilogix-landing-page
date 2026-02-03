@@ -45,6 +45,97 @@ export default function BlogPost() {
     color: 'var(--text-main)'
   }
 
+  if (slug === 'science-of-satiety') {
+    const blogPostingLd = {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline: "The Science of Satiety: Why You're Always Hungry",
+      description: 'Understanding the hunger hormones and how to structure meals that keep you full for hours.',
+      image: ['/assets/images/salmon.jpg'],
+      author: { '@type': 'Person', name: 'Dr. Alex Rivera' },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Nutrilogix',
+        logo: { '@type': 'ImageObject', url: '/assets/images/2.jpg' },
+      },
+      datePublished: '2026-02-02',
+      mainEntityOfPage: { '@type': 'WebPage', '@id': '/blog/science-of-satiety' },
+    }
+
+    return (
+      <div style={contentStyle}>
+        <SEO 
+          title="The Science of Satiety: Stop Constant Hunger - Nutrilogix" 
+          description="Understanding the hunger hormones leptin and ghrelin, and how to structure meals that keep you full for hours using protein and volume."
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
+        />
+        
+        <img src="/assets/images/salmon.jpg" alt="Healthy Satiating Meal" style={imgStyle} />
+        
+        <div style={metaStyle}>
+          <span className="badge">Nutrition Science</span>
+          <span>February 2, 2026</span>
+          <span>5 min read</span>
+        </div>
+
+        <h1 style={h1Style}>The Science of Satiety: Why You're Always Hungry</h1>
+        
+        <div style={bodyStyle}>
+          <p style={{marginBottom: '24px'}}>
+            It’s 3 PM. You had lunch at noon, but your stomach is already growling. You try to push through, but eventually, you grab a snack—and then another. Why does this happen? Is it a lack of willpower?
+          </p>
+
+          <p style={{marginBottom: '24px'}}>
+            Likely not. The culprit is usually <strong>satiety</strong>—or the lack thereof. Satiety is the feeling of fullness that persists <em>after</em> eating, suppressing the urge to eat again. And it’s governed by a complex interplay of hormones, food volume, and nutrient density.
+          </p>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>The Hunger Hormones: Ghrelin & Leptin</h2>
+          <p style={{marginBottom: '24px'}}>
+            Two key players control your hunger:
+          </p>
+          <ul style={{ paddingLeft: '24px', marginBottom: '24px' }}>
+            <li style={{marginBottom: '12px'}}><strong>Ghrelin:</strong> The "hunger hormone." It signals your brain that it's time to eat. It spikes before meals and falls after.</li>
+            <li style={{marginBottom: '12px'}}><strong>Leptin:</strong> The "satiety hormone." Produced by fat cells, it tells your brain you have enough energy stored.</li>
+          </ul>
+          <p style={{marginBottom: '24px'}}>
+            Ultra-processed foods often disrupt these signals, leading to "leptin resistance," where your brain doesn't get the message that you're full.
+          </p>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>The Satiety Formula</h2>
+          <p style={{marginBottom: '24px'}}>
+            To maximize satiety, you need to hit three main targets in every meal:
+          </p>
+          
+          <h3 style={{ fontSize: '1.4rem', marginTop: '30px', marginBottom: '16px' }}>1. Protein</h3>
+          <p style={{marginBottom: '24px'}}>
+            Protein is the most satiating macronutrient. It reduces ghrelin levels and boosts peptide YY, a hormone that makes you feel full. Aim for 20-30g per meal.
+          </p>
+
+          <h3 style={{ fontSize: '1.4rem', marginTop: '30px', marginBottom: '16px' }}>2. Fiber & Volume</h3>
+          <p style={{marginBottom: '24px'}}>
+             Fiber slows down stomach emptying and expands in your gut. High-volume foods (like leafy greens) trigger physical stretch receptors in your stomach, signaling fullness without overloading on calories.
+          </p>
+
+          <h3 style={{ fontSize: '1.4rem', marginTop: '30px', marginBottom: '16px' }}>3. Food Texture</h3>
+          <p style={{marginBottom: '24px'}}>
+            Solid foods are more satiating than liquids. A protein smoothie is digested much faster than a chicken breast, leaving you hungry sooner.
+          </p>
+
+          <div style={{ background: 'var(--primary-light)', padding: '24px', borderRadius: '12px', borderLeft: '4px solid var(--primary)', marginBottom: '32px' }}>
+             <strong>Nutrilogix Pro Tip:</strong> Use our AI to scan your meal. We don't just count calories; we highlight the <strong>Satiety Index</strong> of your food, suggesting swaps like adding more fiber or protein to keep you powered for longer.
+          </div>
+
+          <div style={{ textAlign: 'center', margin: '60px 0' }}>
+            <Link to="/" state={{ scrollTo: 'signup' }} className="btn btn-primary">Analyze Your Satiety Score</Link>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   if (slug === 'hidden-dangers-ultra-processed') {
     const blogPostingLd = {
       '@context': 'https://schema.org',

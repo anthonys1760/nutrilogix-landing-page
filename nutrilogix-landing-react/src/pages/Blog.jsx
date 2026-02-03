@@ -38,6 +38,22 @@ export default function Blog() {
               </Link>
             </article>
 
+            {/* New Post: Science of Satiety */}
+            <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
+              <Link to="/blog/science-of-satiety" style={{ display: 'block' }}>
+                <img src="/assets/images/salmon.jpg" alt="Science of Satiety" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                <div style={{ padding: '24px' }}>
+                  <span className="badge" style={{ marginBottom: '12px' }}>Nutrition Science</span>
+                  <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>The Science of Satiety: Why You're Always Hungry</h3>
+                  <p style={{ fontSize: '0.95rem', marginBottom: '16px' }}>Understanding hunger hormones and how to structure meals to stay full longer.</p>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                    <div className="avatar" style={{ width: 24, height: 24, fontSize: '0.7rem' }}>A</div>
+                    <span>Dr. Alex Rivera • Feb 2, 2026 • 5 min read</span>
+                  </div>
+                </div>
+              </Link>
+            </article>
+
             {/* New Post: UPFs */}
             <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
               <Link to="/blog/hidden-dangers-ultra-processed" style={{ display: 'block' }}>
