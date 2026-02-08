@@ -35,7 +35,7 @@ export default function CookieConsent() {
       display: 'flex',
       flexDirection: 'column',
       gap: '20px',
-      border: '1px solid rgba(255,255,255,0.08)',
+      border: '1px solid var(--border-medium)',
       backdropFilter: 'blur(10px)'
     }}>
       <div>

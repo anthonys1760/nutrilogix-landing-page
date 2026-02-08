@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -10,9 +11,22 @@ import NotFound from './pages/NotFound'
 import CookieConsent from './components/CookieConsent'
 
 function App() {
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem('theme') || 'dark'
+  })
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+    localStorage.setItem('theme', theme)
+  }, [theme])
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === 'dark' ? 'light' : 'dark')
+  }
+
   return (
     <div className="app-layout">
-      <Header />
+      <Header theme={theme} toggleTheme={toggleTheme} />
       <main className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />

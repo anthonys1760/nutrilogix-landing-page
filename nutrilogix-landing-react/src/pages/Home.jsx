@@ -51,14 +51,14 @@ export default function Home() {
             </p>
             <div className="hero-actions" style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'center' }}>
               <a href="#" onClick={scrollToSignup} className="btn btn-primary">Join Waitlist</a>
-              <a href="#" onClick={scrollToSignup} style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 16px', border: '1px solid rgba(255,255,255,0.3)', borderRadius: '8px', color: 'var(--text-main)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500', transition: 'all 0.2s' }}>
+              <a href="#" onClick={scrollToSignup} style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 16px', border: '1px solid var(--border-medium)', borderRadius: '8px', color: 'var(--text-main)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500', transition: 'all 0.2s' }}>
                 <span style={{ fontSize: '1.2rem' }}>🍎</span>
                 <div style={{ textAlign: 'left', lineHeight: '1.2' }}>
                   <div style={{ fontSize: '0.7rem', opacity: 0.8 }}>Download on</div>
                   <div style={{ fontWeight: '600' }}>App Store</div>
                 </div>
               </a>
-              <a href="#" onClick={scrollToSignup} style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 16px', border: '1px solid rgba(255,255,255,0.3)', borderRadius: '8px', color: 'var(--text-main)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500', transition: 'all 0.2s' }}>
+              <a href="#" onClick={scrollToSignup} style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 16px', border: '1px solid var(--border-medium)', borderRadius: '8px', color: 'var(--text-main)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500', transition: 'all 0.2s' }}>
                 <span style={{ fontSize: '1.2rem' }}>▶</span>
                 <div style={{ textAlign: 'left', lineHeight: '1.2' }}>
                   <div style={{ fontSize: '0.7rem', opacity: 0.8 }}>Get it on</div>
