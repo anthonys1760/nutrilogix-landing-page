@@ -242,6 +242,42 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Progress Section */}
+      <section className="section">
+        <div className="container">
+          <div className="hero-inner" style={{ alignItems: 'center' }}>
+            <div className="progress-content reveal">
+              <h2>Visualize your <span className="text-highlight">Progress</span>.</h2>
+              <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '32px', lineHeight: '1.6' }}>
+                Weight is just one part of the story. Nutrilogix tracks your body composition, macro trends, and weight history to show you the full picture of your transformation.
+              </p>
+              
+              <div style={{ display: 'grid', gap: '24px' }}>
+                <div style={{ display: 'flex', gap: '16px' }}>
+                  <div style={{ background: 'var(--primary-light)', color: 'var(--primary)', width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', flexShrink: 0 }}>📈</div>
+                  <div>
+                    <h4 style={{ marginBottom: '4px', fontSize: '1.1rem' }}>Weight History Tracking</h4>
+                    <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Log your weight effortlessly and see beautiful trend lines that filter out daily fluctuations.</p>
+                  </div>
+                </div>
+                
+                <div style={{ display: 'flex', gap: '16px' }}>
+                  <div style={{ background: 'var(--primary-light)', color: 'var(--primary)', width: '48px', height: '48px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', flexShrink: 0 }}>⚖️</div>
+                  <div>
+                    <h4 style={{ marginBottom: '4px', fontSize: '1.1rem' }}>Body Composition Insights</h4>
+                    <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Track body fat percentage and muscle mass alongside your nutrition to see what's actually changing.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="progress-visual reveal reveal-delay-2" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <img src="/assets/images/screen.png" alt="Nutrilogix Progress Tracking" style={{ width: '100%', maxWidth: '750px', height: 'auto', zIndex: 2 }} />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Fitness Section */}
       <section className="section">
         <div className="container">

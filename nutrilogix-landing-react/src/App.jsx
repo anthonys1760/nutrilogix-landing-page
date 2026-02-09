@@ -12,7 +12,7 @@ import CookieConsent from './components/CookieConsent'
 
 function App() {
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem('theme') || 'dark'
+    return localStorage.getItem('theme') || 'light'
   })
 
   useEffect(() => {

@@ -5,25 +5,25 @@
   --primary-light: rgba(13, 198, 139, 0.15);
   --accent: #1E2229;
   
-  /* Text Colors */
-  --text-main: #F5F6F7;
-  --text-muted: #9CA3AF;
-  --text-light: #6B7280;
-  --white: #1E2229; /* Card Background in dark mode */
+  /* Text Colors (Light Mode Default) */
+  --text-main: #111827;
+  --text-muted: #4B5563;
+  --text-light: #9CA3AF;
+  --white: #FFFFFF;
   --real-white: #FFFFFF; /* Pure white for text on primary buttons */
 
   /* Backgrounds */
-  --bg-body: #0F1115;
-  --bg-light: #16191D;
-  --bg-card: #1E2229;
-  --bg-input: #252A33;
-  --bg-header: rgba(15, 17, 21, 0.85);
-  --bg-footer: #0B0C0E;
+  --bg-body: #FFFFFF;
+  --bg-light: #F9FAFB;
+  --bg-card: #F3F4F6;
+  --bg-input: #E5E7EB;
+  --bg-header: rgba(255, 255, 255, 0.85);
+  --bg-footer: #F9FAFB;
 
   /* Borders & Dividers */
-  --border-subtle: rgba(255, 255, 255, 0.05);
-  --border-medium: rgba(255, 255, 255, 0.1);
-  --btn-secondary-border: #2D3436;
+  --border-subtle: rgba(0, 0, 0, 0.05);
+  --border-medium: rgba(0, 0, 0, 0.1);
+  --btn-secondary-border: #E5E7EB;
 
   /* Spacing & Layout */
   --container-width: 1200px;
@@ -33,37 +33,37 @@
   --radius-lg: 24px;
   --radius-full: 9999px;
 
-  /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  /* Shadows (Light Mode Optimized) */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --shadow-brand: 0 10px 30px -10px rgba(13, 198, 139, 0.25);
 
   /* Transitions */
   --transition: all 0.3s ease;
 }
 
-/* Light Mode Overrides */
-[data-theme='light'] {
-  --text-main: #111827;
-  --text-muted: #4B5563;
-  --text-light: #9CA3AF;
-  --white: #FFFFFF;
+/* Dark Mode Overrides */
+[data-theme='dark'] {
+  --text-main: #F5F6F7;
+  --text-muted: #9CA3AF;
+  --text-light: #6B7280;
+  --white: #1E2229; /* Card Background in dark mode */
   
-  --bg-body: #FFFFFF;
-  --bg-light: #F9FAFB;
-  --bg-card: #F3F4F6;
-  --bg-input: #E5E7EB;
-  --bg-header: rgba(255, 255, 255, 0.85);
-  --bg-footer: #F9FAFB;
+  --bg-body: #0F1115;
+  --bg-light: #16191D;
+  --bg-card: #1E2229;
+  --bg-input: #252A33;
+  --bg-header: rgba(15, 17, 21, 0.85);
+  --bg-footer: #0B0C0E;
 
-  --border-subtle: rgba(0, 0, 0, 0.05);
-  --border-medium: rgba(0, 0, 0, 0.1);
-  --btn-secondary-border: #E5E7EB;
+  --border-subtle: rgba(255, 255, 255, 0.05);
+  --border-medium: rgba(255, 255, 255, 0.1);
+  --btn-secondary-border: #2D3436;
 
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
 }
 
 /* Reset & Base */
