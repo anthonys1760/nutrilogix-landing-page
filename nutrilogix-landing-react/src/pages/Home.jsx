@@ -297,63 +297,8 @@ export default function Home() {
             </div>
 
             <div className="step-item reveal reveal-delay-2" style={{ textAlign: 'center' }}>
-              <div className="step-image" style={{ marginBottom: '24px', display: 'flex', justifyContent: 'center' }}>
-                {/* CSS Mockup of the Product Analyzed Modal */}
-                <div style={{
-                  width: '100%',
-                  maxWidth: '320px',
-                  background: 'var(--bg-card)',
-                  borderRadius: '24px',
-                  padding: '24px',
-                  boxShadow: 'var(--shadow-lg)',
-                  border: '1px solid var(--border-medium)',
-                  textAlign: 'left',
-                  position: 'relative'
-                }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-                    <h4 style={{ fontSize: '1.25rem', color: 'var(--text-main)' }}>Product Analyzed</h4>
-                    <span style={{ fontSize: '1.5rem' }}>✨</span>
-                  </div>
-                  
-                  <div style={{ display: 'flex', gap: '16px', marginBottom: '20px' }}>
-                    <div style={{ width: '80px', height: '80px', borderRadius: '12px', background: '#F3F4F6', overflow: 'hidden' }}>
-                      <img src="/assets/images/salmon.jpg" alt="Salmon" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                    </div>
-                    <div>
-                      <div style={{ fontSize: '1.1rem', fontWeight: '700', color: 'var(--text-main)', marginBottom: '4px' }}>Grilled Salmon</div>
-                      <div style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>Wild Caught • 150g</div>
-                    </div>
-                  </div>
-
-                  <div style={{ background: 'var(--bg-light)', borderRadius: '16px', padding: '16px', marginBottom: '20px' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
-                      <span style={{ color: 'var(--text-muted)' }}>Calories</span>
-                      <strong style={{ color: 'var(--text-main)' }}>312 kcal</strong>
-                    </div>
-                    <div style={{ height: '6px', background: 'var(--border-medium)', borderRadius: '3px', overflow: 'hidden' }}>
-                      <div style={{ width: '65%', height: '100%', background: 'var(--primary)' }}></div>
-                    </div>
-                  </div>
-
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px' }}>
-                    <div style={{ textAlign: 'center' }}>
-                      <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '4px' }}>Protein</div>
-                      <div style={{ fontWeight: '700', color: 'var(--text-main)' }}>34g</div>
-                    </div>
-                    <div style={{ textAlign: 'center' }}>
-                      <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '4px' }}>Carbs</div>
-                      <div style={{ fontWeight: '700', color: 'var(--text-main)' }}>0g</div>
-                    </div>
-                    <div style={{ textAlign: 'center' }}>
-                      <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '4px' }}>Fat</div>
-                      <div style={{ fontWeight: '700', color: 'var(--text-main)' }}>18g</div>
-                    </div>
-                  </div>
-
-                  <div style={{ marginTop: '24px', display: 'flex', gap: '8px' }}>
-                    <div className="btn btn-primary" style={{ flex: 1, padding: '10px', fontSize: '0.9rem', borderRadius: '12px' }}>Save Meal</div>
-                  </div>
-                </div>
+              <div className="step-image" style={{ marginBottom: '24px' }}>
+                <img src="/assets/images/analyze.png" alt="AI Analysis" style={{ width: '100%', maxWidth: '550px', height: 'auto', margin: '0 auto', display: 'block' }} />
                 <div className="step-badge" style={{ position: 'absolute', top: '10px', left: '50%', transform: 'translateX(-50%)', marginLeft: '-250px' }}>2</div>
               </div>
               <h3 style={{ fontSize: '1.5rem', marginBottom: '12px' }}>Analyze</h3>
