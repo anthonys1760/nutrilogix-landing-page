@@ -766,6 +766,11 @@ h1, h2, h3, h4, h5, h6 {
     --header-height: 60px;
   }
 
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
   /* Header Mobile State */
   .desktop-nav {
     display: none;
@@ -886,15 +891,18 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 100%;
+    left: auto;
+    width: 100vw;
     height: 100vh;
     background-color: var(--bg-body); /* Theme-aware drawer */
     flex-direction: column;
     justify-content: center;
     padding: 40px;
+    box-sizing: border-box;
     transition: right 0.3s ease-in-out;
     z-index: 1050;
-    gap: 40px; 
+    gap: 40px;
+    overflow-x: hidden;
   }
 
   .nav-links.active {
