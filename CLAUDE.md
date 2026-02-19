@@ -105,13 +105,29 @@ All routes use hash-based URLs (e.g., `/#/blog`) for GitHub Pages compatibility.
 
 **Current Implementation:**
 - Blog posts are hardcoded in `BlogPost.jsx` using slug-based conditional rendering
-- Current posts: `science-of-satiety`, `the-end-of-manual-logging`, `hidden-dangers-ultra-processed`, `understanding-macros`, `ai-in-nutrition`, `meal-planning`, `7-minute-meal-prep`
+- Current posts: `science-of-satiety`, `the-end-of-manual-logging`, `hidden-dangers-ultra-processed`, `understanding-macros`, `ai-in-nutrition`, `meal-planning`, `7-minute-meal-prep`, `hidden-cost-manual-logging`
 - Blog cards and metadata are defined in `Blog.jsx`
+
+**Current Blog Image Mapping** (all images unique, sourced from Unsplash):
+| Post | Image | Source |
+|------|-------|--------|
+| hidden-cost-manual-logging | ai-blog-logging.jpg | Internal |
+| the-end-of-manual-logging | tacos.jpg | Unsplash |
+| science-of-satiety | satiety-meal.jpg | Unsplash |
+| hidden-dangers-ultra-processed | processed-vs-whole.jpg | Internal |
+| understanding-macros | salmon.jpg | Internal |
+| ai-in-nutrition | veggies.jpg | Internal |
+| meal-planning | egg.jpg | Internal |
+| 7-minute-meal-prep | 1.jpg | Internal |
 
 **Adding a New Blog Post:**
 1. Create post content in `BlogPost.jsx` with a new slug conditional
 2. Add card entry to `Blog.jsx` with title, excerpt, featured image, author, date, read time
-3. Add featured image to `public/assets/images/`
+3. Add featured image to `public/assets/images/`:
+   - **Always source blog images from Unsplash** (https://unsplash.com/) using curl/wget
+   - Download with: `curl -L "https://images.unsplash.com/[photo-id]?w=800&q=80" -o filename.jpg`
+   - Ensure each blog post has a **unique image** (no duplicates across posts)
+   - Use high-quality, relevant imagery that matches the article topic
 4. Include JSON-LD schema markup in BlogPost.jsx for SEO
 
 ### Data & Static Content
