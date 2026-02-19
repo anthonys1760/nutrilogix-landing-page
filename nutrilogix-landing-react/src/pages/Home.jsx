@@ -519,12 +519,33 @@ export default function Home() {
           <div className="cta-box">
             <div className="cta-content">
               <h2>Ready to transform your nutrition?</h2>
-              <p>Join thousands of others on the waitlist. Launching soon.</p>
-              <form className="waitlist-form" action="https://formspree.io/f/xkgjdpyd" method="POST" target="_blank">
-                <input type="email" name="email" placeholder="Enter your email..." required />
-                <button type="submit" className="btn btn-white">Join Waitlist</button>
-              </form>
-              <p className="small-print">No spam. Unsubscribe anytime.</p>
+              <p>Available now on iOS. Android coming soon.</p>
+
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', maxWidth: '600px', margin: '40px auto', alignItems: 'start' }}>
+                {/* iOS CTA */}
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
+                  <div style={{ fontSize: '2.5rem' }}>🍎</div>
+                  <h3 style={{ color: 'white', fontSize: '1.2rem', marginBottom: '8px' }}>iOS</h3>
+                  <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem', marginBottom: '16px', textAlign: 'center' }}>Get early access on TestFlight</p>
+                  <a href="https://apple.co/4alOAzW" target="_blank" rel="noopener noreferrer" className="btn btn-white" style={{ width: '100%', textAlign: 'center' }}>
+                    Get TestFlight
+                  </a>
+                </div>
+
+                {/* Android CTA */}
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
+                  <div style={{ fontSize: '2.5rem' }}>🤖</div>
+                  <h3 style={{ color: 'white', fontSize: '1.2rem', marginBottom: '8px' }}>Android</h3>
+                  <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem', marginBottom: '16px', textAlign: 'center' }}>Join the waitlist for early access</p>
+                  <form className="waitlist-form" action="https://formspree.io/f/xkgjdpyd" method="POST" target="_blank" style={{ width: '100%', display: 'flex', gap: 0, flexDirection: 'column' }}>
+                    <input type="email" name="email" placeholder="Enter your email..." required style={{ flex: 1, marginBottom: '8px', padding: '12px 16px', borderRadius: 'var(--radius-sm)', border: 'none', fontSize: '1rem', backgroundColor: 'var(--bg-input)', color: 'var(--text-main)' }} />
+                    <button type="submit" className="btn btn-white" style={{ width: '100%' }}>Join Waitlist</button>
+                  </form>
+                  <p className="small-print" style={{ marginTop: '8px' }}>No spam. Unsubscribe anytime.</p>
+                </div>
+              </div>
+
+              <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.9rem', marginTop: '32px', textAlign: 'center' }}>1,500+ beta users already transforming their nutrition</p>
             </div>
           </div>
         </div>
