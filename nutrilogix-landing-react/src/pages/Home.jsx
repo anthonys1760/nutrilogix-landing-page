@@ -44,18 +44,18 @@ export default function Home() {
       <section className="hero">
         <div className="container hero-inner">
           <div className="hero-content reveal">
-            <span className="badge">🚀 Coming Soon to iOS & Android</span>
+            <span className="badge">🚀 Available Now on TestFlight</span>
             <h1>Nutrition Tracking<br />Reimagined with AI</h1>
             <p className="hero-sub">
               Stop typing. Start snapping. Nutrilogix analyzes your food and tracks your workouts instantly to give you precise calories, macros, and insights.
             </p>
             <div className="hero-actions" style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'center' }}>
               <a href="#" onClick={scrollToSignup} className="btn btn-primary">Join Waitlist</a>
-              <a href="#" onClick={scrollToSignup} style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 16px', border: '1px solid var(--border-medium)', borderRadius: '8px', color: 'var(--text-main)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500', transition: 'all 0.2s' }}>
+              <a href="https://apple.co/4alOAzW" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 16px', border: '1px solid var(--border-medium)', borderRadius: '8px', color: 'var(--text-main)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500', transition: 'all 0.2s' }}>
                 <span style={{ fontSize: '1.2rem' }}>🍎</span>
                 <div style={{ textAlign: 'left', lineHeight: '1.2' }}>
                   <div style={{ fontSize: '0.7rem', opacity: 0.8 }}>Download on</div>
-                  <div style={{ fontWeight: '600' }}>App Store</div>
+                  <div style={{ fontWeight: '600' }}>TestFlight</div>
                 </div>
               </a>
               <a href="#" onClick={scrollToSignup} style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 16px', border: '1px solid var(--border-medium)', borderRadius: '8px', color: 'var(--text-main)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500', transition: 'all 0.2s' }}>

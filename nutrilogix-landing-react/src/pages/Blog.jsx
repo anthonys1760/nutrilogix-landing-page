@@ -21,7 +21,23 @@ export default function Blog() {
       <section className="section" style={{ paddingTop: '20px' }}>
         <div className="container">
           <div className="features-grid"> {/* Reusing grid layout */}
-            
+
+            {/* New Post: Hidden Cost of Manual Logging */}
+            <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
+              <Link to="/blog/hidden-cost-manual-logging" style={{ display: 'block' }}>
+                <img src="/assets/images/ai-blog-logging.jpg" alt="Manual Food Logging Frustration" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                <div style={{ padding: '24px' }}>
+                  <span className="badge" style={{ marginBottom: '12px' }}>Nutrition Science</span>
+                  <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>The Hidden Cost of Manual Food Logging</h3>
+                  <p style={{ fontSize: '0.95rem', marginBottom: '16px' }}>Why manual logging kills your diet momentum and how AI photo tracking solves this completely.</p>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                    <div className="avatar" style={{ width: 24, height: 24, fontSize: '0.7rem' }}>A</div>
+                    <span>Dr. Alex Rivera • Feb 19, 2026 • 5 min read</span>
+                  </div>
+                </div>
+              </Link>
+            </article>
+
             {/* New Post: The End of Manual Logging */}
             <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
               <Link to="/blog/the-end-of-manual-logging" style={{ display: 'block' }}>
