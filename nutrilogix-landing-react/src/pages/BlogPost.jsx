@@ -51,7 +51,7 @@ export default function BlogPost() {
       '@type': 'BlogPosting',
       headline: "The Science of Satiety: Why You're Always Hungry",
       description: 'Understanding the hunger hormones and how to structure meals that keep you full for hours.',
-      image: ['/assets/images/salmon.jpg'],
+      image: ['/assets/images/satiety-meal.jpg'],
       author: { '@type': 'Person', name: 'Dr. Alex Rivera' },
       publisher: {
         '@type': 'Organization',
@@ -72,9 +72,9 @@ export default function BlogPost() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
         />
-        
-        <img src="/assets/images/salmon.jpg" alt="Healthy Satiating Meal" style={imgStyle} />
-        
+
+        <img src="/assets/images/satiety-meal.jpg" alt="Healthy Satiating Meal" style={imgStyle} />
+
         <div style={metaStyle}>
           <span className="badge">Nutrition Science</span>
           <span>February 2, 2026</span>
@@ -221,7 +221,7 @@ export default function BlogPost() {
       '@type': 'BlogPosting',
       headline: 'The End of Manual Logging: Why AI is the Future of Nutrition Tracking',
       description: 'Discover how AI and computer vision are replacing tedious manual food logging, making nutrition tracking faster, more accurate, and sustainable.',
-      image: ['/assets/images/ai-blog-logging.jpg'],
+      image: ['/assets/images/tacos.jpg'],
       author: { '@type': 'Person', name: 'Dr. Alex Rivera' },
       publisher: {
         '@type': 'Organization',
@@ -242,9 +242,9 @@ export default function BlogPost() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
         />
-        
-        <img src="/assets/images/ai-blog-logging.jpg" alt="AI Food Analysis" style={imgStyle} />
-        
+
+        <img src="/assets/images/tacos.jpg" alt="AI Food Analysis" style={imgStyle} />
+
         <div style={metaStyle}>
           <span className="badge">Technology</span>
           <span>January 15, 2026</span>
