@@ -29,8 +29,23 @@ export default function Footer() {
 
         <div className="footer-links-group">
           <h4>Connect</h4>
-          <a href="#" target="_blank" rel="noreferrer">Twitter</a>
-          <a href="#" target="_blank" rel="noreferrer">Instagram</a>
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginBottom: '12px' }}>
+            <a href="https://x.com/AiNutrilogix" target="_blank" rel="noopener noreferrer" title="Follow on X" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '0.95rem' }}>
+              𝕏
+            </a>
+            <a href="https://www.instagram.com/nutrilogix_ai/" target="_blank" rel="noopener noreferrer" title="Follow on Instagram" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '0.95rem' }}>
+              📷
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588345081705" target="_blank" rel="noopener noreferrer" title="Like on Facebook" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '0.95rem' }}>
+              f
+            </a>
+            <a href="https://bsky.app/profile/nutrilogix.bsky.social" target="_blank" rel="noopener noreferrer" title="Follow on Bluesky" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '0.95rem' }}>
+              🦋
+            </a>
+            <a href="https://www.linkedin.com/in/nutrilogix-ai-5b19353b1/" target="_blank" rel="noopener noreferrer" title="Connect on LinkedIn" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '0.95rem' }}>
+              💼
+            </a>
+          </div>
           <a href="mailto:hello@nutrilogix.app">Contact</a>
         </div>
       </div>
