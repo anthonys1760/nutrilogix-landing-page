@@ -774,14 +774,43 @@ h1, h2, h3, h4, h5, h6 {
   .mobile-toggle {
     display: flex;
   }
-  
+
+  .container {
+    padding: 0 12px;
+  }
+
+  .nav-container {
+    gap: 8px;
+  }
+
   .brand-logo {
     font-size: 1.3rem;
+    flex-shrink: 0;
   }
 
   .brand-logo img {
     height: 32px;
     width: 32px;
+  }
+
+  .brand-logo span {
+    display: none;
+  }
+
+  .theme-toggle {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+  }
+
+  .mobile-toggle {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+  }
+
+  .bar {
+    width: 24px;
   }
   
   /* Hero adjustments */
