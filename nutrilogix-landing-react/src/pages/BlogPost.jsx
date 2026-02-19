@@ -428,7 +428,7 @@ export default function BlogPost() {
       '@type': 'BlogPosting',
       headline: 'How AI is Revolutionizing Nutrition Tracking',
       description: 'Artificial Intelligence is transforming nutrition tracking. Learn how computer vision and machine learning make logging meals instant and accurate.',
-      image: ['/assets/images/veggies.jpg'],
+      image: ['/assets/images/1.jpg'],
       author: { '@type': 'Person', name: 'Mike Chen' },
       publisher: {
         '@type': 'Organization',
@@ -449,7 +449,7 @@ export default function BlogPost() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
         />
-        <img src="/assets/images/veggies.jpg" alt="AI in Nutrition" style={imgStyle} />
+        <img src="/assets/images/1.jpg" alt="AI in Nutrition" style={imgStyle} />
 
         <div style={metaStyle}>
           <span className="badge">Technology</span>
