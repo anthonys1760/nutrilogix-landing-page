@@ -41,7 +41,7 @@ export default function Blog() {
             {/* New Post: The End of Manual Logging */}
             <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
               <Link to="/blog/the-end-of-manual-logging" style={{ display: 'block' }}>
-                <img src="/assets/images/ai-blog-logging.jpg" alt="AI Food Analysis" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                <img src="/assets/images/tacos.jpg" alt="AI Food Analysis" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
                 <div style={{ padding: '24px' }}>
                   <span className="badge" style={{ marginBottom: '12px' }}>Technology</span>
                   <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>The End of Manual Logging: Why AI is the Future</h3>
@@ -57,7 +57,7 @@ export default function Blog() {
             {/* New Post: Science of Satiety */}
             <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
               <Link to="/blog/science-of-satiety" style={{ display: 'block' }}>
-                <img src="/assets/images/salmon.jpg" alt="Science of Satiety" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                <img src="/assets/images/satiety-meal.jpg" alt="Science of Satiety" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
                 <div style={{ padding: '24px' }}>
                   <span className="badge" style={{ marginBottom: '12px' }}>Nutrition Science</span>
                   <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>The Science of Satiety: Why You're Always Hungry</h3>
@@ -137,7 +137,7 @@ export default function Blog() {
             {/* Post 4 */}
             <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
               <Link to="/blog/7-minute-meal-prep" style={{ display: 'block' }}>
-                <img src="/assets/images/veggies.jpg" alt="7-Minute Meal Prep" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                <img src="/assets/images/1.jpg" alt="7-Minute Meal Prep" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
                 <div style={{ padding: '24px' }}>
                   <span className="badge" style={{ marginBottom: '12px' }}>Meal Prep</span>
                   <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>7-Minute Meal Prep for Busy Professionals</h3>
