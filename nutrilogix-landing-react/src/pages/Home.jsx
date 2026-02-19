@@ -555,7 +555,7 @@ export default function Home() {
                   <h3 style={{ color: 'white', fontSize: '1.1rem', fontWeight: 700, margin: 0 }}>Android</h3>
                   <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem', margin: 0 }}>Coming Soon</p>
                   <form className="waitlist-form" action="https://formspree.io/f/xkgjdpyd" method="POST" target="_blank" style={{ display: 'flex', gap: '8px', marginTop: '8px' }}>
-                    <input type="email" name="email" placeholder="your@email.com" required style={{ flex: 1, padding: '10px 12px', borderRadius: '6px', border: 'none', fontSize: '0.9rem', backgroundColor: 'rgba(255,255,255,0.15)', color: 'white' }} />
+                    <input type="email" name="email" placeholder="your@email.com" required style={{ flex: 1, padding: '10px 12px', borderRadius: '6px', border: 'none', fontSize: '0.9rem', backgroundColor: '#FFFFFF', color: 'var(--text-main)' }} />
                     <button type="submit" className="btn btn-white" style={{ padding: '10px 20px' }}>Join</button>
                   </form>
                   <p className="small-print" style={{ fontSize: '0.75rem', margin: 0, marginTop: '4px' }}>No spam</p>
