@@ -28,6 +28,7 @@
   /* Spacing & Layout */
   --container-width: 1200px;
   --header-height: 80px;
+  --banner-height: 0px;
   --radius-sm: 8px;
   --radius-md: 16px;
   --radius-lg: 24px;
@@ -169,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Components: Header */
 .site-header {
   position: fixed;
-  top: 0;
+  top: var(--banner-height);
   left: 0;
   right: 0;
   height: var(--header-height);
@@ -179,7 +180,11 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid var(--border-subtle);
   display: flex;
   align-items: center;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease, top 0.3s ease;
+}
+
+.main-content {
+  padding-top: var(--banner-height);
 }
 
 .nav-container {
@@ -438,6 +443,21 @@ h1, h2, h3, h4, h5, h6 {
   100% { transform: translateY(0px); }
 }
 
+@keyframes pulse-icon {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.18); }
+  70%  { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+.feature-card:hover .icon-box {
+  animation: pulse-icon 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+}
+
+@keyframes shimmer-sweep {
+  0%   { left: -75%; }
+  100% { left: 125%; }
+}
+
 /* Sections */
 .section {
   padding: 100px 0;
@@ -611,12 +631,26 @@ h1, h2, h3, h4, h5, h6 {
 
 /* CTA Section */
 .cta-box {
+  position: relative;
+  overflow: hidden;
   background: linear-gradient(135deg, var(--primary), #0aa876);
   border-radius: var(--radius-lg);
   padding: 80px 24px;
   text-align: center;
   color: white;
   box-shadow: var(--shadow-brand);
+}
+
+.cta-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0) 100%);
+  animation: shimmer-sweep 4s ease-in-out infinite;
+  pointer-events: none;
 }
 
 .cta-content h2 {
@@ -699,6 +733,31 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 30px;
   text-align: center;
   font-size: 0.9rem;
+}
+
+/* Comparison Grid */
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 900px) {
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+  .comparison-vs-divider {
+    flex-direction: row !important;
+    padding: 16px 24px !important;
+  }
+  .comparison-vs-divider .divider-line {
+    width: auto !important;
+    height: 1px !important;
+    flex: 1;
+  }
 }
 
 /* Responsive */

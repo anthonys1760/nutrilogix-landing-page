@@ -68,16 +68,16 @@ export default function Home() {
             </div>
             <div className="hero-stats">
               <div className="stat">
+                <strong>30 sec</strong>
+                <span>To log a meal</span>
+              </div>
+              <div className="stat">
+                <strong>1,500+</strong>
+                <span>Beta Users</span>
+              </div>
+              <div className="stat">
                 <strong>95%</strong>
                 <span>Accuracy</span>
-              </div>
-              <div className="stat">
-                <strong>1M+</strong>
-                <span>Foods</span>
-              </div>
-              <div className="stat">
-                <strong>No</strong>
-                <span>Manual Logging</span>
               </div>
             </div>
           </div>
@@ -85,17 +85,17 @@ export default function Home() {
             <div className="phone-mockup-wrapper">
               <img src="/assets/images/nutrionix.png" alt="Nutrilogix App Interface" className="phone-mockup" />
               <div className="floating-card card-1">
-                <span className="emoji">🥑</span>
+                <span className="emoji">📸</span>
                 <div className="text">
-                  <strong>Healthy Fat</strong>
-                  <span>Avocado Toast • 240 kcal</span>
+                  <strong>Logged in 28 sec</strong>
+                  <span>Macros: 45g Protein ✓</span>
                 </div>
               </div>
               <div className="floating-card card-2">
-                <span className="emoji">⚡️</span>
+                <span className="emoji">🎯</span>
                 <div className="text">
-                  <strong>Protein Goal</strong>
-                  <span>Hit 140g today!</span>
+                  <strong>Daily Goal: 94%</strong>
+                  <span>2,180 / 2,300 kcal</span>
                 </div>
               </div>
             </div>
@@ -141,6 +141,70 @@ export default function Home() {
               <div className="icon-box">📈</div>
               <h3>Progress & Weight</h3>
               <p>Track your weight history, body composition, and nutrition trends over time.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Comparison Section */}
+      <section className="section">
+        <div className="container">
+          <div className="section-header reveal">
+            <h2>Why <span className="text-highlight">AI logging</span> wins.</h2>
+            <p>The old way was designed for machines, not humans.</p>
+          </div>
+          <div className="comparison-grid reveal reveal-delay-1">
+            {/* Old Way */}
+            <div style={{ background: 'var(--bg-light)', padding: '40px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+              <h3 style={{ fontSize: '1.3rem', marginBottom: '32px', textAlign: 'center', color: 'var(--text-muted)' }}>The Old Way</h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+                <div style={{ textAlign: 'center', color: 'var(--text-muted)' }}>
+                  <div style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '8px' }}>15 min/day</div>
+                  <p style={{ fontSize: '0.95rem' }}>Manual entry time</p>
+                </div>
+                <div style={{ textAlign: 'center', color: 'var(--text-muted)' }}>
+                  <div style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '8px' }}>30% inaccuracy</div>
+                  <p style={{ fontSize: '0.95rem' }}>Common error rate</p>
+                </div>
+                <div style={{ textAlign: 'center', color: 'var(--text-muted)' }}>
+                  <div style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '8px' }}>73% quit</div>
+                  <p style={{ fontSize: '0.95rem' }}>Abandon tracking</p>
+                </div>
+                <div style={{ textAlign: 'center', color: 'var(--text-muted)' }}>
+                  <div style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '8px' }}>Multiple steps</div>
+                  <p style={{ fontSize: '0.95rem' }}>Search, select, adjust</p>
+                </div>
+              </div>
+            </div>
+
+            {/* VS Divider */}
+            <div className="comparison-vs-divider" style={{ background: 'var(--bg-card)', padding: '40px 24px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '16px', minWidth: '80px', borderLeft: '1px solid var(--border-subtle)', borderRight: '1px solid var(--border-subtle)' }}>
+              <div className="divider-line" style={{ width: '1px', height: '60px', background: 'var(--border-subtle)' }}></div>
+              <span style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--primary)', textAlign: 'center' }}>vs</span>
+              <div className="divider-line" style={{ width: '1px', height: '60px', background: 'var(--border-subtle)' }}></div>
+            </div>
+
+            {/* Nutrilogix Way */}
+            <div style={{ background: 'var(--primary-light)', padding: '40px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+              <h3 style={{ fontSize: '1.3rem', marginBottom: '32px', textAlign: 'center', color: 'var(--primary)' }}>The Nutrilogix Way</h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+                <div style={{ textAlign: 'center', color: 'var(--primary)' }}>
+                  <div style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--primary-dark)', marginBottom: '8px' }}>30 sec/day</div>
+                  <p style={{ fontSize: '0.95rem' }}>Just snap a photo</p>
+                </div>
+                <div style={{ textAlign: 'center', color: 'var(--primary)' }}>
+                  <div style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--primary-dark)', marginBottom: '8px' }}>95% accuracy</div>
+                  <p style={{ fontSize: '0.95rem' }}>AI-powered precision</p>
+                </div>
+                <div style={{ textAlign: 'center', color: 'var(--primary)' }}>
+                  <div style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--primary-dark)', marginBottom: '8px' }}>0 friction</div>
+                  <p style={{ fontSize: '0.95rem' }}>Seamless experience</p>
+                </div>
+                <div style={{ textAlign: 'center', color: 'var(--primary)' }}>
+                  <div style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--primary-dark)', marginBottom: '8px' }}>One photo</div>
+                  <p style={{ fontSize: '0.95rem' }}>That's it</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -322,7 +386,7 @@ export default function Home() {
         <div className="container">
           <div className="section-header reveal">
             <h2>Trusted by <span className="text-highlight">beta testers</span>.</h2>
-            <p>Join over 1,000 early adopters who are already seeing results.</p>
+            <p>Join 1,500+ early adopters who are already seeing results.</p>
           </div>
           <div className="testimonials-grid">
             <div className="testimonial-card reveal reveal-delay-1">
@@ -335,10 +399,11 @@ export default function Home() {
                 <div>
                   <strong style={{ display: 'block', color: 'var(--text-main)' }}>Sarah J.</strong>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Lost 15lbs • Early Access</span>
+                  <span style={{ background: 'var(--primary-light)', color: 'var(--primary)', borderRadius: 'var(--radius-full)', fontSize: '0.75rem', fontWeight: 700, padding: '3px 8px', marginTop: '6px', display: 'inline-block' }}>↓ 15 lbs in 8 weeks</span>
                 </div>
               </div>
             </div>
-            
+
             <div className="testimonial-card reveal reveal-delay-2">
               <div style={{ color: '#FFD700', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
               <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: 'var(--text-main)' }}>
@@ -349,6 +414,7 @@ export default function Home() {
                 <div>
                   <strong style={{ display: 'block', color: 'var(--text-main)' }}>Mike R.</strong>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Muscle Gain • Marathon Runner</span>
+                  <span style={{ background: 'var(--primary-light)', color: 'var(--primary)', borderRadius: 'var(--radius-full)', fontSize: '0.75rem', fontWeight: 700, padding: '3px 8px', marginTop: '6px', display: 'inline-block' }}>+12 lbs muscle in 3 months</span>
                 </div>
               </div>
             </div>
@@ -363,6 +429,7 @@ export default function Home() {
                 <div>
                   <strong style={{ display: 'block', color: 'var(--text-main)' }}>Linda K.</strong>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Busy Parent • Healthy Eater</span>
+                  <span style={{ background: 'var(--primary-light)', color: 'var(--primary)', borderRadius: 'var(--radius-full)', fontSize: '0.75rem', fontWeight: 700, padding: '3px 8px', marginTop: '6px', display: 'inline-block' }}>Saved 4 hrs/week</span>
                 </div>
               </div>
             </div>
@@ -377,6 +444,7 @@ export default function Home() {
                 <div>
                   <strong style={{ display: 'block', color: 'var(--text-main)' }}>James W.</strong>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Crossfit Athlete • Techie</span>
+                  <span style={{ background: 'var(--primary-light)', color: 'var(--primary)', borderRadius: 'var(--radius-full)', fontSize: '0.75rem', fontWeight: 700, padding: '3px 8px', marginTop: '6px', display: 'inline-block' }}>PR every month for 6 months</span>
                 </div>
               </div>
             </div>
@@ -391,6 +459,7 @@ export default function Home() {
                 <div>
                   <strong style={{ display: 'block', color: 'var(--text-main)' }}>Emily S.</strong>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Health Coach • Foodie</span>
+                  <span style={{ background: 'var(--primary-light)', color: 'var(--primary)', borderRadius: 'var(--radius-full)', fontSize: '0.75rem', fontWeight: 700, padding: '3px 8px', marginTop: '6px', display: 'inline-block' }}>Reduced inflammatory foods by 40%</span>
                 </div>
               </div>
             </div>
@@ -405,6 +474,7 @@ export default function Home() {
                 <div>
                   <strong style={{ display: 'block', color: 'var(--text-main)' }}>David L.</strong>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Software Engineer • Busy Professional</span>
+                  <span style={{ background: 'var(--primary-light)', color: 'var(--primary)', borderRadius: 'var(--radius-full)', fontSize: '0.75rem', fontWeight: 700, padding: '3px 8px', marginTop: '6px', display: 'inline-block' }}>Logged every day for 90 days</span>
                 </div>
               </div>
             </div>
