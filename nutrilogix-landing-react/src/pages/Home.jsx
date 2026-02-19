@@ -515,12 +515,41 @@ export default function Home() {
 
       {/* CTA / Signup */}
       <section id="signup" className="section cta-section reveal">
+        <style>{`
+          @media (max-width: 900px) {
+            #cta-cards {
+              grid-template-columns: 1fr !important;
+            }
+            #cta-cards > div {
+              padding: 24px 20px !important;
+            }
+            #cta-form {
+              flex-direction: column !important;
+              gap: 12px !important;
+            }
+            #cta-form input {
+              width: 100% !important;
+              padding: 12px 14px !important;
+              font-size: 16px !important;
+            }
+            #cta-form button {
+              width: 100% !important;
+              padding: 12px 16px !important;
+            }
+            .cta-content h2 {
+              font-size: 1.8rem !important;
+            }
+            .cta-content h3 {
+              font-size: 1rem !important;
+            }
+          }
+        `}</style>
         <div className="container">
           <div className="cta-box">
             <div className="cta-content">
               <h2>Ready to transform your nutrition?</h2>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', maxWidth: '700px', margin: '40px auto 32px' }}>
+              <div id="cta-cards" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', maxWidth: '700px', margin: '40px auto 32px' }}>
                 {/* iOS Card */}
                 <div style={{
                   background: 'rgba(255,255,255,0.1)',
@@ -554,7 +583,7 @@ export default function Home() {
                   <div style={{ fontSize: '2.5rem' }}>🤖</div>
                   <h3 style={{ color: 'white', fontSize: '1.1rem', fontWeight: 700, margin: 0 }}>Android</h3>
                   <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem', margin: 0 }}>Coming Soon</p>
-                  <form className="waitlist-form" action="https://formspree.io/f/xkgjdpyd" method="POST" target="_blank" style={{ display: 'flex', gap: '8px', marginTop: '8px' }}>
+                  <form id="cta-form" className="waitlist-form" action="https://formspree.io/f/xkgjdpyd" method="POST" target="_blank" style={{ display: 'flex', gap: '8px', marginTop: '8px' }}>
                     <input type="email" name="email" placeholder="your@email.com" required style={{ flex: 1, padding: '10px 12px', borderRadius: '6px', border: 'none', fontSize: '0.9rem', backgroundColor: '#FFFFFF', color: 'var(--text-main)' }} />
                     <button type="submit" className="btn btn-white" style={{ padding: '10px 20px' }}>Join</button>
                   </form>
