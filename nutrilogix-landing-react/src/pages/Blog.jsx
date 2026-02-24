@@ -86,6 +86,22 @@ export default function Blog() {
               </Link>
             </article>
 
+            {/* Post: Hydration */}
+            <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
+              <Link to="/blog/science-of-hydration" style={{ display: 'block' }}>
+                <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600&q=80" alt="The Science of Hydration" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                <div style={{ padding: '24px' }}>
+                  <span className="badge" style={{ marginBottom: '12px' }}>Wellness</span>
+                  <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>The Science of Hydration: How Much Water Do You Really Need?</h3>
+                  <p style={{ fontSize: '0.95rem', marginBottom: '16px' }}>Debunk the 8-glass myth and learn evidence-based strategies to optimize your daily water intake.</p>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                    <div className="avatar" style={{ width: 24, height: 24, fontSize: '0.7rem' }}>R</div>
+                    <span>Dr. Rachel Kim • Feb 20, 2026 • 7 min read</span>
+                  </div>
+                </div>
+              </Link>
+            </article>
+
             {/* Post 1 */}
             <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
               <Link to="/blog/understanding-macros" style={{ display: 'block' }}>

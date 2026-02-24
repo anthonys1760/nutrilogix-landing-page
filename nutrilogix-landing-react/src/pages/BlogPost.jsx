@@ -872,6 +872,130 @@ export default function BlogPost() {
     )
   }
 
+  if (slug === 'science-of-hydration') {
+    const blogPostingLd = {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline: 'The Science of Hydration: How Much Water Do You Really Need?',
+      description: 'Debunk the 8-glass myth and learn evidence-based strategies to optimize your daily water intake for better health.',
+      image: ['https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=1200&q=80'],
+      author: { '@type': 'Person', name: 'Dr. Rachel Kim' },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Nutrilogix',
+        logo: { '@type': 'ImageObject', url: '/assets/images/2.jpg' },
+      },
+      datePublished: '2026-02-20',
+      mainEntityOfPage: { '@type': 'WebPage', '@id': '/blog/science-of-hydration' },
+    }
+
+    return (
+      <div style={contentStyle}>
+        <SEO
+          title="The Science of Hydration: How Much Water Do You Really Need? - Nutrilogix"
+          description="Debunk the 8-glass myth and learn evidence-based strategies to optimize your daily water intake for better health."
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
+        />
+
+        <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=1200&q=80" alt="Glass of water with lemon" style={imgStyle} />
+
+        <div style={metaStyle}>
+          <span className="badge">Wellness</span>
+          <span>February 20, 2026</span>
+          <span>7 min read</span>
+        </div>
+
+        <h1 style={h1Style}>The Science of Hydration: How Much Water Do You Really Need?</h1>
+
+        <div style={bodyStyle}>
+          <p style={{marginBottom: '24px'}}>
+            We've all heard the advice: drink eight glasses of water a day. But is that really backed by science? The truth about hydration is more nuanced than a one-size-fits-all rule. Let's dive into what the research actually says and how you can optimize your water intake for better health and performance.
+          </p>
+
+          <div style={{ background: 'var(--primary-light)', padding: '24px', borderRadius: '12px', borderLeft: '4px solid var(--primary)', marginBottom: '32px' }}>
+            Water makes up about 60% of your body weight and is involved in nearly every bodily function — from regulating temperature to transporting nutrients and flushing out waste.
+          </div>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>Debunking the 8-Glass Myth</h2>
+          <p style={{marginBottom: '24px'}}>
+            The popular "8x8" rule — eight 8-ounce glasses per day — has no strong scientific origin. In reality, your hydration needs depend on a variety of factors including your body size, activity level, climate, and diet. A 2004 report from the National Academies of Sciences recommended about 3.7 liters per day for men and 2.7 liters for women from all beverages and food combined.
+          </p>
+          <p style={{marginBottom: '24px'}}>
+            That's an important distinction: you don't need to get all your water from drinking plain water. Fruits, vegetables, soups, and other beverages all contribute to your daily fluid intake.
+          </p>
+
+          <img src="https://images.unsplash.com/photo-1559839914-17aae19cec71?w=1200&q=80" alt="Water being poured into a glass" style={{ width: '100%', borderRadius: '12px', margin: '32px 0', height: '300px', objectFit: 'cover' }} />
+          <p style={{ textAlign: 'center', fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '-24px', marginBottom: '32px' }}>Staying hydrated doesn't have to be complicated — consistency is key.</p>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>Signs You're Not Drinking Enough</h2>
+          <p style={{marginBottom: '24px'}}>
+            Your body is surprisingly good at telling you when it needs more fluids. Here are the most common signs of mild dehydration:
+          </p>
+          <ul style={{ paddingLeft: '24px', marginBottom: '24px' }}>
+            <li style={{marginBottom: '12px'}}><strong>Dark yellow urine</strong> — Pale straw color indicates good hydration</li>
+            <li style={{marginBottom: '12px'}}><strong>Fatigue and low energy</strong> — Even mild dehydration can impair concentration</li>
+            <li style={{marginBottom: '12px'}}><strong>Headaches</strong> — Often one of the earliest signs of insufficient water intake</li>
+            <li style={{marginBottom: '12px'}}><strong>Dry mouth and skin</strong> — Your body redirects water to vital organs first</li>
+            <li style={{marginBottom: '12px'}}><strong>Decreased exercise performance</strong> — A 2% drop in body water can reduce performance significantly</li>
+          </ul>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>Hydration and Exercise</h2>
+          <p style={{marginBottom: '24px'}}>
+            If you're physically active, your water needs increase substantially. During exercise, you can lose 0.5 to 2 liters of fluid per hour through sweat, depending on intensity and conditions. Here's a practical approach:
+          </p>
+          <ul style={{ paddingLeft: '24px', marginBottom: '24px' }}>
+            <li style={{marginBottom: '12px'}}>Drink 500 ml (about 17 oz) of water 2 hours before exercise</li>
+            <li style={{marginBottom: '12px'}}>Sip 200–300 ml every 15–20 minutes during activity</li>
+            <li style={{marginBottom: '12px'}}>Replenish with 1.5x the fluid lost after your workout</li>
+          </ul>
+
+          <img src="https://images.unsplash.com/photo-1606168094336-48f205276929?w=1200&q=80" alt="Person with water bottle after exercise" style={{ width: '100%', borderRadius: '12px', margin: '32px 0', height: '300px', objectFit: 'cover' }} />
+          <p style={{ textAlign: 'center', fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '-24px', marginBottom: '32px' }}>Replenishing fluids after a workout is essential for recovery.</p>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>Foods That Help You Stay Hydrated</h2>
+          <p style={{marginBottom: '24px'}}>
+            You can eat your water too. Many whole foods have a high water content that contributes to your daily intake:
+          </p>
+          <ul style={{ paddingLeft: '24px', marginBottom: '24px' }}>
+            <li style={{marginBottom: '12px'}}><strong>Cucumber</strong> — 96% water</li>
+            <li style={{marginBottom: '12px'}}><strong>Watermelon</strong> — 92% water</li>
+            <li style={{marginBottom: '12px'}}><strong>Strawberries</strong> — 91% water</li>
+            <li style={{marginBottom: '12px'}}><strong>Spinach</strong> — 91% water</li>
+            <li style={{marginBottom: '12px'}}><strong>Oranges</strong> — 87% water</li>
+            <li style={{marginBottom: '12px'}}><strong>Yogurt</strong> — 85% water</li>
+          </ul>
+
+          <div style={{ background: 'var(--primary-light)', padding: '24px', borderRadius: '12px', borderLeft: '4px solid var(--primary)', marginBottom: '32px' }}>
+            <strong>Nutrilogix Tip:</strong> Track not only your macros but also your daily water intake. Simply log your meals and beverages, and our AI will estimate your total hydration from all sources — helping you stay on top of your fluid goals effortlessly.
+          </div>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>Practical Tips for Better Hydration</h2>
+          <p style={{marginBottom: '24px'}}>
+            Building a hydration habit doesn't require a complete lifestyle overhaul. Here are some simple, evidence-based strategies:
+          </p>
+          <ul style={{ paddingLeft: '24px', marginBottom: '24px' }}>
+            <li style={{marginBottom: '12px'}}><strong>Start your morning with water</strong> — Drink a glass as soon as you wake up to rehydrate after sleep</li>
+            <li style={{marginBottom: '12px'}}><strong>Carry a reusable bottle</strong> — Having water visible and accessible increases intake</li>
+            <li style={{marginBottom: '12px'}}><strong>Set reminders</strong> — Use your phone or an app to prompt regular sipping</li>
+            <li style={{marginBottom: '12px'}}><strong>Flavor your water</strong> — Add lemon, cucumber, or mint to make it more appealing</li>
+            <li style={{marginBottom: '12px'}}><strong>Eat water-rich foods</strong> — Incorporate fruits and vegetables at every meal</li>
+          </ul>
+
+          <p style={{marginBottom: '24px'}}>
+            The bottom line? Listen to your body, drink when you're thirsty, and pay attention to the color of your urine. Combined with a balanced diet rich in whole foods, staying properly hydrated is simpler than you think.
+          </p>
+
+          <div style={{ textAlign: 'center', margin: '60px 0' }}>
+            <Link to="/" state={{ scrollTo: 'signup' }} className="btn btn-primary">Track Your Hydration</Link>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   // Fallback for other posts (simplified for brevity of this task)
   return (
     <div className="container" style={{ padding: '80px 20px', textAlign: 'center' }}>

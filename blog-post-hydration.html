@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Science of Hydration: How Much Water Do You Really Need? Learn the facts about daily water intake and how proper hydration boosts your health.">
+    <title>The Science of Hydration: How Much Water Do You Really Need? | Nutrilogix Blog</title>
+    <link rel="icon" href="assets/images/2.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="assets/images/2.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base styles from main site */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #0DC68B;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+            margin-right: 10px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            padding: 4px;
+        }
+
+        .logo span {
+            color: #E4F9F2;
+        }
+
+        .header-nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 24px;
+            font-weight: 500;
+        }
+
+        /* Blog post specific styles */
+        .blog-post {
+            max-width: 800px;
+            margin: 60px auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .blog-post-header {
+            position: relative;
+        }
+
+        .blog-post-header img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .blog-category {
+            position: absolute;
+            margin-top: 20px;
+            top: 20px;
+            left: 20px;
+            padding: 8px 16px;
+            background-color: rgba(13, 198, 139, 0.9);
+            color: white;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .blog-post-content {
+            padding: 40px;
+        }
+
+        .blog-meta {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .author-info {
+            display: flex;
+            align-items: center;
+            margin-right: 30px;
+        }
+
+        .author-info img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+
+        .author-name {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .post-date {
+            color: #888;
+        }
+
+        .blog-post-content h1 {
+            font-size: 36px;
+            line-height: 1.3;
+            margin-bottom: 24px;
+            color: #333;
+        }
+
+        .blog-post-content p {
+            margin-bottom: 24px;
+            font-size: 18px;
+            color: #444;
+        }
+
+        .blog-post-content h2 {
+            font-size: 24px;
+            margin: 40px 0 20px;
+            color: #333;
+        }
+
+        .blog-post-content ul {
+            margin-bottom: 24px;
+            padding-left: 24px;
+        }
+
+        .blog-post-content li {
+            margin-bottom: 12px;
+            font-size: 18px;
+            color: #444;
+        }
+
+        .highlight-box {
+            background: rgba(13, 198, 139, 0.1);
+            border-left: 4px solid #0DC68B;
+            padding: 24px;
+            margin: 32px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .inline-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 32px 0;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .image-caption {
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+            margin-top: -24px;
+            margin-bottom: 32px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 60px 0 30px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #444;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .blog-post {
+                margin: 20px auto;
+                border-radius: 0;
+            }
+
+            .blog-post-header img {
+                height: 300px;
+            }
+
+            .blog-post-content {
+                padding: 20px;
+            }
+
+            .blog-post-content h1 {
+                font-size: 28px;
+            }
+
+            .blog-post-content p,
+            .blog-post-content li {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="assets/images/2.jpg" alt="Nutrilogix Logo">
+                Nutri<span>Logix</span>
+            </a>
+            <nav class="header-nav">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="blog.html">Blog</a>
+                <a href="index.html#signup">Early Access</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="blog-post-header">
+            <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=1200&q=80" alt="Glass of water with lemon">
+            <span class="blog-category">Wellness</span>
+        </header>
+        
+        <div class="blog-post-content">
+            <div class="blog-meta">
+                <div class="author-info">
+                    <img src="assets/images/2.jpg" alt="Dr. Rachel Kim">
+                    <div>
+                        <div class="author-name">Dr. Rachel Kim</div>
+                        <div class="post-date">February 20, 2026</div>
+                    </div>
+                </div>
+                <span>7 min read</span>
+            </div>
+
+            <h1>The Science of Hydration: How Much Water Do You Really Need?</h1>
+            
+            <p>We've all heard the advice: drink eight glasses of water a day. But is that really backed by science? The truth about hydration is more nuanced than a one-size-fits-all rule. Let's dive into what the research actually says and how you can optimize your water intake for better health and performance.</p>
+
+            <div class="highlight-box">
+                <p>Water makes up about 60% of your body weight and is involved in nearly every bodily function — from regulating temperature to transporting nutrients and flushing out waste.</p>
+            </div>
+
+            <h2>Debunking the 8-Glass Myth</h2>
+            <p>The popular "8x8" rule — eight 8-ounce glasses per day — has no strong scientific origin. In reality, your hydration needs depend on a variety of factors including your body size, activity level, climate, and diet. A 2004 report from the National Academies of Sciences recommended about 3.7 liters per day for men and 2.7 liters for women from all beverages and food combined.</p>
+            <p>That's an important distinction: you don't need to get all your water from drinking plain water. Fruits, vegetables, soups, and other beverages all contribute to your daily fluid intake.</p>
+
+            <img class="inline-image" src="https://images.unsplash.com/photo-1559839914-17aae19cec71?w=1200&q=80" alt="Water being poured into a glass">
+            <p class="image-caption">Staying hydrated doesn't have to be complicated — consistency is key.</p>
+
+            <h2>Signs You're Not Drinking Enough</h2>
+            <p>Your body is surprisingly good at telling you when it needs more fluids. Here are the most common signs of mild dehydration:</p>
+            <ul>
+                <li><strong>Dark yellow urine</strong> — Pale straw color indicates good hydration</li>
+                <li><strong>Fatigue and low energy</strong> — Even mild dehydration can impair concentration</li>
+                <li><strong>Headaches</strong> — Often one of the earliest signs of insufficient water intake</li>
+                <li><strong>Dry mouth and skin</strong> — Your body redirects water to vital organs first</li>
+                <li><strong>Decreased exercise performance</strong> — A 2% drop in body water can reduce performance significantly</li>
+            </ul>
+
+            <h2>Hydration and Exercise</h2>
+            <p>If you're physically active, your water needs increase substantially. During exercise, you can lose 0.5 to 2 liters of fluid per hour through sweat, depending on intensity and conditions. Here's a practical approach:</p>
+            <ul>
+                <li>Drink 500 ml (about 17 oz) of water 2 hours before exercise</li>
+                <li>Sip 200–300 ml every 15–20 minutes during activity</li>
+                <li>Replenish with 1.5x the fluid lost after your workout</li>
+            </ul>
+
+            <img class="inline-image" src="https://images.unsplash.com/photo-1606168094336-48f205276929?w=1200&q=80" alt="Person with water bottle after exercise">
+            <p class="image-caption">Replenishing fluids after a workout is essential for recovery.</p>
+
+            <h2>Foods That Help You Stay Hydrated</h2>
+            <p>You can eat your water too. Many whole foods have a high water content that contributes to your daily intake:</p>
+            <ul>
+                <li><strong>Cucumber</strong> — 96% water</li>
+                <li><strong>Watermelon</strong> — 92% water</li>
+                <li><strong>Strawberries</strong> — 91% water</li>
+                <li><strong>Spinach</strong> — 91% water</li>
+                <li><strong>Oranges</strong> — 87% water</li>
+                <li><strong>Yogurt</strong> — 85% water</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p>With Nutrilogix, you can track not only your macros but also your daily water intake. Simply log your meals and beverages, and our AI will estimate your total hydration from all sources — helping you stay on top of your fluid goals effortlessly.</p>
+            </div>
+
+            <h2>Practical Tips for Better Hydration</h2>
+            <p>Building a hydration habit doesn't require a complete lifestyle overhaul. Here are some simple, evidence-based strategies:</p>
+            <ul>
+                <li><strong>Start your morning with water</strong> — Drink a glass as soon as you wake up to rehydrate after sleep</li>
+                <li><strong>Carry a reusable bottle</strong> — Having water visible and accessible increases intake</li>
+                <li><strong>Set reminders</strong> — Use your phone or an app to prompt regular sipping</li>
+                <li><strong>Flavor your water</strong> — Add lemon, cucumber, or mint to make it more appealing</li>
+                <li><strong>Eat water-rich foods</strong> — Incorporate fruits and vegetables at every meal</li>
+            </ul>
+
+            <p>The bottom line? Listen to your body, drink when you're thirsty, and pay attention to the color of your urine. Combined with a balanced diet rich in whole foods, staying properly hydrated is simpler than you think.</p>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                &copy; 2025 Nutrilogix. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

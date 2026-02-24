@@ -280,11 +280,7 @@ export default function Home() {
       <section className="section bg-light">
         <div className="container">
           <div className="hero-inner" style={{ alignItems: 'center' }}>
-            <div className="health-visual reveal" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <img src="/assets/images/scores.png" alt="Nutrilogix Health Score" style={{ width: '100%', maxWidth: '750px', height: 'auto', zIndex: 2 }} />
-            </div>
-
-            <div className="health-content reveal reveal-delay-2">
+            <div className="health-content reveal">
               <h2>Go beyond calories with <span className="text-highlight">Health Scores</span>.</h2>
               <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '32px', lineHeight: '1.6' }}>
                 Not all calories are created equal. Nutrilogix analyzes the quality of your food to help you make smarter choices, not just lighter ones.
@@ -302,6 +298,10 @@ export default function Home() {
                 </li>
               </ul>
             </div>
+
+            <div className="health-visual reveal reveal-delay-2" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <img src="/assets/images/scores.png" alt="Nutrilogix Health Score" style={{ width: '100%', maxWidth: '750px', height: 'auto', zIndex: 2 }} />
+            </div>
           </div>
         </div>
       </section>
@@ -310,7 +310,11 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <div className="hero-inner" style={{ alignItems: 'center' }}>
-            <div className="fitness-content reveal">
+            <div className="fitness-visual reveal" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <img src="/assets/images/expenditure.png" alt="Nutrilogix Weekly Energy Expenditure" style={{ width: '100%', maxWidth: '750px', height: 'auto', zIndex: 2 }} />
+            </div>
+
+            <div className="fitness-content reveal reveal-delay-2">
               <h2>Master your <span className="text-highlight">Energy Balance</span>.</h2>
               <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '32px', lineHeight: '1.6' }}>
                 Go beyond simple calorie counting. Nutrilogix visualizes your weekly energy expenditure vs. intake so you can understand your true progress at a glance.
@@ -334,16 +338,54 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            
-            <div className="fitness-visual reveal reveal-delay-2" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <img src="/assets/images/expenditure.png" alt="Nutrilogix Weekly Energy Expenditure" style={{ width: '100%', maxWidth: '750px', height: 'auto', zIndex: 2 }} />
+          </div>
+        </div>
+      </section>
+
+      {/* Voice Logging Section */}
+      <section className="section bg-light">
+        <div className="container">
+          <div className="hero-inner" style={{ alignItems: 'center' }}>
+            <div className="voice-content reveal">
+              <h2>Log meals with your <span className="text-highlight">Voice</span>.</h2>
+              <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '32px', lineHeight: '1.6' }}>
+                Can't snap a photo? Just tell Nutrilogix what you ate. Our AI understands natural speech and logs your meals instantly—perfect for busy moments or when you're on the go.
+              </p>
+              
+              <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gap: '16px' }}>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.05rem', color: 'var(--text-main)' }}>
+                  <span style={{ color: 'var(--primary)', fontWeight: 800 }}>✓</span> "I had a chicken salad with avocado"
+                </li>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.05rem', color: 'var(--text-main)' }}>
+                  <span style={{ color: 'var(--primary)', fontWeight: 800 }}>✓</span> "Two eggs and toast for breakfast"
+                </li>
+                <li style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '1.05rem', color: 'var(--text-main)' }}>
+                  <span style={{ color: 'var(--primary)', fontWeight: 800 }}>✓</span> "Grande oat milk latte from Starbucks"
+                </li>
+              </ul>
+
+              <div style={{ marginTop: '32px', display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
+                  <span style={{ fontSize: '1.2rem' }}>🎙️</span> Natural language
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
+                  <span style={{ fontSize: '1.2rem' }}>⚡</span> Instant logging
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
+                  <span style={{ fontSize: '1.2rem' }}>🧠</span> AI-powered accuracy
+                </div>
+              </div>
+            </div>
+
+            <div className="voice-visual reveal reveal-delay-2" style={{ position: 'relative', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <img src="/assets/images/voice-logging.png" alt="Nutrilogix Voice Logging" style={{ width: '100%', maxWidth: '750px', height: 'auto', zIndex: 2 }} />
             </div>
           </div>
         </div>
       </section>
 
       {/* How It Works */}
-      <section id="how-it-works" className="section bg-light">
+      <section id="how-it-works" className="section">
         <div className="container">
           <div className="section-header reveal">
             <h2>Three steps to <span className="text-highlight">success</span>.</h2>
