@@ -996,6 +996,168 @@ export default function BlogPost() {
     )
   }
 
+  if (slug === 'health-scores-beyond-calories') {
+    const blogPostingLd = {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline: 'Health Scores: Why Calories Alone Are Lying to You',
+      description: 'How Nutrilogix\'s 0-100 Health Score reveals the real quality of your food and why it matters more than calorie counts.',
+      image: ['https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&q=80'],
+      author: { '@type': 'Person', name: 'Dr. Sarah Miller' },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Nutrilogix',
+        logo: { '@type': 'ImageObject', url: '/assets/images/2.jpg' },
+      },
+      datePublished: '2026-03-04',
+      mainEntityOfPage: { '@type': 'WebPage', '@id': '/blog/health-scores-beyond-calories' },
+    }
+
+    return (
+      <div style={contentStyle}>
+        <SEO
+          title="Health Scores: Why Calories Alone Are Lying to You - Nutrilogix"
+          description="How Nutrilogix's 0-100 Health Score reveals the real quality of your food and why it matters more than calorie counts."
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
+        />
+
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&q=80" alt="Healthy food spread" style={imgStyle} />
+
+        <div style={metaStyle}>
+          <span className="badge">Feature Deep Dive</span>
+          <span>March 4, 2026</span>
+          <span>6 min read</span>
+        </div>
+
+        <h1 style={h1Style}>Health Scores: Why Calories Alone Are Lying to You</h1>
+
+        <div style={bodyStyle}>
+          <p style={{marginBottom: '24px'}}>
+            A 400-calorie meal of grilled salmon, quinoa, and roasted vegetables is not the same as a 400-calorie bag of chips. You know this intuitively. But most nutrition apps treat them identically—just numbers on a dashboard. That's the calorie trap, and it's why so many people eat "within their targets" yet still feel terrible.
+          </p>
+
+          <div style={{ background: 'var(--primary-light)', padding: '24px', borderRadius: '12px', borderLeft: '4px solid var(--primary)', marginBottom: '32px' }}>
+            Nutrilogix Health Scores rate every meal from 0 to 100 based on food quality, processing level, and inflammatory potential—giving you the full picture that calorie counting alone can't.
+          </div>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>The Problem with Calorie-Only Tracking</h2>
+          <p style={{marginBottom: '24px'}}>
+            Calorie counting was a breakthrough when it was introduced. It gave people a simple metric to manage energy balance. But nutrition science has evolved dramatically since then, and we now know that <strong>food quality matters as much as food quantity</strong>.
+          </p>
+          <p style={{marginBottom: '24px'}}>
+            Here's what calorie counts miss:
+          </p>
+          <ul style={{ paddingLeft: '24px', marginBottom: '24px' }}>
+            <li style={{marginBottom: '12px'}}><strong>Processing level:</strong> Ultra-processed foods are digested faster, spike blood sugar, and fail to trigger satiety hormones—even at the same calorie count as whole foods.</li>
+            <li style={{marginBottom: '12px'}}><strong>Nutrient density:</strong> A calorie of spinach delivers vitamins, minerals, and antioxidants. A calorie of soda delivers nothing.</li>
+            <li style={{marginBottom: '12px'}}><strong>Inflammatory ingredients:</strong> Seed oils, artificial sweeteners, and certain emulsifiers can trigger low-grade inflammation that disrupts metabolism over time.</li>
+            <li style={{marginBottom: '12px'}}><strong>Thermic effect:</strong> Your body burns more calories digesting protein and whole foods than it does processing refined carbs.</li>
+          </ul>
+
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1200&q=80" alt="Colorful healthy salad bowl" style={{ width: '100%', borderRadius: '12px', margin: '32px 0', height: '300px', objectFit: 'cover' }} />
+          <p style={{ textAlign: 'center', fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '-24px', marginBottom: '32px' }}>Whole foods score significantly higher than their processed equivalents—even at the same calorie count.</p>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>How Health Scores Work</h2>
+          <p style={{marginBottom: '24px'}}>
+            When you snap a photo with Nutrilogix, our AI doesn't just identify calories and macros. It evaluates your meal across three dimensions and generates a single score from 0 to 100:
+          </p>
+
+          <h3 style={{ fontSize: '1.4rem', marginTop: '30px', marginBottom: '16px' }}>1. Processing Level (40% of score)</h3>
+          <p style={{marginBottom: '24px'}}>
+            The AI uses visual analysis and food identification to classify each item on the NOVA scale—a widely-used scientific framework that groups foods by processing level. Whole foods (Score: high) like a baked sweet potato score much higher than ultra-processed foods (Score: low) like a frozen TV dinner.
+          </p>
+
+          <h3 style={{ fontSize: '1.4rem', marginTop: '30px', marginBottom: '16px' }}>2. Nutrient Density (35% of score)</h3>
+          <p style={{marginBottom: '24px'}}>
+            This measures the vitamins, minerals, fiber, and beneficial compounds per calorie. A meal rich in leafy greens, lean protein, and whole grains will score significantly higher than one composed of empty-calorie refined foods—even if the calorie total is identical.
+          </p>
+
+          <h3 style={{ fontSize: '1.4rem', marginTop: '30px', marginBottom: '16px' }}>3. Inflammatory Markers (25% of score)</h3>
+          <p style={{marginBottom: '24px'}}>
+            Our AI flags known inflammatory ingredients—trans fats, excessive added sugars, artificial additives—and adjusts the score accordingly. Chronic low-grade inflammation is linked to heart disease, diabetes, and cognitive decline. This dimension helps you spot hidden culprits you might not realize you're eating.
+          </p>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>Real Examples: Same Calories, Different Scores</h2>
+          <p style={{marginBottom: '24px'}}>
+            Let's look at some real comparisons to see the Health Score in action:
+          </p>
+
+          <div style={{ display: 'grid', gap: '16px', marginBottom: '32px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 20px', background: 'var(--primary-light)', borderRadius: '12px' }}>
+              <div>
+                <strong>Grilled chicken + brown rice + broccoli</strong>
+                <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>~500 cal</div>
+              </div>
+              <div style={{ fontWeight: 700, fontSize: '1.4rem', color: 'var(--primary)' }}>92</div>
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 20px', background: '#FEF3C7', borderRadius: '12px' }}>
+              <div>
+                <strong>Store-bought chicken sandwich + fries</strong>
+                <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>~500 cal</div>
+              </div>
+              <div style={{ fontWeight: 700, fontSize: '1.4rem', color: '#D97706' }}>45</div>
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 20px', background: '#FEE2E2', borderRadius: '12px' }}>
+              <div>
+                <strong>Candy bar + energy drink</strong>
+                <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>~500 cal</div>
+              </div>
+              <div style={{ fontWeight: 700, fontSize: '1.4rem', color: '#DC2626' }}>12</div>
+            </div>
+          </div>
+
+          <p style={{marginBottom: '24px'}}>
+            Same calorie budget. Wildly different impact on your body. That's the insight Health Scores give you that a calorie counter never will.
+          </p>
+
+          <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1200&q=80" alt="Fresh fruits and vegetables" style={{ width: '100%', borderRadius: '12px', margin: '32px 0', height: '300px', objectFit: 'cover' }} />
+          <p style={{ textAlign: 'center', fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '-24px', marginBottom: '32px' }}>Small swaps toward whole foods compound into dramatic Health Score improvements over time.</p>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>Using Health Scores Day-to-Day</h2>
+          <p style={{marginBottom: '24px'}}>
+            Health Scores are designed to be actionable, not judgmental. You don't need to hit 100 on every meal. Here's a practical framework:
+          </p>
+          <ul style={{ paddingLeft: '24px', marginBottom: '24px' }}>
+            <li style={{marginBottom: '12px'}}><strong>80-100 (Excellent):</strong> Whole, minimally processed foods. Keep doing what you're doing.</li>
+            <li style={{marginBottom: '12px'}}><strong>60-79 (Good):</strong> Solid meals with room for a small upgrade. Maybe swap white rice for brown, or add a side of greens.</li>
+            <li style={{marginBottom: '12px'}}><strong>40-59 (Fair):</strong> Moderate processing or missing key nutrients. The app will suggest one specific swap to improve.</li>
+            <li style={{marginBottom: '12px'}}><strong>Below 40 (Poor):</strong> Heavily processed or nutritionally empty. Aim to limit these to occasional indulgences, not daily habits.</li>
+          </ul>
+
+          <div style={{ background: 'var(--primary-light)', padding: '24px', borderRadius: '12px', borderLeft: '4px solid var(--primary)', marginBottom: '32px' }}>
+            <strong>The 1% Rule:</strong> You don't need to overhaul your diet overnight. Focus on raising your weekly average Health Score by just a few points. Over months, those small improvements compound into real, lasting health changes.
+          </div>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>Weekly Trends That Matter</h2>
+          <p style={{marginBottom: '24px'}}>
+            Individual meal scores are helpful, but the real power is in the trends. Nutrilogix tracks your 7-day rolling average Health Score and shows you:
+          </p>
+          <ul style={{ paddingLeft: '24px', marginBottom: '24px' }}>
+            <li style={{marginBottom: '12px'}}>Which days your food quality dips (weekend brunch, anyone?)</li>
+            <li style={{marginBottom: '12px'}}>Which meals consistently score lowest (often lunch for busy professionals)</li>
+            <li style={{marginBottom: '12px'}}>How your score correlates with your energy levels and mood over time</li>
+            <li style={{marginBottom: '12px'}}>Specific ingredient patterns that are dragging your average down</li>
+          </ul>
+          <p style={{marginBottom: '24px'}}>
+            This turns abstract nutrition advice into concrete, personalized data. Instead of "eat healthier," Nutrilogix tells you exactly where to focus for the biggest improvement.
+          </p>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>The Bottom Line</h2>
+          <p style={{marginBottom: '24px'}}>
+            Calories tell you <em>how much</em> you're eating. Health Scores tell you <em>how well</em> you're eating. You need both to truly understand your nutrition. With Nutrilogix, you get both in a single photo snap—no manual logging, no guesswork, no judgment. Just clarity.
+          </p>
+
+          <div style={{ textAlign: 'center', margin: '60px 0' }}>
+            <Link to="/" state={{ scrollTo: 'signup' }} className="btn btn-primary">Check Your Health Score</Link>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   // Fallback for other posts (simplified for brevity of this task)
   return (
     <div className="container" style={{ padding: '80px 20px', textAlign: 'center' }}>

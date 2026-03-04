@@ -22,6 +22,22 @@ export default function Blog() {
         <div className="container">
           <div className="features-grid"> {/* Reusing grid layout */}
 
+            {/* Post: Health Scores */}
+            <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
+              <Link to="/blog/health-scores-beyond-calories" style={{ display: 'block' }}>
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80" alt="Health Scores Beyond Calories" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                <div style={{ padding: '24px' }}>
+                  <span className="badge" style={{ marginBottom: '12px' }}>Feature Deep Dive</span>
+                  <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>Health Scores: Why Calories Alone Are Lying to You</h3>
+                  <p style={{ fontSize: '0.95rem', marginBottom: '16px' }}>How Nutrilogix's 0-100 Health Score reveals the real quality of your food — and why it matters more than calorie counts.</p>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                    <div className="avatar" style={{ width: 24, height: 24, fontSize: '0.7rem' }}>S</div>
+                    <span>Dr. Sarah Miller • Mar 4, 2026 • 6 min read</span>
+                  </div>
+                </div>
+              </Link>
+            </article>
+
             {/* New Post: Hidden Cost of Manual Logging */}
             <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
               <Link to="/blog/hidden-cost-manual-logging" style={{ display: 'block' }}>
