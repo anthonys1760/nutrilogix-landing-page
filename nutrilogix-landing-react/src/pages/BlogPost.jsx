@@ -45,6 +45,163 @@ export default function BlogPost() {
     color: 'var(--text-main)'
   }
 
+  if (slug === 'scan-your-fridge-ai-recipes') {
+    const blogPostingLd = {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline: 'Scan Your Fridge, Get Recipes: How AI Turns Leftovers Into Macro-Perfect Meals',
+      description: 'How Nutrilogix\'s Fridge Scan uses multi-photo AI detection and macro-aware recipe generation to eliminate food waste and hit your nutrition goals.',
+      image: ['https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=1200&q=80'],
+      author: { '@type': 'Person', name: 'Dr. Alex Rivera' },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Nutrilogix',
+        logo: { '@type': 'ImageObject', url: '/assets/images/2.jpg' },
+      },
+      datePublished: '2026-03-11',
+      dateModified: '2026-03-11',
+      mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://nutrilogix.app/blog/scan-your-fridge-ai-recipes' },
+    }
+
+    return (
+      <div style={contentStyle}>
+        <SEO
+          title="Scan Your Fridge, Get Recipes: AI Macro-Perfect Meals - Nutrilogix"
+          description="How Nutrilogix's Fridge Scan uses multi-photo AI to detect ingredients and generate macro-perfect recipes from what you already have."
+          type="article"
+          image="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=1200&q=80"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
+        />
+
+        <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=1200&q=80" alt="Open fridge full of fresh ingredients" style={imgStyle} />
+
+        <div style={metaStyle}>
+          <span className="badge">Feature Deep Dive</span>
+          <span>March 11, 2026</span>
+          <span>6 min read</span>
+        </div>
+
+        <h1 style={h1Style}>Scan Your Fridge, Get Recipes: How AI Turns Leftovers Into Macro-Perfect Meals</h1>
+
+        <div style={bodyStyle}>
+          <p style={{marginBottom: '24px'}}>
+            It's 6:30 PM. You open the fridge and stare. There's half a bell pepper, some chicken from two days ago, a bag of spinach you keep meaning to use, and eggs. You could order delivery—again—or you could let AI figure it out in seconds.
+          </p>
+
+          <p style={{marginBottom: '24px'}}>
+            That's the idea behind <strong>Fridge Scan</strong>, one of the most-requested features in Nutrilogix. Point your camera at the fridge, and our AI identifies every ingredient, confirms the list with you, then generates recipes that fit your remaining macro budget for the day. No food waste. No guesswork. No sad, random stir-fry.
+          </p>
+
+          <div style={{ background: 'var(--primary-light)', padding: '24px', borderRadius: '12px', borderLeft: '4px solid var(--primary)', marginBottom: '32px' }}>
+            <strong>How it works:</strong> Snap photos of each shelf. AI detects your ingredients. You confirm the list. Then it generates personalized recipes that match your exact calorie and macro targets for the rest of the day.
+          </div>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>The Problem With "What's for Dinner?"</h2>
+          <p style={{marginBottom: '24px'}}>
+            Decision fatigue around meals is real. The average person spends <strong>over 40 minutes per day</strong> deciding what to eat, according to research from Cornell. When you layer in nutrition goals—hitting a protein target, staying under a calorie budget—the mental load compounds. Most people default to takeout or repetitive meals, both of which hurt their goals and their wallets.
+          </p>
+          <p style={{marginBottom: '24px'}}>
+            Meanwhile, the USDA estimates that <strong>31% of the food supply goes to waste</strong> at the consumer level. Those forgotten vegetables in your crisper drawer? They're part of the statistic. The irony: you have perfectly good food at home but no idea what to make with it.
+          </p>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>How Fridge Scan Works: A Two-Stage AI Pipeline</h2>
+          <p style={{marginBottom: '24px'}}>
+            Fridge Scan isn't a gimmick. It's a serious two-stage AI pipeline designed for accuracy and personalization. Here's what happens behind the scenes:
+          </p>
+
+          <h3 style={{ fontSize: '1.4rem', marginTop: '30px', marginBottom: '16px' }}>Stage 1: Ingredient Detection</h3>
+          <p style={{marginBottom: '24px'}}>
+            You take photos of each shelf, door, and drawer in your fridge. Most fridges aren't perfectly organized, so the AI processes <strong>multiple images</strong> to build a complete picture. It uses advanced vision AI to identify every visible item—from obvious staples like milk and eggs to harder-to-spot items like a jar of tahini or a bag of frozen edamame tucked in the back.
+          </p>
+          <p style={{marginBottom: '24px'}}>
+            The system also cross-references your existing <strong>digital pantry</strong>, so it doesn't duplicate items you've already logged. If it's unsure about something, it flags it as uncertain and lets you make the call.
+          </p>
+
+          <h3 style={{ fontSize: '1.4rem', marginTop: '30px', marginBottom: '16px' }}>Stage 2: Macro-Aware Recipe Generation</h3>
+          <p style={{marginBottom: '24px'}}>
+            This is where it gets personal. Once you confirm your ingredient list, the AI doesn't just search a generic recipe database. It calculates your <strong>remaining macro budget</strong>—how many calories, grams of protein, carbs, and fat you have left for the day based on what you've already logged—and generates recipes that fit within those numbers.
+          </p>
+          <p style={{marginBottom: '24px'}}>
+            If you've already eaten 80g of protein and your target is 150g, it will prioritize protein-dense recipes. If you're low on carbs, expect pasta and grain-based suggestions. The recipes are built around <em>your</em> goals, not a one-size-fits-all cookbook.
+          </p>
+
+          <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=1200&q=80" alt="Fresh ingredients on a cutting board" style={{ width: '100%', borderRadius: '12px', margin: '32px 0', height: '300px', objectFit: 'cover' }} />
+          <p style={{ textAlign: 'center', fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '-24px', marginBottom: '32px' }}>Every recipe is generated from the ingredients the AI actually detected in your fridge.</p>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>Multi-Photo Capture: Shelf by Shelf</h2>
+          <p style={{marginBottom: '24px'}}>
+            A fridge is three-dimensional, cluttered, and poorly lit. A single photo can't capture everything. That's why Fridge Scan uses a <strong>guided multi-photo flow</strong> that walks you through capturing each section:
+          </p>
+          <ul style={{ paddingLeft: '24px', marginBottom: '24px' }}>
+            <li style={{marginBottom: '12px'}}><strong>Top Shelf</strong> — Where the dairy and tall items live</li>
+            <li style={{marginBottom: '12px'}}><strong>Middle Shelf</strong> — Leftovers, prepped containers, proteins</li>
+            <li style={{marginBottom: '12px'}}><strong>Bottom Shelf</strong> — Meats, heavier items</li>
+            <li style={{marginBottom: '12px'}}><strong>Door</strong> — Condiments, sauces, drinks</li>
+            <li style={{marginBottom: '12px'}}><strong>Drawers</strong> — Fruits, vegetables, deli items</li>
+          </ul>
+          <p style={{marginBottom: '24px'}}>
+            You don't have to capture all five—snap as many or as few as you want. But the more you capture, the more complete and creative the recipe suggestions become.
+          </p>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>Confirm, Edit, and Add</h2>
+          <p style={{marginBottom: '24px'}}>
+            AI isn't perfect, and we don't pretend it is. After detection, you see a full list of identified ingredients with the option to:
+          </p>
+          <ul style={{ paddingLeft: '24px', marginBottom: '24px' }}>
+            <li style={{marginBottom: '12px'}}><strong>Deselect</strong> items you don't want to cook with (that jar of pickles can sit this one out)</li>
+            <li style={{marginBottom: '12px'}}><strong>Add</strong> items the AI missed—maybe spices in your pantry or something behind the milk</li>
+            <li style={{marginBottom: '12px'}}><strong>Correct</strong> uncertain items the AI flagged</li>
+          </ul>
+          <p style={{marginBottom: '24px'}}>
+            This human-in-the-loop step takes about 10 seconds and dramatically improves recipe quality. It also ensures you're fully in control of what gets cooked.
+          </p>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>Auto-Sync to Your Digital Pantry</h2>
+          <p style={{marginBottom: '24px'}}>
+            Every time you confirm ingredients from a fridge scan, those items are automatically synced to your <strong>digital pantry</strong>. New items are added; existing items are refreshed with updated timestamps. This means your pantry inventory stays current without manual upkeep.
+          </p>
+          <p style={{marginBottom: '24px'}}>
+            The pantry feeds into other Nutrilogix features too—like the AI Shopping List, which knows what you already have before suggesting what to buy. It's a closed loop: scan your fridge, cook from it, and your next shopping list accounts for what's left.
+          </p>
+
+          <div style={{ background: 'var(--primary-light)', padding: '24px', borderRadius: '12px', borderLeft: '4px solid var(--primary)', marginBottom: '32px' }}>
+            <strong>Real result:</strong> Beta users report an average of <strong>35% less food waste</strong> and significantly fewer impulse delivery orders after adopting Fridge Scan as a weekly habit.
+          </div>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>Who Is This For?</h2>
+          <p style={{marginBottom: '24px'}}>
+            Fridge Scan solves different problems for different people:
+          </p>
+          <ul style={{ paddingLeft: '24px', marginBottom: '24px' }}>
+            <li style={{marginBottom: '12px'}}><strong>Busy professionals</strong> who don't have time to plan meals but want to eat well</li>
+            <li style={{marginBottom: '12px'}}><strong>People tracking macros</strong> who need recipes that fit their remaining daily budget</li>
+            <li style={{marginBottom: '12px'}}><strong>Anyone trying to reduce food waste</strong> and actually use what they buy</li>
+            <li style={{marginBottom: '12px'}}><strong>Home cooks in a rut</strong> who want creative ideas from the same ingredients they always have</li>
+          </ul>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>The Bottom Line</h2>
+          <p style={{marginBottom: '24px'}}>
+            Fridge Scan turns a universal daily frustration—"what should I eat?"—into a 30-second workflow. Snap, confirm, cook. Every recipe fits your macros, uses what you already have, and keeps your pantry in sync. It's the kind of feature that sounds simple but requires serious AI engineering to get right.
+          </p>
+          <p style={{marginBottom: '24px'}}>
+            Stop staring at the fridge. Start scanning it.
+          </p>
+
+          <div style={{ textAlign: 'center', margin: '60px 0' }}>
+            <Link to="/" state={{ scrollTo: 'signup' }} className="btn btn-primary">Try Fridge Scan on TestFlight</Link>
+          </div>
+
+          <p style={{textAlign: 'center', marginTop: '40px', color: 'var(--text-muted)'}}>
+            Available now in the Nutrilogix beta. <a href="https://apple.co/4alOAzW" target="_blank" rel="noopener noreferrer" style={{color: 'var(--primary)', fontWeight: 600}}>Get early access →</a>
+          </p>
+        </div>
+      </div>
+    )
+  }
+
   if (slug === 'science-of-satiety') {
     const blogPostingLd = {
       '@context': 'https://schema.org',

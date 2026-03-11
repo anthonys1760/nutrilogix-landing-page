@@ -16,7 +16,10 @@ export default function SEO({ title, description, image, type = 'website' }) {
       ogDescription: document.querySelector('meta[property="og:description"]'),
       ogUrl: document.querySelector('meta[property="og:url"]'),
       ogType: document.querySelector('meta[property="og:type"]'),
-      // Twitter can be added similarly if needed
+      ogImage: document.querySelector('meta[property="og:image"]'),
+      twitterTitle: document.querySelector('meta[name="twitter:title"]'),
+      twitterDescription: document.querySelector('meta[name="twitter:description"]'),
+      twitterImage: document.querySelector('meta[name="twitter:image"]'),
     };
 
     if (metaTags.description) metaTags.description.setAttribute('content', description);
@@ -24,8 +27,12 @@ export default function SEO({ title, description, image, type = 'website' }) {
     if (metaTags.ogDescription) metaTags.ogDescription.setAttribute('content', description);
     if (metaTags.ogUrl) metaTags.ogUrl.setAttribute('content', url);
     if (metaTags.ogType) metaTags.ogType.setAttribute('content', type);
-
-    // Optional: Add Schema.org JSON-LD here if passed as prop
+    if (image) {
+      if (metaTags.ogImage) metaTags.ogImage.setAttribute('content', image);
+      if (metaTags.twitterImage) metaTags.twitterImage.setAttribute('content', image);
+    }
+    if (metaTags.twitterTitle) metaTags.twitterTitle.setAttribute('content', title);
+    if (metaTags.twitterDescription) metaTags.twitterDescription.setAttribute('content', description);
 
   }, [title, description, image, type, url]);
 

@@ -22,6 +22,22 @@ export default function Blog() {
         <div className="container">
           <div className="features-grid"> {/* Reusing grid layout */}
 
+            {/* Post: Fridge Scan */}
+            <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
+              <Link to="/blog/scan-your-fridge-ai-recipes" style={{ display: 'block' }}>
+                <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=600&q=80" alt="AI Fridge Scan" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                <div style={{ padding: '24px' }}>
+                  <span className="badge" style={{ marginBottom: '12px' }}>Feature Deep Dive</span>
+                  <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>Scan Your Fridge, Get Recipes: How AI Turns Leftovers Into Macro-Perfect Meals</h3>
+                  <p style={{ fontSize: '0.95rem', marginBottom: '16px' }}>How Nutrilogix's Fridge Scan uses multi-photo AI detection and macro-aware recipe generation to eliminate food waste.</p>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                    <div className="avatar" style={{ width: 24, height: 24, fontSize: '0.7rem' }}>A</div>
+                    <span>Dr. Alex Rivera • Mar 11, 2026 • 6 min read</span>
+                  </div>
+                </div>
+              </Link>
+            </article>
+
             {/* Post: Health Scores */}
             <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
               <Link to="/blog/health-scores-beyond-calories" style={{ display: 'block' }}>
