@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Gut-Brain Connection: How Your Diet Shapes Your Mood. Discover how the foods you eat influence your mental health through the gut-brain axis.">
+    <title>The Gut-Brain Connection: How Your Diet Shapes Your Mood | Nutrilogix Blog</title>
+    <link rel="icon" href="assets/images/2.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="assets/images/2.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base styles from main site */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #0DC68B;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+            margin-right: 10px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            padding: 4px;
+        }
+
+        .logo span {
+            color: #E4F9F2;
+        }
+
+        .header-nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 24px;
+            font-weight: 500;
+        }
+
+        /* Blog post specific styles */
+        .blog-post {
+            max-width: 800px;
+            margin: 60px auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .blog-post-header {
+            position: relative;
+        }
+
+        .blog-post-header img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .blog-category {
+            position: absolute;
+            margin-top: 20px;
+            top: 20px;
+            left: 20px;
+            padding: 8px 16px;
+            background-color: rgba(13, 198, 139, 0.9);
+            color: white;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .blog-post-content {
+            padding: 40px;
+        }
+
+        .blog-meta {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .author-info {
+            display: flex;
+            align-items: center;
+            margin-right: 30px;
+        }
+
+        .author-info img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+
+        .author-name {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .post-date {
+            color: #888;
+        }
+
+        .blog-post-content h1 {
+            font-size: 36px;
+            line-height: 1.3;
+            margin-bottom: 24px;
+            color: #333;
+        }
+
+        .blog-post-content p {
+            margin-bottom: 24px;
+            font-size: 18px;
+            color: #444;
+        }
+
+        .blog-post-content h2 {
+            font-size: 24px;
+            margin: 40px 0 20px;
+            color: #333;
+        }
+
+        .blog-post-content ul {
+            margin-bottom: 24px;
+            padding-left: 24px;
+        }
+
+        .blog-post-content li {
+            margin-bottom: 12px;
+            font-size: 18px;
+            color: #444;
+        }
+
+        .highlight-box {
+            background: rgba(13, 198, 139, 0.1);
+            border-left: 4px solid #0DC68B;
+            padding: 24px;
+            margin: 32px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .inline-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 32px 0;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .image-caption {
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+            margin-top: -24px;
+            margin-bottom: 32px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 60px 0 30px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #444;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .blog-post {
+                margin: 20px auto;
+                border-radius: 0;
+            }
+
+            .blog-post-header img {
+                height: 300px;
+            }
+
+            .blog-post-content {
+                padding: 20px;
+            }
+
+            .blog-post-content h1 {
+                font-size: 28px;
+            }
+
+            .blog-post-content p,
+            .blog-post-content li {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="assets/images/2.jpg" alt="Nutrilogix Logo">
+                Nutri<span>Logix</span>
+            </a>
+            <nav class="header-nav">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="blog.html">Blog</a>
+                <a href="index.html#signup">Early Access</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Blog Post -->
+    <article class="blog-post">
+        <header class="blog-post-header">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1200&q=80" alt="Colorful healthy food bowls">
+            <span class="blog-category">Science & Wellness</span>
+        </header>
+
+        <div class="blog-post-content">
+            <div class="blog-meta">
+                <div class="author-info">
+                    <img src="assets/images/2.jpg" alt="Dr. Rachel Kim">
+                    <div>
+                        <div class="author-name">Dr. Rachel Kim</div>
+                        <div class="post-date">March 27, 2026</div>
+                    </div>
+                </div>
+                <span>8 min read</span>
+            </div>
+
+            <h1>The Gut-Brain Connection: How Your Diet Shapes Your Mood</h1>
+
+            <p>Have you ever felt butterflies in your stomach before a big presentation, or noticed that a heavy meal makes you sluggish and foggy? These aren't coincidences. Your gut and brain are in constant communication through a complex network known as the gut-brain axis — and the foods you eat play a starring role in this conversation.</p>
+
+            <div class="highlight-box">
+                <p>Your gut contains roughly 100 trillion microorganisms and produces about 95% of your body's serotonin — the neurotransmitter most commonly associated with mood regulation and happiness.</p>
+            </div>
+
+            <h2>What Is the Gut-Brain Axis?</h2>
+            <p>The gut-brain axis is a bidirectional communication system linking your central nervous system (brain and spinal cord) with the enteric nervous system (your gut's own neural network). This connection runs primarily through the vagus nerve, the longest cranial nerve in the body, along with hormonal signals, immune pathways, and metabolites produced by gut bacteria.</p>
+            <p>Your gut is sometimes called the "second brain" because the enteric nervous system contains over 500 million neurons. It can operate independently from the brain, managing digestion on its own, but its influence extends far beyond your stomach. Research published in the journal <em>Nature Reviews Neuroscience</em> shows that gut microbes directly influence brain chemistry, affecting everything from mood and stress response to memory and decision-making.</p>
+
+            <img class="inline-image" src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&q=80" alt="Variety of fermented foods on a table">
+            <p class="image-caption">Fermented foods like yogurt, kimchi, and sauerkraut feed beneficial gut bacteria.</p>
+
+            <h2>How Gut Bacteria Influence Your Mood</h2>
+            <p>The trillions of microorganisms living in your digestive tract — collectively called the gut microbiome — do far more than help break down food. They produce neurotransmitters, short-chain fatty acids, and other compounds that directly affect brain function:</p>
+            <ul>
+                <li><strong>Serotonin production</strong> — Certain gut bacteria (like <em>Lactobacillus</em> and <em>Bifidobacterium</em>) help synthesize serotonin, which regulates mood, sleep, and appetite</li>
+                <li><strong>GABA synthesis</strong> — Some strains produce gamma-aminobutyric acid (GABA), a neurotransmitter that calms anxiety and promotes relaxation</li>
+                <li><strong>Inflammation control</strong> — A balanced microbiome keeps systemic inflammation low; chronic inflammation is strongly linked to depression</li>
+                <li><strong>Cortisol regulation</strong> — Healthy gut flora help modulate the body's stress hormone response</li>
+                <li><strong>Short-chain fatty acids</strong> — Butyrate and other SCFAs produced by fiber fermentation strengthen the gut barrier and reduce neuroinflammation</li>
+            </ul>
+
+            <h2>Foods That Support Your Gut-Brain Health</h2>
+            <p>What you eat directly shapes the composition of your gut microbiome. A diverse, fiber-rich diet encourages the growth of beneficial bacteria, while a diet high in processed foods and added sugars feeds harmful strains. Here are the key food groups to prioritize:</p>
+
+            <h2>1. Probiotic-Rich Foods</h2>
+            <p>Probiotics are live beneficial bacteria that can colonize your gut and improve microbial diversity:</p>
+            <ul>
+                <li><strong>Yogurt</strong> — Look for varieties with live active cultures</li>
+                <li><strong>Kefir</strong> — A fermented dairy drink with a broader range of bacterial strains than yogurt</li>
+                <li><strong>Kimchi and sauerkraut</strong> — Fermented vegetables packed with Lactobacillus</li>
+                <li><strong>Miso and tempeh</strong> — Fermented soy products common in Asian cuisines</li>
+                <li><strong>Kombucha</strong> — Fermented tea with beneficial yeasts and bacteria</li>
+            </ul>
+
+            <h2>2. Prebiotic Fiber</h2>
+            <p>Prebiotics are the fuel that feeds your good bacteria. Without them, probiotics can't thrive:</p>
+            <ul>
+                <li><strong>Garlic and onions</strong> — Rich in inulin, a powerful prebiotic fiber</li>
+                <li><strong>Bananas</strong> — Especially slightly green ones, which contain resistant starch</li>
+                <li><strong>Oats</strong> — High in beta-glucan fiber that feeds Bifidobacteria</li>
+                <li><strong>Asparagus and leeks</strong> — Excellent sources of prebiotic fructooligosaccharides</li>
+                <li><strong>Legumes</strong> — Beans, lentils, and chickpeas are prebiotic powerhouses</li>
+            </ul>
+
+            <img class="inline-image" src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1200&q=80" alt="Fresh fruits and vegetables spread on a table">
+            <p class="image-caption">A diverse, plant-rich diet is one of the best things you can do for your gut microbiome.</p>
+
+            <h2>3. Omega-3 Fatty Acids</h2>
+            <p>Found in fatty fish (salmon, sardines, mackerel), walnuts, and flaxseeds, omega-3s reduce gut inflammation and support the growth of anti-inflammatory bacterial strains. A 2019 study in <em>The International Journal of Molecular Sciences</em> found that higher omega-3 intake was associated with greater microbial diversity — a hallmark of a healthy gut.</p>
+
+            <h2>4. Polyphenol-Rich Foods</h2>
+            <p>Polyphenols are plant compounds found in dark chocolate, berries, green tea, and red wine (in moderation). Most polyphenols aren't absorbed in the small intestine — instead, they travel to the colon where gut bacteria ferment them into beneficial metabolites that support brain health.</p>
+
+            <h2>Foods That Harm the Gut-Brain Connection</h2>
+            <p>Just as certain foods strengthen the gut-brain axis, others can disrupt it:</p>
+            <ul>
+                <li><strong>Ultra-processed foods</strong> — Emulsifiers and artificial additives can damage the gut lining</li>
+                <li><strong>Excess sugar</strong> — Feeds harmful bacteria and yeasts like Candida, reducing microbial diversity</li>
+                <li><strong>Artificial sweeteners</strong> — Some studies suggest they alter gut bacteria composition unfavorably</li>
+                <li><strong>Excessive alcohol</strong> — Disrupts the gut barrier and promotes inflammation</li>
+                <li><strong>Low-fiber diets</strong> — Without prebiotic fiber, beneficial bacteria starve and decline</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p>Nutrilogix can help you track not just your macros, but the diversity of your diet. By analyzing the foods you photograph, our AI identifies prebiotic and probiotic-rich ingredients — giving you actionable insights into how your meals support your gut-brain health.</p>
+            </div>
+
+            <h2>Simple Steps to Start Improving Your Gut-Brain Health</h2>
+            <p>You don't need a complete dietary overhaul. Small, consistent changes can meaningfully shift your microbiome in as little as two weeks:</p>
+            <ul>
+                <li><strong>Add one fermented food daily</strong> — A serving of yogurt, a forkful of sauerkraut, or a glass of kefir</li>
+                <li><strong>Eat 30 different plants per week</strong> — Herbs, spices, nuts, seeds, fruits, and vegetables all count toward microbial diversity</li>
+                <li><strong>Prioritize whole grains</strong> — Swap refined carbs for oats, brown rice, or quinoa</li>
+                <li><strong>Manage stress</strong> — Chronic stress damages gut bacteria; even 10 minutes of daily meditation helps</li>
+                <li><strong>Sleep 7-9 hours</strong> — Poor sleep disrupts the microbiome, which in turn worsens sleep quality</li>
+                <li><strong>Track what you eat</strong> — Awareness is the first step to lasting change</li>
+            </ul>
+
+            <p>The science is clear: what you eat shapes how you feel, not just physically but mentally and emotionally. By feeding your gut the right foods, you're investing in a healthier, happier brain. The gut-brain connection isn't just a trend — it's one of the most exciting frontiers in nutritional science, and it puts the power of better mental health right on your plate.</p>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                &copy; 2025 Nutrilogix. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
