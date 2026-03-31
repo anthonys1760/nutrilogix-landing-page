@@ -1,6 +1,81 @@
 import React, { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import SEO from '../components/SEO'
+import { generatedPosts } from '../data/generatedPosts'
+
+function GeneratedPostRenderer({ post }) {
+  const contentStyle = { maxWidth: '800px', margin: '40px auto', padding: '0 20px' }
+  const imgStyle = { width: '100%', height: '400px', objectFit: 'cover', borderRadius: '24px', marginBottom: '40px' }
+  const bodyStyle = { fontSize: '1.125rem', lineHeight: 1.8, color: 'var(--text-main)' }
+  const headingStyle = { fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }
+  const calloutStyle = {
+    background: 'var(--primary-light, rgba(13,198,139,0.08))',
+    borderLeft: '4px solid var(--primary)',
+    borderRadius: '12px',
+    padding: '20px 24px',
+    marginBottom: '24px'
+  }
+
+  const blogPostingLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.excerpt,
+    image: [post.image.startsWith('http') ? post.image : `https://nutrilogix.app${post.image}`],
+    author: { '@type': 'Person', name: post.author },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Nutrilogix',
+      logo: { '@type': 'ImageObject', url: '/assets/images/2.jpg' },
+    },
+    datePublished: post.dateISO,
+    dateModified: post.dateISO,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `https://nutrilogix.app/blog/${post.slug}` },
+  }
+
+  return (
+    <div style={contentStyle}>
+      <SEO
+        title={`${post.title} - Nutrilogix`}
+        description={post.excerpt}
+        type="article"
+        image={post.image.startsWith('http') ? post.image : `https://nutrilogix.app${post.image}`}
+      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }} />
+
+      <img src={post.image} alt={post.title} style={imgStyle} />
+
+      <div style={{ marginBottom: '32px' }}>
+        <span className="badge">{post.category}</span>
+      </div>
+      <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', lineHeight: 1.2 }}>{post.title}</h1>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '16px', color: 'var(--text-muted)', marginBottom: '32px', fontSize: '0.9rem' }}>
+        <div className="avatar" style={{ width: 32, height: 32 }}>{post.authorInitial}</div>
+        <span>{post.author} • {post.date} • {post.readTime} read</span>
+      </div>
+
+      <div style={bodyStyle}>
+        {post.body.map((block, i) => {
+          if (block.type === 'paragraph') return <p key={i} style={{ marginBottom: '24px' }} dangerouslySetInnerHTML={{ __html: block.text }} />
+          if (block.type === 'heading') return <h2 key={i} style={headingStyle}>{block.text}</h2>
+          if (block.type === 'callout') return <div key={i} style={calloutStyle} dangerouslySetInnerHTML={{ __html: block.text }} />
+          if (block.type === 'image') return <img key={i} src={block.src} alt={block.alt} style={{ width: '100%', borderRadius: '12px', height: '300px', objectFit: 'cover', marginBottom: '32px' }} />
+          if (block.type === 'list') return (
+            <ul key={i} style={{ paddingLeft: '24px', marginBottom: '24px' }}>
+              {block.items.map((item, j) => <li key={j} style={{ marginBottom: '12px' }} dangerouslySetInnerHTML={{ __html: item }} />)}
+            </ul>
+          )
+          if (block.type === 'cta') return (
+            <div key={i} style={{ textAlign: 'center', margin: '60px 0' }}>
+              <Link to="/" state={{ scrollTo: 'signup' }} className="btn btn-primary">Join the Nutrilogix Waitlist</Link>
+            </div>
+          )
+          return null
+        })}
+      </div>
+    </div>
+  )
+}
 
 export default function BlogPost() {
   const { slug } = useParams()
@@ -8,6 +83,10 @@ export default function BlogPost() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [slug])
+
+  // Check generated posts first
+  const generated = generatedPosts.find(p => p.slug === slug)
+  if (generated) return <GeneratedPostRenderer post={generated} />
 
   // Shared Styles for content
   const contentStyle = {

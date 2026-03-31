@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
+import { generatedPosts } from '../data/generatedPosts'
 
 export default function Blog() {
   return (
     <>
-      <SEO 
+      <SEO
         title="Nutrilogix Blog - Nutrition Science & AI Tech"
         description="Expert articles on nutrition tracking, AI food analysis, and healthy living tips."
       />
@@ -21,6 +22,24 @@ export default function Blog() {
       <section className="section" style={{ paddingTop: '20px' }}>
         <div className="container">
           <div className="features-grid"> {/* Reusing grid layout */}
+
+            {/* Generated posts (newest first) */}
+            {[...generatedPosts].reverse().map(post => (
+              <article key={post.slug} className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
+                <Link to={`/blog/${post.slug}`} style={{ display: 'block' }}>
+                  <img src={post.image} alt={post.title} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                  <div style={{ padding: '24px' }}>
+                    <span className="badge" style={{ marginBottom: '12px' }}>{post.category}</span>
+                    <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>{post.title}</h3>
+                    <p style={{ fontSize: '0.95rem', marginBottom: '16px' }}>{post.excerpt}</p>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                      <div className="avatar" style={{ width: 24, height: 24, fontSize: '0.7rem' }}>{post.authorInitial}</div>
+                      <span>{post.author} • {post.date} • {post.readTime} read</span>
+                    </div>
+                  </div>
+                </Link>
+              </article>
+            ))}
 
             {/* Post: Fridge Scan */}
             <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
