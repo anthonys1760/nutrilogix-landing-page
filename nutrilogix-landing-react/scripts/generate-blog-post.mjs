@@ -117,6 +117,7 @@ Respond ONLY with valid JSON (no markdown, no extra text) matching this exact sc
   "excerpt": "2-sentence excerpt for the blog card (max 200 chars)",
   "category": "One of: Nutrition Science | Wellness Science | Technology | Meal Prep | Tips & Tricks | Health Science | Nutrition Basics",
   "readTime": "X min",
+  "keywords": "6-8 comma-separated SEO keywords relevant to the post topic",
   "image": "https://images.unsplash.com/photo-PHOTOID?w=800&q=80",
   "body": [
     { "type": "paragraph", "text": "..." },

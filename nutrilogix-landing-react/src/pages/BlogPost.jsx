@@ -16,21 +16,25 @@ function GeneratedPostRenderer({ post }) {
     marginBottom: '24px'
   }
 
+  const absoluteImage = post.image.startsWith('http') ? post.image : `https://nutrilogix.app${post.image}`
+
   const blogPostingLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: post.title,
     description: post.excerpt,
-    image: [post.image.startsWith('http') ? post.image : `https://nutrilogix.app${post.image}`],
+    url: `https://nutrilogix.app/blog/${post.slug}`,
+    image: [absoluteImage],
     author: { '@type': 'Person', name: post.author },
     publisher: {
       '@type': 'Organization',
       name: 'Nutrilogix',
-      logo: { '@type': 'ImageObject', url: '/assets/images/2.jpg' },
+      logo: { '@type': 'ImageObject', url: 'https://nutrilogix.app/assets/images/2.jpg' },
     },
     datePublished: post.dateISO,
     dateModified: post.dateISO,
     mainEntityOfPage: { '@type': 'WebPage', '@id': `https://nutrilogix.app/blog/${post.slug}` },
+    ...(post.keywords ? { keywords: Array.isArray(post.keywords) ? post.keywords.join(', ') : post.keywords } : {}),
   }
 
   return (
@@ -39,7 +43,10 @@ function GeneratedPostRenderer({ post }) {
         title={`${post.title} - Nutrilogix`}
         description={post.excerpt}
         type="article"
-        image={post.image.startsWith('http') ? post.image : `https://nutrilogix.app${post.image}`}
+        image={absoluteImage}
+        publishedTime={post.dateISO}
+        authorName={post.author}
+        keywords={Array.isArray(post.keywords) ? post.keywords.join(', ') : post.keywords}
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }} />
 

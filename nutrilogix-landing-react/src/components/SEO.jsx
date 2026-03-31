@@ -1,40 +1,64 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-export default function SEO({ title, description, image, type = 'website' }) {
+function setMeta(selector, content) {
+  let el = document.querySelector(selector)
+  if (!el) {
+    el = document.createElement('meta')
+    if (selector.includes('[property=')) {
+      el.setAttribute('property', selector.match(/property="([^"]+)"/)[1])
+    } else {
+      el.setAttribute('name', selector.match(/name="([^"]+)"/)[1])
+    }
+    document.head.appendChild(el)
+  }
+  el.setAttribute('content', content)
+}
+
+function removeMeta(selector) {
+  const el = document.querySelector(selector)
+  if (el) el.remove()
+}
+
+export default function SEO({ title, description, image, type = 'website', publishedTime, authorName, keywords }) {
   const location = useLocation();
   const url = `https://nutrilogix.app${location.pathname}`;
 
   useEffect(() => {
-    // Update Title
     document.title = title;
 
-    // Update Meta Tags
-    const metaTags = {
-      description: document.querySelector('meta[name="description"]'),
-      ogTitle: document.querySelector('meta[property="og:title"]'),
-      ogDescription: document.querySelector('meta[property="og:description"]'),
-      ogUrl: document.querySelector('meta[property="og:url"]'),
-      ogType: document.querySelector('meta[property="og:type"]'),
-      ogImage: document.querySelector('meta[property="og:image"]'),
-      twitterTitle: document.querySelector('meta[name="twitter:title"]'),
-      twitterDescription: document.querySelector('meta[name="twitter:description"]'),
-      twitterImage: document.querySelector('meta[name="twitter:image"]'),
-    };
+    setMeta('meta[name="description"]', description)
+    setMeta('meta[property="og:title"]', title)
+    setMeta('meta[property="og:description"]', description)
+    setMeta('meta[property="og:url"]', url)
+    setMeta('meta[property="og:type"]', type)
+    setMeta('meta[name="twitter:title"]', title)
+    setMeta('meta[name="twitter:description"]', description)
 
-    if (metaTags.description) metaTags.description.setAttribute('content', description);
-    if (metaTags.ogTitle) metaTags.ogTitle.setAttribute('content', title);
-    if (metaTags.ogDescription) metaTags.ogDescription.setAttribute('content', description);
-    if (metaTags.ogUrl) metaTags.ogUrl.setAttribute('content', url);
-    if (metaTags.ogType) metaTags.ogType.setAttribute('content', type);
     if (image) {
-      if (metaTags.ogImage) metaTags.ogImage.setAttribute('content', image);
-      if (metaTags.twitterImage) metaTags.twitterImage.setAttribute('content', image);
+      setMeta('meta[property="og:image"]', image)
+      setMeta('meta[name="twitter:image"]', image)
     }
-    if (metaTags.twitterTitle) metaTags.twitterTitle.setAttribute('content', title);
-    if (metaTags.twitterDescription) metaTags.twitterDescription.setAttribute('content', description);
 
-  }, [title, description, image, type, url]);
+    if (type === 'article') {
+      // Upgrade Twitter card to show large image for blog posts
+      setMeta('meta[name="twitter:card"]', 'summary_large_image')
+
+      // Article-specific OG tags
+      if (publishedTime) setMeta('meta[property="article:published_time"]', publishedTime)
+      if (authorName) {
+        setMeta('meta[property="article:author"]', authorName)
+        setMeta('meta[name="author"]', authorName)
+      }
+      if (keywords) setMeta('meta[name="keywords"]', keywords)
+    } else {
+      // Reset to defaults for non-article pages
+      setMeta('meta[name="twitter:card"]', 'summary')
+      setMeta('meta[name="author"]', 'Nutrilogix')
+      removeMeta('meta[property="article:published_time"]')
+      removeMeta('meta[property="article:author"]')
+    }
+  }, [title, description, image, type, url, publishedTime, authorName, keywords]);
 
   return null;
 }

@@ -11,6 +11,7 @@ export const generatedPosts = [
     dateISO: '2026-03-31',
     readTime: '6 min',
     category: 'Wellness Science',
+    keywords: 'sleep and nutrition, sleep deprivation hunger, ghrelin leptin sleep, cortisol diet, sleep weight loss, nutrition sleep connection',
     image: '/assets/images/sleep-nutrition.jpg',
     body: [
       {
@@ -108,6 +109,7 @@ export const generatedPosts = [
     "excerpt": "Discover the fascinating link between what you eat and how you feel. Emerging research reveals diet's profound impact on mental wellness and cognitive function.",
     "category": "Health Science",
     "readTime": "6 min",
+    "keywords": "gut brain connection, diet mental health, gut microbiome mood, serotonin gut, nutrition anxiety depression, probiotic mental health",
     "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=800&q=80",
     "body": [
       {
