@@ -108,7 +108,7 @@ export const generatedPosts = [
     "excerpt": "Discover the fascinating link between what you eat and how you feel. Emerging research reveals diet's profound impact on mental wellness and cognitive function.",
     "category": "Health Science",
     "readTime": "6 min",
-    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=800&q=80",
     "body": [
       {
         "type": "paragraph",

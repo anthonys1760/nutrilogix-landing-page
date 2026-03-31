@@ -20,14 +20,12 @@ const ROOT = path.resolve(__dirname, '..')
 // ── Curated fallback Unsplash IDs (verified working) ─────────────────────────
 // Used when Claude returns a photo URL that returns 404.
 const FALLBACK_IMAGES = [
-  'photo-1512621776951-a57141f2eefd', // veggie bowl
   'photo-1498837167922-ddd27525d352', // healthy food spread
-  'photo-1490645935967-10de6ba17061', // food/health
   'photo-1543352634-99a5d50ae78e',    // salad
   'photo-1559757148-5c350d0d3c56',    // gut/food
   'photo-1505576399279-565b52d4ac71', // fermented foods
-  'photo-1548839140-29a749e1cf4d',    // water/wellness
-  'photo-1584568694244-14fbdf83bd30', // fridge/fresh food
+  'photo-1456513080510-7bf3a84b82f8', // nutrition/diet
+  'photo-1494390248081-4e521a5940db', // wellness/health
 ]
 
 function randomFallback() {
