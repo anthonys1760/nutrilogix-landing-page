@@ -167,5 +167,82 @@ export const generatedPosts = [
     "date": "Mar 31, 2026",
     "dateISO": "2026-03-31",
     "slug": "the-gut-brain-connection-how-your-diet-influences-mental-hea"
+  },
+  {
+    "slug": "protein-timing-muscle-fat-loss",
+    "title": "Protein Timing: Why When You Eat Protein Is as Important as How Much",
+    "excerpt": "Hitting your daily protein target is only half the battle. New research shows how you distribute protein across the day can boost muscle gains by up to 38%.",
+    "author": "Dr. Sarah Miller",
+    "authorInitial": "S",
+    "date": "Apr 03, 2026",
+    "dateISO": "2026-04-03",
+    "readTime": "7 min",
+    "category": "Nutrition Science",
+    "keywords": "protein timing muscle growth, anabolic window myth, protein distribution meals, post workout protein, leucine muscle protein synthesis, protein before bed casein, optimal protein intake timing, muscle building nutrition",
+    "image": "https://images.unsplash.com/photo-1543352634-99a5d50ae78e?w=800&q=80",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Most people obsess over hitting their daily protein target — and that absolutely matters. But a growing body of research suggests that <em>when</em> you eat protein across the day may be just as important as the total amount. Whether your goal is building muscle, losing fat, or both, understanding protein timing could be the missing variable your nutrition strategy has been lacking."
+      },
+      {
+        "type": "heading",
+        "text": "The Anabolic Window: Myth vs. Reality"
+      },
+      {
+        "type": "paragraph",
+        "text": "For decades, gym culture promoted the idea of a narrow 'anabolic window' — a strict 30-minute post-workout period during which you had to consume protein or lose your gains. The science has since evolved considerably. A landmark 2013 meta-analysis published in the <em>Journal of the International Society of Sports Nutrition</em> found that the anabolic window is both real and much wider than commonly believed — extending up to several hours post-exercise, particularly for trained individuals who ate a protein-containing meal before training. The urgency to rush a protein shake while still at the gym is largely overstated. What matters far more is your total daily protein intake and — crucially — how you distribute it across meals."
+      },
+      {
+        "type": "callout",
+        "text": "A 2017 systematic review in the <strong>British Journal of Sports Medicine</strong> found that total daily protein intake was the strongest predictor of muscle gain in resistance-trained individuals — but protein distribution across meals was the <strong>second most significant factor</strong>, independent of total intake."
+      },
+      {
+        "type": "heading",
+        "text": "Protein Distribution: Spread It Out"
+      },
+      {
+        "type": "paragraph",
+        "text": "Muscle protein synthesis (MPS) — the cellular process that builds and repairs muscle tissue — has a ceiling response to protein intake per meal. Research from McMaster University identified a key <em>leucine threshold</em>: consuming approximately 2.5–3g of leucine per meal is required to maximally stimulate MPS. Beyond that threshold, additional protein in a single sitting offers diminishing returns for muscle building. The practical implication is significant: eating 150g of protein at dinner is far less effective than spreading 150g across four meals of roughly 35–40g each. Each meal acts as a separate MPS-stimulating event, compounding your anabolic signal across the day."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Aim for <strong>0.4–0.55g of protein per kg of bodyweight per meal</strong> to maximally stimulate MPS each sitting",
+          "Target <strong>3–5 protein-containing meals per day</strong> rather than front- or back-loading into one or two large servings",
+          "Prioritize <strong>leucine-rich protein sources</strong> — whey, eggs, chicken, beef, and fish are particularly potent MPS triggers",
+          "Don't skip <strong>breakfast protein</strong> — research shows a high-protein breakfast reduces total daily calorie intake by 15–20% through improved satiety",
+          "For plant-based eaters, <strong>combine complementary proteins</strong> (rice + beans, oats + soy) to ensure complete essential amino acid delivery"
+        ]
+      },
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=800&q=80",
+        "alt": "Balanced high-protein meal with vegetables and grains"
+      },
+      {
+        "type": "heading",
+        "text": "Workout Nutrition and Bedtime Protein"
+      },
+      {
+        "type": "paragraph",
+        "text": "While timing isn't everything, certain windows genuinely matter. Pre-workout protein (1–2 hours before training) provides circulating amino acids during and immediately after exercise when MPS rates are elevated. Post-workout, aim for a complete protein source within 2 hours — not because you'll lose gains otherwise, but because this window sees enhanced insulin sensitivity and heightened MPS responsiveness. Before bed is another strategic window often overlooked. A 2012 study in <em>Medicine & Science in Sports & Exercise</em> found that consuming 40g of casein protein 30 minutes before sleep increased overnight MPS rates by 22% compared to placebo. Casein digests slowly, releasing amino acids steadily across the overnight fast — making Greek yogurt, cottage cheese, or a casein shake useful pre-sleep choices if muscle building is a priority. Tools like <strong>Nutrilogix</strong> let you visualize your protein distribution across the day at a glance, making it easy to spot whether you're hitting these strategic windows or accidentally cramming all your protein into one meal."
+      },
+      {
+        "type": "callout",
+        "text": "A 2021 study in <em>Nutrients</em> found that participants who distributed protein evenly across 3–4 meals gained <strong>38% more lean muscle mass</strong> over 12 weeks than those consuming the same total daily protein in 1–2 large servings — with no difference in training volume between groups."
+      },
+      {
+        "type": "heading",
+        "text": "The Bottom Line"
+      },
+      {
+        "type": "paragraph",
+        "text": "Protein timing isn't magic — total daily intake and training stimulus still drive the majority of your results. But the evidence is clear: distribution and strategic timing meaningfully amplify those results. Hit your daily protein target (1.6–2.2g/kg of bodyweight for active individuals), spread it across 3–5 meals with leucine-rich sources, consider a slow-digesting protein before bed, and time a complete protein source around your workouts. These aren't marginal tweaks — they're the difference between leaving gains on the table and systematically capturing every anabolic opportunity your body offers."
+      },
+      {
+        "type": "cta"
+      }
+    ]
   }
 ]
