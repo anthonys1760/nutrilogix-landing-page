@@ -169,6 +169,83 @@ export const generatedPosts = [
     "slug": "the-gut-brain-connection-how-your-diet-influences-mental-hea"
   },
   {
+    "slug": "intermittent-fasting-metabolism-science",
+    "title": "Intermittent Fasting and Metabolism: What the Science Actually Says",
+    "excerpt": "With over 1,400 peer-reviewed studies published since 2015, IF is one of the most researched eating strategies alive. Here's what the evidence really supports — and what it doesn't.",
+    "author": "Dr. Alex Rivera",
+    "authorInitial": "A",
+    "date": "Apr 06, 2026",
+    "dateISO": "2026-04-06",
+    "readTime": "7 min",
+    "category": "Nutrition Science",
+    "keywords": "intermittent fasting metabolism, 16:8 fasting benefits, intermittent fasting science, metabolic switch fasting, autophagy fasting, insulin sensitivity fasting, time restricted eating weight loss, IF vs calorie restriction",
+    "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Intermittent fasting has become one of the most studied dietary strategies of the past decade — with over 1,400 peer-reviewed papers published since 2015 alone. The claims range from modest weight loss to dramatic metabolic transformation, cellular rejuvenation, and even longevity extension. Separating what the research actually supports from what's been inflated by wellness culture is essential before you restructure your entire eating schedule."
+      },
+      {
+        "type": "heading",
+        "text": "What Intermittent Fasting Actually Is"
+      },
+      {
+        "type": "paragraph",
+        "text": "Intermittent fasting (IF) isn't a diet in the traditional sense — it's an eating <em>pattern</em> that cycles between defined periods of eating and fasting. The most common protocols are: <strong>16:8</strong> (fasting for 16 hours, eating within an 8-hour window), <strong>5:2</strong> (eating normally five days a week, restricting to 500–600 calories on two non-consecutive days), and alternate-day fasting. Unlike calorie-prescriptive diets, IF doesn't dictate <em>what</em> you eat — only <em>when</em>. This distinction matters enormously for how it affects your body, and why its metabolic effects can differ meaningfully from simple calorie restriction."
+      },
+      {
+        "type": "callout",
+        "text": "A <strong>2019 review in the New England Journal of Medicine</strong> analyzed over a decade of IF research and concluded that intermittent fasting triggers cellular and metabolic changes that calorie restriction alone does not replicate — including enhanced mitochondrial function, autophagy upregulation, and improved insulin sensitivity."
+      },
+      {
+        "type": "heading",
+        "text": "The Metabolic Science Behind Fasting"
+      },
+      {
+        "type": "paragraph",
+        "text": "When you go without food for 12–16 hours, your body depletes its liver glycogen stores (roughly 100–120g of stored glucose) and undergoes a <em>metabolic switch</em> — shifting from glucose as the primary fuel to fat-derived ketones. This metabolic flexibility sits at the core of IF's documented benefits. In the fasted state, insulin levels fall sharply. Lower insulin means your fat cells can release stored fatty acids into circulation for energy — a process actively suppressed when you eat frequently throughout the day. Simultaneously, prolonged fasting triggers <em>autophagy</em> — a cellular housekeeping process that degrades damaged proteins and dysfunctional organelles. Nobel Prize–winning research by Yoshinori Ohsumi confirmed that autophagy is significantly upregulated during fasting, with downstream implications for cellular repair, immune function, and inflammation control."
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Improved insulin sensitivity:</strong> Multiple RCTs show 16:8 IF reduces fasting insulin by 20–31% in overweight individuals over 8–12 weeks, even independent of weight loss",
+          "<strong>Enhanced fat oxidation:</strong> The metabolic switch to ketone production trains your body to access stored fat more efficiently — a trait known as metabolic flexibility",
+          "<strong>Reduced inflammatory markers:</strong> A 2019 study in <em>Cell</em> found that IF significantly lowered circulating inflammatory proteins including CRP and IL-6",
+          "<strong>Cardiometabolic improvements:</strong> Studies consistently show reductions in blood pressure, LDL cholesterol, and triglycerides with sustained IF practice over 8+ weeks",
+          "<strong>Cognitive performance:</strong> Ketone bodies produced during fasting serve as an alternative brain fuel, with evidence linking IF to improved working memory and focus in several trials"
+        ]
+      },
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80",
+        "alt": "Healthy whole foods and meal timing for intermittent fasting"
+      },
+      {
+        "type": "heading",
+        "text": "What Intermittent Fasting Cannot Do"
+      },
+      {
+        "type": "paragraph",
+        "text": "Here's where intellectual honesty matters. Despite the enthusiasm, IF is <em>not</em> metabolically superior to continuous calorie restriction for weight loss when total calories are matched. A rigorous 2020 trial published in <em>JAMA Internal Medicine</em> found that time-restricted eating produced similar weight loss outcomes to traditional calorie counting at equivalent caloric deficits. The primary mechanism of weight loss with IF remains calorie restriction — most people simply eat fewer calories within a compressed eating window, without realizing it. What IF offers is a structured, often easier-to-sustain framework for achieving that deficit. For many people, not eating until noon is far simpler than portioning six small meals. One practical advantage: tools like <strong>Nutrilogix</strong> let you track exactly how your eating window shapes your calorie totals and macros, turning IF from a leap of faith into a measurable strategy."
+      },
+      {
+        "type": "callout",
+        "text": "A 2020 meta-analysis of 27 randomized controlled trials in <strong>Obesity Reviews</strong> found that intermittent fasting and continuous calorie restriction produced equivalent weight loss at 12 weeks — but IF showed significantly greater improvements in <strong>fasting insulin and insulin resistance</strong>, independent of weight change alone."
+      },
+      {
+        "type": "heading",
+        "text": "The Bottom Line"
+      },
+      {
+        "type": "paragraph",
+        "text": "Intermittent fasting is a legitimate, evidence-based eating strategy with real metabolic benefits — particularly for insulin sensitivity, fat oxidation, inflammation, and cellular repair. But it isn't magic, and it isn't universally superior to other dietary approaches for weight loss. Its greatest strength may be that it provides a <em>sustainable framework</em> for reducing calorie intake without the mental overhead of constant tracking. If you're considering IF, approach it empirically: track your data, measure how your eating window affects your actual intake and energy, and let the results — not the hype — guide your decisions."
+      },
+      {
+        "type": "cta"
+      }
+    ]
+  },
+  {
     "slug": "protein-timing-muscle-fat-loss",
     "title": "Protein Timing: Why When You Eat Protein Is as Important as How Much",
     "excerpt": "Hitting your daily protein target is only half the battle. New research shows how you distribute protein across the day can boost muscle gains by up to 38%.",
