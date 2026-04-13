@@ -398,5 +398,82 @@ export const generatedPosts = [
         "type": "cta"
       }
     ]
+  },
+  {
+    "slug": "thermic-effect-of-food-metabolism",
+    "title": "The Thermic Effect of Food: How Eating Burns Calories",
+    "excerpt": "Not all calories are metabolized equally. Protein burns up to 30% of its own calories through digestion — and this science can reshape your entire approach to fat loss.",
+    "author": "Dr. Sarah Miller",
+    "authorInitial": "S",
+    "date": "Apr 13, 2026",
+    "dateISO": "2026-04-13",
+    "readTime": "7 min",
+    "category": "Nutrition Science",
+    "keywords": "thermic effect of food, TEF weight loss, protein metabolism rate, diet induced thermogenesis, high protein diet metabolism, macronutrient digestion calories, calorie burning digestion, metabolic cost of protein",
+    "image": "https://images.unsplash.com/fjNkfPrJQPM?w=800&q=80",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "You log your breakfast, hit your calorie target, and assume all 500 of those calories are treated the same by your body. They're not. A 500-calorie meal of grilled chicken and vegetables will cost your metabolism more energy to process than a 500-calorie bowl of pasta — sometimes by 80–100 calories. This difference has a name: the <em>thermic effect of food</em> (TEF). And for anyone trying to lose fat, maintain muscle, or simply understand how their body actually uses energy, it's one of the most important yet overlooked variables in nutrition science."
+      },
+      {
+        "type": "heading",
+        "text": "What Is the Thermic Effect of Food?"
+      },
+      {
+        "type": "paragraph",
+        "text": "The thermic effect of food — also called diet-induced thermogenesis (DIT) or specific dynamic action — refers to the increase in metabolic rate that occurs after eating. When you consume food, your body must expend energy to digest, absorb, transport, and store the nutrients you've taken in. This isn't a minor footnote: TEF accounts for roughly <strong>8–15% of most people's total daily energy expenditure (TDEE)</strong>. The critical detail is that this metabolic cost varies dramatically depending on <em>what</em> you eat. Protein, carbohydrates, and fat each carry a fundamentally different metabolic price tag, and the composition of your meals determines how much of the energy you consume gets spent on processing it."
+      },
+      {
+        "type": "callout",
+        "text": "<strong>Protein carries a thermic effect of 20–30%</strong>, meaning your body burns 20–30 calories for every 100 calories of protein consumed through digestion alone — compared to just 5–10% for carbohydrates and 0–3% for dietary fat, according to research published in the <em>European Journal of Clinical Nutrition</em>."
+      },
+      {
+        "type": "heading",
+        "text": "Protein: The High-Cost Macronutrient"
+      },
+      {
+        "type": "paragraph",
+        "text": "Protein's exceptionally high TEF explains much of why high-protein diets consistently outperform isocaloric lower-protein diets for fat loss in randomized controlled trials — even when total calories are matched. When you consume protein, your body must first break it down into individual amino acids (deamination), then resynthesize them into new proteins (muscle, enzymes, hormones), or convert excess amino acids to glucose or fatty acids for storage. Each step is metabolically costly. A 2004 study in the <em>Journal of Nutrition</em> quantified this precisely: a meal providing 29% of calories from protein generated a thermic response roughly <em>twice</em> as large as an equicaloric meal providing 11% protein. This isn't a marginal effect — for someone consuming 2,000 calories per day, shifting protein from 15% to 30% of intake can increase TEF by 50–100 calories per day. Over a year, that's a difference of 18,000–36,000 calories — entirely from changing the <em>composition</em> of what you eat, not how much."
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Prioritize protein at every meal:</strong> Aim for 30–40g per sitting to maximize both TEF and muscle protein synthesis. Chicken breast, eggs, Greek yogurt, and legumes all carry high thermic costs.",
+          "<strong>Be aware of dietary fat's minimal TEF:</strong> Fat is only 0–3% thermogenic, making calorie-dense, fat-heavy meals the least metabolically expensive macronutrient by a wide margin.",
+          "<strong>Whole foods beat processed foods on TEF:</strong> A 2010 study in <em>Food & Nutrition Research</em> found that whole-food meals had a TEF roughly 50% higher than ultraprocessed meals of identical caloric content, due to the energy cost of breaking down intact food matrices.",
+          "<strong>Fiber adds additional metabolic cost:</strong> High-fiber carbohydrates — oats, legumes, vegetables — require more digestive energy than refined starches, adding modestly but consistently to your daily TEF.",
+          "<strong>Meal frequency matters less than composition:</strong> Despite popular belief, eating smaller, more frequent meals doesn't meaningfully raise daily TEF compared to fewer larger meals of the same macronutrient composition."
+        ]
+      },
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/rzPVSqQjjqs?w=800&q=80",
+        "alt": "Cooked protein-rich meal with meat and eggs — high thermic effect foods"
+      },
+      {
+        "type": "heading",
+        "text": "TEF and Your Total Daily Energy Expenditure"
+      },
+      {
+        "type": "paragraph",
+        "text": "Total daily energy expenditure consists of four components: basal metabolic rate (BMR), non-exercise activity thermogenesis (NEAT), exercise activity, and TEF. Most people are well aware of the first three — they track calories burned during workouts, estimate BMR from formulas, and think about movement throughout the day. TEF is the forgotten fourth variable. On a standard mixed diet, TEF contributes roughly 150–300 calories of daily energy expenditure for most adults. But this figure swings significantly based on macronutrient composition. A high-protein diet (30%+ of calories from protein) consistently pushes daily TEF toward the upper end of this range — creating a meaningful, essentially effortless daily caloric deficit. This is one of the primary mechanisms explaining why, in clinical comparisons, high-protein dieters consistently lose more fat and preserve more muscle than low-protein dieters at equivalent caloric intakes. Apps like <strong>Nutrilogix</strong> capture this in practice: your macronutrient balance isn't just important for nutrients — it's literally determining how many calories your metabolism spends every single time you eat."
+      },
+      {
+        "type": "callout",
+        "text": "A <strong>2012 randomized controlled trial</strong> published in <em>JAMA</em> compared low-fat, low-glycemic, and high-protein diets at identical post-weight-loss calorie levels. The high-protein group produced <strong>approximately 300 more calories per day in total energy expenditure</strong> than the low-fat group — with TEF differences accounting for a significant portion of this metabolic advantage."
+      },
+      {
+        "type": "heading",
+        "text": "The Bottom Line"
+      },
+      {
+        "type": "paragraph",
+        "text": "The thermic effect of food is a real, measurable, and strategically important phenomenon that most nutrition advice ignores. Not all calories are processed equally — and protein, in particular, carries a metabolic premium that compounds across every meal, every day. If your goal is fat loss while preserving muscle, prioritizing protein isn't just about amino acids; it's about leveraging the highest-TEF macronutrient to drive daily energy expenditure without additional exercise. Choose whole foods over processed, build every plate around a quality protein source, and let the composition of your diet do some of the metabolic work for you."
+      },
+      {
+        "type": "cta"
+      }
+    ]
   }
 ]
