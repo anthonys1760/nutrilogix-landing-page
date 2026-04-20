@@ -552,5 +552,82 @@ export const generatedPosts = [
         "type": "cta"
       }
     ]
+  },
+  {
+    "slug": "omega-3-fatty-acids-epa-dha-benefits",
+    "title": "Omega-3 Fatty Acids: What EPA and DHA Actually Do Inside Your Body",
+    "excerpt": "Most people are deficient in omega-3s while chronically over-dosed on omega-6s. Here's what the science says about EPA, DHA, and how to close the most common nutritional gap in modern diets.",
+    "author": "Dr. Sarah Miller",
+    "authorInitial": "S",
+    "date": "Apr 20, 2026",
+    "dateISO": "2026-04-20",
+    "readTime": "7 min",
+    "category": "Nutrition Science",
+    "keywords": "omega-3 fatty acids, EPA DHA benefits, fish oil supplements, omega-3 heart health, omega-3 brain function, omega-3 rich foods, how much omega-3 per day, omega-6 omega-3 ratio",
+    "image": "https://images.unsplash.com/inDRPMBfX8M?w=800&q=80",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Here's a nutritional fact most people have never heard: the typical Western diet delivers omega-6 fatty acids at a ratio of 15:1 to 20:1 against omega-3s. Our ancestors evolved on a ratio of roughly 1:1 to 4:1. This single dietary shift — driven by the industrialization of seed oils and the displacement of fatty fish, wild game, and pastured animals from modern plates — is one of the most consequential nutritional changes in human history. Omega-3 deficiency is now estimated to be among the top preventable causes of death globally. And for most people, it's completely invisible."
+      },
+      {
+        "type": "heading",
+        "text": "EPA vs. DHA: Not All Omega-3s Are the Same"
+      },
+      {
+        "type": "paragraph",
+        "text": "The omega-3 family includes three key members: alpha-linolenic acid (ALA), eicosapentaenoic acid (EPA), and docosahexaenoic acid (DHA). ALA is plant-derived — found in flaxseeds, chia seeds, walnuts, and hemp — and is considered 'essential' because the body cannot synthesize it. But here is the critical distinction most omega-3 coverage glosses over: the human body converts ALA to EPA with only 5–15% efficiency, and to DHA with less than 0.5–5%. This bottleneck means that flaxseed oil, despite its high ALA content, is a poor substitute for the preformed EPA and DHA found in fatty fish and seafood. <em>EPA</em> is the primary anti-inflammatory omega-3, directly competing with arachidonic acid (an omega-6) for the enzymes that produce inflammatory signaling molecules called eicosanoids. <em>DHA</em> is the dominant structural fat in the brain, retina, and cardiac tissue — making up approximately 40% of the polyunsaturated fatty acids in the cerebral cortex. When DHA is chronically low, the brain substitutes omega-6 DPA in its place, a structural compromise with measurable effects on neural membrane function."
+      },
+      {
+        "type": "callout",
+        "text": "<strong>An estimated 68–95% of Americans are deficient in omega-3 fatty acids</strong>, depending on the threshold used, according to surveys published in the <em>American Journal of Clinical Nutrition</em>. The typical Western omega-6:omega-3 ratio of 15–20:1 is consistently associated with cardiovascular disease, cancer, and chronic inflammation — while a ratio below 4:1 is linked with significantly reduced all-cause mortality."
+      },
+      {
+        "type": "heading",
+        "text": "What the Research Shows on Heart, Brain, and Inflammation"
+      },
+      {
+        "type": "paragraph",
+        "text": "The cardiovascular case for EPA and DHA is among the most thoroughly documented in nutritional science. At doses of 2–4g per day, omega-3s reduce serum triglycerides by 15–30% — a magnitude comparable to pharmaceutical triglyceride-lowering agents. The landmark 2018 REDUCE-IT trial, published in the <em>New England Journal of Medicine</em>, found that high-dose EPA (4g/day) reduced major adverse cardiovascular events by 25% in high-risk patients already on statins. Beyond cardiovascular outcomes, EPA and DHA suppress pro-inflammatory eicosanoids (prostaglandins, leukotrienes) through competitive inhibition at cyclooxygenase and lipoxygenase enzymes — the same pathways targeted by NSAIDs like ibuprofen. Multiple meta-analyses confirm that regular fish oil supplementation meaningfully reduces circulating CRP and IL-6. For the brain, DHA is structural: without adequate intake, every membrane in every neuron is built from suboptimal materials, affecting signal transmission, receptor density, and synaptic plasticity."
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Eat fatty fish 2–3 times per week:</strong> Salmon, sardines, mackerel, herring, and anchovies deliver 1–3g of combined EPA+DHA per 100g. Wild-caught salmon provides ~2.2g per serving; canned sardines ~1.5g — making them among the most cost-effective nutrient-dense proteins available.",
+          "<strong>Don't rely on ALA alone:</strong> Flaxseed, chia, and walnuts provide ALA, which is valuable for overall health — but the conversion efficiency to biologically active EPA and DHA is too low to be a primary omega-3 strategy, particularly for brain health.",
+          "<strong>Supplement strategically:</strong> For those who don't eat fish regularly, 1–2g of combined EPA+DHA from a quality fish or algal oil daily maintains adequate status. Algal oil is the preferred vegan option, delivering preformed DHA and EPA without the ALA conversion bottleneck.",
+          "<strong>Reduce your omega-6 load:</strong> Replacing soybean, sunflower, and corn oils with olive oil, avocado oil, or macadamia oil significantly lowers omega-6 intake — improving the omega-6:omega-3 ratio and amplifying the benefit of any omega-3 you add.",
+          "<strong>Optimize absorption:</strong> Omega-3s absorb up to 70% better when taken with a fat-containing meal. Enteric-coated capsules reduce fishy aftertaste by dissolving in the intestine rather than the stomach."
+        ]
+      },
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/3w6qAk35xAg?w=800&q=80",
+        "alt": "Walnuts and nuts — plant-based ALA omega-3 sources"
+      },
+      {
+        "type": "heading",
+        "text": "Practical Dosing and the Best Food Sources"
+      },
+      {
+        "type": "paragraph",
+        "text": "For general health maintenance, major health bodies recommend 250–500mg of combined EPA+DHA daily — achievable with 2 servings of fatty fish per week. For therapeutic targets — reducing elevated triglycerides, managing chronic inflammation, or supporting cognitive health — research-supported doses range from 1–4g per day of combined EPA+DHA. When using supplements, look for the <em>combined EPA+DHA content</em> on the label, not total fish oil. A '1000mg fish oil' capsule may contain only 180mg EPA and 120mg DHA — making it easy to dramatically underdose. The richest whole-food sources per 100g include: Atlantic mackerel (~2.5g), wild-caught salmon (~2.2g), Atlantic herring (~2.0g), canned sardines in oil (~1.5g), and oysters (~0.7g). For plant-based eaters, algal oil and seaweed are the only meaningful direct sources of preformed EPA and DHA. Tracking your weekly fish intake and fat source quality is exactly the kind of pattern that <strong>Nutrilogix</strong> surfaces — showing you at a glance whether your omega-3 intake is consistent enough to actually make a difference."
+      },
+      {
+        "type": "callout",
+        "text": "A meta-analysis of 19 clinical trials in <strong><em>Nutritional Neuroscience</em></strong> found that DHA supplementation significantly improved working memory, processing speed, and executive function in healthy adults aged 18–45 — with the <strong>greatest cognitive benefits in participants with the lowest baseline DHA status</strong>, confirming that deficiency, not supplementation per se, drives the cognitive impairment most people accept as normal."
+      },
+      {
+        "type": "heading",
+        "text": "The Bottom Line"
+      },
+      {
+        "type": "paragraph",
+        "text": "EPA and DHA are among the most researched, most evidence-backed nutritional interventions in modern medicine — with consistent findings across cardiovascular health, inflammation, brain structure, and cognition. The practical gap isn't complexity; it's consistency. Most people don't eat fatty fish regularly enough, overconsume omega-6 from industrial seed oils, and assume that plant-sourced ALA covers the rest. It doesn't. Closing this gap is straightforward: eat fatty fish 2–3 times per week, choose cooking oils with a better omega-6 profile, and supplement with a quality EPA+DHA source if fish isn't a reliable part of your diet. These are low-effort interventions with among the strongest evidence bases in all of nutritional science."
+      },
+      {
+        "type": "cta"
+      }
+    ]
   }
 ]
