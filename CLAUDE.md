@@ -130,6 +130,16 @@ All routes use hash-based URLs (e.g., `/#/blog`) for GitHub Pages compatibility.
    - Use high-quality, relevant imagery that matches the article topic
 4. Include JSON-LD schema markup in BlogPost.jsx for SEO
 
+**Adding a Generated Blog Post (generatedPosts.js):**
+- Posts in `src/data/generatedPosts.js` use the same image field but **MUST use local paths** (`/assets/images/filename.jpg`), NOT direct Unsplash CDN URLs
+- **Why**: Unsplash CDN URLs using short photo slugs (e.g. `images.unsplash.com/fjNkfPrJQPM`) return 403 errors in browsers. Only the old `photo-TIMESTAMP-HASH` format (e.g. `photo-1498837167922-ddd27525d352`) works without API keys — and that format is hard to obtain reliably
+- **Correct workflow for generated posts**:
+  1. Find a suitable Unsplash photo at unsplash.com
+  2. Download it: `curl -L "https://unsplash.com/photos/[id]/download?force=true" -o public/assets/images/[name].jpg`
+  3. Reference it in the post object as `"image": "/assets/images/[name].jpg"`
+- **Fallback**: if download fails, reuse a thematically appropriate existing local image from `public/assets/images/` — broken images are worse than reused ones
+- **Never** put a raw `images.unsplash.com/[short-id]` URL directly in generatedPosts.js — these will be broken in production
+
 ### Data & Static Content
 
 - **Testimonials** - Hardcoded in Home.jsx

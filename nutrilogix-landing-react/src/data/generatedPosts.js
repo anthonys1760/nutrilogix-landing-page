@@ -410,7 +410,7 @@ export const generatedPosts = [
     "readTime": "7 min",
     "category": "Nutrition Science",
     "keywords": "thermic effect of food, TEF weight loss, protein metabolism rate, diet induced thermogenesis, high protein diet metabolism, macronutrient digestion calories, calorie burning digestion, metabolic cost of protein",
-    "image": "https://images.unsplash.com/fjNkfPrJQPM?w=800&q=80",
+    "image": "/assets/images/egg.jpg",
     "body": [
       {
         "type": "paragraph",
@@ -448,8 +448,8 @@ export const generatedPosts = [
       },
       {
         "type": "image",
-        "src": "https://images.unsplash.com/rzPVSqQjjqs?w=800&q=80",
-        "alt": "Cooked protein-rich meal with meat and eggs — high thermic effect foods"
+        "src": "/assets/images/ai-blog-logging.jpg",
+        "alt": "Colorful whole-food bowl with vegetables and plant-based proteins — high-TEF whole foods"
       },
       {
         "type": "heading",
@@ -487,7 +487,7 @@ export const generatedPosts = [
     "readTime": "7 min",
     "category": "Nutrition Science",
     "keywords": "blood sugar stabilization, glycemic load diet, insulin resistance prevention, blood sugar weight loss, low glycemic foods, glucose spikes diet, stable energy nutrition, post-meal glucose response",
-    "image": "https://images.unsplash.com/IGfIGP5ONV0?w=800&q=80",
+    "image": "/assets/images/satiety-meal.jpg",
     "body": [
       {
         "type": "paragraph",
@@ -529,8 +529,8 @@ export const generatedPosts = [
       },
       {
         "type": "image",
-        "src": "https://images.unsplash.com/v2sx_coFrXI?w=800&q=80",
-        "alt": "Assorted colorful vegetables and whole foods for blood sugar balance"
+        "src": "/assets/images/processed-vs-whole.jpg",
+        "alt": "Whole-food bowl with eggs, greens, and vegetables — whole foods for blood sugar stability"
       },
       {
         "type": "paragraph",
@@ -564,7 +564,7 @@ export const generatedPosts = [
     "readTime": "7 min",
     "category": "Nutrition Science",
     "keywords": "omega-3 fatty acids, EPA DHA benefits, fish oil supplements, omega-3 heart health, omega-3 brain function, omega-3 rich foods, how much omega-3 per day, omega-6 omega-3 ratio",
-    "image": "https://images.unsplash.com/inDRPMBfX8M?w=800&q=80",
+    "image": "/assets/images/salmon.jpg",
     "body": [
       {
         "type": "paragraph",
@@ -602,8 +602,8 @@ export const generatedPosts = [
       },
       {
         "type": "image",
-        "src": "https://images.unsplash.com/3w6qAk35xAg?w=800&q=80",
-        "alt": "Walnuts and nuts — plant-based ALA omega-3 sources"
+        "src": "/assets/images/veggies.jpg",
+        "alt": "Balanced protein and vegetable plate representing healthy fat and nutrient-rich eating"
       },
       {
         "type": "heading",
