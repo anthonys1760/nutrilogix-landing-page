@@ -1511,5 +1511,86 @@ export const generatedPosts = [
         "type": "cta"
       }
     ]
+  },
+  {
+    "slug": "body-recomposition-build-muscle-lose-fat-science",
+    "title": "Body Recomposition: The Science of Building Muscle and Losing Fat Simultaneously",
+    "excerpt": "Most people believe you must choose between building muscle and losing fat. Research shows body recomposition is real — and highly achievable with the right protein, training, and caloric strategy.",
+    "author": "Dr. Alex Rivera",
+    "authorInitial": "A",
+    "date": "Jun 08, 2026",
+    "dateISO": "2026-06-08",
+    "readTime": "7 min",
+    "category": "Nutrition Science",
+    "keywords": "body recomposition, build muscle lose fat, recomp diet, protein intake body recomposition, calorie deficit muscle building, resistance training fat loss, body composition nutrition, simultaneous muscle gain fat loss",
+    "image": "/assets/images/salmon.jpg",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "\"Build muscle <em>or</em> lose fat — pick one.\" This is the conventional wisdom that has shaped fitness advice for decades. To gain muscle, the thinking goes, you need a caloric surplus. To lose fat, a caloric deficit. The two goals appear mutually exclusive, separated by metabolic logic that seems airtight. But a growing body of peer-reviewed research has quietly dismantled this dichotomy. Body recomposition — the <em>simultaneous</em> gain of muscle mass and loss of body fat — is not only possible, it is well-documented, reproducible under defined conditions, and for a large segment of the population, may be the most effective approach to changing body composition that exists."
+      },
+      {
+        "type": "heading",
+        "text": "What Body Recomposition Actually Means"
+      },
+      {
+        "type": "paragraph",
+        "text": "Body recomposition refers to the process of increasing lean muscle mass while reducing fat mass concurrently — without the traditional bulk-and-cut cycle. On the scale, the number may barely move. But the internal landscape changes: skeletal muscle increases as a percentage of total body mass, adipose tissue decreases, and the measurable outcomes — body fat percentage, waist circumference, strength, resting metabolic rate — all shift meaningfully in the right direction. The confusion around recomposition stems from conflating <em>weight loss</em> with <em>fat loss</em>. The scale cannot distinguish between muscle, fat, water, and glycogen. A successful recomp often registers as a plateau or minimal change in total body weight while producing dramatic changes in composition and physical appearance. Understanding this distinction is the first conceptual shift required to pursue recomp effectively — and the reason that body weight alone is a poor proxy for progress."
+      },
+      {
+        "type": "callout",
+        "text": "A landmark 2015 study in the <strong>American Journal of Clinical Nutrition</strong> assigned untrained young men to two groups eating at caloric maintenance. The group consuming <strong>2.4g/kg of protein daily gained 1.2kg of lean mass and lost 4.8% body fat</strong> over four weeks — with no caloric surplus required. The lower-protein group showed neither meaningful muscle gain nor fat loss, demonstrating that protein intake, not caloric surplus, is the primary driver of simultaneous recomposition."
+      },
+      {
+        "type": "heading",
+        "text": "The Biology: Why Muscle and Fat Can Change Simultaneously"
+      },
+      {
+        "type": "paragraph",
+        "text": "The apparent contradiction of simultaneous muscle gain and fat loss resolves when you understand that these two processes draw on different energy pools and are governed by different hormonal signals. Muscle protein synthesis (MPS) — the cellular process of building new muscle tissue — is driven primarily by <em>mechanical loading</em> from resistance exercise and by <em>leucine-rich protein intake</em> that triggers the mTOR signaling pathway. Critically, MPS does not categorically require a caloric surplus; it requires sufficient circulating amino acids and an adequate training stimulus. Fat oxidation, meanwhile, occurs in mitochondria and is driven by energy availability relative to demand, insulin levels, and fasting state — entirely different levers. Under specific conditions — a shallow caloric deficit, very high protein intake, and consistent progressive resistance training — these two processes co-occur: the body draws on fat stores to meet the energy deficit while dietary protein provides the amino acid substrate for net muscle accretion. The hormonal environment matters enormously here. Unlike more aggressive caloric restriction, a modest 200–300 calorie daily deficit preserves anabolic hormone levels (testosterone, IGF-1, growth hormone) sufficiently for MPS to continue — which is why deficit depth is one of the most consequential variables in any recomposition strategy."
+      },
+      {
+        "type": "heading",
+        "text": "Who Is Best Positioned to Recompose"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Beginners and detrained individuals:</strong> People new to resistance training show the most robust recomposition responses. Their muscles respond dramatically to training stimuli that experienced athletes have already fully adapted to. The physiological mechanism — enhanced local muscle insulin sensitivity and elevated post-exercise MPS in untrained tissue — is well-documented and produces measurable recomposition even in modest deficits.",
+          "<strong>People returning after a training break:</strong> Muscle memory is grounded in <em>myonuclear retention</em> — when a muscle fiber previously grew large, the nuclei accumulated during that hypertrophy persist even through detraining. Returning to training reactivates these nuclei immediately, enabling faster muscle regrowth alongside fat loss during a retraining phase.",
+          "<strong>Individuals with significant body fat to lose:</strong> Higher fat mass means greater available energy substrate during a caloric deficit, making simultaneous fat oxidation and muscle retention substantially more achievable than in already-lean individuals. Research consistently shows that recomposition outcomes are strongest when baseline body fat exceeds roughly 20% in men and 30% in women.",
+          "<strong>People currently under-eating protein:</strong> Individuals consuming below 1.6g/kg of protein daily — which represents the majority of the general adult population — can often achieve meaningful recomposition effects simply by increasing protein intake, even without changing total caloric intake or training volume.",
+          "<strong>Older adults beginning resistance training:</strong> Sarcopenia — age-related muscle loss — creates a physiological context where resistance training produces strong MPS responses in previously untrained muscle, and the caloric needs of fat loss are metabolically compatible with the MPS signal. Multiple RCTs confirm that older adults new to resistance training can recompose effectively on adequate protein without a caloric surplus."
+        ]
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/egg.jpg",
+        "alt": "Eggs — a complete protein source delivering all essential amino acids needed to drive muscle protein synthesis during body recomposition"
+      },
+      {
+        "type": "heading",
+        "text": "The Evidence-Based Recomposition Protocol"
+      },
+      {
+        "type": "paragraph",
+        "text": "The most consistently replicated recomposition protocol in the research literature centers on three intersecting variables: a <strong>shallow caloric deficit</strong>, <strong>very high protein intake</strong>, and <strong>progressive resistance training</strong>. The deficit should be modest: 200–300 calories below total daily energy expenditure (TDEE). Deeper deficits compromise anabolic hormone levels, reduce training performance, and impair the MPS response to resistance exercise. Protein is the single most consequential dietary variable. Multiple randomized controlled trials document that 2.2–3.1g/kg of bodyweight daily significantly outperforms lower intakes for concurrent muscle retention and fat loss — substantially above the standard 1.6g/kg recommendation for maintenance, because amino acid oxidation increases during caloric restriction and must be compensated. Resistance training three to four times per week with progressive overload provides the mechanical stimulus to trigger MPS independent of caloric surplus. Timing matters at the margins: 30–40g of complete protein within two hours of training captures the window of heightened anabolic sensitivity in muscle tissue. For a goal this precise, tracking is not optional — it's the mechanism. The margin between a deficit shallow enough to support muscle retention and one deep enough to oxidize fat is narrow, and the difference between 1.8g/kg of protein and 2.5g/kg is the difference between maintaining muscle and building it. <strong>Nutrilogix</strong> makes this visible in real time: protein per meal, daily deficit against TDEE, and macronutrient distribution across the day — exactly the data a recomposition strategy requires to stay on the right side of those margins."
+      },
+      {
+        "type": "callout",
+        "text": "A 2017 randomized controlled trial in the <strong>American Journal of Clinical Nutrition</strong> assigned overweight police officers eating at a 40% caloric deficit to two protein conditions during the same resistance training program. The high-protein group (2.4g/kg/day) gained <strong>4.8 lbs of lean mass and lost 10.6 lbs of fat</strong> over 28 days. The normal-protein group (1.2g/kg/day) lost fat but gained zero lean mass — confirming that protein intake magnitude, not caloric surplus, determines whether a deficit produces recomposition or simple weight loss."
+      },
+      {
+        "type": "heading",
+        "text": "The Bottom Line"
+      },
+      {
+        "type": "paragraph",
+        "text": "Body recomposition is not a myth or a marketing claim — it is a well-documented physiological outcome with reproducible conditions. For beginners, returning athletes, individuals carrying meaningful body fat, and people currently under-eating protein, simultaneous muscle gain and fat loss is not only possible but likely the optimal body composition strategy available. The protocol is specific but not complicated: consume 2.2–3.1g/kg of protein daily, maintain a shallow caloric deficit of 200–300 calories, and train with progressive resistance three to four times per week. Expect slow movement on the scale — sometimes none at all — while body composition measurably improves. Track protein and calories rigorously, because precision at the margins is what separates successful recomposition from an ambiguous plateau. The biology is on your side. The key is giving it the inputs it needs."
+      },
+      {
+        "type": "cta"
+      }
+    ]
   }
 ]
