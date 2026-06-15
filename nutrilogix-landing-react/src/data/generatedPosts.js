@@ -1678,5 +1678,83 @@ export const generatedPosts = [
         "type": "cta"
       }
     ]
+  },
+  {
+    "slug": "resistant-starch-gut-health-fat-burning",
+    "title": "Resistant Starch: The Carb That Feeds Your Gut Bacteria and Boosts Fat Burning",
+    "excerpt": "The carb that resists digestion may be the most powerful prebiotic in your kitchen. Here's the science on resistant starch, butyrate, and the cook-cool trick that changes everything.",
+    "author": "Dr. Sarah Miller",
+    "authorInitial": "S",
+    "date": "Jun 15, 2026",
+    "dateISO": "2026-06-15",
+    "readTime": "7 min",
+    "category": "Nutrition Science",
+    "keywords": "resistant starch benefits, resistant starch foods, cooked and cooled rice, butyrate gut health, resistant starch weight loss, second meal effect, prebiotic starch, RS3 retrograded starch",
+    "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Most nutrition science focuses on carbohydrates you digest — and rightly so. But there's a category of carbohydrate that your digestive enzymes cannot break down, that travels intact to your colon, and that may have more influence on your gut health, blood sugar stability, and fat metabolism than almost anything else you eat. It's called <em>resistant starch</em>, and it behaves less like a conventional carbohydrate and more like a prebiotic fiber — feeding the bacterial colonies that govern everything from inflammation to appetite. The irony is that most people already eat resistant starch foods regularly. They're just cooking them in ways that destroy most of it."
+      },
+      {
+        "type": "heading",
+        "text": "What Is Resistant Starch — and Why Can't Your Body Digest It?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Starch is normally broken down by amylase enzymes in your small intestine into glucose — but resistant starch (RS) resists this process entirely. It arrives in the large intestine largely intact, where it becomes fuel for gut bacteria rather than a glucose source for your cells. Scientists recognize four types, but two matter most practically. <em>RS2</em> — found naturally in green bananas, raw oats, and underripe plantains — has a granular crystalline structure that digestive enzymes cannot efficiently penetrate. <em>RS3</em>, called retrograded starch, forms when cooked starchy foods are cooled: the starch molecules recrystallize into a structure that resists enzymatic breakdown. Freshly cooked white rice contains roughly 3% resistant starch by dry weight. Refrigerate that same rice overnight and RS content can climb to 15–20% — a striking transformation with meaningful metabolic consequences, triggered by nothing more than temperature change and time."
+      },
+      {
+        "type": "callout",
+        "text": "A 2022 clinical trial in <strong>Cell Host & Microbe</strong> found that participants consuming 30g of resistant starch daily for 8 weeks showed significant increases in microbiome diversity — including a <strong>15% rise in Bifidobacterium and Lactobacillus species</strong> — the same bacterial families targeted by expensive probiotic supplements, achieved through dietary change alone."
+      },
+      {
+        "type": "heading",
+        "text": "Butyrate: How Resistant Starch Feeds Your Gut Lining"
+      },
+      {
+        "type": "paragraph",
+        "text": "When resistant starch reaches the colon, gut bacteria ferment it into short-chain fatty acids (SCFAs) — primarily butyrate, propionate, and acetate. Of these, butyrate is the most clinically significant. Colonocytes, the cells lining your colon, derive roughly 70% of their energy from butyrate alone, making it the essential fuel source of your gut wall. Adequate butyrate production maintains the tight junctions between intestinal cells — the barrier that prevents partially digested food particles and bacterial fragments from entering systemic circulation. Beyond the gut lining, butyrate suppresses the transcription factor NF-κB, the master switch for inflammatory gene expression, while reducing circulating pro-inflammatory cytokines including IL-6 and TNF-α. Animal and early human data also suggest that butyrate crosses the blood-brain barrier, where it modulates neuroinflammation and influences mood-regulating pathways — a finding that connects resistant starch intake to the broader gut-brain axis research. The practical takeaway: the fermentation of resistant starch by your gut bacteria isn't a neutral digestive event. It's an active biochemical process that maintains your intestinal architecture, suppresses systemic inflammation, and supports microbiome populations that influence health far beyond the colon."
+      },
+      {
+        "type": "heading",
+        "text": "Top Resistant Starch Foods and How to Maximize Their Content"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Cooked and cooled rice:</strong> RS content rises from ~3% to 15–20% after overnight refrigeration. Eaten cold or reheated, it retains significantly more RS than freshly cooked rice — making leftover rice one of the most underrated prebiotic foods in the kitchen.",
+          "<strong>Cooked and cooled potatoes:</strong> A medium potato contains roughly 1g RS when freshly cooked; chilled overnight, it yields ~3.5g RS per serving. Potato salad with vinegar dressing is both an RS3-rich dish and a blood sugar-friendly choice.",
+          "<strong>Green (unripe) bananas:</strong> A green banana provides 4–9g RS, compared to under 1g in a fully ripe banana. RS converts rapidly to digestible sugar as the fruit ripens — the greener, the better for RS content.",
+          "<strong>Cooked and cooled legumes:</strong> Lentils, chickpeas, and white beans contain among the highest RS concentrations of any common food — typically 3–6g per 100g — plus a substantial fiber payload that compounds the prebiotic effect.",
+          "<strong>Raw oats (overnight oats):</strong> Heating oats disrupts their granular RS2 structure. Overnight oats made by soaking raw oats in liquid and refrigerating retain significantly more RS than cooked porridge — making them a higher-prebiotic alternative with the same ingredients.",
+          "<strong>Cooked and cooled pasta:</strong> Like rice and potatoes, pasta undergoes RS3 retrogradation when cooled. Cold pasta salad eaten the next day has a meaningfully lower glycemic load than freshly cooked pasta, even if reheated."
+        ]
+      },
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=800&q=80",
+        "alt": "Balanced whole-food meal with grains, legumes, and vegetables — key resistant starch sources"
+      },
+      {
+        "type": "paragraph",
+        "text": "One of the most practically important — and least discussed — aspects of resistant starch is the <em>second meal effect</em>: consuming RS at breakfast measurably reduces the blood glucose and insulin response to an unrelated meal eaten hours later. The mechanism involves propionate, an SCFA produced during RS fermentation in the colon, which circulates to the liver and suppresses hepatic glucose output while improving peripheral insulin sensitivity. A 2019 randomized controlled trial in the <em>American Journal of Clinical Nutrition</em> found that a breakfast providing 30g RS from high-amylose maize reduced post-lunch glucose peaks by 20% and post-lunch insulin by 28% — even when the lunch itself was identical between groups. This cross-meal glucose-attenuating effect means that resistant starch isn't merely a per-meal strategy: it creates a hormonal advantage that compounds across the day. For anyone tracking their nutrition with <strong>Nutrilogix</strong>, paying attention to the fiber and RS contribution of your morning meals may explain more about your afternoon energy and hunger patterns than what you're actually eating at lunch."
+      },
+      {
+        "type": "callout",
+        "text": "The <strong>second meal effect</strong> in numbers: a 2019 RCT in the <em>American Journal of Clinical Nutrition</em> found that breakfast containing 30g of resistant starch reduced post-lunch glucose peaks by <strong>20%</strong> and insulin spikes by <strong>28%</strong> compared to a low-RS control breakfast — with the same lunch consumed by both groups. The effect was attributed to propionate-mediated hepatic glucose suppression persisting from the morning fermentation window."
+      },
+      {
+        "type": "heading",
+        "text": "The Bottom Line"
+      },
+      {
+        "type": "paragraph",
+        "text": "Resistant starch doesn't require exotic new foods — it requires understanding how to prepare the ones you already eat. Cook your rice and potatoes ahead, refrigerate them overnight, and serve cold or reheated: the RS3 content is substantially higher than the freshly cooked version. Swap ripe bananas for slightly green ones. Make overnight oats instead of hot porridge. Eat legumes regularly. These aren't hardships — they're small preparation shifts with measurable effects on gut microbiome diversity, SCFA and butyrate production, intestinal barrier integrity, blood sugar stability, and cross-meal insulin sensitivity. In an era obsessed with expensive supplements and novel interventions, resistant starch is proof that some of the most powerful nutritional tools are already sitting in your pantry. You just need to let them cool down first."
+      },
+      {
+        "type": "cta"
+      }
+    ]
   }
 ]
