@@ -2240,5 +2240,82 @@ export const generatedPosts = [
         "type": "cta"
       }
     ]
+  },
+  {
+    "slug": "carb-cycling-fat-loss-performance-science",
+    "title": "Carb Cycling for Fat Loss and Performance: What the Science Says",
+    "excerpt": "Carb cycling matches carbohydrate intake to your training intensity — and the research shows it can accelerate fat loss while protecting muscle. Here's how to do it right.",
+    "author": "Dr. Sarah Miller",
+    "authorInitial": "S",
+    "date": "Jul 09, 2026",
+    "dateISO": "2026-07-09",
+    "readTime": "7 min",
+    "category": "Nutrition Science",
+    "keywords": "carb cycling, carb cycling for fat loss, high carb low carb days, carbohydrate periodization, carb cycling muscle gain, refeed days science, nutrient timing carbs, glycogen replenishment",
+    "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Carbohydrates have been blamed for everything from weight gain to insulin resistance to energy crashes — and simultaneously defended as the primary fuel for athletic performance and cognitive function. The truth is more nuanced: carbs aren't inherently good or bad. <em>When</em> you eat them, in what quantities, and relative to your energy expenditure that day — these are the variables that actually matter. Carb cycling is built on exactly that premise: matching carbohydrate intake to training demands rather than eating the same amount every day. Done correctly, it can help you burn more fat, preserve muscle during a cut, and train harder without the performance crashes that come from chronically low-carb eating."
+      },
+      {
+        "type": "heading",
+        "text": "What Is Carb Cycling?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Carb cycling is a dietary approach that alternates between higher-carbohydrate days and lower-carbohydrate days according to your training schedule. On days with heavy resistance training or high-intensity cardio — when your muscles are burning through glycogen — you eat more carbs to fuel performance and replenish depleted stores. On rest days or low-intensity activity days, when glycogen demand is lower, you drop carbohydrate intake and rely more on fat for fuel. The result is a weekly oscillation between two metabolic states: anabolic (carb-supported, insulin-elevated) and fat-burning (carb-depleted, lipolysis-dominant). Protein typically remains constant or elevated throughout, protecting lean mass regardless of where carbs fall. Carb cycling occupies the space between strict ketogenic dieting and standard balanced eating — attempting to capture the metabolic advantages of both approaches by cycling between them strategically."
+      },
+      {
+        "type": "callout",
+        "text": "A 2020 review in <strong>Nutrients</strong> found that carbohydrate periodization — alternating high and low carbohydrate availability across training sessions — <strong>significantly improved fat oxidation rates</strong> compared to matched-calorie constant-carbohydrate diets, without reducing peak power output in trained athletes."
+      },
+      {
+        "type": "heading",
+        "text": "The Hormonal Logic Behind Carb Cycling"
+      },
+      {
+        "type": "paragraph",
+        "text": "The scientific rationale for carb cycling centers on hormonal regulation — specifically leptin, your primary long-term satiety and metabolic rate hormone. When you're in a sustained calorie deficit, leptin levels fall over time, slowing your metabolism and increasing hunger in a process called <em>metabolic adaptation</em>. This is one of the core reasons that sustained calorie restriction becomes progressively harder. Strategic high-carbohydrate days — often called 'refeed days' in the fat loss context — can temporarily restore leptin levels, blunting metabolic adaptation without fully breaking the calorie deficit across the week as a whole. On the insulin side, high-carb training days drive insulin secretion at the moment when your muscles are most insulin-sensitive: glycogen-depleted and post-exercise. This is the most favorable context to elevate insulin — it shuttles glucose and amino acids into muscle cells for recovery and growth rather than into adipose tissue for storage. Conversely, low-carb rest days keep insulin low, raise circulating free fatty acids, and shift your body toward fat oxidation when glycogen demand is minimal."
+      },
+      {
+        "type": "heading",
+        "text": "Structuring High vs. Low Carb Days"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>High-carb days (heavy training days):</strong> Target 2.5–4g of carbs per kg of bodyweight; prioritize starchy, low-fat carbohydrates — rice, oats, sweet potato, quinoa — timed around your workouts for maximal glycogen replenishment",
+          "<strong>Low-carb days (rest or light activity):</strong> Drop to 0.5–1.5g of carbs per kg of bodyweight; draw most carbs from fibrous vegetables, and increase healthy fat intake to compensate for reduced carb calories",
+          "<strong>Moderate-carb days (optional middle tier):</strong> Roughly 1.5–2g per kg for moderate-intensity training days, smoothing the oscillation between the two extremes",
+          "<strong>Protein remains constant:</strong> Maintain 1.8–2.5g per kg of bodyweight daily across all day types — this non-negotiable anchor preserves muscle through the entire cycle",
+          "<strong>Example weekly structure:</strong> High carb Monday/Wednesday/Friday (lifting days), low carb Tuesday/Thursday/Sunday, moderate carb Saturday (active recovery or light cardio)"
+        ]
+      },
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+        "alt": "Balanced meal with complex carbohydrates, lean protein, and vegetables"
+      },
+      {
+        "type": "paragraph",
+        "text": "The research on carb cycling is promising but requires honest framing. A 2018 study in the <em>International Journal of Sport Nutrition and Exercise Metabolism</em> compared trained athletes on carbohydrate periodization versus constant carbohydrate intake matched for total weekly calories. The periodization group showed meaningfully greater improvements in fat oxidation during steady-state exercise and maintained higher peak power output during intense sessions — evidence that switching metabolic states may train the body to access both fuel sources more effectively. Carb cycling works best when you have at least 3–4 structured training sessions per week that create clear 'high demand' and 'low demand' days. For those training irregularly, the week-to-week variation becomes difficult to plan and the hormonal oscillations don't accumulate meaningfully. Tracking both macros and training load is essential — you need to know what your carb targets are each day type and whether performance metrics are improving. This is exactly the kind of multi-variable tracking <strong>Nutrilogix</strong> is built for: seeing your macros alongside training intensity reveals whether your high-carb days are actually landing on your hardest sessions, or whether your schedule has drifted from the plan."
+      },
+      {
+        "type": "callout",
+        "text": "A 2019 systematic review in the <strong>Journal of Human Kinetics</strong> found that carbohydrate periodization outperformed constant carbohydrate intake for <strong>body composition improvements</strong> in 7 out of 9 randomized controlled trials, with the most pronounced effects in individuals who trained 4 or more days per week."
+      },
+      {
+        "type": "heading",
+        "text": "The Bottom Line"
+      },
+      {
+        "type": "paragraph",
+        "text": "Carb cycling isn't magic — total weekly calorie and protein targets still drive the majority of body composition results. But matching carbohydrate availability to your actual training demands has a genuine mechanistic rationale backed by a growing body of evidence. High-carb training days fuel performance, support muscle protein synthesis, and temporarily preserve leptin levels; low-carb rest days push your body into fat-burning mode and build metabolic flexibility. If you're already hitting your protein targets consistently and have a structured training schedule with at least three distinct sessions per week, carb cycling is one of the highest-leverage nutritional refinements available — a strategy that works <em>with</em> your body's hormonal rhythms rather than fighting them with static, one-size-fits-all macros every day of the week."
+      },
+      {
+        "type": "cta"
+      }
+    ]
   }
 ]
