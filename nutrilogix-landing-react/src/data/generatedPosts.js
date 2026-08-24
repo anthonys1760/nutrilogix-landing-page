@@ -3255,5 +3255,86 @@ export const generatedPosts = [
         "type": "cta"
       }
     ]
+  },
+  {
+    "slug": "pre-workout-nutrition-exercise-performance-science",
+    "title": "Pre-Workout Nutrition: The Science of What to Eat Before Exercise",
+    "excerpt": "What you eat before training can make or break your workout. Here's the evidence-based guide to fuel timing, carbs, and protein for peak performance.",
+    "author": "Dr. Rachel Kim",
+    "authorInitial": "R",
+    "date": "Aug 24, 2026",
+    "dateISO": "2026-08-24",
+    "readTime": "7 min",
+    "category": "Nutrition Science",
+    "keywords": "pre-workout nutrition, what to eat before exercise, pre workout meal timing, carbs before workout, protein before gym, exercise fueling, workout performance nutrition, pre exercise meal",
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Most people agonize over their workout itself — the rep scheme, the exercise selection, the rest periods — and give almost no thought to what they ate in the hours before. Yet a growing body of research shows that pre-exercise nutrition can determine whether you perform at your peak or plateau mid-session, whether you build muscle or break it down, and whether you recover quickly or feel exhausted for days. What you eat before you train isn't a minor detail. It is one of the most accessible performance levers you have, and most people aren't using it."
+      },
+      {
+        "type": "heading",
+        "text": "Why Pre-Workout Nutrition Matters More Than You Think"
+      },
+      {
+        "type": "paragraph",
+        "text": "When you exercise, your muscles rely on two primary fuel sources: glycogen (stored carbohydrate) and free fatty acids from fat. The intensity of your training determines which fuel dominates. At higher intensities — anything above roughly 70% of VO₂max — glycogen becomes the critical limiting fuel. Deplete it, and performance drops sharply; sprints become shuffles, and the final sets of a strength workout become nearly impossible. At lower intensities, fat oxidation sustains you for longer, but glycogen is still required to initiate and sustain fat burning efficiently. Protein plays a different role: providing amino acids that prevent muscle protein breakdown during exercise, particularly in sessions lasting more than an hour. And hydration status — often ignored entirely — affects cardiovascular efficiency, thermoregulation, and even cognitive performance during training."
+      },
+      {
+        "type": "callout",
+        "text": "<strong>A 2018 meta-analysis in the <em>Journal of the International Society of Sports Nutrition</em></strong> found that consuming carbohydrates 1–4 hours before endurance exercise improved average performance by <strong>10–12%</strong> compared to exercising fasted — with the greatest gains seen in sessions lasting more than 90 minutes."
+      },
+      {
+        "type": "heading",
+        "text": "What Each Macronutrient Actually Does Before Training"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Carbohydrates — the primary fuel:</strong> Replenish liver and muscle glycogen stores depleted overnight or since your last meal. Fast-digesting carbs (banana, white rice, toast) are ideal 30–60 minutes before training; slower-digesting carbs (oats, sweet potato) work well 2–3 hours out. Match the amount to session duration and intensity.",
+          "<strong>Protein — the muscle protector:</strong> Consuming 20–40g of protein before training elevates amino acid availability in the blood during exercise, blunting muscle protein breakdown and priming the post-workout muscle protein synthesis response. Whey, Greek yogurt, eggs, and chicken all qualify.",
+          "<strong>Fat — handle with care:</strong> High-fat meals slow gastric emptying significantly and should be minimized in the 1–2 hours before training. Consumed earlier (2–4 hours out), small amounts of healthy fat support sustained energy in longer, lower-intensity sessions without causing GI distress.",
+          "<strong>Hydration — the invisible variable:</strong> Even mild dehydration of just 1–2% of body weight measurably reduces aerobic capacity, increases perceived effort, and impairs decision-making. Begin every session fully hydrated rather than trying to catch up mid-workout.",
+          "<strong>Caffeine — the most evidence-backed ergogenic:</strong> 3–6 mg per kg of body weight, consumed 30–60 minutes before training, consistently improves both endurance performance and strength output across dozens of randomized trials. It is the single most studied and validated pre-workout compound."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Timing the Pre-Workout Meal: The Critical Window"
+      },
+      {
+        "type": "paragraph",
+        "text": "The timing of your pre-workout meal matters as much as its composition. A large, complete meal eaten 3–4 hours before exercise gives your body time to digest fully, restore liver glycogen, and clear the stomach — eliminating GI distress risk during high-intensity work. A smaller snack 30–60 minutes before is appropriate for early-morning training or when a full meal isn't feasible. For most people, the sweet spot is 1–2 hours before exercise: enough time for substantial digestion but close enough to maintain elevated blood glucose and amino acid availability at the start of the session. The worst outcome is training immediately after a large, high-fat, high-volume meal — blood is diverted to the digestive system, gastric emptying slows dramatically, and nausea during intense effort becomes a real risk. If you've ever had a terrible workout after a large lunch, this is why."
+      },
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80",
+        "alt": "A balanced pre-workout meal with oats, banana, and Greek yogurt laid out on a kitchen counter"
+      },
+      {
+        "type": "heading",
+        "text": "Practical Pre-Workout Meals by Training Goal"
+      },
+      {
+        "type": "paragraph",
+        "text": "The right pre-workout fuel depends on what you're training for. <strong>For strength and hypertrophy:</strong> prioritize 30–40g of protein alongside 40–60g of moderate-GI carbohydrates, 1–2 hours before training. Greek yogurt with granola and berries, two eggs with toast and a banana, or chicken with white rice all deliver the right fuel mix. <strong>For endurance training lasting more than 90 minutes:</strong> carbohydrates take center stage. A bagel with light cream cheese, oatmeal with honey and fruit, or a banana with peanut butter provides the glycogen substrate your aerobic system depends on. <strong>For fat-loss goals:</strong> some evidence supports training at low-to-moderate intensity in a semi-fasted state, but this consistently comes at the cost of performance — and most people do significantly more total work (and therefore burn more calories) when they train fueled. Tools like Nutrilogix let you log your pre-workout meals and track how different fueling strategies affect your energy, output, and recovery patterns over time — turning guesswork into a data-driven system."
+      },
+      {
+        "type": "callout",
+        "text": "<strong>A 2017 study in the <em>Journal of Strength and Conditioning Research</em></strong> found that consuming <strong>20g of whey protein immediately before resistance training</strong> increased muscle protein synthesis rates by <strong>25% above fasted training</strong> — with no impairment of fat oxidation in subjects with normal body composition."
+      },
+      {
+        "type": "heading",
+        "text": "The Bottom Line"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pre-workout nutrition isn't about magic powders or complex protocols — it's about providing your body with the right fuel, in the right amounts, at the right time. Carbohydrates power high-intensity work. Protein protects and builds muscle. Fat slows digestion and should be minimized close to training. Hydration underpins all of it. The specifics depend on your training type, session duration, and individual goals — but the gap between exercising well-fueled and exercising fasted or poorly fueled is rarely trivial. If you've been leaving your pre-workout nutrition to chance, it may be the simplest, most immediate performance and body composition upgrade available to you."
+      },
+      {
+        "type": "cta"
+      }
+    ]
   }
 ]
