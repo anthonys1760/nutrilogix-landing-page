@@ -3336,5 +3336,90 @@ export const generatedPosts = [
         "type": "cta"
       }
     ]
+  },
+  {
+    "slug": "post-workout-nutrition-muscle-recovery-science",
+    "title": "Post-Workout Nutrition: The Science of Muscle Recovery and Growth",
+    "excerpt": "The 30-minute anabolic window is largely a myth. Here's what the research actually says about protein timing, glycogen replenishment, and maximizing muscle recovery.",
+    "author": "Dr. Alex Rivera",
+    "authorInitial": "A",
+    "date": "Aug 27, 2026",
+    "dateISO": "2026-08-27",
+    "readTime": "7 min",
+    "category": "Nutrition Science",
+    "keywords": "post workout nutrition, what to eat after workout, muscle recovery nutrition, anabolic window, protein after workout, post workout meal, muscle protein synthesis, glycogen replenishment",
+    "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "You've just finished a hard training session. You're sweaty, breathing heavy, and someone on the internet has told you that if you don't down a protein shake within 30 minutes, all your gains are evaporating. This idea — the \"anabolic window\" — has sold millions of tubs of protein powder. The science behind it, though, is far more nuanced than the supplement industry would have you believe. Understanding what your muscles actually need after training, and when, can fundamentally change how you approach recovery."
+      },
+      {
+        "type": "heading",
+        "text": "The Anabolic Window: How Tight Is It, Really?"
+      },
+      {
+        "type": "paragraph",
+        "text": "The concept of an anabolic window comes from research showing that muscle protein synthesis (MPS) — the process of building and repairing muscle tissue — is elevated for hours after resistance training. Early studies suggested the window was narrow: 30–60 minutes post-workout. But a landmark 2013 meta-analysis in the <em>Journal of the International Society of Sports Nutrition</em> by Schoenfeld and Aragon re-examined the data and found the window is considerably wider — up to 4–6 hours on either side of training. If you ate a protein-rich meal 1–2 hours before your workout, your body is still processing and utilizing those amino acids well into your session and beyond. The urgency of an immediate post-workout shake largely disappears when pre-workout nutrition is adequate."
+      },
+      {
+        "type": "callout",
+        "text": "<strong>Research finding:</strong> A 2013 meta-analysis in the <em>Journal of the International Society of Sports Nutrition</em> concluded that for exercisers who consumed protein before training, the post-exercise anabolic window extends to <strong>4–6 hours</strong> — not the 30-minute window popularized by supplement marketing."
+      },
+      {
+        "type": "heading",
+        "text": "What Your Muscles Actually Need After Training"
+      },
+      {
+        "type": "paragraph",
+        "text": "The real priority post-workout is protein — specifically, essential amino acids (EAAs), which the body cannot synthesize on its own. Resistance training creates microscopic tears in muscle fibers; amino acids are the raw material the body uses to repair and rebuild those fibers thicker and stronger. But total daily protein intake remains the <em>primary</em> driver of muscle growth and repair. Research consistently shows that spreading protein intake across 3–5 meals per day, each containing 25–40 grams of protein, is the most effective strategy for maximizing MPS over a 24-hour period. Consuming 70 grams in one sitting and only 10 grams at other meals is significantly less efficient than distributing intake evenly."
+      },
+      {
+        "type": "heading",
+        "text": "Protein Quality and the Leucine Threshold"
+      },
+      {
+        "type": "paragraph",
+        "text": "Not all protein triggers MPS equally. The key activator is leucine, a branched-chain amino acid that acts as a molecular switch for muscle protein synthesis by activating the mTOR signaling pathway. To fully trigger MPS, a meal needs to provide roughly <strong>2–3 grams of leucine</strong>. Animal proteins — chicken, fish, eggs, dairy, beef — are leucine-dense and considered complete proteins. Plant proteins can achieve similar effects, but often require larger serving sizes or strategic combining. Whey protein, derived from milk, contains approximately 10–11% leucine by weight, which is why it remains the gold standard in sports nutrition research."
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Chicken breast (150g):</strong> ~40g protein, ~3g leucine — one of the most efficient post-workout choices",
+          "<strong>Greek yogurt (200g):</strong> ~20g protein, pairs well with fruit for a natural protein + carbohydrate combo",
+          "<strong>Eggs (3 whole):</strong> ~18g protein with all essential amino acids plus fat-soluble vitamins",
+          "<strong>Salmon (150g):</strong> ~35g protein plus anti-inflammatory omega-3s that actively aid muscle repair",
+          "<strong>Cottage cheese (200g):</strong> ~24g protein, casein-dominant for slower, sustained amino acid release"
+        ]
+      },
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80",
+        "alt": "Nutritious post-workout meal with protein and healthy carbohydrates"
+      },
+      {
+        "type": "heading",
+        "text": "Carbohydrates and Glycogen Replenishment"
+      },
+      {
+        "type": "paragraph",
+        "text": "The second post-workout priority is carbohydrate — specifically, replenishing muscle glycogen, the storage form of glucose that fuels moderate-to-high intensity exercise. A single intense resistance or cardio session can deplete muscle glycogen stores by 24–40%. If you're training twice a day or have another session within 8 hours, rapid glycogen replenishment becomes genuinely important. Sports nutrition guidelines recommend consuming 1.0–1.2g of carbohydrate per kilogram of body weight in the 4 hours after training to maximize glycogen synthesis. For someone training once daily with adequate overnight recovery, total daily carbohydrate intake matters far more than timing."
+      },
+      {
+        "type": "callout",
+        "text": "<strong>Glycogen research:</strong> Classic studies by Ivy et al. found that consuming fast-digesting carbohydrates (white rice, fruit, bread) alongside protein after training increased muscle glycogen resynthesis by <strong>up to 38%</strong> compared to protein alone — particularly critical for athletes training multiple sessions per day."
+      },
+      {
+        "type": "heading",
+        "text": "The Bottom Line"
+      },
+      {
+        "type": "paragraph",
+        "text": "Post-workout nutrition is not about racing against an imaginary 30-minute clock with a perfectly calibrated shake. It's about eating enough high-quality protein spread across the day, including adequate carbohydrates to replenish glycogen, staying well-hydrated, and trusting that your body's recovery mechanisms operate over hours, not minutes. Apps like Nutrilogix can help you track whether your post-workout meals are actually hitting your protein and macro targets — because the gap between what people think they're eating and what they're actually consuming is often exactly where results are lost or gained."
+      },
+      {
+        "type": "cta"
+      }
+    ]
   }
 ]
