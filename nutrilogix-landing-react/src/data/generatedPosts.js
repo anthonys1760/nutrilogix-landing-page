@@ -4015,5 +4015,83 @@ export const generatedPosts = [
         "type": "cta"
       }
     ]
+  },
+  {
+    "slug": "potassium-sodium-blood-pressure-heart-health",
+    "title": "Potassium: The Overlooked Mineral That Balances Sodium and Protects Your Heart",
+    "excerpt": "Only 3% of Americans meet potassium recommendations — yet this mineral counteracts sodium, regulates blood pressure, and powers every heartbeat. Here's what the science says.",
+    "author": "Dr. Sarah Miller",
+    "authorInitial": "S",
+    "date": "Sep 24, 2026",
+    "dateISO": "2026-09-24",
+    "readTime": "6 min",
+    "category": "Nutrition Science",
+    "keywords": "potassium deficiency, potassium and blood pressure, potassium rich foods, potassium benefits, potassium sodium balance, high potassium foods, potassium heart health, electrolytes nutrition",
+    "image": "https://images.unsplash.com/photo-1494390248081-4e521a5940db?w=800&q=80",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Sodium gets the bad press — the mineral we're told to watch, limit, and worry about. But potassium, its biological counterpart, may actually be the more important variable in the blood pressure equation. While the average American consumes far more sodium than recommended, they consume far <em>less</em> potassium than their cardiovascular system requires. This isn't a minor nutritional footnote. The sodium-potassium ratio shapes vascular health, nerve signaling, and cardiac rhythm at the cellular level — and the modern diet has it dramatically out of balance."
+      },
+      {
+        "type": "heading",
+        "text": "The Sodium-Potassium Pump: Biology's Most Important Balancing Act"
+      },
+      {
+        "type": "paragraph",
+        "text": "Every cell in your body runs on a protein called the sodium-potassium ATPase pump. This molecular machine uses ATP — your cellular energy currency — to continuously pump three sodium ions out of the cell and pull two potassium ions in, maintaining the electrochemical gradient that powers nerve impulses, muscle contractions, and virtually all cellular communication. When potassium intake is chronically low, this pump can't operate efficiently. Sodium accumulates inside cells, fluid retention increases, and arterial walls become less pliable and more prone to elevated pressure. This is why potassium doesn't just <em>balance</em> sodium in dietary terms — it literally counteracts sodium's blood pressure-raising effects at the cellular level. The research on this mechanism has been established for decades; what has changed is our understanding of just how deficient most people are."
+      },
+      {
+        "type": "callout",
+        "text": "<strong>The deficiency gap is massive:</strong> NHANES data shows that only about 3% of Americans meet the recommended daily potassium intake. The average adult consumes roughly 2,300mg per day — less than half the 4,700mg that the WHO and most national health authorities recommend for cardiovascular protection."
+      },
+      {
+        "type": "heading",
+        "text": "Why Modern Diets Are Chronically Potassium-Poor"
+      },
+      {
+        "type": "paragraph",
+        "text": "The mismatch between what human physiology expects and what modern diets deliver is striking. Our Paleolithic ancestors consumed an estimated 10,000mg of potassium daily from wild plants, tubers, fruits, and legumes. Today's packaged-food diet delivers a fraction of that — because ultra-processed foods, which account for roughly 60% of calories in the average American diet, are potassium-poor by nature. They're typically made from refined grains, industrial fats, and added sodium: the exact inverse of what cardiovascular physiology requires. Low vegetable intake compounds this further. A diet built around bread, pasta, processed snacks, and fast food can generate thousands of milligrams of sodium per day while delivering almost no potassium — pushing the body into a chronic low-grade state of sodium excess and potassium insufficiency that slowly degrades vascular health over years."
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Muscle cramps and spasms</strong> — potassium is essential for proper muscle contraction and relaxation; deficiency particularly affects the legs and calves during or after exercise",
+          "<strong>Unexplained fatigue and weakness</strong> — cellular energy generation depends on the sodium-potassium pump; impaired pump function means reduced efficiency across all tissues",
+          "<strong>Heart palpitations or irregular heartbeat</strong> — potassium is critical for the electrical stability of cardiac muscle; even mild hypokalemia can disrupt normal heart rhythm",
+          "<strong>Constipation and digestive sluggishness</strong> — the smooth muscle lining the gut relies on potassium for the coordinated contractions that move food through the digestive tract",
+          "<strong>Blood pressure that resists other interventions</strong> — if you're eating well and exercising but blood pressure remains elevated, inadequate potassium relative to sodium may be the missing variable",
+          "<strong>Increased sugar cravings</strong> — emerging research links potassium deficiency to impaired insulin signaling and reduced glucose tolerance, which can amplify carbohydrate cravings"
+        ]
+      },
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80",
+        "alt": "Fresh vegetables and potassium-rich whole foods"
+      },
+      {
+        "type": "heading",
+        "text": "The Best Food Sources — and How to Actually Hit Your Target"
+      },
+      {
+        "type": "paragraph",
+        "text": "Potassium is most abundant in minimally processed plant foods and certain animal proteins. A single baked potato with skin delivers over 900mg. Avocados provide roughly 975mg per cup. White beans lead the plant kingdom with over 1,000mg per cup — making them among the highest-potassium foods by serving size. Dark leafy greens (spinach, Swiss chard, beet greens), sweet potatoes, edamame, dried apricots, lentils, and salmon all contribute meaningfully. The pattern is not complicated: eating more whole, unprocessed plants consistently moves potassium intake toward the recommended range. Practically, this means building meals around legumes and vegetables as primary components rather than side dishes — and being deliberate about tracking intake if you suspect you're in the deficient majority."
+      },
+      {
+        "type": "callout",
+        "text": "A landmark meta-analysis of 32 randomized controlled trials published in <strong>BMJ Open</strong> found that increasing potassium intake reduced systolic blood pressure by an average of 3.5 mmHg and diastolic pressure by 2 mmHg — effects comparable to low-dose antihypertensive medication in some populations, achieved through diet alone."
+      },
+      {
+        "type": "heading",
+        "text": "The Bottom Line"
+      },
+      {
+        "type": "paragraph",
+        "text": "Potassium is the mineral your cardiovascular system depends on and the one most consistently absent from modern diets. The research on its blood pressure, heart rhythm, and cellular energy benefits is among the most consistent in nutritional science. Increasing intake doesn't require supplements — it requires deliberate food choices: more vegetables, legumes, fish, and whole fruit. If you're tracking your nutrition with a tool like Nutrilogix, make potassium a metric you monitor alongside protein and calories. For most people, the gap between current intake and optimal intake is both significant and entirely fixable — one whole-food meal at a time."
+      },
+      {
+        "type": "cta"
+      }
+    ]
   }
 ]
