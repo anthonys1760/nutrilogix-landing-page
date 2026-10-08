@@ -4334,5 +4334,78 @@ export const generatedPosts = [
         "type": "cta"
       }
     ]
+  },
+  {
+    slug: 'thermic-effect-of-food',
+    title: 'The Thermic Effect of Food: How Your Body Burns Calories Just by Eating',
+    excerpt: 'Every meal you eat requires energy to digest — and the type of food you choose dramatically changes how much. Here\'s how TEF quietly works in your favor.',
+    author: 'Dr. Alex Rivera',
+    authorInitial: 'A',
+    date: 'Oct 08, 2026',
+    dateISO: '2026-10-08',
+    readTime: '6 min',
+    category: 'Nutrition Science',
+    keywords: 'thermic effect of food, TEF nutrition, protein metabolism, dietary induced thermogenesis, macros and metabolism, protein for weight loss, food digestion calories',
+    image: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=800&q=80',
+    body: [
+      {
+        type: 'paragraph',
+        text: 'Most people think about calories as a single number on a label. But your body doesn\'t process every calorie the same way. Digesting food, absorbing nutrients, and transporting them to your cells all require energy — and that energy expenditure is called the <em>thermic effect of food</em> (TEF), sometimes referred to as dietary-induced thermogenesis. It\'s not a hack or a trick: it\'s a real, measurable component of your total daily energy expenditure, and it behaves very differently depending on what you eat.'
+      },
+      {
+        type: 'heading',
+        text: 'What Is the Thermic Effect of Food?'
+      },
+      {
+        type: 'paragraph',
+        text: 'TEF represents roughly 10% of total daily energy expenditure in most people — meaning if you burn 2,000 calories in a day, approximately 200 of those come from the metabolic work of digesting and processing your food. This number isn\'t fixed. It varies based on metabolic health, meal size, meal frequency, and most significantly, the macronutrient composition of what you ate. Understanding TEF doesn\'t mean obsessing over fractions of calories — it means recognizing a quiet lever you can pull when structuring your diet for fat loss or body composition goals.'
+      },
+      {
+        type: 'callout',
+        text: '<strong>Research published in the American Journal of Clinical Nutrition</strong> found that a high-protein meal produces a thermic response up to 5× greater than a high-fat meal of equal caloric value — a metabolic difference that compounds meaningfully over weeks and months of consistent eating.'
+      },
+      {
+        type: 'heading',
+        text: 'How the Three Macronutrients Compare'
+      },
+      {
+        type: 'list',
+        items: [
+          '<strong>Protein: 20–30% TEF.</strong> Digesting and assimilating protein is energetically expensive. Your body burns roughly 20–30 calories for every 100 calories of protein consumed — making it the most "metabolically costly" macronutrient by a wide margin.',
+          '<strong>Carbohydrates: 5–10% TEF.</strong> Carb digestion requires moderate energy, primarily for glycolysis and glucose transport. Fiber-rich whole-food carbohydrates trend toward the higher end of this range compared to refined carbs.',
+          '<strong>Fat: 0–3% TEF.</strong> Fat is by far the most metabolically efficient macronutrient for your body to store. It requires very little energy to digest and pack away as adipose tissue — the same property that makes it calorically dense also makes it thermically inert.',
+          '<strong>Alcohol: ~20% TEF.</strong> Alcohol has a surprisingly high thermic effect, but it also suppresses fat oxidation and promotes fat storage through other hormonal mechanisms — so the high TEF is not a metabolic advantage.',
+          '<strong>Mixed meals: ~10% average.</strong> Most real-world meals fall in the 6–10% range, with higher-protein compositions consistently tracking toward the upper bound.'
+        ]
+      },
+      {
+        type: 'image',
+        src: 'https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=800&q=80',
+        alt: 'High-protein meal with grilled chicken, vegetables, and whole grains'
+      },
+      {
+        type: 'heading',
+        text: 'Why TEF Matters for Weight Loss'
+      },
+      {
+        type: 'paragraph',
+        text: 'Here\'s where TEF becomes practically meaningful: two diets with identical calorie counts can result in different <em>net</em> energy intake depending on macronutrient composition. A 2,000-calorie diet where 30% of calories come from protein produces a higher TEF than a 2,000-calorie diet where only 10% comes from protein. The daily difference can amount to 50–80 calories — modest in isolation, significant over a year. Beyond calorie math, high-protein diets preserve lean muscle mass during fat loss, and muscle tissue is itself more metabolically active than fat. That\'s a compounding advantage. Practical moves to shift TEF in your favor: prioritize lean protein at every meal (chicken, fish, legumes, Greek yogurt, eggs), opt for whole-food carbohydrates over refined options, and distribute your protein across meals rather than loading it all at dinner. Tools like <em>Nutrilogix</em> make it easy to track protein distribution across the day so you can see whether your meals are actually hitting the targets you intend.'
+      },
+      {
+        type: 'callout',
+        text: '<strong>A 2021 meta-analysis in Obesity Reviews</strong> found that higher-protein diets (≥25% of total calories from protein) were associated with a 4–6% higher resting metabolic rate compared to lower-protein diets — even when total calorie intake was matched. The thermic effect of protein was identified as a key contributing mechanism.'
+      },
+      {
+        type: 'heading',
+        text: 'The Bottom Line'
+      },
+      {
+        type: 'paragraph',
+        text: 'The thermic effect of food isn\'t a magic bullet — it won\'t rescue a diet that\'s fundamentally off-track. But it is a real, scientifically validated metabolic advantage that accumulates quietly with every meal you eat. When you center your meals around protein and fiber-rich whole foods, you\'re not just improving satiety and nutrient density — you\'re also making your body do more work to process what you\'ve consumed. That steady metabolic overhead adds up over time, and it costs you nothing to activate it.'
+      },
+      {
+        type: 'cta'
+      }
+    ]
   }
 ]
