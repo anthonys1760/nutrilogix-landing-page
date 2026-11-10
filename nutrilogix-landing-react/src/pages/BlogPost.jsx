@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import SEO from '../components/SEO'
+import TestFlightButton from '../components/TestFlightButton'
 import { SITE_ORIGIN } from '../seoHead.js'
 import { generatedPosts } from '../data/generatedPosts'
 import { postRedirects } from '../data/postRedirects'
+import { formatPostDate, sourceLines } from '../formatDate'
 
 function GeneratedPostRenderer({ post }) {
   const contentStyle = { maxWidth: '800px', margin: '40px auto', padding: '0 20px' }
@@ -58,7 +60,7 @@ function GeneratedPostRenderer({ post }) {
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }} />
 
-      <img src={post.image} alt={post.title} {...localImageSize(post.image)} style={imgStyle} />
+      <img src={post.image} alt={post.title} {...localImageSize(post.image)} className="post-cover" style={imgStyle} />
 
       <div style={{ marginBottom: '32px' }}>
         <span className="badge">{post.category}</span>
@@ -66,7 +68,7 @@ function GeneratedPostRenderer({ post }) {
       <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', lineHeight: 1.2 }}>{post.title}</h1>
       <div style={{ display: 'flex', alignItems: 'center', gap: '16px', color: 'var(--text-muted)', marginBottom: '32px', fontSize: '0.9rem' }}>
         <div className="avatar" style={{ width: 32, height: 32 }}>{post.authorInitial}</div>
-        <span>{post.author} • {post.date} • {post.readTime} read</span>
+        <span>{post.author} • {formatPostDate(post.dateISO)} • {post.readTime} read</span>
       </div>
 
       <div style={bodyStyle}>
@@ -82,11 +84,14 @@ function GeneratedPostRenderer({ post }) {
           )
           if (block.type === 'cta') return (
             <div key={i} style={{ textAlign: 'center', margin: '60px 0' }}>
-              <Link to="/" state={{ scrollTo: 'signup' }} className="btn btn-primary">Join the Nutrilogix Waitlist</Link>
+              <TestFlightButton />
             </div>
           )
           return null
         })}
+        {sourceLines(post).length > 0 && (
+          <p className="post-sources"><strong>Sources: </strong>{sourceLines(post).join('; ')}</p>
+        )}
       </div>
     </div>
   )
@@ -173,11 +178,11 @@ export default function BlogPost() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
         />
 
-        <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=1200&q=80" alt="Open fridge full of fresh ingredients" style={imgStyle} />
+        <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=1200&q=80" alt="Open fridge full of fresh ingredients" className="post-cover" style={imgStyle} />
 
         <div style={metaStyle}>
           <span className="badge">Feature Deep Dive</span>
-          <span>March 11, 2026</span>
+          <span>Mar 11, 2026</span>
           <span>6 min read</span>
         </div>
 
@@ -288,11 +293,11 @@ export default function BlogPost() {
           </p>
 
           <div style={{ textAlign: 'center', margin: '60px 0' }}>
-            <Link to="/" state={{ scrollTo: 'signup' }} className="btn btn-primary">Try Fridge Scan on TestFlight</Link>
+            <TestFlightButton />
           </div>
 
           <p style={{textAlign: 'center', marginTop: '40px', color: 'var(--text-muted)'}}>
-            Available now in the Nutrilogix beta. <a href="https://testflight.apple.com/join/7tFSghHS" target="_blank" rel="noopener noreferrer" style={{color: 'var(--primary)', fontWeight: 600}}>Get early access →</a>
+            Available now in the Nutrilogix beta. <TestFlightButton />
           </p>
         </div>
       </div>
@@ -327,11 +332,11 @@ export default function BlogPost() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
         />
 
-        <img src="/assets/images/satiety-meal.jpg" alt="Healthy Satiating Meal" style={imgStyle} />
+        <img src="/assets/images/satiety-meal.jpg" alt="Healthy Satiating Meal" className="post-cover" style={imgStyle} />
 
         <div style={metaStyle}>
           <span className="badge">Nutrition Science</span>
-          <span>February 2, 2026</span>
+          <span>Feb 2, 2026</span>
           <span>5 min read</span>
         </div>
 
@@ -383,7 +388,7 @@ export default function BlogPost() {
           </div>
 
           <div style={{ textAlign: 'center', margin: '60px 0' }}>
-            <Link to="/" state={{ scrollTo: 'signup' }} className="btn btn-primary">Analyze Your Satiety Score</Link>
+            <TestFlightButton />
           </div>
         </div>
       </div>
@@ -395,7 +400,7 @@ export default function BlogPost() {
       '@context': 'https://schema.org',
       '@type': 'BlogPosting',
       headline: 'The Hidden Dangers of Ultra-Processed Foods (and How AI Spots Them)',
-      description: 'Learn why ultra-processed foods are sabotaging your health and how Nutrilogix AI helps you identify and swap them out instantly.',
+      description: 'Learn why ultra-processed foods are sabotaging your health and how Nutrilogix helps you identify and swap them out instantly.',
       image: ['/assets/images/processed-vs-whole.jpg'],
       author: { '@type': 'Person', name: 'Anthony Smith' },
       publisher: {
@@ -411,18 +416,18 @@ export default function BlogPost() {
       <div style={contentStyle}>
         <SEO 
           title="Ultra-Processed Foods: The Hidden Danger - Nutrilogix" 
-          description="Learn why ultra-processed foods are sabotaging your health and how Nutrilogix AI helps you identify and swap them out instantly."
+          description="Learn why ultra-processed foods are sabotaging your health and how Nutrilogix helps you identify and swap them out instantly."
         />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
         />
         
-        <img src="/assets/images/processed-vs-whole.jpg" alt="Whole vs Processed Foods" style={imgStyle} />
+        <img src="/assets/images/processed-vs-whole.jpg" alt="Whole vs Processed Foods" className="post-cover" style={imgStyle} />
         
         <div style={metaStyle}>
           <span className="badge">Health Science</span>
-          <span>February 10, 2026</span>
+          <span>Feb 10, 2026</span>
           <span>5 min read</span>
         </div>
 
@@ -462,7 +467,7 @@ export default function BlogPost() {
           </p>
 
           <div style={{ textAlign: 'center', margin: '60px 0' }}>
-            <Link to="/" state={{ scrollTo: 'signup' }} className="btn btn-primary">Scan Your Fridge Now</Link>
+            <TestFlightButton />
           </div>
         </div>
       </div>
@@ -496,11 +501,11 @@ export default function BlogPost() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
         />
-        <img src="/assets/images/veggies.webp" alt="7-Minute Meal Prep" width="1600" height="1067" style={imgStyle} />
+        <img src="/assets/images/veggies.webp" alt="7-Minute Meal Prep" width="1600" height="1067" className="post-cover" style={imgStyle} />
 
         <div style={metaStyle}>
           <span className="badge">Tips & Tricks</span>
-          <span>March 5, 2026</span>
+          <span>Mar 5, 2026</span>
           <span>8 min read</span>
         </div>
 
@@ -579,7 +584,7 @@ export default function BlogPost() {
           </p>
 
           <div style={{ textAlign: 'center', margin: '60px 0' }}>
-            <a href="/#signup" className="btn btn-primary">Start Tracking in Seconds</a>
+            <TestFlightButton />
           </div>
 
           <p style={{textAlign: 'center', marginTop: '40px', color: 'var(--text-muted)'}}>
@@ -617,11 +622,11 @@ export default function BlogPost() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
         />
-        <img src="/assets/images/1.jpg" alt="AI in Nutrition" style={imgStyle} />
+        <img src="/assets/images/1.jpg" alt="AI in Nutrition" className="post-cover" style={imgStyle} />
 
         <div style={metaStyle}>
           <span className="badge">Technology</span>
-          <span>February 28, 2026</span>
+          <span>Feb 28, 2026</span>
           <span>4 min read</span>
         </div>
 
@@ -652,7 +657,7 @@ export default function BlogPost() {
           </div>
 
           <div style={{ textAlign: 'center', margin: '60px 0' }}>
-            <Link to="/" state={{ scrollTo: 'signup' }} className="btn btn-primary">Experience AI Tracking</Link>
+            <TestFlightButton />
           </div>
         </div>
       </div>
@@ -687,11 +692,11 @@ export default function BlogPost() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
         />
 
-        <img src="/assets/images/ai-blog-logging.jpg" alt="Food Logging Frustration" style={imgStyle} />
+        <img src="/assets/images/ai-blog-logging.jpg" alt="Food Logging Frustration" className="post-cover" style={imgStyle} />
 
         <div style={metaStyle}>
           <span className="badge">Nutrition Science</span>
-          <span>February 19, 2026</span>
+          <span>Feb 19, 2026</span>
           <span>6 min read</span>
         </div>
 
@@ -754,7 +759,7 @@ export default function BlogPost() {
           </p>
 
           <ul style={{ paddingLeft: '24px', marginBottom: '24px' }}>
-            <li style={{marginBottom: '12px'}}><strong>Identify multiple foods instantly</strong> with 95%+ accuracy</li>
+            <li style={{marginBottom: '12px'}}><strong>Identify multiple foods in one photo</strong>, then edit anything that looks off</li>
             <li style={{marginBottom: '12px'}}><strong>Estimate portions volumetrically</strong> without weighing</li>
             <li style={{marginBottom: '12px'}}><strong>Account for cooking methods</strong> (fried vs. baked)</li>
             <li style={{marginBottom: '12px'}}><strong>Recognize restaurant meals</strong> by appearance</li>
@@ -795,7 +800,7 @@ export default function BlogPost() {
           </p>
 
           <div style={{ textAlign: 'center', margin: '60px 0' }}>
-            <a href="/#signup" className="btn btn-primary">Try Nutrilogix on TestFlight</a>
+            <TestFlightButton />
           </div>
 
           <p style={{textAlign: 'center', marginTop: '40px', color: 'var(--text-muted)'}}>
@@ -833,11 +838,11 @@ export default function BlogPost() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
         />
-        <img src="/assets/images/salmon.webp" alt="Macro-Balanced Meal" width="1600" height="1067" style={imgStyle} />
+        <img src="/assets/images/salmon.webp" alt="Macro-Balanced Meal" width="1600" height="1067" className="post-cover" style={imgStyle} />
 
         <div style={metaStyle}>
           <span className="badge">Nutrition Basics</span>
-          <span>January 20, 2026</span>
+          <span>Jan 20, 2026</span>
           <span>5 min read</span>
         </div>
 
@@ -913,7 +918,7 @@ export default function BlogPost() {
           </div>
 
           <div style={{ textAlign: 'center', margin: '60px 0' }}>
-            <Link to="/" state={{ scrollTo: 'signup' }} className="btn btn-primary">Learn Your Macros Now</Link>
+            <TestFlightButton />
           </div>
         </div>
       </div>
@@ -947,11 +952,11 @@ export default function BlogPost() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
         />
-        <img src="/assets/images/egg.webp" alt="Meal Planning" width="1600" height="1436" style={imgStyle} />
+        <img src="/assets/images/egg.webp" alt="Meal Planning" width="1600" height="1436" className="post-cover" style={imgStyle} />
 
         <div style={metaStyle}>
           <span className="badge">Tips & Tricks</span>
-          <span>March 12, 2026</span>
+          <span>Mar 12, 2026</span>
           <span>6 min read</span>
         </div>
 
@@ -1045,7 +1050,7 @@ export default function BlogPost() {
           </ul>
 
           <div style={{ textAlign: 'center', margin: '60px 0' }}>
-            <Link to="/" state={{ scrollTo: 'signup' }} className="btn btn-primary">Start Meal Planning Today</Link>
+            <TestFlightButton />
           </div>
 
           <p style={{textAlign: 'center', marginTop: '40px', color: 'var(--text-muted)'}}>
@@ -1084,11 +1089,11 @@ export default function BlogPost() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
         />
 
-        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&q=80" alt="Healthy food spread" style={imgStyle} />
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&q=80" alt="Healthy food spread" className="post-cover" style={imgStyle} />
 
         <div style={metaStyle}>
           <span className="badge">Feature Deep Dive</span>
-          <span>March 4, 2026</span>
+          <span>Mar 4, 2026</span>
           <span>6 min read</span>
         </div>
 
@@ -1211,7 +1216,7 @@ export default function BlogPost() {
           </p>
 
           <div style={{ textAlign: 'center', margin: '60px 0' }}>
-            <Link to="/" state={{ scrollTo: 'signup' }} className="btn btn-primary">Check Your Health Score</Link>
+            <TestFlightButton />
           </div>
         </div>
       </div>

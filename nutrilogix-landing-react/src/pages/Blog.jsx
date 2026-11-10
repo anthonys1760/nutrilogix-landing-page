@@ -1,7 +1,11 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { useEffect, useMemo } from 'react'
+import { Link, useSearchParams } from 'react-router-dom'
 import SEO from '../components/SEO'
 import { generatedPosts } from '../data/generatedPosts'
+import { staticPosts } from '../data/staticPosts'
+import { formatPostDate } from '../formatDate'
+
+const PAGE_SIZE = 12
 
 function localImageSize(src) {
   if (typeof src !== 'string') return {}
@@ -10,14 +14,66 @@ function localImageSize(src) {
   return {}
 }
 
+function allPosts() {
+  const seen = new Set()
+  const posts = []
+  for (const post of generatedPosts) {
+    if (!post.slug || seen.has(post.slug)) continue
+    seen.add(post.slug)
+    posts.push({
+      slug: post.slug,
+      title: post.title,
+      excerpt: post.excerpt,
+      image: post.image,
+      imageAlt: post.title,
+      category: post.category,
+      author: post.author,
+      authorInitial: post.authorInitial,
+      dateISO: post.dateISO,
+      readTime: post.readTime,
+    })
+  }
+  for (const post of staticPosts) {
+    if (seen.has(post.slug)) continue
+    seen.add(post.slug)
+    posts.push(post)
+  }
+  return posts.sort((a, b) => (b.dateISO || '').localeCompare(a.dateISO || '') || a.slug.localeCompare(b.slug))
+}
+
 export default function Blog() {
+  const posts = useMemo(() => allPosts(), [])
+  const topics = useMemo(() => {
+    return [...new Set(posts.map((post) => post.category).filter(Boolean))].sort()
+  }, [posts])
+  const [params, setParams] = useSearchParams()
+  const topic = params.get('topic') || ''
+  const requested = Number.parseInt(params.get('page') || '1', 10)
+  const filtered = topic ? posts.filter((post) => post.category === topic) : posts
+  const pageCount = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE))
+  const page = Number.isFinite(requested) ? Math.min(Math.max(requested, 1), pageCount) : 1
+  const visible = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
+
+  useEffect(() => {
+    if (!params.get('page') && !params.get('topic')) return
+    document.getElementById('blog-grid')?.scrollIntoView({
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+    })
+  }, [page, topic, params])
+
+  const setQuery = (nextPage, nextTopic) => {
+    const next = {}
+    if (nextTopic) next.topic = nextTopic
+    if (nextPage > 1) next.page = String(nextPage)
+    setParams(next)
+  }
+
   return (
     <>
       <SEO
         title="Nutrilogix Blog - Nutrition Science & AI Tech"
         description="Expert articles on nutrition tracking, AI food analysis, and healthy living tips."
       />
-      {/* Blog Header */}
       <section className="section bg-light" style={{ paddingBottom: '40px' }}>
         <div className="container section-header">
           <h1>Nutrition & Health Insights</h1>
@@ -25,174 +81,73 @@ export default function Blog() {
         </div>
       </section>
 
-      {/* Blog Grid */}
       <section className="section" style={{ paddingTop: '20px' }}>
         <div className="container">
-          <div className="features-grid"> {/* Reusing grid layout */}
+          <div className="topic-filters" role="group" aria-label="Filter posts by topic">
+            <button
+              type="button"
+              className={`topic-filter ${topic ? '' : 'is-active'}`}
+              aria-pressed={!topic}
+              onClick={() => setQuery(1, '')}
+            >
+              All
+            </button>
+            {topics.map((name) => (
+              <button
+                key={name}
+                type="button"
+                className={`topic-filter ${topic === name ? 'is-active' : ''}`}
+                aria-pressed={topic === name}
+                onClick={() => setQuery(1, name)}
+              >
+                {name}
+              </button>
+            ))}
+          </div>
 
-            {/* Generated posts (newest first) */}
-            {[...generatedPosts].reverse().map(post => (
+          <div id="blog-grid" className="features-grid">
+            {visible.map((post) => (
               <article key={post.slug} className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
                 <Link to={`/blog/${post.slug}`} style={{ display: 'block' }}>
-                  <img src={post.image} alt={post.title} {...localImageSize(post.image)} loading="lazy" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                  <img src={post.image} alt={post.imageAlt || post.title} {...localImageSize(post.image)} loading="lazy" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
                   <div style={{ padding: '24px' }}>
                     <span className="badge" style={{ marginBottom: '12px' }}>{post.category}</span>
-                    <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>{post.title}</h3>
+                    <h2 className="blog-card-title">{post.title}</h2>
                     <p style={{ fontSize: '0.95rem', marginBottom: '16px' }}>{post.excerpt}</p>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
                       <div className="avatar" style={{ width: 24, height: 24, fontSize: '0.7rem' }}>{post.authorInitial}</div>
-                      <span>{post.author} • {post.date} • {post.readTime} read</span>
+                      <span>{post.author} • {formatPostDate(post.dateISO)} • {post.readTime} read</span>
                     </div>
                   </div>
                 </Link>
               </article>
             ))}
-
-            {/* Post: Fridge Scan */}
-            <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
-              <Link to="/blog/scan-your-fridge-ai-recipes" style={{ display: 'block' }}>
-                <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=600&q=80" alt="AI Fridge Scan" loading="lazy" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
-                <div style={{ padding: '24px' }}>
-                  <span className="badge" style={{ marginBottom: '12px' }}>Feature Deep Dive</span>
-                  <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>Scan Your Fridge, Get Recipes: How AI Turns Leftovers Into Macro-Perfect Meals</h3>
-                  <p style={{ fontSize: '0.95rem', marginBottom: '16px' }}>How Nutrilogix's Fridge Scan uses multi-photo AI detection and macro-aware recipe generation to eliminate food waste.</p>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                    <div className="avatar" style={{ width: 24, height: 24, fontSize: '0.7rem' }}>A</div>
-                    <span>Anthony Smith • Mar 11, 2026 • 6 min read</span>
-                  </div>
-                </div>
-              </Link>
-            </article>
-
-            {/* Post: Health Scores */}
-            <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
-              <Link to="/blog/health-scores-beyond-calories" style={{ display: 'block' }}>
-                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80" alt="Health Scores Beyond Calories" loading="lazy" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
-                <div style={{ padding: '24px' }}>
-                  <span className="badge" style={{ marginBottom: '12px' }}>Feature Deep Dive</span>
-                  <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>Health Scores: Why Calories Alone Are Lying to You</h3>
-                  <p style={{ fontSize: '0.95rem', marginBottom: '16px' }}>How Nutrilogix's 0-100 Health Score reveals the real quality of your food — and why it matters more than calorie counts.</p>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                    <div className="avatar" style={{ width: 24, height: 24, fontSize: '0.7rem' }}>A</div>
-                    <span>Anthony Smith • Mar 4, 2026 • 6 min read</span>
-                  </div>
-                </div>
-              </Link>
-            </article>
-
-            {/* New Post: Hidden Cost of Manual Logging */}
-            <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
-              <Link to="/blog/hidden-cost-manual-logging" style={{ display: 'block' }}>
-                <img src="/assets/images/ai-blog-logging.jpg" alt="Manual Food Logging Frustration" loading="lazy" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
-                <div style={{ padding: '24px' }}>
-                  <span className="badge" style={{ marginBottom: '12px' }}>Nutrition Science</span>
-                  <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>The Hidden Cost of Manual Food Logging</h3>
-                  <p style={{ fontSize: '0.95rem', marginBottom: '16px' }}>Why manual logging kills your diet momentum and how AI photo tracking solves this completely.</p>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                    <div className="avatar" style={{ width: 24, height: 24, fontSize: '0.7rem' }}>A</div>
-                    <span>Anthony Smith • Feb 19, 2026 • 6 min read</span>
-                  </div>
-                </div>
-              </Link>
-            </article>
-
-            {/* New Post: Science of Satiety */}
-            <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
-              <Link to="/blog/science-of-satiety" style={{ display: 'block' }}>
-                <img src="/assets/images/satiety-meal.jpg" alt="Science of Satiety" loading="lazy" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
-                <div style={{ padding: '24px' }}>
-                  <span className="badge" style={{ marginBottom: '12px' }}>Nutrition Science</span>
-                  <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>The Science of Satiety: Why You're Always Hungry</h3>
-                  <p style={{ fontSize: '0.95rem', marginBottom: '16px' }}>Understanding hunger hormones and how to structure meals to stay full longer.</p>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                    <div className="avatar" style={{ width: 24, height: 24, fontSize: '0.7rem' }}>A</div>
-                    <span>Anthony Smith • Feb 2, 2026 • 5 min read</span>
-                  </div>
-                </div>
-              </Link>
-            </article>
-
-            {/* New Post: UPFs */}
-            <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
-              <Link to="/blog/hidden-dangers-ultra-processed" style={{ display: 'block' }}>
-                <img src="/assets/images/processed-vs-whole.jpg" alt="Whole vs Processed Foods" loading="lazy" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
-                <div style={{ padding: '24px' }}>
-                  <span className="badge" style={{ marginBottom: '12px' }}>Health Science</span>
-                  <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>Hidden Dangers of Ultra-Processed Foods</h3>
-                  <p style={{ fontSize: '0.95rem', marginBottom: '16px' }}>Why "real food" matters more than macros, and how AI helps you spot the difference.</p>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                    <div className="avatar" style={{ width: 24, height: 24, fontSize: '0.7rem' }}>A</div>
-                    <span>Anthony Smith • Feb 10, 2026 • 5 min read</span>
-                  </div>
-                </div>
-              </Link>
-            </article>
-
-            {/* Post 1 */}
-            <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
-              <Link to="/blog/understanding-macros" style={{ display: 'block' }}>
-                <img src="/assets/images/salmon.webp" alt="Understanding Macros" width="1600" height="1067" loading="lazy" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
-                <div style={{ padding: '24px' }}>
-                  <span className="badge" style={{ marginBottom: '12px' }}>Nutrition Basics</span>
-                  <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>Understanding Macros: A Beginner's Guide</h3>
-                  <p style={{ fontSize: '0.95rem', marginBottom: '16px' }}>Learn about the three main macronutrients - proteins, carbohydrates, and fats - and why they matter.</p>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                    <div className="avatar" style={{ width: 24, height: 24, fontSize: '0.7rem' }}>A</div>
-                    <span>Anthony Smith • Jan 20, 2026 • 5 min read</span>
-                  </div>
-                </div>
-              </Link>
-            </article>
-
-            {/* Post 2 */}
-            <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
-              <Link to="/blog/ai-in-nutrition" style={{ display: 'block' }}>
-                <img src="/assets/images/1.jpg" alt="AI in Nutrition" loading="lazy" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
-                <div style={{ padding: '24px' }}>
-                  <span className="badge" style={{ marginBottom: '12px' }}>Technology</span>
-                  <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>How AI is Revolutionizing Nutrition Tracking</h3>
-                  <p style={{ fontSize: '0.95rem', marginBottom: '16px' }}>Discover how artificial intelligence is making it easier than ever to track your daily nutrition.</p>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                    <div className="avatar" style={{ width: 24, height: 24, fontSize: '0.7rem' }}>A</div>
-                    <span>Anthony Smith • Feb 28, 2026 • 4 min read</span>
-                  </div>
-                </div>
-              </Link>
-            </article>
-
-            {/* Post 3 */}
-            <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
-              <Link to="/blog/meal-planning" style={{ display: 'block' }}>
-                <img src="/assets/images/egg.webp" alt="Meal Planning" width="1600" height="1436" loading="lazy" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
-                <div style={{ padding: '24px' }}>
-                  <span className="badge" style={{ marginBottom: '12px' }}>Tips & Tricks</span>
-                  <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>5 Simple Steps to Effective Meal Planning</h3>
-                  <p style={{ fontSize: '0.95rem', marginBottom: '16px' }}>Master the art of meal planning with these practical tips that will save you time.</p>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                    <div className="avatar" style={{ width: 24, height: 24, fontSize: '0.7rem' }}>A</div>
-                    <span>Anthony Smith • Mar 12, 2026 • 6 min read</span>
-                  </div>
-                </div>
-              </Link>
-            </article>
-
-            {/* Post 4 */}
-            <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
-              <Link to="/blog/7-minute-meal-prep" style={{ display: 'block' }}>
-                <img src="/assets/images/veggies.webp" alt="7-Minute Meal Prep" width="1600" height="1067" loading="lazy" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
-                <div style={{ padding: '24px' }}>
-                  <span className="badge" style={{ marginBottom: '12px' }}>Meal Prep</span>
-                  <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>7-Minute Meal Prep for Busy Professionals</h3>
-                  <p style={{ fontSize: '0.95rem', marginBottom: '16px' }}>A plug-and-play protein + veg + smart carb system with AI photo tracking.</p>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                    <div className="avatar" style={{ width: 24, height: 24, fontSize: '0.7rem' }}>A</div>
-                    <span>Anthony Smith • Mar 5, 2026 • 8 min read</span>
-                  </div>
-                </div>
-              </Link>
-            </article>
-
           </div>
+
+          {pageCount > 1 && (
+            <nav className="blog-pagination" aria-label="Blog pages">
+              <button type="button" disabled={page <= 1} onClick={() => setQuery(page - 1, topic)}>
+                Previous
+              </button>
+              {Array.from({ length: pageCount }, (_, index) => {
+                const number = index + 1
+                return (
+                  <button
+                    key={number}
+                    type="button"
+                    className={number === page ? 'is-active' : ''}
+                    aria-current={number === page ? 'page' : undefined}
+                    onClick={() => setQuery(number, topic)}
+                  >
+                    {number}
+                  </button>
+                )
+              })}
+              <button type="button" disabled={page >= pageCount} onClick={() => setQuery(page + 1, topic)}>
+                Next
+              </button>
+            </nav>
+          )}
         </div>
       </section>
     </>
