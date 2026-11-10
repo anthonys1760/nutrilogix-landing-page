@@ -57,11 +57,7 @@ async function safeImageUrl(url) {
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY
 if (!OPENROUTER_API_KEY) { console.error('[Blog] Missing OPENROUTER_API_KEY'); process.exit(1) }
 
-const AUTHORS = [
-  { name: 'Dr. Alex Rivera', initial: 'A' },
-  { name: 'Dr. Sarah Miller', initial: 'S' },
-  { name: 'Dr. Rachel Kim', initial: 'R' },
-]
+const AUTHOR = { name: 'Anthony Smith', initial: 'A' }
 
 const DATA_FILE = path.join(ROOT, 'src/data/generatedPosts.js')
 
@@ -99,7 +95,7 @@ function loadExistingPosts() {
 // ── OpenRouter call ───────────────────────────────────────────────────────────
 
 async function generatePost(existingSlugs, existingTitles) {
-  const author = AUTHORS[Math.floor(Math.random() * AUTHORS.length)]
+  const author = AUTHOR
   const dateISO = today()
 
   const prompt = `You are a nutrition science writer for Nutrilogix, an AI-powered food tracking app.
@@ -147,7 +143,7 @@ Body rules:
     headers: {
       'Authorization': `Bearer ${OPENROUTER_API_KEY}`,
       'Content-Type': 'application/json',
-      'HTTP-Referer': 'https://nutrilogix.app',
+      'HTTP-Referer': 'https://nutrilogix-ai.com',
       'X-Title': 'Nutrilogix Blog Automation',
     },
     body: JSON.stringify({

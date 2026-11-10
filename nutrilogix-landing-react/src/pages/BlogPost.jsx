@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import SEO from '../components/SEO'
+import SEO, { SITE_ORIGIN } from '../components/SEO'
 import { generatedPosts } from '../data/generatedPosts'
 
 function GeneratedPostRenderer({ post }) {
@@ -16,24 +16,27 @@ function GeneratedPostRenderer({ post }) {
     marginBottom: '24px'
   }
 
-  const absoluteImage = post.image.startsWith('http') ? post.image : `https://nutrilogix.app${post.image}`
+  const salmonSize = (src) => (
+    typeof src === 'string' && src.endsWith('/salmon.webp') ? { width: 1600, height: 1067 } : {}
+  )
+  const absoluteImage = post.image.startsWith('http') ? post.image : `${SITE_ORIGIN}${post.image}`
 
   const blogPostingLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: post.title,
     description: post.excerpt,
-    url: `https://nutrilogix.app/blog/${post.slug}`,
+    url: `${SITE_ORIGIN}/blog/${post.slug}`,
     image: [absoluteImage],
     author: { '@type': 'Person', name: post.author },
     publisher: {
       '@type': 'Organization',
       name: 'Nutrilogix',
-      logo: { '@type': 'ImageObject', url: 'https://nutrilogix.app/assets/images/2.jpg' },
+      logo: { '@type': 'ImageObject', url: `${SITE_ORIGIN}/assets/images/2.jpg` },
     },
     datePublished: post.dateISO,
     dateModified: post.dateISO,
-    mainEntityOfPage: { '@type': 'WebPage', '@id': `https://nutrilogix.app/blog/${post.slug}` },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_ORIGIN}/blog/${post.slug}` },
     ...(post.keywords ? { keywords: Array.isArray(post.keywords) ? post.keywords.join(', ') : post.keywords } : {}),
   }
 
@@ -50,7 +53,7 @@ function GeneratedPostRenderer({ post }) {
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }} />
 
-      <img src={post.image} alt={post.title} style={imgStyle} />
+      <img src={post.image} alt={post.title} {...salmonSize(post.image)} style={imgStyle} />
 
       <div style={{ marginBottom: '32px' }}>
         <span className="badge">{post.category}</span>
@@ -66,7 +69,7 @@ function GeneratedPostRenderer({ post }) {
           if (block.type === 'paragraph') return <p key={i} style={{ marginBottom: '24px' }} dangerouslySetInnerHTML={{ __html: block.text }} />
           if (block.type === 'heading') return <h2 key={i} style={headingStyle}>{block.text}</h2>
           if (block.type === 'callout') return <div key={i} style={calloutStyle} dangerouslySetInnerHTML={{ __html: block.text }} />
-          if (block.type === 'image') return <img key={i} src={block.src} alt={block.alt} style={{ width: '100%', borderRadius: '12px', height: '300px', objectFit: 'cover', marginBottom: '32px' }} />
+          if (block.type === 'image') return <img key={i} src={block.src} alt={block.alt} loading="lazy" {...salmonSize(block.src)} style={{ width: '100%', borderRadius: '12px', height: '300px', objectFit: 'cover', marginBottom: '32px' }} />
           if (block.type === 'list') return (
             <ul key={i} style={{ paddingLeft: '24px', marginBottom: '24px' }}>
               {block.items.map((item, j) => <li key={j} style={{ marginBottom: '12px' }} dangerouslySetInnerHTML={{ __html: item }} />)}
@@ -138,7 +141,7 @@ export default function BlogPost() {
       headline: 'Scan Your Fridge, Get Recipes: How AI Turns Leftovers Into Macro-Perfect Meals',
       description: 'How Nutrilogix\'s Fridge Scan uses multi-photo AI detection and macro-aware recipe generation to eliminate food waste and hit your nutrition goals.',
       image: ['https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=1200&q=80'],
-      author: { '@type': 'Person', name: 'Dr. Alex Rivera' },
+      author: { '@type': 'Person', name: 'Anthony Smith' },
       publisher: {
         '@type': 'Organization',
         name: 'Nutrilogix',
@@ -146,7 +149,7 @@ export default function BlogPost() {
       },
       datePublished: '2026-03-11',
       dateModified: '2026-03-11',
-      mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://nutrilogix.app/blog/scan-your-fridge-ai-recipes' },
+      mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://nutrilogix-ai.com/blog/scan-your-fridge-ai-recipes' },
     }
 
     return (
@@ -295,7 +298,7 @@ export default function BlogPost() {
       headline: "The Science of Satiety: Why You're Always Hungry",
       description: 'Understanding the hunger hormones and how to structure meals that keep you full for hours.',
       image: ['/assets/images/satiety-meal.jpg'],
-      author: { '@type': 'Person', name: 'Dr. Alex Rivera' },
+      author: { '@type': 'Person', name: 'Anthony Smith' },
       publisher: {
         '@type': 'Organization',
         name: 'Nutrilogix',
@@ -386,7 +389,7 @@ export default function BlogPost() {
       headline: 'The Hidden Dangers of Ultra-Processed Foods (and How AI Spots Them)',
       description: 'Learn why ultra-processed foods are sabotaging your health and how Nutrilogix AI helps you identify and swap them out instantly.',
       image: ['/assets/images/processed-vs-whole.jpg'],
-      author: { '@type': 'Person', name: 'Dr. Sarah Miller' },
+      author: { '@type': 'Person', name: 'Anthony Smith' },
       publisher: {
         '@type': 'Organization',
         name: 'Nutrilogix',
@@ -465,7 +468,7 @@ export default function BlogPost() {
       headline: 'The End of Manual Logging: Why AI is the Future of Nutrition Tracking',
       description: 'Discover how AI and computer vision are replacing tedious manual food logging, making nutrition tracking faster, more accurate, and sustainable.',
       image: ['/assets/images/tacos.jpg'],
-      author: { '@type': 'Person', name: 'Dr. Alex Rivera' },
+      author: { '@type': 'Person', name: 'Anthony Smith' },
       publisher: {
         '@type': 'Organization',
         name: 'Nutrilogix',
@@ -551,7 +554,7 @@ export default function BlogPost() {
       headline: '7-Minute Meal Prep for Busy Professionals',
       description: 'A quick meal prep system using protein, veg, and smart carbs, integrated with an AI photo app for instant macro tracking.',
       image: ['/assets/images/veggies.jpg'],
-      author: { '@type': 'Person', name: 'Sarah Johnson' },
+      author: { '@type': 'Person', name: 'Anthony Smith' },
       publisher: {
         '@type': 'Organization',
         name: 'Nutrilogix',
@@ -672,7 +675,7 @@ export default function BlogPost() {
       headline: 'How AI is Revolutionizing Nutrition Tracking',
       description: 'Artificial Intelligence is transforming nutrition tracking. Learn how computer vision and machine learning make logging meals instant and accurate.',
       image: ['/assets/images/1.jpg'],
-      author: { '@type': 'Person', name: 'Mike Chen' },
+      author: { '@type': 'Person', name: 'Anthony Smith' },
       publisher: {
         '@type': 'Organization',
         name: 'Nutrilogix',
@@ -741,7 +744,7 @@ export default function BlogPost() {
       headline: "The Hidden Cost of Manual Food Logging (And Why It Keeps You Stuck)",
       description: 'Why manual food logging fails and how AI photo tracking solves the problem.',
       image: ['/assets/images/ai-blog-logging.jpg'],
-      author: { '@type': 'Person', name: 'Dr. Alex Rivera' },
+      author: { '@type': 'Person', name: 'Anthony Smith' },
       publisher: {
         '@type': 'Organization',
         name: 'Nutrilogix',
@@ -871,8 +874,8 @@ export default function BlogPost() {
       '@type': 'BlogPosting',
       headline: 'Understanding Macros: A Beginner\'s Guide',
       description: 'Learn about the three main macronutrients - proteins, carbohydrates, and fats - and why they matter for your nutrition goals.',
-      image: ['/assets/images/salmon.jpg'],
-      author: { '@type': 'Person', name: 'Sarah Johnson' },
+      image: ['/assets/images/salmon.webp'],
+      author: { '@type': 'Person', name: 'Anthony Smith' },
       publisher: {
         '@type': 'Organization',
         name: 'Nutrilogix',
@@ -892,7 +895,7 @@ export default function BlogPost() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
         />
-        <img src="/assets/images/salmon.jpg" alt="Macro-Balanced Meal" style={imgStyle} />
+        <img src="/assets/images/salmon.webp" alt="Macro-Balanced Meal" width="1600" height="1067" style={imgStyle} />
 
         <div style={metaStyle}>
           <span className="badge">Nutrition Basics</span>
@@ -986,7 +989,7 @@ export default function BlogPost() {
       headline: '5 Simple Steps to Effective Meal Planning',
       description: 'Master the art of meal planning with these practical tips that will save you time, money, and decision fatigue.',
       image: ['/assets/images/egg.jpg'],
-      author: { '@type': 'Person', name: 'Emily Davis' },
+      author: { '@type': 'Person', name: 'Anthony Smith' },
       publisher: {
         '@type': 'Organization',
         name: 'Nutrilogix',
@@ -1122,7 +1125,7 @@ export default function BlogPost() {
       headline: 'The Science of Hydration: How Much Water Do You Really Need?',
       description: 'Debunk the 8-glass myth and learn evidence-based strategies to optimize your daily water intake for better health.',
       image: ['https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=1200&q=80'],
-      author: { '@type': 'Person', name: 'Dr. Rachel Kim' },
+      author: { '@type': 'Person', name: 'Anthony Smith' },
       publisher: {
         '@type': 'Organization',
         name: 'Nutrilogix',
@@ -1246,7 +1249,7 @@ export default function BlogPost() {
       headline: 'Health Scores: Why Calories Alone Are Lying to You',
       description: 'How Nutrilogix\'s 0-100 Health Score reveals the real quality of your food and why it matters more than calorie counts.',
       image: ['https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&q=80'],
-      author: { '@type': 'Person', name: 'Dr. Sarah Miller' },
+      author: { '@type': 'Person', name: 'Anthony Smith' },
       publisher: {
         '@type': 'Organization',
         name: 'Nutrilogix',
