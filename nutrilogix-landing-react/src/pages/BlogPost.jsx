@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, Navigate, useParams } from 'react-router-dom'
 import SEO from '../components/SEO'
 import { SITE_ORIGIN } from '../seoHead.js'
 import { generatedPosts } from '../data/generatedPosts'
+import { postRedirects } from '../data/postRedirects'
 
 function GeneratedPostRenderer({ post }) {
   const contentStyle = { maxWidth: '800px', margin: '40px auto', padding: '0 20px' }
@@ -97,6 +98,9 @@ export default function BlogPost() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [slug])
+
+  const redirectedSlug = postRedirects[slug]
+  if (redirectedSlug) return <Navigate to={`/blog/${redirectedSlug}`} replace />
 
   // Check generated posts first
   const generated = generatedPosts.find(p => p.slug === slug)
@@ -465,92 +469,6 @@ export default function BlogPost() {
     )
   }
 
-  if (slug === 'the-end-of-manual-logging') {
-    const blogPostingLd = {
-      '@context': 'https://schema.org',
-      '@type': 'BlogPosting',
-      headline: 'The End of Manual Logging: Why AI is the Future of Nutrition Tracking',
-      description: 'Discover how AI and computer vision are replacing tedious manual food logging, making nutrition tracking faster, more accurate, and sustainable.',
-      image: ['/assets/images/tacos.jpg'],
-      author: { '@type': 'Person', name: 'Anthony Smith' },
-      publisher: {
-        '@type': 'Organization',
-        name: 'Nutrilogix',
-        logo: { '@type': 'ImageObject', url: '/assets/images/2.jpg' },
-      },
-      datePublished: '2026-01-15',
-      mainEntityOfPage: { '@type': 'WebPage', '@id': '/blog/the-end-of-manual-logging' },
-    }
-
-    return (
-      <div style={contentStyle}>
-        <SEO 
-          title="The End of Manual Logging - Nutrilogix" 
-          description="Discover how AI and computer vision are replacing tedious manual food logging, making nutrition tracking faster, more accurate, and sustainable."
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
-        />
-
-        <img src="/assets/images/tacos.jpg" alt="AI Food Analysis" style={imgStyle} />
-
-        <div style={metaStyle}>
-          <span className="badge">Technology</span>
-          <span>January 15, 2026</span>
-          <span>6 min read</span>
-        </div>
-
-        <h1 style={h1Style}>The End of Manual Logging: Why AI is the Future of Nutrition Tracking</h1>
-        
-        <div style={bodyStyle}>
-          <p style={{marginBottom: '24px'}}>
-            For decades, "tracking your macros" meant one thing: staring at a food label, searching a clunky database, estimating portion sizes, and manually typing numbers into an app. It was tedious, prone to error, and the #1 reason people quit their nutrition goals.
-          </p>
-
-          <p style={{marginBottom: '24px'}}>
-            But the era of manual logging is over. <strong>Computer Vision</strong> and <strong>Generative AI</strong> have matured to the point where your phone camera can now "see" food just like you do-but with the nutritional precision of a lab technician.
-          </p>
-
-          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>The Friction of Traditional Tracking</h2>
-          <p style={{marginBottom: '24px'}}>
-            Studies show that users underestimate their calorie intake by up to 30% when logging manually. Why? Because we are terrible at guessing portion sizes. Is that 4oz of chicken or 6oz? Is that tablespoon of oil or two?
-          </p>
-          <p style={{marginBottom: '24px'}}>
-            Beyond accuracy, the sheer <em>friction</em> is a killer. Spending 15 minutes a day logging food feels like a part-time job. AI reduces this to seconds.
-          </p>
-
-          <div style={{ background: 'var(--primary-light)', padding: '24px', borderRadius: '12px', borderLeft: '4px solid var(--primary)', marginBottom: '32px' }}>
-             <strong>The Nutrilogix Difference:</strong> We don't just match keywords. Our AI analyzes the visual texture, volume, and composition of your meal to calculate density and mass instantly.
-          </div>
-
-          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>How AI "See's" Your Food</h2>
-          <p style={{marginBottom: '24px'}}>
-            When you snap a photo with Nutrilogix, a complex pipeline triggers in milliseconds:
-          </p>
-          <ul style={{ paddingLeft: '24px', marginBottom: '24px' }}>
-            <li style={{marginBottom: '12px'}}><strong>Segmentation:</strong> The AI separates the steak from the broccoli and the rice.</li>
-            <li style={{marginBottom: '12px'}}><strong>Volumetric Analysis:</strong> It estimates the 3D volume of each item based on depth and reference points.</li>
-            <li style={{marginBottom: '12px'}}><strong>Density Calculation:</strong> It identifies the food type (e.g., "Grilled Salmon") to apply the correct caloric density.</li>
-          </ul>
-
-          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>Beyond Calories: Quality Scores</h2>
-          <p style={{marginBottom: '24px'}}>
-            The future isn't just about <em>how much</em> you eat, but <em>what</em> you eat. AI can detect processing levels, identifying ultra-processed foods vs. whole foods instantly. This empowers you to optimize for longevity, not just weight loss.
-          </p>
-
-          <div style={{ textAlign: 'center', margin: '60px 0' }}>
-            <Link to="/" state={{ scrollTo: 'signup' }} className="btn btn-primary">Experience the Future</Link>
-          </div>
-
-          <p>
-            Ready to stop typing and start living? <a href="/#signup" style={{color: 'var(--primary)', fontWeight: 600}}>Join the Nutrilogix waitlist</a> today.
-          </p>
-        </div>
-      </div>
-    )
-  }
-
   if (slug === '7-minute-meal-prep') {
     const blogPostingLd = {
       '@context': 'https://schema.org',
@@ -774,7 +692,7 @@ export default function BlogPost() {
         <div style={metaStyle}>
           <span className="badge">Nutrition Science</span>
           <span>February 19, 2026</span>
-          <span>5 min read</span>
+          <span>6 min read</span>
         </div>
 
         <h1 style={h1Style}>The Hidden Cost of Manual Food Logging (And Why It Keeps You Stuck)</h1>
@@ -841,6 +759,22 @@ export default function BlogPost() {
             <li style={{marginBottom: '12px'}}><strong>Account for cooking methods</strong> (fried vs. baked)</li>
             <li style={{marginBottom: '12px'}}><strong>Recognize restaurant meals</strong> by appearance</li>
           </ul>
+
+          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>How the Camera Reads a Plate</h2>
+          <p style={{marginBottom: '24px'}}>
+            A photo log is not a keyword search against a food database. When you snap a plate, the analysis runs as a short pipeline:
+          </p>
+          <ul style={{ paddingLeft: '24px', marginBottom: '24px' }}>
+            <li style={{marginBottom: '12px'}}><strong>Segmentation:</strong> The model separates the steak from the broccoli and the rice, instead of treating the plate as one item.</li>
+            <li style={{marginBottom: '12px'}}><strong>Volumetric analysis:</strong> It estimates the 3D volume of each item from depth and reference points, which is the step manual logging asks you to guess.</li>
+            <li style={{marginBottom: '12px'}}><strong>Density calculation:</strong> It identifies the food — grilled salmon versus fried — and applies that food's caloric density to the estimated volume.</li>
+          </ul>
+          <div style={{ background: 'var(--primary-light)', padding: '24px', borderRadius: '12px', borderLeft: '4px solid var(--primary)', marginBottom: '32px' }}>
+            <strong>Texture, volume, and composition:</strong> The estimate comes from how the food looks — visual texture, volume, and what is on the plate — rather than from matching a typed name.
+          </div>
+          <p style={{marginBottom: '24px'}}>
+            The same pass can go past calories. Processing level is visible: an ultra-processed item and a plate of whole foods do not look the same, and flagging that difference is what lets a log speak to food quality, not only to the calorie total.
+          </p>
 
           <p style={{marginBottom: '24px'}}>
             By removing friction, you remove the need for motivation. Tracking becomes as easy as taking a photo-something you're already doing anyway.
@@ -1117,130 +1051,6 @@ export default function BlogPost() {
           <p style={{textAlign: 'center', marginTop: '40px', color: 'var(--text-muted)'}}>
             Ready to simplify your nutrition? Let Nutrilogix help you stay accountable.
           </p>
-        </div>
-      </div>
-    )
-  }
-
-  if (slug === 'science-of-hydration') {
-    const blogPostingLd = {
-      '@context': 'https://schema.org',
-      '@type': 'BlogPosting',
-      headline: 'The Science of Hydration: How Much Water Do You Really Need?',
-      description: 'Debunk the 8-glass myth and learn evidence-based strategies to optimize your daily water intake for better health.',
-      image: ['https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=1200&q=80'],
-      author: { '@type': 'Person', name: 'Anthony Smith' },
-      publisher: {
-        '@type': 'Organization',
-        name: 'Nutrilogix',
-        logo: { '@type': 'ImageObject', url: '/assets/images/2.jpg' },
-      },
-      datePublished: '2026-02-20',
-      mainEntityOfPage: { '@type': 'WebPage', '@id': '/blog/science-of-hydration' },
-    }
-
-    return (
-      <div style={contentStyle}>
-        <SEO
-          title="The Science of Hydration: How Much Water Do You Really Need? - Nutrilogix"
-          description="Debunk the 8-glass myth and learn evidence-based strategies to optimize your daily water intake for better health."
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
-        />
-
-        <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=1200&q=80" alt="Glass of water with lemon" style={imgStyle} />
-
-        <div style={metaStyle}>
-          <span className="badge">Wellness</span>
-          <span>February 20, 2026</span>
-          <span>7 min read</span>
-        </div>
-
-        <h1 style={h1Style}>The Science of Hydration: How Much Water Do You Really Need?</h1>
-
-        <div style={bodyStyle}>
-          <p style={{marginBottom: '24px'}}>
-            We've all heard the advice: drink eight glasses of water a day. But is that really backed by science? The truth about hydration is more nuanced than a one-size-fits-all rule. Let's dive into what the research actually says and how you can optimize your water intake for better health and performance.
-          </p>
-
-          <div style={{ background: 'var(--primary-light)', padding: '24px', borderRadius: '12px', borderLeft: '4px solid var(--primary)', marginBottom: '32px' }}>
-            Water makes up about 60% of your body weight and is involved in nearly every bodily function — from regulating temperature to transporting nutrients and flushing out waste.
-          </div>
-
-          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>Debunking the 8-Glass Myth</h2>
-          <p style={{marginBottom: '24px'}}>
-            The popular "8x8" rule — eight 8-ounce glasses per day — has no strong scientific origin. In reality, your hydration needs depend on a variety of factors including your body size, activity level, climate, and diet. A 2004 report from the National Academies of Sciences recommended about 3.7 liters per day for men and 2.7 liters for women from all beverages and food combined.
-          </p>
-          <p style={{marginBottom: '24px'}}>
-            That's an important distinction: you don't need to get all your water from drinking plain water. Fruits, vegetables, soups, and other beverages all contribute to your daily fluid intake.
-          </p>
-
-          <img src="https://images.unsplash.com/photo-1559839914-17aae19cec71?w=1200&q=80" alt="Water being poured into a glass" style={{ width: '100%', borderRadius: '12px', margin: '32px 0', height: '300px', objectFit: 'cover' }} />
-          <p style={{ textAlign: 'center', fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '-24px', marginBottom: '32px' }}>Staying hydrated doesn't have to be complicated — consistency is key.</p>
-
-          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>Signs You're Not Drinking Enough</h2>
-          <p style={{marginBottom: '24px'}}>
-            Your body is surprisingly good at telling you when it needs more fluids. Here are the most common signs of mild dehydration:
-          </p>
-          <ul style={{ paddingLeft: '24px', marginBottom: '24px' }}>
-            <li style={{marginBottom: '12px'}}><strong>Dark yellow urine</strong> — Pale straw color indicates good hydration</li>
-            <li style={{marginBottom: '12px'}}><strong>Fatigue and low energy</strong> — Even mild dehydration can impair concentration</li>
-            <li style={{marginBottom: '12px'}}><strong>Headaches</strong> — Often one of the earliest signs of insufficient water intake</li>
-            <li style={{marginBottom: '12px'}}><strong>Dry mouth and skin</strong> — Your body redirects water to vital organs first</li>
-            <li style={{marginBottom: '12px'}}><strong>Decreased exercise performance</strong> — A 2% drop in body water can reduce performance significantly</li>
-          </ul>
-
-          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>Hydration and Exercise</h2>
-          <p style={{marginBottom: '24px'}}>
-            If you're physically active, your water needs increase substantially. During exercise, you can lose 0.5 to 2 liters of fluid per hour through sweat, depending on intensity and conditions. Here's a practical approach:
-          </p>
-          <ul style={{ paddingLeft: '24px', marginBottom: '24px' }}>
-            <li style={{marginBottom: '12px'}}>Drink 500 ml (about 17 oz) of water 2 hours before exercise</li>
-            <li style={{marginBottom: '12px'}}>Sip 200–300 ml every 15–20 minutes during activity</li>
-            <li style={{marginBottom: '12px'}}>Replenish with 1.5x the fluid lost after your workout</li>
-          </ul>
-
-          <img src="https://images.unsplash.com/photo-1606168094336-48f205276929?w=1200&q=80" alt="Person with water bottle after exercise" style={{ width: '100%', borderRadius: '12px', margin: '32px 0', height: '300px', objectFit: 'cover' }} />
-          <p style={{ textAlign: 'center', fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '-24px', marginBottom: '32px' }}>Replenishing fluids after a workout is essential for recovery.</p>
-
-          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>Foods That Help You Stay Hydrated</h2>
-          <p style={{marginBottom: '24px'}}>
-            You can eat your water too. Many whole foods have a high water content that contributes to your daily intake:
-          </p>
-          <ul style={{ paddingLeft: '24px', marginBottom: '24px' }}>
-            <li style={{marginBottom: '12px'}}><strong>Cucumber</strong> — 96% water</li>
-            <li style={{marginBottom: '12px'}}><strong>Watermelon</strong> — 92% water</li>
-            <li style={{marginBottom: '12px'}}><strong>Strawberries</strong> — 91% water</li>
-            <li style={{marginBottom: '12px'}}><strong>Spinach</strong> — 91% water</li>
-            <li style={{marginBottom: '12px'}}><strong>Oranges</strong> — 87% water</li>
-            <li style={{marginBottom: '12px'}}><strong>Yogurt</strong> — 85% water</li>
-          </ul>
-
-          <div style={{ background: 'var(--primary-light)', padding: '24px', borderRadius: '12px', borderLeft: '4px solid var(--primary)', marginBottom: '32px' }}>
-            <strong>Nutrilogix Tip:</strong> Track not only your macros but also your daily water intake. Simply log your meals and beverages, and our AI will estimate your total hydration from all sources — helping you stay on top of your fluid goals effortlessly.
-          </div>
-
-          <h2 style={{ fontSize: '1.8rem', marginTop: '40px', marginBottom: '20px' }}>Practical Tips for Better Hydration</h2>
-          <p style={{marginBottom: '24px'}}>
-            Building a hydration habit doesn't require a complete lifestyle overhaul. Here are some simple, evidence-based strategies:
-          </p>
-          <ul style={{ paddingLeft: '24px', marginBottom: '24px' }}>
-            <li style={{marginBottom: '12px'}}><strong>Start your morning with water</strong> — Drink a glass as soon as you wake up to rehydrate after sleep</li>
-            <li style={{marginBottom: '12px'}}><strong>Carry a reusable bottle</strong> — Having water visible and accessible increases intake</li>
-            <li style={{marginBottom: '12px'}}><strong>Set reminders</strong> — Use your phone or an app to prompt regular sipping</li>
-            <li style={{marginBottom: '12px'}}><strong>Flavor your water</strong> — Add lemon, cucumber, or mint to make it more appealing</li>
-            <li style={{marginBottom: '12px'}}><strong>Eat water-rich foods</strong> — Incorporate fruits and vegetables at every meal</li>
-          </ul>
-
-          <p style={{marginBottom: '24px'}}>
-            The bottom line? Listen to your body, drink when you're thirsty, and pay attention to the color of your urine. Combined with a balanced diet rich in whole foods, staying properly hydrated is simpler than you think.
-          </p>
-
-          <div style={{ textAlign: 'center', margin: '60px 0' }}>
-            <Link to="/" state={{ scrollTo: 'signup' }} className="btn btn-primary">Track Your Hydration</Link>
-          </div>
         </div>
       </div>
     )

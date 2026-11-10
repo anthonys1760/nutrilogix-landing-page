@@ -9,9 +9,9 @@ export const generatedPosts = [
     authorInitial: 'A',
     date: 'Mar 31, 2026',
     dateISO: '2026-03-31',
-    readTime: '6 min',
+    readTime: '8 min',
     category: 'Wellness Science',
-    keywords: 'sleep and nutrition, sleep deprivation hunger, ghrelin leptin sleep, cortisol diet, sleep weight loss, nutrition sleep connection',
+    keywords: 'sleep and nutrition, sleep deprivation hunger, ghrelin leptin sleep, cortisol diet, sleep weight loss, nutrition sleep connection, sleep deprivation insulin resistance, slow-wave sleep metabolism',
     image: '/assets/images/sleep-nutrition.jpg',
     body: [
       {
@@ -24,11 +24,15 @@ export const generatedPosts = [
       },
       {
         type: 'paragraph',
-        text: 'Sleep deprivation directly disrupts two key hunger hormones: ghrelin and leptin. Ghrelin is your appetite-stimulating hormone — it tells your brain "feed me." Leptin is your satiety hormone — it tells your brain "you\'re full, stop eating." After just one night of poor sleep (under 6 hours), research published in the journal <em>Sleep</em> found ghrelin levels rise by up to 28% and leptin drops by 18%. The result: you feel hungrier, fuller less quickly, and your brain is essentially running a hunger deficit that no amount of "eating healthy" can fully offset.'
+        text: 'Sleep deprivation directly disrupts two key hunger hormones: ghrelin and leptin. Ghrelin is your appetite-stimulating hormone — it tells your brain "feed me." Leptin is your satiety hormone — it tells your brain "you\'re full, stop eating." After just one night of poor sleep (under 6 hours), research published in the journal <em>Sleep</em> found ghrelin levels rise by up to 28% and leptin drops by 18%. A landmark study in <em>PLOS Medicine</em> tracked healthy adults sleeping either 5 or 8 hours a night for one week and found <strong>15% higher ghrelin</strong> and <strong>15.5% lower leptin</strong> after the short-sleep week. The result: you feel hungrier, fuller less quickly, and your brain is essentially running a hunger deficit that no amount of "eating healthy" can fully offset.'
       },
       {
         type: 'callout',
         text: 'A 2022 study in <strong>Cell Metabolism</strong> found that sleep-deprived participants consumed an average of 308 extra calories per day — predominantly from high-fat, high-sugar foods — compared to when they were well-rested.'
+      },
+      {
+        type: 'callout',
+        text: 'A 2022 meta-analysis in <em>Obesity Reviews</em> found that short sleepers (under 6 hours a night) consumed an average of <strong>385 extra calories per day</strong> compared with people sleeping 7–9 hours.'
       },
       {
         type: 'heading',
@@ -36,7 +40,7 @@ export const generatedPosts = [
       },
       {
         type: 'paragraph',
-        text: 'It\'s not just hormones. Sleep deprivation reduces activity in the prefrontal cortex — the brain region responsible for impulse control and rational decision-making. At the same time, it ramps up activity in the amygdala, your brain\'s reward and emotion center. The net effect: the brain becomes highly responsive to food cues (especially hyperpalatable junk food) and far less capable of resisting them. Nutritionists call this "food noise." You\'re not hungry in the traditional sense — you\'re just neurologically primed to seek caloric reward.'
+        text: 'It\'s not just hormones. Sleep deprivation reduces activity in the prefrontal cortex — the brain region responsible for impulse control and rational decision-making. At the same time, it ramps up activity in the amygdala, your brain\'s reward and emotion center. Brain imaging studies show amygdala responses to food images increase by up to 24% after sleep restriction. Sleep loss also makes the endocannabinoid system — the same pathway activated by cannabis — more active, which intensifies hedonic food cravings and snack-seeking. The net effect: the brain becomes highly responsive to food cues (especially hyperpalatable junk food) and far less capable of resisting them. Nutritionists call this "food noise." You\'re not hungry in the traditional sense — you\'re just neurologically primed to seek caloric reward. Elevated ghrelin adds to that pull by signaling reward centers, and cortisol rises with sleep deprivation, steering appetite toward sugar and refined carbohydrates.'
       },
       {
         type: 'heading',
@@ -44,7 +48,7 @@ export const generatedPosts = [
       },
       {
         type: 'paragraph',
-        text: 'Poor sleep triggers elevated cortisol (your stress hormone), which in turn raises blood glucose. Your pancreas responds with more insulin to clear that glucose — but chronically elevated insulin makes your cells less sensitive to it over time, nudging you toward insulin resistance. This doesn\'t just affect diabetes risk; it affects fat storage. Higher insulin means your body preferentially stores energy as fat, particularly visceral (belly) fat, and becomes less efficient at burning it.'
+        text: 'Poor sleep triggers elevated cortisol (your stress hormone), which in turn raises blood glucose. Your pancreas responds with more insulin to clear that glucose — but chronically elevated insulin makes your cells less sensitive to it over time, nudging you toward insulin resistance. This doesn\'t just affect diabetes risk; it affects fat storage. Higher insulin means your body preferentially stores energy as fat, particularly visceral (belly) fat, and becomes less efficient at burning it. In a controlled experiment at the University of Chicago, healthy young adults showed a <strong>25% reduction in insulin sensitivity</strong> after only four nights restricted to 4.5 hours. Studies of sleep-restricted people in controlled weight-loss trials consistently show they lose less fat and more lean muscle than well-rested counterparts eating identical diets.'
       },
       {
         type: 'image',
@@ -90,6 +94,18 @@ export const generatedPosts = [
       {
         type: 'callout',
         text: '<strong>Track the pattern:</strong> With Nutrilogix, you can spot your own sleep-nutrition correlation. Notice which days your Health Score dips or calorie targets get blown — those are often your worst sleep nights. Awareness is the first step to breaking the cycle.'
+      },
+      {
+        type: 'heading',
+        text: 'How Much Sleep, and Which Kind'
+      },
+      {
+        type: 'paragraph',
+        text: 'The evidence converges around 7 to 9 hours for most adults, and the kind of sleep matters as much as the total. Slow-wave (deep) sleep is when growth hormone is released, muscle repair occurs, and insulin sensitivity resets for the next day. Alcohol, late-night eating, blue light, and cortisol from chronic stress all suppress those deep stages, even when the clock says you were in bed long enough.'
+      },
+      {
+        type: 'callout',
+        text: 'A 2024 study in <em>Nature Communications</em> found that bringing sleep up to 8.5 hours in previously sleep-restricted adults reduced daily calorie intake by an average of <strong>270 calories</strong>, with no other dietary intervention.'
       },
       {
         type: 'heading',
@@ -315,7 +331,7 @@ export const generatedPosts = [
       },
       {
         "type": "paragraph",
-        "text": "Protein timing isn't magic — total daily intake and training stimulus still drive the majority of your results. But the evidence is clear: distribution and strategic timing meaningfully amplify those results. Hit your daily protein target (1.6–2.2g/kg of bodyweight for active individuals), spread it across 3–5 meals with leucine-rich sources, consider a slow-digesting protein before bed, and time a complete protein source around your workouts. These aren't marginal tweaks — they're the difference between leaving gains on the table and systematically capturing every anabolic opportunity your body offers."
+        "text": "Protein timing isn't magic — total daily intake and training stimulus still drive the majority of your results. But the evidence is clear: distribution and strategic timing meaningfully amplify those results. Hit your daily protein target (1.6–2.2g/kg of bodyweight for active individuals), spread it across 3–5 meals with leucine-rich sources, consider a slow-digesting protein before bed, and time a complete protein source around your workouts. These aren't marginal tweaks — they're the difference between leaving gains on the table and systematically capturing every anabolic opportunity your body offers. When those meals fall in the day — a large breakfast versus a large late dinner — is a different question. That circadian side is covered in <a href=\"/blog/chrono-nutrition-meal-timing-circadian-clock\">chrono-nutrition and the body clock</a>."
       },
       {
         "type": "cta"
@@ -407,9 +423,9 @@ export const generatedPosts = [
     "authorInitial": "A",
     "date": "Apr 13, 2026",
     "dateISO": "2026-04-13",
-    "readTime": "7 min",
+    "readTime": "8 min",
     "category": "Nutrition Science",
-    "keywords": "thermic effect of food, TEF weight loss, protein metabolism rate, diet induced thermogenesis, high protein diet metabolism, macronutrient digestion calories, calorie burning digestion, metabolic cost of protein",
+    "keywords": "thermic effect of food, TEF weight loss, protein metabolism rate, diet induced thermogenesis, high protein diet metabolism, macronutrient digestion calories, calorie burning digestion, metabolic cost of protein, alcohol thermic effect",
     "image": "/assets/images/egg.webp",
     "body": [
       {
@@ -434,7 +450,7 @@ export const generatedPosts = [
       },
       {
         "type": "paragraph",
-        "text": "Protein's exceptionally high TEF explains much of why high-protein diets consistently outperform isocaloric lower-protein diets for fat loss in randomized controlled trials — even when total calories are matched. When you consume protein, your body must first break it down into individual amino acids (deamination), then resynthesize them into new proteins (muscle, enzymes, hormones), or convert excess amino acids to glucose or fatty acids for storage. Each step is metabolically costly. A 2004 study in the <em>Journal of Nutrition</em> quantified this precisely: a meal providing 29% of calories from protein generated a thermic response roughly <em>twice</em> as large as an equicaloric meal providing 11% protein. This isn't a marginal effect — for someone consuming 2,000 calories per day, shifting protein from 15% to 30% of intake can increase TEF by 50–100 calories per day. Over a year, that's a difference of 18,000–36,000 calories — entirely from changing the <em>composition</em> of what you eat, not how much."
+        "text": "Protein's exceptionally high TEF explains much of why high-protein diets consistently outperform isocaloric lower-protein diets for fat loss in randomized controlled trials — even when total calories are matched. When you consume protein, your body must first break it down into individual amino acids (deamination), then resynthesize them into new proteins (muscle, enzymes, hormones), or convert excess amino acids to glucose or fatty acids for storage. Each step is metabolically costly. A 2004 study in the <em>Journal of Nutrition</em> quantified this precisely: a meal providing 29% of calories from protein generated a thermic response roughly <em>twice</em> as large as an equicaloric meal providing 11% protein. Research published in the <em>American Journal of Clinical Nutrition</em> found that a high-protein meal produces a thermic response up to 5× greater than a high-fat meal of equal caloric value. This isn't a marginal effect — for someone consuming 2,000 calories per day, shifting protein from 15% to 30% of intake can increase TEF by 50–100 calories per day. Over a year, that's a difference of 18,000–36,000 calories — entirely from changing the <em>composition</em> of what you eat, not how much."
       },
       {
         "type": "list",
@@ -443,7 +459,9 @@ export const generatedPosts = [
           "<strong>Be aware of dietary fat's minimal TEF:</strong> Fat is only 0–3% thermogenic, making calorie-dense, fat-heavy meals the least metabolically expensive macronutrient by a wide margin.",
           "<strong>Whole foods beat processed foods on TEF:</strong> A 2010 study in <em>Food & Nutrition Research</em> found that whole-food meals had a TEF roughly 50% higher than ultraprocessed meals of identical caloric content, due to the energy cost of breaking down intact food matrices.",
           "<strong>Fiber adds additional metabolic cost:</strong> High-fiber carbohydrates — oats, legumes, vegetables — require more digestive energy than refined starches, adding modestly but consistently to your daily TEF.",
-          "<strong>Meal frequency matters less than composition:</strong> Despite popular belief, eating smaller, more frequent meals doesn't meaningfully raise daily TEF compared to fewer larger meals of the same macronutrient composition."
+          "<strong>Meal frequency matters less than composition:</strong> Despite popular belief, eating smaller, more frequent meals doesn't meaningfully raise daily TEF compared to fewer larger meals of the same macronutrient composition.",
+          "<strong>Alcohol is thermogenic, not helpful:</strong> Alcohol has a thermic effect of about 20%, but it also suppresses fat oxidation and promotes fat storage through other hormonal mechanisms — so the high TEF is not a metabolic advantage.",
+          "<strong>Mixed meals land near 10%:</strong> Most real-world meals fall in the 6–10% TEF range, with higher-protein plates tracking toward the upper bound."
         ]
       },
       {
@@ -462,6 +480,10 @@ export const generatedPosts = [
       {
         "type": "callout",
         "text": "A <strong>2012 randomized controlled trial</strong> published in <em>JAMA</em> compared low-fat, low-glycemic, and high-protein diets at identical post-weight-loss calorie levels. The high-protein group produced <strong>approximately 300 more calories per day in total energy expenditure</strong> than the low-fat group — with TEF differences accounting for a significant portion of this metabolic advantage."
+      },
+      {
+        "type": "callout",
+        "text": "A 2021 meta-analysis in <em>Obesity Reviews</em> found that higher-protein diets (at least 25% of calories from protein) were associated with a <strong>4–6% higher resting metabolic rate</strong> than lower-protein diets, even when total calories were matched. The thermic effect of protein was identified as a key contributing mechanism."
       },
       {
         "type": "heading",
@@ -1505,7 +1527,7 @@ export const generatedPosts = [
       },
       {
         "type": "paragraph",
-        "text": "Chrono-nutrition reveals something fundamental: calories and food quality, while essential, do not tell the complete metabolic story. When you eat shapes how efficiently your body processes every gram of food, how readily it accesses stored fat, how well it sleeps, and how hungry it will be the following day. The practical framework is straightforward: eat most of your calories in the first half of the day, align your eating window with daylight hours, taper dinner toward protein and non-starchy vegetables, and establish a food cutoff 2–3 hours before sleep. These aren't arbitrary restrictions — they are a direct application of your own circadian biology. Tracking not just <em>what</em> you eat but <em>when</em> you eat it — exactly the kind of time-stamped pattern that <strong>Nutrilogix</strong> surfaces in your daily log — transforms meal timing from an abstract concept into an actionable, measurable lever for better metabolic health and body composition."
+        "text": "Chrono-nutrition reveals something fundamental: calories and food quality, while essential, do not tell the complete metabolic story. When you eat shapes how efficiently your body processes every gram of food, how readily it accesses stored fat, how well it sleeps, and how hungry it will be the following day. The practical framework is straightforward: eat most of your calories in the first half of the day, align your eating window with daylight hours, taper dinner toward protein and non-starchy vegetables, and establish a food cutoff 2–3 hours before sleep. These aren't arbitrary restrictions — they are a direct application of your own circadian biology. How to split protein across those meals — the per-meal leucine threshold, not the clock — is a separate topic, covered in <a href=\"/blog/protein-timing-muscle-fat-loss\">protein timing for muscle and fat loss</a>. Tracking not just <em>what</em> you eat but <em>when</em> you eat it — exactly the kind of time-stamped pattern that <strong>Nutrilogix</strong> surfaces in your daily log — transforms meal timing from an abstract concept into an actionable, measurable lever for better metabolic health and body composition."
       },
       {
         "type": "cta"
@@ -1765,9 +1787,9 @@ export const generatedPosts = [
     "authorInitial": "A",
     "date": "Jun 18, 2026",
     "dateISO": "2026-06-18",
-    "readTime": "6 min",
+    "readTime": "8 min",
     "category": "Health Science",
-    "keywords": "hydration and metabolism, water and weight loss, drinking water fat loss, dehydration effects performance, water before meals calorie reduction, how much water to drink daily, water appetite suppression, optimal hydration",
+    "keywords": "hydration and metabolism, water and weight loss, drinking water fat loss, dehydration effects performance, water before meals calorie reduction, how much water to drink daily, water appetite suppression, optimal hydration, eight glasses of water myth, water rich foods",
     "image": "/assets/images/satiety-meal.jpg",
     "body": [
       {
@@ -1828,6 +1850,33 @@ export const generatedPosts = [
       {
         "type": "callout",
         "text": "A large cross-sectional study in the <strong><em>Annals of Family Medicine</em></strong> analyzing data from 9,528 adults found that individuals with inadequate hydration had a <strong>significantly higher risk of obesity</strong> — and that each unit increase in urine specific gravity (a proxy for dehydration) corresponded with a <strong>0.7 kg/m² increase in BMI</strong> after adjusting for caloric intake, physical activity, and demographic variables. The authors concluded that optimal hydration status should be considered a component of obesity prevention independently of diet and exercise."
+      },
+      {
+        "type": "heading",
+        "text": "The 8-Glass Rule, and What to Use Instead"
+      },
+      {
+        "type": "paragraph",
+        "text": "Water makes up about 60% of body weight and is involved in temperature regulation, nutrient transport, and clearing waste. The popular \"8×8\" rule — eight 8-ounce glasses a day — has no strong scientific origin. Needs depend on body size, activity, climate, and diet. A 2004 report from the National Academies of Sciences recommended about 3.7 liters a day for men and 2.7 liters for women from all beverages and food combined, not from plain water alone. Fruit, vegetables, soups, and other drinks all count."
+      },
+      {
+        "type": "paragraph",
+        "text": "Mild dehydration also shows up as fatigue, headache, dry mouth, and dry skin, because the body redirects water toward vital organs first. Urine that is pale straw-yellow is the practical daily check; dark yellow is a deficit."
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Cucumber</strong> — 96% water",
+          "<strong>Watermelon</strong> — 92% water",
+          "<strong>Strawberries</strong> — 91% water",
+          "<strong>Spinach</strong> — 91% water",
+          "<strong>Oranges</strong> — 87% water",
+          "<strong>Yogurt</strong> — 85% water"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Exercise raises the requirement further. Sweat losses run from about 0.5 to 2 liters an hour, depending on intensity and conditions. A practical pattern is 500 ml about two hours before exercise, 200–300 ml every 15–20 minutes during activity, and about 1.5 times the fluid lost once the session is over."
       },
       {
         "type": "heading",
@@ -2791,84 +2840,7 @@ export const generatedPosts = [
       }
     ]
   },
-  {
-    "slug": "sleep-deprivation-hunger-hormones-weight-loss",
-    "title": "Sleep and Weight Loss: How Poor Sleep Hijacks Your Hunger Hormones",
-    "excerpt": "Discover how sleep deprivation disrupts ghrelin, leptin, and insulin — and why fixing your sleep may be the most powerful fat-loss strategy you're ignoring.",
-    "author": "Anthony Smith",
-    "authorInitial": "A",
-    "date": "Aug 3, 2026",
-    "dateISO": "2026-08-03",
-    "readTime": "7 min",
-    "category": "Wellness Science",
-    "keywords": "sleep and weight loss, sleep deprivation hunger hormones, ghrelin leptin sleep, poor sleep metabolism, sleep deprivation insulin resistance, sleep quality fat loss, sleep and obesity",
-    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
-    "body": [
-      {
-        "type": "paragraph",
-        "text": "You've tracked your calories meticulously. You've hit the gym four times this week. But the scale won't budge — and you wake up craving something sugary before you've even brushed your teeth. The problem might not be your diet or your discipline. It might be what happens in the eight hours before your alarm goes off. Sleep deprivation is one of the most underestimated drivers of weight gain in modern life — and the science explaining why is both fascinating and deeply actionable."
-      },
-      {
-        "type": "heading",
-        "text": "The Hunger Hormone Cascade That Starts in Your Bedroom"
-      },
-      {
-        "type": "paragraph",
-        "text": "Two hormones govern nearly every hunger signal your body sends: <strong>ghrelin</strong>, the 'hunger hormone' that spikes before meals and drives appetite, and <strong>leptin</strong>, the satiety hormone produced by fat cells that tells your brain you're full. When you sleep well, these hormones operate in a careful rhythm. When you don't, that rhythm collapses completely. A landmark study published in <em>PLOS Medicine</em> tracked healthy adults sleeping either 5 or 8 hours per night for one week. After just one week of short sleep, participants showed <strong>15% higher ghrelin levels</strong> and <strong>15.5% lower leptin levels</strong> — a perfect biochemical storm engineered to make you eat more while feeling significantly less satisfied after meals. This isn't willpower failure. It's hormonal chemistry."
-      },
-      {
-        "type": "callout",
-        "text": "<strong>Research Stat:</strong> A 2022 meta-analysis in <em>Obesity Reviews</em> found that short sleepers (under 6 hours per night) consumed an average of <strong>385 extra calories per day</strong> compared to those sleeping 7–9 hours — the caloric equivalent of a large slice of pizza, consumed every single day, driven entirely by hormonal changes rather than conscious choice."
-      },
-      {
-        "type": "heading",
-        "text": "Sleep Deprivation and Insulin Resistance"
-      },
-      {
-        "type": "paragraph",
-        "text": "The hunger hormone story is just the beginning. Sleep loss also triggers profound changes in how your cells respond to insulin. In a controlled experiment at the University of Chicago, healthy young adults showed a <strong>25% reduction in insulin sensitivity</strong> after only four nights of restricted sleep — just 4.5 hours per night. This means your pancreas must secrete more insulin to move the same amount of glucose out of your blood, a state that actively promotes fat storage, particularly around the abdomen. Chronically elevated insulin also suppresses fat-burning enzymes, essentially locking fat cells in 'storage mode' even when you're eating at a caloric deficit. Studies on sleep-restricted individuals in controlled weight-loss trials consistently show they lose <em>less fat and more lean muscle mass</em> than well-rested counterparts eating identical diets — a finding that reframes sleep as a metabolic variable, not merely a comfort variable."
-      },
-      {
-        "type": "heading",
-        "text": "Why Your Brain Craves Junk Food After a Bad Night"
-      },
-      {
-        "type": "list",
-        "items": [
-          "Elevated ghrelin signals the brain's reward centers, making high-calorie, high-sugar foods appear significantly more appealing and harder to resist",
-          "The prefrontal cortex — responsible for impulse control and long-term decision-making — shows measurably reduced activity after even a single night of poor sleep",
-          "The endocannabinoid system (the same pathway activated by cannabis) becomes more active with sleep loss, intensifying hedonic food cravings and snack-seeking behavior",
-          "Cortisol rises with sleep deprivation, further stimulating appetite specifically for sugar and refined carbohydrates",
-          "Brain imaging studies show amygdala responses to food images increase by up to 24% after sleep restriction, driving more emotionally reactive and impulsive eating"
-        ]
-      },
-      {
-        "type": "image",
-        "src": "https://images.unsplash.com/photo-1494390248081-4e521a5940db?w=800&q=80",
-        "alt": "Nutritious whole foods that support healthy sleep and metabolic function"
-      },
-      {
-        "type": "paragraph",
-        "text": "The evidence converges around 7 to 9 hours for most adults — but the <em>quality</em> of sleep matters as much as the raw quantity. Slow-wave (deep) sleep is particularly critical: this is when growth hormone is released, muscle repair occurs, and insulin sensitivity resets for the following day. Alcohol, late-night eating, blue light exposure, and elevated cortisol from chronic stress all suppress deep sleep stages, even when total sleep time appears adequate on paper. Tracking the connection between your eating patterns and next-day energy and recovery is exactly where tools like Nutrilogix become useful — logging how your macronutrient timing and meal composition affects your sleep quality and subsequent appetite gives you data most people never think to gather."
-      },
-      {
-        "type": "callout",
-        "text": "<strong>Clinical Finding:</strong> A 2024 study in <em>Nature Communications</em> found that optimizing sleep to 8.5 hours in previously sleep-restricted adults reduced daily calorie intake by an average of <strong>270 calories</strong> — with no other dietary intervention. Hormonal normalization alone produced meaningful, sustained caloric reduction."
-      },
-      {
-        "type": "heading",
-        "text": "The Bottom Line"
-      },
-      {
-        "type": "paragraph",
-        "text": "Fat loss is not purely a math equation. It's a hormonal environment — and sleep is the single most powerful lever for resetting the conditions that govern hunger, metabolism, and fat storage. Before you cut more calories or add another workout, examine whether you're giving your body the 7–9 hours it needs to regulate ghrelin, leptin, insulin, and cortisol. Poor sleep doesn't just leave you tired. It makes every other health habit measurably harder to execute, biologically predisposes you toward overeating, and physiologically shifts your body toward fat storage. Fix the foundation first — and the rest of your health strategy will work considerably better because of it."
-      },
-      {
-        "type": "cta"
-      }
-    ]
-  },
-  {
+    {
     "slug": "cold-exposure-brown-fat-metabolism-science",
     "title": "Cold Exposure and Brown Fat: The Metabolic Science Behind Ice Baths",
     "excerpt": "Cold exposure activates brown adipose tissue — a calorie-burning fat that generates heat. Here's what the research actually says about ice baths and metabolic health.",
@@ -3930,9 +3902,9 @@ export const generatedPosts = [
     "authorInitial": "A",
     "date": "Sep 21, 2026",
     "dateISO": "2026-09-21",
-    "readTime": "7 min",
+    "readTime": "8 min",
     "category": "Nutrition Science",
-    "keywords": "autophagy, fasting and autophagy, how to trigger autophagy, cellular cleanup, autophagy diet, intermittent fasting benefits, autophagy and longevity",
+    "keywords": "autophagy, fasting and autophagy, how to trigger autophagy, cellular cleanup, autophagy diet, intermittent fasting benefits, autophagy and longevity, mitophagy, autophagy human biomarkers",
     "image": "https://images.unsplash.com/photo-1543352634-99a5d50ae78e?w=800&q=80",
     "body": [
       {
@@ -3945,11 +3917,11 @@ export const generatedPosts = [
       },
       {
         "type": "paragraph",
-        "text": "The word autophagy comes from the Greek for \"self-eating\" — and that's essentially what it is. Autophagy is the cell's built-in recycling and quality-control program. When a cell detects damaged proteins, dysfunctional organelles (like mitochondria that have lost their efficiency), or intracellular pathogens, it initiates autophagy: a process of engulfing these components in a double-membrane structure called an <em>autophagosome</em>, then fusing it with a lysosome — the cell's digestive compartment — where the contents are broken down and the amino acids and lipids are reclaimed for energy or new cellular construction. Think of it as biological composting at the cellular level. Without this cleanup, damaged components accumulate. Damaged mitochondria produce excessive free radicals. Misfolded proteins aggregate. The cell becomes increasingly dysfunctional — a pattern central to Alzheimer's disease, Parkinson's disease, type 2 diabetes, and multiple cancers."
+        "text": "The word autophagy comes from the Greek for \"self-eating\" — and that's essentially what it is. Autophagy is the cell's built-in recycling and quality-control program. When a cell detects damaged proteins, dysfunctional organelles (like mitochondria that have lost their efficiency), or intracellular pathogens, it initiates autophagy: a process of engulfing these components in a double-membrane structure called an <em>autophagosome</em>, then fusing it with a lysosome — the cell's digestive compartment — where the contents are broken down and the amino acids and lipids are reclaimed for energy or new cellular construction. A specialized form, <em>mitophagy</em>, selectively removes dysfunctional mitochondria, which improves energy production and reduces oxidative stress. The same machinery also degrades intracellular bacteria and viruses, so it participates in innate immune defense, and by recycling amino acids and fatty acids it helps a cell keep its energy supply during nutrient scarcity. Think of it as biological composting at the cellular level. Without this cleanup, damaged components accumulate. Damaged mitochondria produce excessive free radicals. Misfolded proteins aggregate. The cell becomes increasingly dysfunctional — a pattern central to Alzheimer's disease, Parkinson's disease, type 2 diabetes, and multiple cancers."
       },
       {
         "type": "callout",
-        "text": "<strong>Nobel-Prize science:</strong> Ohsumi's research identified the core ATG (autophagy-related) gene family that governs autophagy across all eukaryotic organisms — from yeast to humans. More than <strong>30 autophagy-regulating genes</strong> have since been identified in humans, and mutations in several are directly linked to increased cancer risk, inflammatory bowel disease, and neurodegeneration."
+        "text": "<strong>Nobel-Prize science:</strong> Ohsumi's research identified the core ATG (autophagy-related) gene family that governs autophagy across all eukaryotic organisms — from yeast to humans. More than <strong>30 autophagy-regulating genes</strong> have since been identified in humans, and mutations in several are directly linked to increased cancer risk, inflammatory bowel disease, and neurodegeneration. The process was first observed in the 1960s; the molecular mechanisms were not mapped until Ohsumi's landmark yeast experiments in the 1990s."
       },
       {
         "type": "heading",
@@ -3970,7 +3942,7 @@ export const generatedPosts = [
       },
       {
         "type": "paragraph",
-        "text": "This is the question most people want answered — and the honest answer is: it depends on your metabolic state, and human evidence on exact thresholds is still limited. Animal studies consistently show autophagy induction after 24–48 hours of fasting. Human studies using autophagy-related biomarkers suggest meaningful upregulation begins around 12–16 hours into a fasted state, with significant increases by 24 hours. A 2019 paper in <em>Nature Communications</em> measuring autophagy markers in human white blood cells found that 24-hour fasting produced a roughly <strong>300% increase</strong> in autophagic flux compared to the fed state. For most people practicing time-restricted eating (16:8) or alternate-day fasting, some degree of autophagy enhancement is biologically plausible, though the magnitude likely differs substantially from extended fasting. Exercise also independently triggers autophagy through AMPK activation — a finding that adds to the case for combining movement with dietary discipline."
+        "text": "This is the question most people want answered — and the honest answer is: it depends on your metabolic state, and human evidence on exact thresholds is still limited. Autophagy is a continuous dial, not a binary switch. How far it rises depends on metabolic rate, insulin sensitivity, baseline mTOR activity, and whether carbohydrates were eaten before the fast began. Carbohydrate intake strongly suppresses autophagy by raising insulin and mTOR, so a lower-carbohydrate pattern can keep autophagy higher even inside a shorter fasting window. Animal studies consistently show autophagy induction after 24–48 hours of fasting. Human studies using autophagy-related biomarkers suggest meaningful upregulation begins around 12–16 hours into a fasted state, with significant increases by 24 hours. A 2019 paper in <em>Nature Communications</em> measuring autophagy markers in human white blood cells found that 24-hour fasting produced a roughly <strong>300% increase</strong> in autophagic flux compared to the fed state. For most people practicing time-restricted eating (16:8) or alternate-day fasting, some degree of autophagy enhancement is biologically plausible, though the magnitude likely differs substantially from extended fasting. Extended fasts produce stronger signals in the research, but prolonged fasting also carries risks of muscle catabolism, electrolyte imbalance, and hormonal disruption, and it should not be started without medical guidance. Exercise also independently triggers autophagy through AMPK activation — a finding that adds to the case for combining movement with dietary discipline."
       },
       {
         "type": "list",
@@ -3982,6 +3954,10 @@ export const generatedPosts = [
           "<strong>Exercise:</strong> Resistance and endurance training both activate AMPK and trigger autophagy in muscle tissue independently of fasting",
           "<strong>Coffee:</strong> Preliminary research suggests black coffee (no milk or sugar) may not fully interrupt the fasted-state autophagy signal, though this remains an area of active investigation"
         ]
+      },
+      {
+        "type": "callout",
+        "text": "A 2023 review in <em>Nature Reviews Molecular Cell Biology</em> noted that autophagy's benefits are well established in animal models, while human clinical evidence remains limited — largely because measuring autophagy in living human tissue is technically difficult. Most human data comes from surrogate biomarkers such as LC3-II in blood cells, rather than direct tissue measurement."
       },
       {
         "type": "heading",
@@ -4335,80 +4311,7 @@ export const generatedPosts = [
       }
     ]
   },
-  {
-    slug: 'thermic-effect-of-food',
-    title: 'The Thermic Effect of Food: How Your Body Burns Calories Just by Eating',
-    excerpt: 'Every meal you eat requires energy to digest — and the type of food you choose dramatically changes how much. Here\'s how TEF quietly works in your favor.',
-    author: 'Anthony Smith',
-    authorInitial: 'A',
-    date: 'Oct 08, 2026',
-    dateISO: '2026-10-08',
-    readTime: '6 min',
-    category: 'Nutrition Science',
-    keywords: 'thermic effect of food, TEF nutrition, protein metabolism, dietary induced thermogenesis, macros and metabolism, protein for weight loss, food digestion calories',
-    image: 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=800&q=80',
-    body: [
-      {
-        type: 'paragraph',
-        text: 'Most people think about calories as a single number on a label. But your body doesn\'t process every calorie the same way. Digesting food, absorbing nutrients, and transporting them to your cells all require energy — and that energy expenditure is called the <em>thermic effect of food</em> (TEF), sometimes referred to as dietary-induced thermogenesis. It\'s not a hack or a trick: it\'s a real, measurable component of your total daily energy expenditure, and it behaves very differently depending on what you eat.'
-      },
-      {
-        type: 'heading',
-        text: 'What Is the Thermic Effect of Food?'
-      },
-      {
-        type: 'paragraph',
-        text: 'TEF represents roughly 10% of total daily energy expenditure in most people — meaning if you burn 2,000 calories in a day, approximately 200 of those come from the metabolic work of digesting and processing your food. This number isn\'t fixed. It varies based on metabolic health, meal size, meal frequency, and most significantly, the macronutrient composition of what you ate. Understanding TEF doesn\'t mean obsessing over fractions of calories — it means recognizing a quiet lever you can pull when structuring your diet for fat loss or body composition goals.'
-      },
-      {
-        type: 'callout',
-        text: '<strong>Research published in the American Journal of Clinical Nutrition</strong> found that a high-protein meal produces a thermic response up to 5× greater than a high-fat meal of equal caloric value — a metabolic difference that compounds meaningfully over weeks and months of consistent eating.'
-      },
-      {
-        type: 'heading',
-        text: 'How the Three Macronutrients Compare'
-      },
-      {
-        type: 'list',
-        items: [
-          '<strong>Protein: 20–30% TEF.</strong> Digesting and assimilating protein is energetically expensive. Your body burns roughly 20–30 calories for every 100 calories of protein consumed — making it the most "metabolically costly" macronutrient by a wide margin.',
-          '<strong>Carbohydrates: 5–10% TEF.</strong> Carb digestion requires moderate energy, primarily for glycolysis and glucose transport. Fiber-rich whole-food carbohydrates trend toward the higher end of this range compared to refined carbs.',
-          '<strong>Fat: 0–3% TEF.</strong> Fat is by far the most metabolically efficient macronutrient for your body to store. It requires very little energy to digest and pack away as adipose tissue — the same property that makes it calorically dense also makes it thermically inert.',
-          '<strong>Alcohol: ~20% TEF.</strong> Alcohol has a surprisingly high thermic effect, but it also suppresses fat oxidation and promotes fat storage through other hormonal mechanisms — so the high TEF is not a metabolic advantage.',
-          '<strong>Mixed meals: ~10% average.</strong> Most real-world meals fall in the 6–10% range, with higher-protein compositions consistently tracking toward the upper bound.'
-        ]
-      },
-      {
-        type: 'image',
-        src: 'https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=800&q=80',
-        alt: 'High-protein meal with grilled chicken, vegetables, and whole grains'
-      },
-      {
-        type: 'heading',
-        text: 'Why TEF Matters for Weight Loss'
-      },
-      {
-        type: 'paragraph',
-        text: 'Here\'s where TEF becomes practically meaningful: two diets with identical calorie counts can result in different <em>net</em> energy intake depending on macronutrient composition. A 2,000-calorie diet where 30% of calories come from protein produces a higher TEF than a 2,000-calorie diet where only 10% comes from protein. The daily difference can amount to 50–80 calories — modest in isolation, significant over a year. Beyond calorie math, high-protein diets preserve lean muscle mass during fat loss, and muscle tissue is itself more metabolically active than fat. That\'s a compounding advantage. Practical moves to shift TEF in your favor: prioritize lean protein at every meal (chicken, fish, legumes, Greek yogurt, eggs), opt for whole-food carbohydrates over refined options, and distribute your protein across meals rather than loading it all at dinner. Tools like <em>Nutrilogix</em> make it easy to track protein distribution across the day so you can see whether your meals are actually hitting the targets you intend.'
-      },
-      {
-        type: 'callout',
-        text: '<strong>A 2021 meta-analysis in Obesity Reviews</strong> found that higher-protein diets (≥25% of total calories from protein) were associated with a 4–6% higher resting metabolic rate compared to lower-protein diets — even when total calorie intake was matched. The thermic effect of protein was identified as a key contributing mechanism.'
-      },
-      {
-        type: 'heading',
-        text: 'The Bottom Line'
-      },
-      {
-        type: 'paragraph',
-        text: 'The thermic effect of food isn\'t a magic bullet — it won\'t rescue a diet that\'s fundamentally off-track. But it is a real, scientifically validated metabolic advantage that accumulates quietly with every meal you eat. When you center your meals around protein and fiber-rich whole foods, you\'re not just improving satiety and nutrient density — you\'re also making your body do more work to process what you\'ve consumed. That steady metabolic overhead adds up over time, and it costs you nothing to activate it.'
-      },
-      {
-        type: 'cta'
-      }
-    ]
-  },
-  {
+    {
     "slug": "ketogenic-diet-fat-ketosis-weight-loss-science",
     "title": "The Ketogenic Diet: What the Science Actually Says",
     "excerpt": "One of nutrition's most debated diets gets a fair hearing from the peer-reviewed literature. Here's what randomized trials actually show about ketosis, fat loss, and metabolic health.",
@@ -4729,9 +4632,9 @@ export const generatedPosts = [
     "authorInitial": "A",
     "date": "Oct 26, 2026",
     "dateISO": "2026-10-26",
-    "readTime": "7 min",
+    "readTime": "8 min",
     "category": "Nutrition Science",
-    "keywords": "probiotics vs prebiotics, gut microbiome health, probiotic foods list, prebiotic foods gut bacteria, Lactobacillus Bifidobacterium benefits, short chain fatty acids butyrate, synbiotics, fermented foods microbiome",
+    "keywords": "probiotics vs prebiotics, gut microbiome health, probiotic foods list, prebiotic foods gut bacteria, Lactobacillus Bifidobacterium benefits, short chain fatty acids butyrate, synbiotics, fermented foods microbiome, synbiotic food pairings, Bifidobacterium longum BB536",
     "image": "https://images.unsplash.com/photo-1543352634-99a5d50ae78e?w=800&q=80",
     "body": [
       {
@@ -4756,7 +4659,7 @@ export const generatedPosts = [
       },
       {
         "type": "paragraph",
-        "text": "The evidence for probiotics is strongest in specific clinical contexts. The most robust data supports three areas. First, <strong>antibiotic-associated diarrhea</strong>: multiple meta-analyses confirm that taking <em>Lactobacillus rhamnosus GG</em> or <em>Saccharomyces boulardii</em> concurrently with antibiotics reduces the risk of diarrhea by approximately 40–60% — one of the most replicated findings in probiotic research. Second, <strong>irritable bowel syndrome (IBS)</strong>: several multi-strain probiotic formulations have shown statistically significant reductions in bloating, abdominal pain, and stool irregularity across randomized controlled trials, though effect sizes are moderate and strain selection remains critical. Third, the <strong>gut-brain axis</strong>: a growing body of mechanistic and clinical research — including a landmark 2019 study in <em>Psychiatry Research</em> — found that specific probiotic strains can reduce self-reported anxiety and depression scores, likely by modulating serotonin precursor production and lowering intestinal inflammation that signals the vagus nerve. For immune function, emerging data on <em>Lactobacillus acidophilus</em> and <em>Bifidobacterium lactis</em> suggests modest reductions in upper respiratory infection duration — particularly in children and older adults."
+        "text": "The evidence for probiotics is strongest in specific clinical contexts. The most robust data supports three areas. First, <strong>antibiotic-associated diarrhea</strong>: multiple meta-analyses confirm that taking <em>Lactobacillus rhamnosus GG</em> or <em>Saccharomyces boulardii</em> concurrently with antibiotics reduces the risk of diarrhea by approximately 40–60% — one of the most replicated findings in probiotic research. A 2023 meta-analysis in <em>The Lancet Gastroenterology &amp; Hepatology</em> found a 37% reduction, largely confined to those same two strains, and noted that most commercial products use neither. <em>Bifidobacterium longum</em> BB536 is another strain with clinical-trial evidence for specific outcomes — a reminder that a result for one strain says nothing about a different strain in the same genus. A culture that is dead on arrival, or a dose too small to matter, does not meet the definition of an adequate amount. Second, <strong>irritable bowel syndrome (IBS)</strong>: several multi-strain probiotic formulations have shown statistically significant reductions in bloating, abdominal pain, and stool irregularity across randomized controlled trials, though effect sizes are moderate and strain selection remains critical. The sharper evidence is for diarrhea-predominant IBS rather than IBS as a single condition. Third, the <strong>gut-brain axis</strong>: a growing body of mechanistic and clinical research — including a landmark 2019 study in <em>Psychiatry Research</em> — found that specific probiotic strains can reduce self-reported anxiety and depression scores, likely by modulating serotonin precursor production and lowering intestinal inflammation that signals the vagus nerve. For immune function, emerging data on <em>Lactobacillus acidophilus</em> and <em>Bifidobacterium lactis</em> suggests modest reductions in upper respiratory infection duration — particularly in children and older adults. Acute use also includes supporting immune function in immunocompromised populations."
       },
       {
         "type": "list",
@@ -4774,7 +4677,7 @@ export const generatedPosts = [
       },
       {
         "type": "paragraph",
-        "text": "While probiotics dominate supplement shelves, prebiotic foods may ultimately be more impactful for long-term microbiome diversity. Prebiotics — primarily inulin, fructooligosaccharides (FOS), galactooligosaccharides (GOS), and resistant starch — pass through the upper digestive tract undigested and reach the large intestine, where they are fermented by resident bacteria into <em>short-chain fatty acids</em> (SCFAs), particularly butyrate, propionate, and acetate. Butyrate is especially critical: it serves as the primary energy source for colonocytes (colon lining cells), reinforces the intestinal barrier, suppresses intestinal inflammation, and influences gene expression linked to colon cancer prevention. Inulin-type fructans — found in chicory root, Jerusalem artichoke, garlic, leeks, and onions — have the strongest evidence for selectively stimulating <em>Bifidobacterium</em>, one of the bacterial genera most consistently associated with positive health outcomes in large microbiome studies. Even 5–8g of dietary inulin daily has been shown to meaningfully shift microbiome composition within as little as two weeks of consistent intake."
+        "text": "While probiotics dominate supplement shelves, prebiotic foods may ultimately be more impactful for long-term microbiome diversity. Prebiotics — primarily inulin, fructooligosaccharides (FOS), galactooligosaccharides (GOS), and resistant starch — pass through the upper digestive tract undigested and reach the large intestine, where they are fermented by resident bacteria into <em>short-chain fatty acids</em> (SCFAs), particularly butyrate, propionate, and acetate. Butyrate is especially critical: it serves as the primary energy source for colonocytes (colon lining cells), reinforces the intestinal barrier, suppresses intestinal inflammation, and influences gene expression linked to colon cancer prevention. Inulin-type fructans — found in chicory root, Jerusalem artichoke, garlic, leeks, onions, and asparagus — have the strongest evidence for selectively stimulating <em>Bifidobacterium</em>, one of the bacterial genera most consistently associated with positive health outcomes in large microbiome studies. Even 5–8g of dietary inulin daily has been shown to meaningfully shift microbiome composition within as little as two weeks of consistent intake."
       },
       {
         "type": "image",
@@ -4787,80 +4690,21 @@ export const generatedPosts = [
       },
       {
         "type": "heading",
-        "text": "The Bottom Line"
+        "text": "Synbiotics: Pair the Organism With Its Food"
       },
       {
         "type": "paragraph",
-        "text": "The science is unambiguous: both probiotics and prebiotics can meaningfully influence gut microbiome composition and function — but effects are strain-specific, dose-dependent, and highly context-dependent. For most healthy adults, consistently eating prebiotic-rich plants (garlic, onions, leeks, Jerusalem artichoke, legumes, oats, bananas) and probiotic-containing fermented foods (yogurt, kefir, kimchi, miso) will deliver more durable, diverse benefits than any generic supplement. If you have a specific condition — IBS, antibiotic disruption, or persistent digestive symptoms — targeted probiotic strains with documented evidence are worth pursuing with a healthcare provider. The underlying principle, though, is universal: a varied, fiber-rich diet is the most powerful prebiotic intervention available. Tracking your fiber intake, food diversity, and overall dietary quality with <em>Nutrilogix</em> gives you the data to make measurable, lasting changes to your gut microbiome — and to see in real time whether those changes are actually moving the needle."
-      },
-      {
-        "type": "cta"
-      }
-    ]
-  },
-  {
-    "slug": "autophagy-fasting-cellular-cleanup-science",
-    "title": "Autophagy: The Science of Cellular Self-Cleaning and Why Fasting Triggers It",
-    "excerpt": "Autophagy is your body's cellular recycling system — and fasting is its most powerful activator. Here's what the Nobel Prize–winning science actually says.",
-    "author": "Anthony Smith",
-    "authorInitial": "A",
-    "date": "Oct 29, 2026",
-    "dateISO": "2026-10-29",
-    "readTime": "7 min",
-    "category": "Nutrition Science",
-    "keywords": "autophagy, fasting and autophagy, cellular cleanup, intermittent fasting benefits, autophagy benefits, how to trigger autophagy, cellular health, longevity science",
-    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=800&q=80",
-    "body": [
-      {
-        "type": "paragraph",
-        "text": "Every cell in your body has a built-in garbage disposal. When proteins misfold, organelles break down, or pathogens sneak in, a cellular process called <strong>autophagy</strong> kicks in — identifying, dismantling, and recycling the debris. It's one of biology's most elegant mechanisms, and scientists believe it plays a central role in longevity, disease prevention, and metabolic health. The best part? One of the most effective ways to activate it doesn't require a pill or a prescription. It requires simply <em>not eating</em>."
-      },
-      {
-        "type": "heading",
-        "text": "What Is Autophagy?"
-      },
-      {
-        "type": "paragraph",
-        "text": "The word autophagy comes from the Greek <em>auto</em> (self) and <em>phagein</em> (to eat) — literally, 'self-eating.' The process involves the cell forming a double-membraned structure called an <strong>autophagosome</strong> that engulfs damaged proteins, dysfunctional mitochondria, and invading microbes. The autophagosome then fuses with a lysosome, which digests the contents and releases the building blocks — amino acids, fatty acids, and other molecules — back into the cell for reuse. This process isn't destructive; it's regenerative. Think of it as cellular composting: old, broken-down material is dismantled so useful components can be repurposed. When autophagy works efficiently, it helps protect against the accumulation of damaged proteins linked to Alzheimer's disease, Parkinson's, and certain cancers."
-      },
-      {
-        "type": "callout",
-        "text": "<strong>Nobel Prize Recognition:</strong> In 2016, Japanese cell biologist Yoshinori Ohsumi was awarded the Nobel Prize in Physiology or Medicine for discovering the molecular mechanisms underlying autophagy — a process first observed in the 1960s but not fully understood until Ohsumi's landmark yeast cell experiments in the 1990s."
-      },
-      {
-        "type": "heading",
-        "text": "How Fasting Triggers Autophagy"
-      },
-      {
-        "type": "paragraph",
-        "text": "Under normal fed conditions, autophagy operates at a low, housekeeping level. It's when nutrients become scarce — specifically when insulin drops and cellular energy sensors shift — that autophagy ramps up significantly. The key molecular switch is <strong>mTOR</strong> (mechanistic target of rapamycin), a protein complex that acts as the cell's growth sensor. When mTOR is active (as it is after a meal), it suppresses autophagy. When mTOR is inhibited — as happens during fasting, caloric restriction, or intense exercise — autophagy accelerates. A second player is <strong>AMPK</strong>, an energy-sensing enzyme activated when cellular ATP levels fall during fasting. AMPK directly promotes autophagy while simultaneously inhibiting mTOR. This dual mechanism means that even short-term fasting creates meaningful shifts in autophagy rate. Animal studies have shown autophagy markers increasing significantly within 24 to 48 hours of fasting, and emerging human research suggests elevated autophagy biomarkers appear as early as 12 to 16 hours into a fast."
+        "text": "Probiotics produce largely transient colonization — the introduced bacteria rarely establish themselves permanently. Their value is mostly acute: antibiotic-associated diarrhea, diarrhea-predominant IBS, and immune support in specific groups. Prebiotics, by contrast, durably shift the microbes already living in the gut by feeding them. A synbiotic pattern pairs the two so the prebiotic gives the introduced strain a selective advantage. You do not need a product labeled synbiotic. Pairing fermented foods with prebiotic-rich foods does the same job, often with a broader mix of microbes than a single-strain capsule."
       },
       {
         "type": "list",
         "items": [
-          "<strong>Cellular detoxification:</strong> Removal of misfolded proteins implicated in neurodegenerative diseases like Alzheimer's and Parkinson's",
-          "<strong>Mitochondrial quality control:</strong> A specialized form called mitophagy selectively removes dysfunctional mitochondria, improving energy production and reducing oxidative stress",
-          "<strong>Immune system regulation:</strong> Autophagy degrades intracellular bacteria and viruses, playing a critical role in innate immune defense",
-          "<strong>Metabolic efficiency:</strong> By recycling amino acids and fatty acids, autophagy helps cells maintain energy homeostasis during nutrient scarcity",
-          "<strong>Cancer suppression:</strong> Robust autophagy may help eliminate pre-cancerous cells with genomic instability before they can progress"
+          "<strong>Yogurt + banana:</strong> live cultures paired with prebiotic FOS and resistant starch",
+          "<strong>Kefir + oats:</strong> broad-spectrum probiotics combined with beta-glucan and inulin",
+          "<strong>Kimchi + legumes:</strong> live Lactobacillus fermentations alongside resistant starch and GOS",
+          "<strong>Sauerkraut + asparagus:</strong> naturally fermented cultures with prebiotic inulin",
+          "<strong>Miso soup + garlic:</strong> fermented soybean paste combined with allicin-rich prebiotic alliums"
         ]
-      },
-      {
-        "type": "image",
-        "src": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80",
-        "alt": "Healthy whole foods and meal timing supporting cellular health and fasting protocols"
-      },
-      {
-        "type": "heading",
-        "text": "How Long Do You Need to Fast?"
-      },
-      {
-        "type": "paragraph",
-        "text": "This is the question everyone wants answered — and unfortunately it's genuinely complicated. There's no single 'autophagy threshold' that applies universally. Autophagy is a continuous dial, not a binary switch, and the degree to which it ramps up depends on individual factors including metabolic rate, insulin sensitivity, baseline mTOR activity, and whether carbohydrates were consumed before the fast began. That said, here's what the evidence broadly supports: <strong>autophagy begins to meaningfully increase around the 12–16 hour mark</strong> in most metabolically flexible individuals. A 16:8 intermittent fasting protocol — fasting for 16 hours, eating within an 8-hour window — is widely used to create regular autophagy pulses. For more pronounced induction, extended fasts of 24–48 hours appear to generate significantly higher levels. However, prolonged fasting carries real risks including muscle catabolism, electrolyte imbalance, and hormonal disruption, and should not be undertaken without medical guidance. One practical lever: <strong>carbohydrate intake strongly suppresses autophagy</strong> by driving insulin and mTOR activity. A low-carbohydrate or ketogenic diet can therefore sustain elevated autophagy even during shorter fasting windows — a reason some researchers consider low-carb eating an autophagy-supportive dietary pattern."
-      },
-      {
-        "type": "callout",
-        "text": "<strong>Human Research Gap:</strong> A 2023 review in <em>Nature Reviews Molecular Cell Biology</em> noted that while autophagy's benefits are well-established in animal models, human clinical evidence remains limited — primarily because measuring autophagy in living human tissues is technically difficult. Most human data comes from surrogate biomarkers like LC3-II levels in blood cells rather than direct tissue measurement, making precise fasting protocols hard to prescribe with confidence."
       },
       {
         "type": "heading",
@@ -4868,14 +4712,14 @@ export const generatedPosts = [
       },
       {
         "type": "paragraph",
-        "text": "Autophagy is one of biology's most important cellular maintenance systems, and fasting remains the most well-validated way to meaningfully trigger it. You don't need extreme multi-day fasts — regular 14 to 16-hour fasting windows, combined with a diet that limits chronic insulin spikes, appears sufficient to keep autophagy cycling regularly. The deeper insight is that this process evolved precisely because periods of food scarcity were normal for human biology. By occasionally mimicking that pattern, you're signaling your cells to perform the kind of deep maintenance that keeps them running cleanly. If you're tracking your nutrition and meal timing with <em>Nutrilogix</em>, the app's logging and fasting timer features can help you identify when your last meal occurred and whether your patterns align with an autophagy-supportive schedule. Consistency over time matters far more than perfection on any single day."
+        "text": "The science is unambiguous: both probiotics and prebiotics can meaningfully influence gut microbiome composition and function — but effects are strain-specific, dose-dependent, and highly context-dependent. For most healthy adults, consistently eating prebiotic-rich plants (garlic, onions, leeks, Jerusalem artichoke, asparagus, legumes, oats, bananas) and probiotic-containing fermented foods (yogurt, kefir, kimchi, miso) will deliver more durable, diverse benefits than any generic supplement. For most healthy people, $30 a month on a generic probiotic is a weaker bet than a daily serving of garlic, oats, or asparagus, with specific strains reserved for defined problems such as antibiotic recovery or diarrhea-predominant IBS. If you have a specific condition — IBS, antibiotic disruption, or persistent digestive symptoms — targeted probiotic strains with documented evidence are worth pursuing with a healthcare provider. The underlying principle, though, is universal: a varied, fiber-rich diet is the most powerful prebiotic intervention available. Tracking your fiber intake, food diversity, and overall dietary quality with <em>Nutrilogix</em> gives you the data to make measurable, lasting changes to your gut microbiome — and to see in real time whether those changes are actually moving the needle."
       },
       {
         "type": "cta"
       }
     ]
   },
-  {
+    {
     "slug": "iodine-thyroid-metabolism-deficiency-weight",
     "title": "Iodine Deficiency: The Hidden Thyroid Disruptor Behind Your Weight Gain and Fatigue",
     "excerpt": "Your thyroid controls your metabolic rate, and it can't function without iodine. Learn why iodine deficiency remains surprisingly common and how to fix it with food.",
@@ -5043,92 +4887,7 @@ export const generatedPosts = [
       }
     ]
   },
-  {
-    "slug": "probiotics-vs-prebiotics-gut-health-science",
-    "title": "Probiotics vs. Prebiotics: The Science of Building a Healthier Gut Microbiome",
-    "excerpt": "Most people know probiotics exist — but prebiotics may matter more. Here's what the research actually says about each and how they work together.",
-    "author": "Anthony Smith",
-    "authorInitial": "A",
-    "date": "Nov 9, 2026",
-    "dateISO": "2026-11-09",
-    "readTime": "7 min",
-    "category": "Nutrition Science",
-    "keywords": "probiotics, prebiotics, gut microbiome, gut bacteria, synbiotics, intestinal health, digestive health, microbiome diversity",
-    "image": "https://images.unsplash.com/photo-1543352634-99a5d50ae78e?w=800&q=80",
-    "body": [
-      {
-        "type": "paragraph",
-        "text": "Walk into any pharmacy and you'll find shelves dedicated to probiotic supplements promising to \"support gut health.\" Yet most people buying them have only a vague idea of what probiotics actually do — and virtually no awareness of prebiotics, the compounds that may matter even more. Understanding the difference between these two, and how they work together, is one of the most evidence-backed steps you can take toward a healthier gut microbiome."
-      },
-      {
-        "type": "heading",
-        "text": "What Are Probiotics — and What They're Not"
-      },
-      {
-        "type": "paragraph",
-        "text": "Probiotics are live microorganisms that, when consumed in adequate amounts, confer a health benefit on the host. The key phrase is <em>adequate amounts</em> — a Lactobacillus in your yogurt does nothing for your gut if it's dead before it arrives or if the dose is too small to matter. The two most studied genera are <em>Lactobacillus</em> and <em>Bifidobacterium</em>, with individual strains like <em>Lactobacillus rhamnosus</em> GG and <em>Bifidobacterium longum</em> BB536 having robust clinical trial evidence for specific outcomes. This strain-specificity is crucial: a randomized controlled trial showing that one Lactobacillus strain prevents antibiotic-associated diarrhea tells you nothing about whether a different Lactobacillus strain will help with IBS. The marketing around probiotics frequently ignores this, treating \"probiotic\" as a monolithic category the way you might treat \"antibiotic\" — when in reality the differences between strains can be as large as the differences between entire species."
-      },
-      {
-        "type": "callout",
-        "text": "<strong>Research checkpoint:</strong> A 2023 meta-analysis in <em>The Lancet Gastroenterology &amp; Hepatology</em> found that probiotic supplementation reduced the risk of antibiotic-associated diarrhea by 37% — but the benefit was largely confined to two specific strains: <em>L. rhamnosus</em> GG and the yeast <em>Saccharomyces boulardii</em>. Most commercially available products use neither."
-      },
-      {
-        "type": "heading",
-        "text": "Prebiotics: The Fuel That Makes Your Gut Bacteria Thrive"
-      },
-      {
-        "type": "paragraph",
-        "text": "Prebiotics are selectively fermented dietary components that beneficially alter the composition or activity of the gut microbiome. In plain terms: they're the food your beneficial gut bacteria eat. Unlike probiotics, which you're introducing from outside, prebiotics nourish the microorganisms already living inside you. The most studied prebiotics — inulin, fructooligosaccharides (FOS), and galactooligosaccharides (GOS) — are non-digestible carbohydrates found naturally in chicory root, garlic, onions, leeks, asparagus, and bananas. When gut bacteria ferment these compounds, they produce short-chain fatty acids (SCFAs) — particularly butyrate, propionate, and acetate — which feed the colonocytes lining your colon, reduce intestinal inflammation, and play a role in metabolic regulation. <em>Butyrate alone is the preferred energy source for colonic cells and has been linked to reduced colorectal cancer risk in multiple large population studies.</em>"
-      },
-      {
-        "type": "heading",
-        "text": "Synbiotics: When Combining Both Becomes More Than the Sum of Its Parts"
-      },
-      {
-        "type": "paragraph",
-        "text": "A synbiotic is a product or dietary pattern that combines probiotics and prebiotics in a way where the prebiotic specifically promotes the survival and activity of the probiotic. Research suggests this combination produces effects neither achieves as reliably alone. The prebiotic acts as a selective advantage for the introduced probiotic strain — increasing its ability to colonize and compete. Practically, you don't need a supplement labeled \"synbiotic\" to get this benefit. Pairing naturally fermented foods with prebiotic-rich foods achieves the same result, often with a broader range of microbial diversity than any single-strain supplement can provide."
-      },
-      {
-        "type": "list",
-        "items": [
-          "<strong>Yogurt + banana:</strong> live cultures paired with prebiotic FOS and resistant starch",
-          "<strong>Kefir + oats:</strong> broad-spectrum probiotics combined with beta-glucan and inulin",
-          "<strong>Kimchi + legumes:</strong> live Lactobacillus fermentations alongside resistant starch and GOS",
-          "<strong>Sauerkraut + asparagus:</strong> naturally fermented cultures with prebiotic inulin",
-          "<strong>Miso soup + garlic:</strong> fermented soybean paste combined with allicin-rich prebiotic alliums"
-        ]
-      },
-      {
-        "type": "image",
-        "src": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80",
-        "alt": "Colorful fermented foods and fiber-rich vegetables on a table representing gut health"
-      },
-      {
-        "type": "heading",
-        "text": "What the Research Actually Shows About Gut Microbiome Impact"
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest answer is: probiotics and prebiotics do different things, and neither does everything the marketing claims. Probiotics produce largely transient colonization effects — the introduced bacteria rarely permanently establish themselves in your gut. Their value lies in acute applications: preventing antibiotic-associated diarrhea, managing diarrhea-predominant IBS, and supporting immune function in immunocompromised populations. Prebiotics, by contrast, durably shift the composition of your existing microbiome by selectively enriching beneficial species. A landmark 2022 study in <em>Cell Host &amp; Microbe</em> compared a high-fiber prebiotic-rich diet against a high-fermented-food diet for ten weeks and found that a high-fiber approach produced significantly greater microbiome diversity and reduced inflammatory markers — but participants who consumed both consistently showed the greatest overall benefit. The takeaway: probiotics address specific or acute problems; prebiotics build the ecosystem; together, they're most powerful."
-      },
-      {
-        "type": "callout",
-        "text": "<strong>Key finding:</strong> A 2022 Stanford trial published in <em>Cell</em> found that a high-fiber diet increased microbiome diversity and reduced 19 inflammatory proteins — including IL-6 and IL-12p70. Participants who combined a high-fiber diet with daily fermented food intake saw the greatest reduction in systemic inflammatory markers over the ten-week period."
-      },
-      {
-        "type": "heading",
-        "text": "The Bottom Line"
-      },
-      {
-        "type": "paragraph",
-        "text": "Most people spending $30 a month on a probiotic supplement would see more measurable benefit from adding a daily serving of garlic, oats, or asparagus to their diet. That said, targeted probiotic strains for specific clinical purposes — antibiotic recovery, IBS-D management, infant colic — have genuine evidentiary support. The most evidence-backed strategy for most people is to focus first on diversifying prebiotic fiber intake across multiple food sources, add fermented foods regularly (kefir, yogurt, kimchi, sauerkraut, miso), and reserve specific probiotic supplements for defined purposes where the strain-specific evidence is strong. Tools like <em>Nutrilogix</em> make it straightforward to track your daily fiber intake and spot gaps across food categories — because the foundation of a healthy microbiome isn't a capsule you swallow, it's the food ecosystem you build one meal at a time."
-      },
-      {
-        "type": "cta"
-      }
-    ]
-  },
-  {
+    {
     "slug": "thanksgiving-leftovers-logged",
     "title": "Thanksgiving Leftovers, Logged: Scan the Fridge and Cook Macro-Friendly Meals All Week",
     "excerpt": "The Friday fridge is a week of meals if you store leftovers safely and actually use them. Here's how to scan what you have and cook macro-friendly dishes before the clock runs out.",
@@ -5171,7 +4930,7 @@ export const generatedPosts = [
       },
       {
         "type": "paragraph",
-        "text": "Once the food is put away, the next problem is visibility. You know there's turkey in there. You may not remember the roasted carrots, the extra eggs, or the container of sauce behind the milk. That's where a fridge scan is useful — not as a gimmick, but as a way to turn \"what's left\" into a short list of ingredients and a few meals you can actually cook. I walked through the broader idea in <a href=\"#/blog/scan-your-fridge-ai-recipes\">Scan Your Fridge, Get AI Recipes</a>. The leftover week is the same habit, with a tighter deadline."
+        "text": "Once the food is put away, the next problem is visibility. You know there's turkey in there. You may not remember the roasted carrots, the extra eggs, or the container of sauce behind the milk. That's where a fridge scan is useful — not as a gimmick, but as a way to turn \"what's left\" into a short list of ingredients and a few meals you can actually cook. I walked through the broader idea in <a href=\"/blog/scan-your-fridge-ai-recipes\">Scan Your Fridge, Get AI Recipes</a>. The leftover week is the same habit, with a tighter deadline."
       },
       {
         "type": "image",
@@ -5188,7 +4947,7 @@ export const generatedPosts = [
       },
       {
         "type": "paragraph",
-        "text": "I won't invent gram counts for your turkey, stuffing, or pie. Portions vary, and a made-up number helps no one. What you can do is build meals around the leftovers you actually stored, then log the plate so the macros come from the food, not from a guess. If you want a refresher on why those three numbers matter in the first place, <a href=\"#/blog/understanding-macros\">Understanding Macros</a> is the plain-language version."
+        "text": "I won't invent gram counts for your turkey, stuffing, or pie. Portions vary, and a made-up number helps no one. What you can do is build meals around the leftovers you actually stored, then log the plate so the macros come from the food, not from a guess. If you want a refresher on why those three numbers matter in the first place, <a href=\"/blog/understanding-macros\">Understanding Macros</a> is the plain-language version."
       },
       {
         "type": "paragraph",
@@ -5214,7 +4973,7 @@ export const generatedPosts = [
       },
       {
         "type": "paragraph",
-        "text": "The leftover week is a small <a href=\"#/blog/meal-planning\">meal-planning</a> problem with a hard stop. I like to sketch three or four dinners on Friday, assign the most perishable dishes first, and freeze the rest the same day. If you already batch-cook on ordinary weeks, the same short-session mindset in <a href=\"#/blog/7-minute-meal-prep\">7-minute meal prep</a> applies here: you're not starting from a raw grocery bag, you're finishing food you already cooked."
+        "text": "The leftover week is a small <a href=\"/blog/meal-planning\">meal-planning</a> problem with a hard stop. I like to sketch three or four dinners on Friday, assign the most perishable dishes first, and freeze the rest the same day. If you already batch-cook on ordinary weeks, the same short-session mindset in <a href=\"/blog/7-minute-meal-prep\">7-minute meal prep</a> applies here: you're not starting from a raw grocery bag, you're finishing food you already cooked."
       },
       {
         "type": "paragraph",
