@@ -62,7 +62,7 @@ function App() {
           gap: '8px', padding: '0 48px',
         }}>
           <span>🚀 TestFlight is Live — Limited Beta Spots Available.</span>
-          <a href="https://apple.co/4alOAzW" target="_blank" rel="noopener noreferrer"
+          <a href="https://testflight.apple.com/join/7tFSghHS" target="_blank" rel="noopener noreferrer"
             style={{ color: '#fff', textDecoration: 'underline', marginLeft: '6px' }}>
             Get Early Access →
           </a>

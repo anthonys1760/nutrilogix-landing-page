@@ -51,7 +51,7 @@ export default function Home() {
             </p>
             <div className="hero-actions" style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'center' }}>
               <a href="#" onClick={scrollToSignup} className="btn btn-primary">Join Waitlist</a>
-              <a href="https://apple.co/4alOAzW" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 16px', border: '1px solid var(--border-medium)', borderRadius: '8px', color: 'var(--text-main)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500', transition: 'all 0.2s' }}>
+              <a href="https://testflight.apple.com/join/7tFSghHS" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 16px', border: '1px solid var(--border-medium)', borderRadius: '8px', color: 'var(--text-main)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500', transition: 'all 0.2s' }}>
                 <span style={{ fontSize: '1.2rem' }}>🍎</span>
                 <div style={{ textAlign: 'left', lineHeight: '1.2' }}>
                   <div style={{ fontSize: '0.7rem', opacity: 0.8 }}>Download on</div>
@@ -606,7 +606,7 @@ export default function Home() {
                   <div style={{ fontSize: '2.5rem' }}>🍎</div>
                   <h3 style={{ color: 'white', fontSize: '1.1rem', fontWeight: 700, margin: 0 }}>iOS</h3>
                   <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem', margin: 0 }}>Get TestFlight</p>
-                  <a href="https://apple.co/4alOAzW" target="_blank" rel="noopener noreferrer" className="btn btn-white" style={{ marginTop: '8px' }}>
+                  <a href="https://testflight.apple.com/join/7tFSghHS" target="_blank" rel="noopener noreferrer" className="btn btn-white" style={{ marginTop: '8px' }}>
                     Download Now
                   </a>
                 </div>

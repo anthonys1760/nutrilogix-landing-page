@@ -292,7 +292,7 @@ export default function BlogPost() {
           </div>
 
           <p style={{textAlign: 'center', marginTop: '40px', color: 'var(--text-muted)'}}>
-            Available now in the Nutrilogix beta. <a href="https://apple.co/4alOAzW" target="_blank" rel="noopener noreferrer" style={{color: 'var(--primary)', fontWeight: 600}}>Get early access →</a>
+            Available now in the Nutrilogix beta. <a href="https://testflight.apple.com/join/7tFSghHS" target="_blank" rel="noopener noreferrer" style={{color: 'var(--primary)', fontWeight: 600}}>Get early access →</a>
           </p>
         </div>
       </div>
