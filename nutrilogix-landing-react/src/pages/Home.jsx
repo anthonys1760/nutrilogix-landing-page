@@ -38,7 +38,7 @@ export default function Home() {
     <>
       <SEO 
         title="Nutrilogix - AI Nutrition Tracking & Smart Kitchen"
-        description="Track calories by photo, scan your fridge for recipes, and sync with Apple Health. No manual logging required."
+        description="Track calories by photo, scan your fridge for recipes, and sync workouts with Apple Health. Nutrilogix logs a meal in about 30 seconds, with no manual entry."
       />
       {/* Hero Section */}
       <section className="hero">
@@ -395,7 +395,7 @@ export default function Home() {
           <div className="steps-container">
             <div className="step-item reveal reveal-delay-1" style={{ textAlign: 'center' }}>
               <div className="step-image" style={{ marginBottom: '24px' }}>
-                <img src="/assets/images/snap.png" alt="Snap a photo" style={{ width: '100%', maxWidth: '550px', height: 'auto', margin: '0 auto', display: 'block' }} />
+                <img src="/assets/images/snap.webp" alt="Snap a photo" width="1024" height="1024" loading="lazy" style={{ width: '100%', maxWidth: '550px', height: 'auto', margin: '0 auto', display: 'block' }} />
                 <div className="step-badge" style={{ position: 'absolute', top: '10px', left: '50%', transform: 'translateX(-50%)', marginLeft: '-250px' }}>1</div>
               </div>
               <h3 style={{ fontSize: '1.5rem', marginBottom: '12px' }}>Snap</h3>
