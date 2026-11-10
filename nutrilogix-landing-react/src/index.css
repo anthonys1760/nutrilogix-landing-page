@@ -200,6 +200,7 @@ h1, h2, h3, h4, h5, h6 {
 .brand-logo {
   display: flex;
   align-items: center;
+  min-height: 44px;
   font-size: 1.5rem;
   font-weight: 800;
   color: var(--text-main);
@@ -228,6 +229,9 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   background: none;
   border: none;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .nav-link:hover {
@@ -632,8 +636,8 @@ h1, h2, h3, h4, h5, h6 {
 .avatar {
   width: 48px;
   height: 48px;
-  background: var(--primary);
-  color: var(--on-primary);
+  background: #E7FAF2;
+  color: #087F5B;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -911,7 +915,8 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     padding: 40px;
     box-sizing: border-box;
-    transition: right 0.3s ease-in-out;
+    transition: right 0.3s ease-in-out, visibility 0s linear 0.3s;
+    visibility: hidden;
     z-index: 1050;
     gap: 40px;
     overflow-x: hidden;
@@ -919,6 +924,8 @@ h1, h2, h3, h4, h5, h6 {
 
   .nav-links.active {
     right: 0;
+    visibility: visible;
+    transition: right 0.3s ease-in-out, visibility 0s;
   }
 
   .nav-link {
@@ -1051,6 +1058,11 @@ html.cookie-bar-open body {
   color: #6EE7B7;
   font-weight: 600;
   text-decoration: underline;
+  padding: 12px 4px;
+}
+
+.cookie-bar :focus-visible {
+  outline-color: #6EE7B7;
 }
 
 .cookie-btn {
@@ -1386,8 +1398,8 @@ html.cookie-bar-open body {
   .phone-mockup-wrapper {
     position: relative;
     display: block;
-    width: 260px;
-    max-width: 260px;
+    width: 300px;
+    max-width: 300px;
     height: 300px;
     margin: 6px auto 0;
     overflow: hidden;
@@ -1400,7 +1412,14 @@ html.cookie-bar-open body {
     margin: 0;
     transform: none;
     object-fit: cover;
-    object-position: center 7%;
+    object-position: top;
+  }
+
+  .cta-content .btn-testflight {
+    padding: 0 14px;
+    font-size: 16px;
+    gap: 8px;
+    white-space: nowrap;
   }
 
   .post-cover {
@@ -1471,7 +1490,25 @@ html.cookie-bar-open body {
     font-weight: 800;
   }
 
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .stat strong {
+    white-space: nowrap;
+    font-size: 1.5rem;
+  }
+
   .phone-mockup-wrapper {
-    max-width: 520px;
+    max-width: 340px;
+  }
+
+  .phone-mockup {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: top;
   }
 }

@@ -4,7 +4,7 @@ import SEO from '../components/SEO'
 import Icon from '../components/Icons'
 import TestFlightButton, { AndroidNotifyLink } from '../components/TestFlightButton'
 import WaitlistForm from '../components/WaitlistForm'
-import { OFFER_LINE } from '../siteCopy'
+import { OFFER_LINE, OFFER_PILL } from '../siteCopy'
 
 export default function Home() {
   const location = useLocation();
@@ -51,14 +51,14 @@ export default function Home() {
       <section className="hero">
         <div className="container hero-inner">
           <div className="hero-content">
-            <span className="badge offer-pill"><i className="offer-dot" aria-hidden="true" />{OFFER_LINE}</span>
+            <span className="badge offer-pill"><i className="offer-dot" aria-hidden="true" />{OFFER_PILL}</span>
             <h1>Snap your plate.<br /><span className="text-highlight">Get your macros.</span></h1>
             <p className="hero-sub">
               Take a photo or just say what you ate. Nutrilogix logs calories and macros in about 30 seconds, and syncs workouts from Apple Health.
             </p>
             <div className="hero-actions">
               <TestFlightButton />
-              <p className="hero-cta-meta">Opens Apple’s TestFlight app</p>
+              <p className="hero-cta-meta">Free core tracking · Opens Apple’s TestFlight app</p>
               <AndroidNotifyLink onClick={scrollToSignup} />
             </div>
             <div className="hero-stats">
@@ -78,7 +78,7 @@ export default function Home() {
           </div>
           <div className="hero-visual">
             <div className="phone-mockup-wrapper">
-              <img src="/assets/images/nutrionix.png" alt="Nutrilogix home screen showing calories eaten and protein, carbs, and fat" className="phone-mockup" />
+              <img src="/assets/images/nutrionix-phone.webp" alt="Nutrilogix home screen showing calories eaten and protein, carbs, and fat" className="phone-mockup" />
               <div className="phone-fade" aria-hidden="true" />
             </div>
           </div>
@@ -414,40 +414,40 @@ export default function Home() {
           </div>
           <div className="testimonials-grid">
             <div className="testimonial-card reveal reveal-delay-1">
-              <div style={{ color: '#FFD700', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
+              <div role="img" aria-label="5 out of 5 stars" style={{ color: '#B45309', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
               <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: 'var(--text-main)' }}>
                 "I never tracked because it was too tedious. Nutrilogix changed that completely. Just snapping a photo makes logging meals fun rather than a chore."
               </p>
               <div className="user">
-                <div className="avatar" style={{ background: 'var(--primary-light)', color: 'var(--primary)' }}>S</div>
+                <div className="avatar">S</div>
                 <div>
                   <strong style={{ display: 'block', color: 'var(--text-main)' }}>Sarah J.</strong>
-                  <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Lost 15lbs • Early Access</span>
+                  <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Early Access</span>
                 </div>
               </div>
             </div>
 
             <div className="testimonial-card reveal reveal-delay-2">
-              <div style={{ color: '#FFD700', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
+              <div role="img" aria-label="5 out of 5 stars" style={{ color: '#B45309', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
               <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: 'var(--text-main)' }}>
                 "The AI is scary good. It recognized my complex homemade lasagna ingredients perfectly. The health score feature is a game changer for my diet quality."
               </p>
               <div className="user">
-                <div className="avatar" style={{ background: '#E0E7FF', color: '#4F46E5' }}>M</div>
+                <div className="avatar">M</div>
                 <div>
                   <strong style={{ display: 'block', color: 'var(--text-main)' }}>Mike R.</strong>
-                  <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Muscle Gain • Marathon Runner</span>
+                  <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Marathon Runner</span>
                 </div>
               </div>
             </div>
 
             <div className="testimonial-card reveal reveal-delay-3">
-              <div style={{ color: '#FFD700', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
+              <div role="img" aria-label="5 out of 5 stars" style={{ color: '#B45309', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
               <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: 'var(--text-main)' }}>
                 "The shopping list feature saves me hours every week. I love how it automatically checks my fridge before telling me what to buy. Incredible AI."
               </p>
               <div className="user">
-                <div className="avatar" style={{ background: '#FEF3C7', color: '#D97706' }}>L</div>
+                <div className="avatar">L</div>
                 <div>
                   <strong style={{ display: 'block', color: 'var(--text-main)' }}>Linda K.</strong>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Busy Parent • Healthy Eater</span>
@@ -456,12 +456,12 @@ export default function Home() {
             </div>
 
             <div className="testimonial-card reveal reveal-delay-1">
-              <div style={{ color: '#FFD700', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
+              <div role="img" aria-label="5 out of 5 stars" style={{ color: '#B45309', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
               <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: 'var(--text-main)' }}>
                 "Finally, an app that syncs correctly with Apple Health! My workout burn is instantly credited to my daily goals. It's the most seamless setup I've used."
               </p>
               <div className="user">
-                <div className="avatar" style={{ background: '#DCFCE7', color: '#166534' }}>J</div>
+                <div className="avatar">J</div>
                 <div>
                   <strong style={{ display: 'block', color: 'var(--text-main)' }}>James W.</strong>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Crossfit Athlete • Techie</span>
@@ -470,12 +470,12 @@ export default function Home() {
             </div>
 
             <div className="testimonial-card reveal reveal-delay-2">
-              <div style={{ color: '#FFD700', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
+              <div role="img" aria-label="5 out of 5 stars" style={{ color: '#B45309', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
               <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: 'var(--text-main)' }}>
                 "I was shocked at my favorite snacks' health scores. Nutrilogix has helped me cut out inflammatory foods I didn't even know I was eating. Worth every penny."
               </p>
               <div className="user">
-                <div className="avatar" style={{ background: '#FCE7F3', color: '#9D174D' }}>E</div>
+                <div className="avatar">E</div>
                 <div>
                   <strong style={{ display: 'block', color: 'var(--text-main)' }}>Emily S.</strong>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Health Coach • Foodie</span>
@@ -484,12 +484,12 @@ export default function Home() {
             </div>
 
             <div className="testimonial-card reveal reveal-delay-3">
-              <div style={{ color: '#FFD700', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
+              <div role="img" aria-label="5 out of 5 stars" style={{ color: '#B45309', marginBottom: '16px', fontSize: '1.2rem' }}>★★★★★</div>
               <p style={{ fontSize: '1.1rem', lineHeight: '1.6', fontStyle: 'normal', marginBottom: '24px', color: 'var(--text-main)' }}>
                 "The speed is what got me. I can log an entire meal during a 30-second break between meetings. No searching, no typing, just a photo. It's brilliant engineering."
               </p>
               <div className="user">
-                <div className="avatar" style={{ background: '#F3F4F6', color: '#374151' }}>D</div>
+                <div className="avatar">D</div>
                 <div>
                   <strong style={{ display: 'block', color: 'var(--text-main)' }}>David L.</strong>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Software Engineer • Busy Professional</span>

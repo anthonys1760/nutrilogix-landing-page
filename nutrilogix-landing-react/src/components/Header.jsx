@@ -45,6 +45,7 @@ export default function Header({ theme, toggleTheme }) {
             className={`mobile-toggle ${isMenuOpen ? 'open' : ''}`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle navigation"
+            aria-expanded={isMenuOpen}
           >
             <span className="bar"></span>
             <span className="bar"></span>
