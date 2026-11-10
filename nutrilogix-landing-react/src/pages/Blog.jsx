@@ -90,23 +90,7 @@ export default function Blog() {
                   <p style={{ fontSize: '0.95rem', marginBottom: '16px' }}>Why manual logging kills your diet momentum and how AI photo tracking solves this completely.</p>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
                     <div className="avatar" style={{ width: 24, height: 24, fontSize: '0.7rem' }}>A</div>
-                    <span>Anthony Smith • Feb 19, 2026 • 5 min read</span>
-                  </div>
-                </div>
-              </Link>
-            </article>
-
-            {/* New Post: The End of Manual Logging */}
-            <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
-              <Link to="/blog/the-end-of-manual-logging" style={{ display: 'block' }}>
-                <img src="/assets/images/tacos.jpg" alt="AI Food Analysis" loading="lazy" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
-                <div style={{ padding: '24px' }}>
-                  <span className="badge" style={{ marginBottom: '12px' }}>Technology</span>
-                  <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>The End of Manual Logging: Why AI is the Future</h3>
-                  <p style={{ fontSize: '0.95rem', marginBottom: '16px' }}>Discover how computer vision is replacing tedious food logging with instant, accurate photo analysis.</p>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                    <div className="avatar" style={{ width: 24, height: 24, fontSize: '0.7rem' }}>A</div>
-                    <span>Anthony Smith • Jan 15, 2026 • 6 min read</span>
+                    <span>Anthony Smith • Feb 19, 2026 • 6 min read</span>
                   </div>
                 </div>
               </Link>
@@ -139,22 +123,6 @@ export default function Blog() {
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
                     <div className="avatar" style={{ width: 24, height: 24, fontSize: '0.7rem' }}>A</div>
                     <span>Anthony Smith • Feb 10, 2026 • 5 min read</span>
-                  </div>
-                </div>
-              </Link>
-            </article>
-
-            {/* Post: Hydration */}
-            <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
-              <Link to="/blog/science-of-hydration" style={{ display: 'block' }}>
-                <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600&q=80" alt="The Science of Hydration" loading="lazy" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
-                <div style={{ padding: '24px' }}>
-                  <span className="badge" style={{ marginBottom: '12px' }}>Wellness</span>
-                  <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>The Science of Hydration: How Much Water Do You Really Need?</h3>
-                  <p style={{ fontSize: '0.95rem', marginBottom: '16px' }}>Debunk the 8-glass myth and learn evidence-based strategies to optimize your daily water intake.</p>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                    <div className="avatar" style={{ width: 24, height: 24, fontSize: '0.7rem' }}>A</div>
-                    <span>Anthony Smith • Feb 20, 2026 • 7 min read</span>
                   </div>
                 </div>
               </Link>

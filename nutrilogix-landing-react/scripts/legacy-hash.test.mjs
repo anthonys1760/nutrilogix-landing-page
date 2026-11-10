@@ -4,6 +4,7 @@ import { dirname, join } from 'node:path'
 import test from 'node:test'
 import { fileURLToPath } from 'node:url'
 import { generatedPosts } from '../src/data/generatedPosts.js'
+import { postRedirects } from '../src/data/postRedirects.js'
 import { legacyHashToPath } from '../src/legacyHash.js'
 import { canonicalUrl, extractBlogPosting, toCanonicalPath } from '../src/seoHead.js'
 
@@ -30,13 +31,33 @@ test('in-page anchors are not treated as legacy routes', () => {
 
 test('every published post hash redirects to its path', () => {
   const src = readFileSync(join(root, 'src/pages/BlogPost.jsx'), 'utf8')
+  const blogIndex = readFileSync(join(root, 'src/pages/Blog.jsx'), 'utf8')
   const hardcoded = [...src.matchAll(/slug === '([^']+)'/g)].map((match) => match[1])
   const slugs = [...generatedPosts.map((post) => post.slug), ...hardcoded]
+  const published = new Set(slugs)
   assert.ok(slugs.length >= 70)
   for (const slug of slugs) {
     assert.equal(legacyHashToPath(`#/blog/${slug}`), `/blog/${slug}`)
     assert.equal(canonicalUrl(`/blog/${slug}/`), `https://nutrilogix-ai.com/blog/${slug}`)
+    assert.equal(postRedirects[slug], undefined)
   }
+  for (const [fromSlug, toSlug] of Object.entries(postRedirects)) {
+    assert.equal(published.has(fromSlug), false)
+    assert.equal(published.has(toSlug), true)
+    assert.equal(legacyHashToPath(`#/blog/${fromSlug}`), `/blog/${toSlug}`)
+    assert.equal(legacyHashToPath(`#/blog/${fromSlug}/`), `/blog/${toSlug}`)
+    assert.equal(src.includes(fromSlug), false)
+    assert.equal(blogIndex.includes(fromSlug), false)
+    const bodies = JSON.stringify(generatedPosts)
+    assert.equal(new RegExp(`/blog/${fromSlug}(?![a-z0-9-])`).test(bodies), false)
+    assert.equal(bodies.includes(`#/blog/${fromSlug}`), false)
+  }
+  assert.equal(
+    legacyHashToPath('#/blog/the-end-of-manual-logging?ref=old'),
+    '/blog/hidden-cost-manual-logging?ref=old'
+  )
+  assert.equal(JSON.stringify(generatedPosts).includes('href=\\"#/blog/'), false)
+  assert.equal(JSON.stringify(generatedPosts).includes('#/blog/'), false)
 })
 
 test('canonical paths drop trailing slashes except the homepage', () => {

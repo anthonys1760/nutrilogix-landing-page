@@ -2,7 +2,9 @@ import { build } from 'vite'
 import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
-import { SITE_ORIGIN, enrichHeadFromBlogPosting, extractBlogPosting, serializeHead } from '../src/seoHead.js'
+import { generatedPosts } from '../src/data/generatedPosts.js'
+import { postRedirects } from '../src/data/postRedirects.js'
+import { SITE_ORIGIN, enrichHeadFromBlogPosting, escapeHtml, extractBlogPosting, serializeHead } from '../src/seoHead.js'
 import { getAllRoutes, getPostRoutes } from './routes.mjs'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
@@ -163,6 +165,36 @@ const sitemapEntries = rendered.map((item) => {
 })
 
 writeFileSync(join(distDir, 'sitemap.xml'), renderSitemap(sitemapEntries))
+
+const keptTitles = {
+  'hidden-cost-manual-logging': 'The Hidden Cost of Manual Food Logging (And Why It Keeps You Stuck)',
+}
+for (const post of generatedPosts) keptTitles[post.slug] = post.title
+
+for (const [fromSlug, toSlug] of Object.entries(postRedirects)) {
+  const title = keptTitles[toSlug]
+  if (!title) throw new Error(`Missing title for redirect target ${toSlug}`)
+  const targetPath = `/blog/${toSlug}`
+  const canonical = `${SITE_ORIGIN}${targetPath}`
+  const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirecting to ${escapeHtml(title)}</title>
+  <meta name="robots" content="noindex" />
+  <meta http-equiv="refresh" content="0; url=${targetPath}" />
+  <link rel="canonical" href="${canonical}" />
+  <script>location.replace(${JSON.stringify(targetPath)});</script>
+</head>
+<body>
+  <p>This page has moved. <a href="${targetPath}">${escapeHtml(title)}</a></p>
+</body>
+</html>
+`
+  writeRoute(`/blog/${fromSlug}`, html)
+}
+console.log(`Wrote ${Object.keys(postRedirects).length} retired-slug redirect pages`)
 
 const generatedCount = rendered.filter((item) => item.route.kind === 'generated').length
 const hardcodedCount = rendered.filter((item) => item.route.kind === 'hardcoded').length

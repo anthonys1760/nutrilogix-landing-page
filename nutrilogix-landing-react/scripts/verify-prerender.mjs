@@ -2,6 +2,7 @@ import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { postRedirects } from '../src/data/postRedirects.js'
 import { SITE_ORIGIN, canonicalUrl, extractBlogPosting } from '../src/seoHead.js'
 import { getAllRoutes } from './routes.mjs'
 
@@ -171,6 +172,34 @@ for (const loc of locSet) {
   if (!expectedLocs.has(loc)) fail(`sitemap has unexpected ${loc}`)
 }
 if (sitemap.includes('/this-page-does-not-exist')) fail('sitemap includes the 404 probe')
+
+for (const [fromSlug, toSlug] of Object.entries(postRedirects)) {
+  const rel = `blog/${fromSlug}/index.html`
+  const sibling = `blog/${fromSlug}.html`
+  const targetPath = `/blog/${toSlug}`
+  const canonicalTarget = `${SITE_ORIGIN}${targetPath}`
+  if (!exists(rel)) {
+    fail(`missing redirect page ${rel}`)
+  } else {
+    const html = readDist(rel)
+    if (!exists(sibling)) fail(`missing redirect page ${sibling}`)
+    else if (readDist(sibling) !== html) fail(`${sibling} does not match ${rel}`)
+    if (!html.includes(`<meta http-equiv="refresh" content="0; url=${targetPath}"`)) {
+      fail(`${rel} missing meta refresh to ${targetPath}`)
+    }
+    if (!html.includes(`<link rel="canonical" href="${canonicalTarget}"`)) {
+      fail(`${rel} missing canonical ${canonicalTarget}`)
+    }
+    if (!html.includes('<meta name="robots" content="noindex"')) fail(`${rel} missing noindex`)
+    if (!html.includes(`location.replace(${JSON.stringify(targetPath)})`)) fail(`${rel} missing JS redirect`)
+    if (!html.includes(`<a href="${targetPath}">`)) fail(`${rel} missing visible link`)
+    if (html.includes('BlogPosting')) fail(`${rel} should be a redirect, not an article`)
+  }
+  if (sitemap.includes(`<loc>${SITE_ORIGIN}/blog/${fromSlug}</loc>`)) {
+    fail(`sitemap still lists /blog/${fromSlug}`)
+  }
+  if (!sitemap.includes(`<loc>${canonicalTarget}</loc>`)) fail(`sitemap missing kept /blog/${toSlug}`)
+}
 
 for (const route of routes.filter((item) => item.kind === 'generated')) {
   const loc = canonicalUrl(route.path)
