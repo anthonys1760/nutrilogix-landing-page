@@ -948,6 +948,9 @@ h1, h2, h3, h4, h5, h6 {
   .fitness-content {
     margin-top: 80px;
   }
+
+  .shopping-visual { order: 1; }
+  .shopping-content { order: 0; }
 }
 
 /* Scroll Reveal Animation */
