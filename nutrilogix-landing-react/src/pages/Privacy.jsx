@@ -65,7 +65,7 @@ export default function Privacy() {
         <section style={{ marginBottom: '32px' }}>
           <h2>5. Contact Us</h2>
           <p>
-            If you have questions or comments about this policy, you may email us at <a href="mailto:privacy@nutrilogix.app" style={{ color: 'var(--primary)' }}>privacy@nutrilogix.app</a>.
+            If you have questions or comments about this policy, you may email us at <a href="mailto:anthony.smith1760@gmail.com" style={{ color: 'var(--primary)' }}>anthony.smith1760@gmail.com</a>.
           </p>
         </section>
       </div>

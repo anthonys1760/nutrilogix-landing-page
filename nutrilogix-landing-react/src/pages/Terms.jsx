@@ -54,7 +54,7 @@ export default function Terms() {
         <section style={{ marginBottom: '32px' }}>
           <h2>5. Contact Us</h2>
           <p>
-            In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us at <a href="mailto:support@nutrilogix.app" style={{ color: 'var(--primary)' }}>support@nutrilogix.app</a>.
+            In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us at <a href="mailto:anthony.smith1760@gmail.com" style={{ color: 'var(--primary)' }}>anthony.smith1760@gmail.com</a>.
           </p>
         </section>
       </div>
