@@ -5127,5 +5127,106 @@ export const generatedPosts = [
         "type": "cta"
       }
     ]
+  },
+  {
+    "slug": "thanksgiving-leftovers-logged",
+    "title": "Thanksgiving Leftovers, Logged: Scan the Fridge and Cook Macro-Friendly Meals All Week",
+    "excerpt": "The Friday fridge is a week of meals if you store leftovers safely and actually use them. Here's how to scan what you have and cook macro-friendly dishes before the clock runs out.",
+    "author": "Anthony Smith",
+    "authorInitial": "A",
+    "date": "Nov 19, 2026",
+    "dateISO": "2026-11-19",
+    "readTime": "6 min",
+    "category": "Meal Prep",
+    "keywords": "thanksgiving leftovers, leftover turkey storage, fridge scan recipes, macro-friendly leftovers, leftover food safety, meal planning leftovers, turkey leftover meals",
+    "image": "https://images.unsplash.com/photo-1605926637512-c8b131444a4b?w=800&q=80",
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "By Friday morning, the hard part of Thanksgiving is supposed to be over. The table is cleared. The fridge is not. Turkey, stuffing, roasted vegetables, a half-pan of sweet potatoes, and a container of gravy you meant to label. That food is a week of meals if you handle it well, or a wasted Sunday night if you don't. This post is for the week after the meal: how to store leftovers safely, see what you actually have, and cook from it without guessing at portions or blowing past the clock."
+      },
+      {
+        "type": "heading",
+        "text": "Store it safely before you plan the week"
+      },
+      {
+        "type": "paragraph",
+        "text": "The food-safety work starts before anyone talks about macros. The <a href=\"https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/leftovers-and-food-safety\">USDA Food Safety and Inspection Service</a> puts perishable leftovers in the danger zone between 40°F and 140°F, where bacteria grow rapidly. After cooking, or after food comes off a warming tray, leftovers need to be refrigerated within <strong>2 hours</strong> — or within <strong>1 hour</strong> if the room is above 90°F, the way an afternoon kitchen can feel with the oven still on. Anything left out longer than that should be thrown away."
+      },
+      {
+        "type": "paragraph",
+        "text": "Cooling large dishes slowly is the other quiet risk. FSIS recommends dividing food into shallow containers so it reaches 40°F or below as quickly as possible, and cutting a whole turkey into smaller pieces before it goes in the fridge. Slice the breast meat; legs and wings can stay whole. Cover leftovers, wrap them airtight, and refrigerate or freeze them right away so they stay moist and don't pick up other odors."
+      },
+      {
+        "type": "callout",
+        "text": "<strong>The clock is shorter than it feels.</strong> FSIS says leftovers can stay in the refrigerator for <strong>3 to 4 days</strong>, or in the freezer for <strong>3 to 4 months</strong> for best quality (frozen leftovers kept at 0°F stay safe longer, but dry out and lose flavor). <a href=\"https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts\">FoodSafety.gov's cold storage chart</a>, last reviewed September 19, 2023, lists cooked meat or poultry leftovers at 3 to 4 days in the fridge and 2 to 6 months in the freezer, and notes that freezer times are about quality — food held continuously at 0°F or below can be kept indefinitely. If you won't eat it by day four, freeze a portion on Friday, not on Tuesday night when you're already tired of turkey."
+      },
+      {
+        "type": "paragraph",
+        "text": "When you reheat, FSIS is specific: leftovers should reach <strong>165°F</strong> as measured with a food thermometer. Bring sauces, soups, and gravies to a rolling boil. Cover food in the microwave, rotate it, and check the temperature in more than one spot. You can reheat leftovers from frozen, and you can refreeze what remains after previously frozen leftovers have been reheated to 165°F."
+      },
+      {
+        "type": "heading",
+        "text": "Scan the fridge instead of guessing"
+      },
+      {
+        "type": "paragraph",
+        "text": "Once the food is put away, the next problem is visibility. You know there's turkey in there. You may not remember the roasted carrots, the extra eggs, or the container of sauce behind the milk. That's where a fridge scan is useful — not as a gimmick, but as a way to turn \"what's left\" into a short list of ingredients and a few meals you can actually cook. I walked through the broader idea in <a href=\"#/blog/scan-your-fridge-ai-recipes\">Scan Your Fridge, Get AI Recipes</a>. The leftover week is the same habit, with a tighter deadline."
+      },
+      {
+        "type": "image",
+        "src": "/assets/images/fridge-scan.png",
+        "alt": "NutriLogix Fridge Scan screen showing detected ingredients — watermelon, carrots, tomatoes, ham and deli meat, eggs, mayonnaise, tomato sauce, beer, water, and butter — plus macro-tagged recipe cards with Save and Log Meal buttons. This screenshot is a general fridge-scan example, not a Thanksgiving leftover fridge."
+      },
+      {
+        "type": "paragraph",
+        "text": "The screen above is the Fridge Scan UI, not a Thanksgiving leftover fridge — the detected items in this example are things like watermelon, carrots, tomatoes, ham, eggs, and butter. What it does show is the workflow: ingredients get identified, recipe cards come back with calories and macros already on them, and you can save a recipe or tap <strong>Log Meal</strong> when you cook it. On this example card, a veggie-packed egg scramble with tomatoes and ham is listed at 280 calories, 22 grams of protein, 8 grams of carbs, and 18 grams of fat, and tagged as 15 minutes and easy. I wouldn't treat those numbers as a leftover-turkey recipe. I would treat them as the kind of breakdown you want before you eat, so you're not estimating a plate by eye."
+      },
+      {
+        "type": "heading",
+        "text": "Cook from what you have, without invented macros"
+      },
+      {
+        "type": "paragraph",
+        "text": "I won't invent gram counts for your turkey, stuffing, or pie. Portions vary, and a made-up number helps no one. What you can do is build meals around the leftovers you actually stored, then log the plate so the macros come from the food, not from a guess. If you want a refresher on why those three numbers matter in the first place, <a href=\"#/blog/understanding-macros\">Understanding Macros</a> is the plain-language version."
+      },
+      {
+        "type": "paragraph",
+        "text": "A practical leftover week usually looks less like a new holiday menu and more like a few repeatable plates:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Sliced turkey with leftover roasted vegetables and a fresh side salad — simple, fast, and easy to log as a plate instead of a mystery bowl.",
+          "A skillet hash: diced turkey, leftover potatoes or carrots, and a couple of eggs if you have them. Cook it hot, and reheat any pre-cooked pieces to 165°F.",
+          "Soup or stew from leftover turkey and vegetables. <a href=\"https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts\">FoodSafety.gov</a> lists soups and stews with meat or vegetables at 3 to 4 days in the refrigerator and 2 to 3 months in the freezer. Cool it in shallow containers, the same as any other leftover.",
+          "Turkey in a wrap or over greens, using leftover meat and whatever crisp vegetables remain. If a recipe needs one item you don't have, add only that — don't rebuild the grocery trip you just survived.",
+          "Freeze labeled portions on day one if you already know you won't finish the turkey in four days. FSIS allows refrigerator thawing, after which the food should be used within 3 to 4 days or refrozen."
+        ]
+      },
+      {
+        "type": "callout",
+        "text": "<strong>Use the 3-to-4-day window on purpose.</strong> If Thursday is the meal, leftover turkey and cooked meat or poultry should be eaten or frozen by Sunday or Monday, not \"sometime next week.\" Pumpkin and pecan pie, on the same FoodSafety.gov chart, also land at 3 to 4 days in the fridge after baking. The scan helps you see what's left. The calendar is what keeps it safe."
+      },
+      {
+        "type": "heading",
+        "text": "Plan the week, then log what you actually ate"
+      },
+      {
+        "type": "paragraph",
+        "text": "The leftover week is a small <a href=\"#/blog/meal-planning\">meal-planning</a> problem with a hard stop. I like to sketch three or four dinners on Friday, assign the most perishable dishes first, and freeze the rest the same day. If you already batch-cook on ordinary weeks, the same short-session mindset in <a href=\"#/blog/7-minute-meal-prep\">7-minute meal prep</a> applies here: you're not starting from a raw grocery bag, you're finishing food you already cooked."
+      },
+      {
+        "type": "paragraph",
+        "text": "NutriLogix is built for that loop. Scan the fridge, get macro-friendly recipe ideas from what's already there, and log the meal when you eat it — the Log Meal button on the recipe card is the last step, not a separate homework assignment. The point isn't to turn Thanksgiving into a spreadsheet. It's to use the food while it's still good, and to know what was on the plate without spending the weekend tapping through a food database."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you do only one thing after the meal, do this: get the turkey into shallow containers within two hours, decide by Friday what you'll eat in the next three to four days, freeze the rest, and log the meals you actually cook. That's how leftovers become lunch, not a smell in the back of the fridge."
+      },
+      {
+        "type": "cta"
+      }
+    ]
   }
 ]
