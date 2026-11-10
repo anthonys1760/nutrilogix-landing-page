@@ -16,9 +16,12 @@ function GeneratedPostRenderer({ post }) {
     marginBottom: '24px'
   }
 
-  const salmonSize = (src) => (
-    typeof src === 'string' && src.endsWith('/salmon.webp') ? { width: 1600, height: 1067 } : {}
-  )
+  const localImageSize = (src) => {
+    if (typeof src !== 'string') return {}
+    if (src.endsWith('/salmon.webp') || src.endsWith('/veggies.webp')) return { width: 1600, height: 1067 }
+    if (src.endsWith('/egg.webp')) return { width: 1600, height: 1436 }
+    return {}
+  }
   const absoluteImage = post.image.startsWith('http') ? post.image : `${SITE_ORIGIN}${post.image}`
 
   const blogPostingLd = {
@@ -53,7 +56,7 @@ function GeneratedPostRenderer({ post }) {
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }} />
 
-      <img src={post.image} alt={post.title} {...salmonSize(post.image)} style={imgStyle} />
+      <img src={post.image} alt={post.title} {...localImageSize(post.image)} style={imgStyle} />
 
       <div style={{ marginBottom: '32px' }}>
         <span className="badge">{post.category}</span>
@@ -69,7 +72,7 @@ function GeneratedPostRenderer({ post }) {
           if (block.type === 'paragraph') return <p key={i} style={{ marginBottom: '24px' }} dangerouslySetInnerHTML={{ __html: block.text }} />
           if (block.type === 'heading') return <h2 key={i} style={headingStyle}>{block.text}</h2>
           if (block.type === 'callout') return <div key={i} style={calloutStyle} dangerouslySetInnerHTML={{ __html: block.text }} />
-          if (block.type === 'image') return <img key={i} src={block.src} alt={block.alt} loading="lazy" {...salmonSize(block.src)} style={{ width: '100%', borderRadius: '12px', height: '300px', objectFit: 'cover', marginBottom: '32px' }} />
+          if (block.type === 'image') return <img key={i} src={block.src} alt={block.alt} loading="lazy" {...localImageSize(block.src)} style={{ width: '100%', borderRadius: '12px', height: '300px', objectFit: 'cover', marginBottom: '32px' }} />
           if (block.type === 'list') return (
             <ul key={i} style={{ paddingLeft: '24px', marginBottom: '24px' }}>
               {block.items.map((item, j) => <li key={j} style={{ marginBottom: '12px' }} dangerouslySetInnerHTML={{ __html: item }} />)}
@@ -553,7 +556,7 @@ export default function BlogPost() {
       '@type': 'BlogPosting',
       headline: '7-Minute Meal Prep for Busy Professionals',
       description: 'A quick meal prep system using protein, veg, and smart carbs, integrated with an AI photo app for instant macro tracking.',
-      image: ['/assets/images/veggies.jpg'],
+      image: ['/assets/images/veggies.webp'],
       author: { '@type': 'Person', name: 'Anthony Smith' },
       publisher: {
         '@type': 'Organization',
@@ -574,7 +577,7 @@ export default function BlogPost() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
         />
-        <img src="/assets/images/veggies.jpg" alt="7-Minute Meal Prep" style={imgStyle} />
+        <img src="/assets/images/veggies.webp" alt="7-Minute Meal Prep" width="1600" height="1067" style={imgStyle} />
 
         <div style={metaStyle}>
           <span className="badge">Tips & Tricks</span>
@@ -988,7 +991,7 @@ export default function BlogPost() {
       '@type': 'BlogPosting',
       headline: '5 Simple Steps to Effective Meal Planning',
       description: 'Master the art of meal planning with these practical tips that will save you time, money, and decision fatigue.',
-      image: ['/assets/images/egg.jpg'],
+      image: ['/assets/images/egg.webp'],
       author: { '@type': 'Person', name: 'Anthony Smith' },
       publisher: {
         '@type': 'Organization',
@@ -1009,7 +1012,7 @@ export default function BlogPost() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
         />
-        <img src="/assets/images/egg.jpg" alt="Meal Planning" style={imgStyle} />
+        <img src="/assets/images/egg.webp" alt="Meal Planning" width="1600" height="1436" style={imgStyle} />
 
         <div style={metaStyle}>
           <span className="badge">Tips & Tricks</span>

@@ -410,7 +410,7 @@ export const generatedPosts = [
     "readTime": "7 min",
     "category": "Nutrition Science",
     "keywords": "thermic effect of food, TEF weight loss, protein metabolism rate, diet induced thermogenesis, high protein diet metabolism, macronutrient digestion calories, calorie burning digestion, metabolic cost of protein",
-    "image": "/assets/images/egg.jpg",
+    "image": "/assets/images/egg.webp",
     "body": [
       {
         "type": "paragraph",
@@ -602,7 +602,7 @@ export const generatedPosts = [
       },
       {
         "type": "image",
-        "src": "/assets/images/veggies.jpg",
+        "src": "/assets/images/veggies.webp",
         "alt": "Balanced protein and vegetable plate representing healthy fat and nutrient-rich eating"
       },
       {
@@ -679,7 +679,7 @@ export const generatedPosts = [
       },
       {
         "type": "image",
-        "src": "/assets/images/egg.jpg",
+        "src": "/assets/images/egg.webp",
         "alt": "Eggs — one of the few whole foods that naturally contains preformed vitamin D3 alongside choline and essential amino acids"
       },
       {
@@ -718,7 +718,7 @@ export const generatedPosts = [
     "readTime": "7 min",
     "category": "Nutrition Science",
     "keywords": "calorie density, nutrient density, volume eating, calorie dense foods, nutrient rich foods, satiety per calorie, energy density diet, fat loss nutrition",
-    "image": "/assets/images/veggies.jpg",
+    "image": "/assets/images/veggies.webp",
     "body": [
       {
         "type": "paragraph",
@@ -799,7 +799,7 @@ export const generatedPosts = [
     "readTime": "7 min",
     "category": "Nutrition Science",
     "keywords": "fermented foods gut health, gut microbiome diversity, probiotics benefits, kefir gut health, kimchi benefits, butyrate short chain fatty acids, best fermented foods, microbiome diet",
-    "image": "/assets/images/veggies.jpg",
+    "image": "/assets/images/veggies.webp",
     "body": [
       {
         "type": "paragraph",
@@ -1125,7 +1125,7 @@ export const generatedPosts = [
     "readTime": "7 min",
     "category": "Nutrition Science",
     "keywords": "caffeine metabolism, coffee metabolic rate, caffeine fat oxidation, coffee weight loss, caffeine thermogenesis, adenosine caffeine mechanism, cortisol coffee timing, caffeine exercise performance",
-    "image": "/assets/images/veggies.jpg",
+    "image": "/assets/images/veggies.webp",
     "body": [
       {
         "type": "paragraph",
@@ -1248,7 +1248,7 @@ export const generatedPosts = [
       },
       {
         "type": "image",
-        "src": "/assets/images/egg.jpg",
+        "src": "/assets/images/egg.webp",
         "alt": "Eggs — a natural source of complete protein and key amino acids that support the body's own creatine synthesis"
       },
       {
@@ -1369,7 +1369,7 @@ export const generatedPosts = [
     "readTime": "7 min",
     "category": "Nutrition Science",
     "keywords": "magnesium deficiency symptoms, best magnesium supplements, magnesium sleep, magnesium anxiety, magnesium foods, magnesium and metabolism, magnesium deficiency fatigue, how much magnesium per day",
-    "image": "/assets/images/veggies.jpg",
+    "image": "/assets/images/veggies.webp",
     "body": [
       {
         "type": "paragraph",
@@ -1565,7 +1565,7 @@ export const generatedPosts = [
       },
       {
         "type": "image",
-        "src": "/assets/images/egg.jpg",
+        "src": "/assets/images/egg.webp",
         "alt": "Eggs — a complete protein source delivering all essential amino acids needed to drive muscle protein synthesis during body recomposition"
       },
       {
@@ -1814,7 +1814,7 @@ export const generatedPosts = [
       },
       {
         "type": "image",
-        "src": "/assets/images/veggies.jpg",
+        "src": "/assets/images/veggies.webp",
         "alt": "Colorful whole-food vegetables and produce — water-rich foods that contribute meaningfully to daily hydration alongside their nutritional content"
       },
       {
@@ -1938,7 +1938,7 @@ export const generatedPosts = [
     "readTime": "7 min",
     "category": "Nutrition Science",
     "keywords": "iron deficiency symptoms, iron deficiency fatigue women, heme vs non-heme iron, iron absorption tips, ferritin optimal levels, iron rich foods, iron deficiency brain fog, iron supplements",
-    "image": "/assets/images/veggies.jpg",
+    "image": "/assets/images/veggies.webp",
     "body": [
       {
         "type": "paragraph",
@@ -2402,7 +2402,7 @@ export const generatedPosts = [
     "readTime": "7 min",
     "category": "Nutrition Science",
     "keywords": "B vitamins energy, B12 deficiency symptoms, B6 B12 folate nutrition, vitamin B complex benefits, B vitamins metabolism, thiamine riboflavin niacin, B12 vegan deficiency, energy metabolism vitamins",
-    "image": "/assets/images/egg.jpg",
+    "image": "/assets/images/egg.webp",
     "body": [
       {
         "type": "paragraph",
@@ -2480,7 +2480,7 @@ export const generatedPosts = [
     "readTime": "7 min",
     "category": "Nutrition Science",
     "keywords": "dietary fat hormones, low fat diet testosterone, cholesterol hormone production, fat and estrogen, dietary fat testosterone levels, omega-3 hormones, hormone health nutrition, testosterone diet",
-    "image": "/assets/images/egg.jpg",
+    "image": "/assets/images/egg.webp",
     "body": [
       {
         "type": "paragraph",
@@ -2676,7 +2676,7 @@ export const generatedPosts = [
       },
       {
         "type": "image",
-        "src": "/assets/images/veggies.jpg",
+        "src": "/assets/images/veggies.webp",
         "alt": "Colorful vegetables and whole foods that support leptin sensitivity and reduce inflammation"
       },
       {
@@ -3111,7 +3111,7 @@ export const generatedPosts = [
     "readTime": "7 min",
     "category": "Nutrition Science",
     "keywords": "plant protein vs animal protein, building muscle plant based, complete protein plant, leucine threshold muscle protein synthesis, vegan protein muscle, protein quality PDCAAS DIAAS",
-    "image": "/assets/images/veggies.jpg",
+    "image": "/assets/images/veggies.webp",
     "body": [
       {
         "type": "paragraph",

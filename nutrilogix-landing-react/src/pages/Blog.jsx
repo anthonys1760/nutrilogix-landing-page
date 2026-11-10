@@ -3,6 +3,13 @@ import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
 import { generatedPosts } from '../data/generatedPosts'
 
+function localImageSize(src) {
+  if (typeof src !== 'string') return {}
+  if (src.endsWith('/salmon.webp') || src.endsWith('/veggies.webp')) return { width: 1600, height: 1067 }
+  if (src.endsWith('/egg.webp')) return { width: 1600, height: 1436 }
+  return {}
+}
+
 export default function Blog() {
   return (
     <>
@@ -27,7 +34,7 @@ export default function Blog() {
             {[...generatedPosts].reverse().map(post => (
               <article key={post.slug} className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
                 <Link to={`/blog/${post.slug}`} style={{ display: 'block' }}>
-                  <img src={post.image} alt={post.title} width={post.image.endsWith('/salmon.webp') ? 1600 : undefined} height={post.image.endsWith('/salmon.webp') ? 1067 : undefined} loading="lazy" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                  <img src={post.image} alt={post.title} {...localImageSize(post.image)} loading="lazy" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
                   <div style={{ padding: '24px' }}>
                     <span className="badge" style={{ marginBottom: '12px' }}>{post.category}</span>
                     <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>{post.title}</h3>
@@ -188,7 +195,7 @@ export default function Blog() {
             {/* Post 3 */}
             <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
               <Link to="/blog/meal-planning" style={{ display: 'block' }}>
-                <img src="/assets/images/egg.jpg" alt="Meal Planning" loading="lazy" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                <img src="/assets/images/egg.webp" alt="Meal Planning" width="1600" height="1436" loading="lazy" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
                 <div style={{ padding: '24px' }}>
                   <span className="badge" style={{ marginBottom: '12px' }}>Tips & Tricks</span>
                   <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>5 Simple Steps to Effective Meal Planning</h3>
@@ -204,7 +211,7 @@ export default function Blog() {
             {/* Post 4 */}
             <article className="feature-card" style={{ padding: 0, overflow: 'hidden' }}>
               <Link to="/blog/7-minute-meal-prep" style={{ display: 'block' }}>
-                <img src="/assets/images/veggies.jpg" alt="7-Minute Meal Prep" loading="lazy" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                <img src="/assets/images/veggies.webp" alt="7-Minute Meal Prep" width="1600" height="1067" loading="lazy" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
                 <div style={{ padding: '24px' }}>
                   <span className="badge" style={{ marginBottom: '12px' }}>Meal Prep</span>
                   <h3 style={{ fontSize: '1.25rem', marginBottom: '8px' }}>7-Minute Meal Prep for Busy Professionals</h3>
