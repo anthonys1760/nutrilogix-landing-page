@@ -645,16 +645,17 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-/* CTA Section */
+/* CTA Section — light by default; dark only under [data-theme='dark'] */
 .cta-box {
   position: relative;
   overflow: hidden;
-  background: #0F1115;
+  background: var(--bg-light);
+  border: 1px solid var(--border-medium);
   border-radius: var(--radius-lg);
   padding: 80px 24px;
   text-align: center;
-  color: #F5F6F7;
-  box-shadow: var(--shadow-brand);
+  color: var(--text-main);
+  box-shadow: var(--shadow-md);
 }
 
 .cta-box::before {
@@ -670,12 +671,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cta-content h2 {
-  color: #F5F6F7;
+  color: var(--text-main);
   margin-bottom: 16px;
 }
 
 .cta-content p {
-  color: rgba(255,255,255,0.9);
+  color: var(--text-muted);
   margin-bottom: 32px;
   font-size: 1.2rem;
 }
@@ -689,17 +690,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .waitlist-form input {
   flex: 1;
+  min-width: 0;
   padding: 12px 16px;
   border-radius: var(--radius-sm);
-  border: none;
+  border: 1px solid #6B7280;
   font-size: 1rem;
-  background: var(--bg-input);
-  color: var(--text-main); /* Fixed: was hardcoded white */
+  background: #FFFFFF;
+  color: #111827;
+}
+
+.waitlist-form input::placeholder {
+  color: #4B5563;
+  opacity: 1;
 }
 
 .small-print {
   font-size: 0.85rem;
-  opacity: 0.7;
+  color: var(--text-muted);
+  opacity: 1;
 }
 
 /* Footer */
@@ -1175,8 +1183,8 @@ html.cookie-bar-open body {
   color: var(--green-text);
 }
 
-.cta-offer {
-  color: #E7FAF2;
+.cta-content .cta-offer {
+  color: var(--green-text);
   font-weight: 600;
   margin-bottom: 24px;
 }
@@ -1185,16 +1193,22 @@ html.cookie-bar-open body {
   margin-bottom: 28px;
 }
 
-.cta-android-heading {
-  color: #F5F6F7;
+.cta-content .cta-android-heading {
+  color: var(--text-main);
   font-size: 1.15rem;
   margin-bottom: 8px;
 }
 
-.cta-android-copy {
-  color: #D1D5DB;
+.cta-content .cta-android-copy {
+  color: var(--text-muted);
   font-size: 1rem;
   margin-bottom: 16px;
+}
+
+.cta-content .small-print {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-bottom: 0;
 }
 
 .waitlist-form {
@@ -1209,20 +1223,60 @@ html.cookie-bar-open body {
 }
 
 .btn-notify {
-  background: #FFFFFF;
-  color: #0F1115;
+  background: #111827;
+  color: #FFFFFF;
   font-weight: 700;
+  border: 1px solid #111827;
 }
 
 .waitlist-status {
-  color: #F5F6F7;
+  color: var(--text-main);
   font-weight: 600;
   margin: 0 auto;
 }
 
 .waitlist-error {
-  color: #FCA5A5;
+  color: #B91C1C;
   width: 100%;
+}
+
+[data-theme='dark'] .cta-box {
+  background: #0F1115;
+  border-color: rgba(255, 255, 255, 0.14);
+  color: #F5F6F7;
+  box-shadow: var(--shadow-brand);
+}
+
+[data-theme='dark'] .cta-content h2,
+[data-theme='dark'] .cta-content .cta-android-heading,
+[data-theme='dark'] .waitlist-status {
+  color: #F5F6F7;
+}
+
+[data-theme='dark'] .cta-content p,
+[data-theme='dark'] .cta-content .cta-android-copy,
+[data-theme='dark'] .cta-content .small-print {
+  color: #D1D5DB;
+}
+
+[data-theme='dark'] .cta-content .cta-offer {
+  color: #E7FAF2;
+}
+
+[data-theme='dark'] .waitlist-form input {
+  background: #FFFFFF;
+  color: #111827;
+  border-color: #D1D5DB;
+}
+
+[data-theme='dark'] .btn-notify {
+  background: #FFFFFF;
+  color: #0F1115;
+  border-color: #FFFFFF;
+}
+
+[data-theme='dark'] .waitlist-error {
+  color: #FECACA;
 }
 
 .social-row {
@@ -1416,10 +1470,13 @@ html.cookie-bar-open body {
   }
 
   .cta-content .btn-testflight {
-    padding: 0 14px;
+    padding: 12px 14px;
     font-size: 16px;
     gap: 8px;
-    white-space: nowrap;
+    height: auto;
+    line-height: 1.25;
+    text-align: center;
+    white-space: normal;
   }
 
   .post-cover {
