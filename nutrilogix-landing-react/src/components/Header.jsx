@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import TestFlightButton from './TestFlightButton';
 
 export default function Header({ theme, toggleTheme }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ export default function Header({ theme, toggleTheme }) {
       <div className="container nav-container">
         <Link to="/" className="brand-logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <img src="/assets/images/2.jpg" alt="Nutrilogix" />
-          <span>Nutri<span className="text-highlight">Logix</span></span>
+          <span>Nutri<span className="text-highlight">logix</span></span>
         </Link>
 
         <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -44,6 +45,7 @@ export default function Header({ theme, toggleTheme }) {
             className={`mobile-toggle ${isMenuOpen ? 'open' : ''}`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle navigation"
+            aria-expanded={isMenuOpen}
           >
             <span className="bar"></span>
             <span className="bar"></span>
@@ -65,7 +67,7 @@ export default function Header({ theme, toggleTheme }) {
             </>
           )}
           <Link to="/blog" className="nav-link" onClick={() => setIsMenuOpen(false)}>Blog</Link>
-          <a href="#signup" className="btn btn-primary nav-cta" onClick={() => scrollToSection('signup')}>Early Access</a>
+          <TestFlightButton className="nav-cta" onClick={() => setIsMenuOpen(false)} />
         </nav>
       </div>
     </header>

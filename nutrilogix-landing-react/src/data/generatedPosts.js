@@ -4893,8 +4893,8 @@ export const generatedPosts = [
     "excerpt": "The Friday fridge is a week of meals if you store leftovers safely and actually use them. Here's how to scan what you have and cook macro-friendly dishes before the clock runs out.",
     "author": "Anthony Smith",
     "authorInitial": "A",
-    "date": "Nov 19, 2026",
-    "dateISO": "2026-11-19",
+    "date": "Nov 10, 2026",
+    "dateISO": "2026-11-10",
     "readTime": "6 min",
     "category": "Meal Prep",
     "keywords": "thanksgiving leftovers, leftover turkey storage, fridge scan recipes, macro-friendly leftovers, leftover food safety, meal planning leftovers, turkey leftover meals",
@@ -4935,7 +4935,7 @@ export const generatedPosts = [
       {
         "type": "image",
         "src": "/assets/images/fridge-scan.png",
-        "alt": "NutriLogix Fridge Scan screen showing detected ingredients — watermelon, carrots, tomatoes, ham and deli meat, eggs, mayonnaise, tomato sauce, beer, water, and butter — plus macro-tagged recipe cards with Save and Log Meal buttons. This screenshot is a general fridge-scan example, not a Thanksgiving leftover fridge."
+        "alt": "Nutrilogix Fridge Scan screen showing detected ingredients — watermelon, carrots, tomatoes, ham and deli meat, eggs, mayonnaise, tomato sauce, beer, water, and butter — plus macro-tagged recipe cards with Save and Log Meal buttons. This screenshot is a general fridge-scan example, not a Thanksgiving leftover fridge."
       },
       {
         "type": "paragraph",
@@ -4977,7 +4977,7 @@ export const generatedPosts = [
       },
       {
         "type": "paragraph",
-        "text": "NutriLogix is built for that loop. Scan the fridge, get macro-friendly recipe ideas from what's already there, and log the meal when you eat it — the Log Meal button on the recipe card is the last step, not a separate homework assignment. The point isn't to turn Thanksgiving into a spreadsheet. It's to use the food while it's still good, and to know what was on the plate without spending the weekend tapping through a food database."
+        "text": "Nutrilogix is built for that loop. Scan the fridge, get macro-friendly recipe ideas from what's already there, and log the meal when you eat it — the Log Meal button on the recipe card is the last step, not a separate homework assignment. The point isn't to turn Thanksgiving into a spreadsheet. It's to use the food while it's still good, and to know what was on the plate without spending the weekend tapping through a food database."
       },
       {
         "type": "paragraph",
