@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import SEO, { SITE_ORIGIN } from '../components/SEO'
+import SEO from '../components/SEO'
+import { SITE_ORIGIN } from '../seoHead.js'
 import { generatedPosts } from '../data/generatedPosts'
 
 function GeneratedPostRenderer({ post }) {

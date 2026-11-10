@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -9,13 +9,24 @@ import Privacy from './pages/Privacy'
 import Terms from './pages/Terms'
 import NotFound from './pages/NotFound'
 import CookieConsent from './components/CookieConsent'
+import LegacyHashRedirect from './components/LegacyHashRedirect'
 
 function App() {
+  const location = useLocation()
+  const normalizedPath = location.pathname.length > 1
+    ? location.pathname.replace(/\/+$/, '')
+    : location.pathname
+  const routeLocation = normalizedPath === location.pathname
+    ? location
+    : { ...location, pathname: normalizedPath }
+
   const [theme, setTheme] = useState(() => {
+    if (typeof localStorage === 'undefined') return 'light'
     return localStorage.getItem('theme') || 'light'
   })
 
   const [bannerVisible, setBannerVisible] = useState(() => {
+    if (typeof localStorage === 'undefined') return true
     return localStorage.getItem('announcement-banner-dismissed') !== 'true'
   })
 
@@ -65,7 +76,8 @@ function App() {
       )}
       <Header theme={theme} toggleTheme={toggleTheme} />
       <main className="main-content">
-        <Routes>
+        {typeof document !== 'undefined' && <LegacyHashRedirect />}
+        <Routes location={routeLocation}>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
