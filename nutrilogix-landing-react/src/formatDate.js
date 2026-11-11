@@ -30,7 +30,10 @@ export function sourceLines(post) {
   return list.map((item) => {
     if (typeof item === 'string') return item.trim()
     if (item && typeof item === 'object') {
-      return String(item.title || item.name || item.label || '').trim()
+      const label = String(item.title || item.name || item.label || '').trim()
+      const url = String(item.url || item.href || '').trim()
+      if (label && url && !label.includes(url)) return `${label} ${url}`
+      return label || url
     }
     return ''
   }).filter(Boolean)
