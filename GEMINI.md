@@ -50,7 +50,17 @@ The site is deployed to GitHub Pages automatically via GitHub Actions.
     -   Vite copies this file to the build output (`dist/`) automatically.
     -   This prevents the custom domain from breaking during deployment updates.
 
+## Weekly blog
+
+`.github/workflows/weekly-blog.yml` drafts one post every Thursday at 14:00 UTC and opens a pull request into `master`. It does not push to `master`. The generator calls xAI and needs the repository Actions secret `XAI_API_KEY`. Optional variable `BLOG_MODEL` overrides the default model `grok-4.7`. `OPENROUTER_API_KEY` is not used.
+
+Preview the topic and request without calling the API:
+
+```bash
+cd nutrilogix-landing-react && node scripts/generate-blog-post.mjs --dry-run
+```
+
 ## Critical Conventions
--   **Routing:** Always use `HashRouter` in `main.jsx`. `BrowserRouter` will fail on GitHub Pages refresh because the static server cannot handle client-side routes (e.g., `/blog`).
+-   **Routing:** The app uses `BrowserRouter`. `npm run build` prerenders `/blog/<slug>` (and the other public routes) to real HTML files, and retired slugs are prerendered as redirects.
 -   **Images:** Assets should be placed in `nutrilogix-landing-react/public/assets/` and referenced via absolute paths (e.g., `/assets/images/file.jpg`).
 -   **Styles:** Global styles and variables are in `index.css`. Use the established CSS variables (e.g., `--primary`, `--text-main`) for consistency.
