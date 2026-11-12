@@ -7,6 +7,32 @@ import { generatedPosts } from '../data/generatedPosts'
 import { postRedirects } from '../data/postRedirects'
 import { formatPostDate, sourceLines } from '../formatDate'
 
+const AUTHOR_ABOUT = 'https://anthonysdigital.net/about.html'
+
+function authorPerson(name = 'Anthony Smith') {
+  return {
+    '@type': 'Person',
+    '@id': 'https://anthonysdigital.net/#person',
+    name: name || 'Anthony Smith',
+    url: 'https://anthonysdigital.net/',
+  }
+}
+
+function AuthorLink({ name = 'Anthony Smith' }) {
+  return (
+    <a className="author-link" href={AUTHOR_ABOUT} rel="author">{name}</a>
+  )
+}
+
+function AuthorByline({ name = 'Anthony Smith', initial = 'A' }) {
+  return (
+    <div className="post-byline">
+      <div className="avatar" aria-hidden="true">{initial}</div>
+      <AuthorLink name={name} />
+    </div>
+  )
+}
+
 function GeneratedPostRenderer({ post }) {
   const contentStyle = { maxWidth: '800px', margin: '40px auto', padding: '0 20px' }
   const imgStyle = { width: '100%', height: '400px', objectFit: 'cover', borderRadius: '24px', marginBottom: '40px' }
@@ -35,7 +61,8 @@ function GeneratedPostRenderer({ post }) {
     description: post.excerpt,
     url: `${SITE_ORIGIN}/blog/${post.slug}`,
     image: [absoluteImage],
-    author: { '@type': 'Person', name: post.author },
+    author: authorPerson(post.author),
+    creator: authorPerson(post.author),
     publisher: {
       '@type': 'Organization',
       name: 'Nutrilogix',
@@ -68,7 +95,7 @@ function GeneratedPostRenderer({ post }) {
       <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', lineHeight: 1.2 }}>{post.title}</h1>
       <div style={{ display: 'flex', alignItems: 'center', gap: '16px', color: 'var(--text-muted)', marginBottom: '32px', fontSize: '0.9rem' }}>
         <div className="avatar" style={{ width: 32, height: 32 }}>{post.authorInitial}</div>
-        <span>{post.author} • {formatPostDate(post.dateISO)} • {post.readTime} read</span>
+        <span><AuthorLink name={post.author} /> • {formatPostDate(post.dateISO)} • {post.readTime} read</span>
       </div>
 
       <div style={bodyStyle}>
@@ -154,7 +181,8 @@ export default function BlogPost() {
       headline: 'Scan Your Fridge, Get Recipes: How AI Turns Leftovers Into Macro-Perfect Meals',
       description: 'How Nutrilogix\'s Fridge Scan uses multi-photo AI detection and macro-aware recipe generation to eliminate food waste and hit your nutrition goals.',
       image: ['https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=1200&q=80'],
-      author: { '@type': 'Person', name: 'Anthony Smith' },
+      author: authorPerson('Anthony Smith'),
+      creator: authorPerson('Anthony Smith'),
       publisher: {
         '@type': 'Organization',
         name: 'Nutrilogix',
@@ -180,6 +208,7 @@ export default function BlogPost() {
 
         <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=1200&q=80" alt="Open fridge full of fresh ingredients" className="post-cover" style={imgStyle} />
 
+        <AuthorByline />
         <div style={metaStyle}>
           <span className="badge">Feature Deep Dive</span>
           <span>Mar 11, 2026</span>
@@ -311,7 +340,8 @@ export default function BlogPost() {
       headline: "The Science of Satiety: Why You're Always Hungry",
       description: 'Understanding the hunger hormones and how to structure meals that keep you full for hours.',
       image: ['/assets/images/satiety-meal.jpg'],
-      author: { '@type': 'Person', name: 'Anthony Smith' },
+      author: authorPerson('Anthony Smith'),
+      creator: authorPerson('Anthony Smith'),
       publisher: {
         '@type': 'Organization',
         name: 'Nutrilogix',
@@ -334,6 +364,7 @@ export default function BlogPost() {
 
         <img src="/assets/images/satiety-meal.jpg" alt="Healthy Satiating Meal" className="post-cover" style={imgStyle} />
 
+        <AuthorByline />
         <div style={metaStyle}>
           <span className="badge">Nutrition Science</span>
           <span>Feb 2, 2026</span>
@@ -402,7 +433,8 @@ export default function BlogPost() {
       headline: 'The Hidden Dangers of Ultra-Processed Foods (and How AI Spots Them)',
       description: 'Learn why ultra-processed foods are sabotaging your health and how Nutrilogix helps you identify and swap them out instantly.',
       image: ['/assets/images/processed-vs-whole.jpg'],
-      author: { '@type': 'Person', name: 'Anthony Smith' },
+      author: authorPerson('Anthony Smith'),
+      creator: authorPerson('Anthony Smith'),
       publisher: {
         '@type': 'Organization',
         name: 'Nutrilogix',
@@ -425,6 +457,7 @@ export default function BlogPost() {
         
         <img src="/assets/images/processed-vs-whole.jpg" alt="Whole vs Processed Foods" className="post-cover" style={imgStyle} />
         
+        <AuthorByline />
         <div style={metaStyle}>
           <span className="badge">Health Science</span>
           <span>Feb 10, 2026</span>
@@ -481,7 +514,8 @@ export default function BlogPost() {
       headline: '7-Minute Meal Prep for Busy Professionals',
       description: 'A quick meal prep system using protein, veg, and smart carbs, integrated with an AI photo app for instant macro tracking.',
       image: ['/assets/images/veggies.webp'],
-      author: { '@type': 'Person', name: 'Anthony Smith' },
+      author: authorPerson('Anthony Smith'),
+      creator: authorPerson('Anthony Smith'),
       publisher: {
         '@type': 'Organization',
         name: 'Nutrilogix',
@@ -503,6 +537,7 @@ export default function BlogPost() {
         />
         <img src="/assets/images/veggies.webp" alt="7-Minute Meal Prep" width="1600" height="1067" className="post-cover" style={imgStyle} />
 
+        <AuthorByline />
         <div style={metaStyle}>
           <span className="badge">Tips & Tricks</span>
           <span>Mar 5, 2026</span>
@@ -602,7 +637,8 @@ export default function BlogPost() {
       headline: 'How AI is Revolutionizing Nutrition Tracking',
       description: 'Artificial Intelligence is transforming nutrition tracking. Learn how computer vision and machine learning make logging meals instant and accurate.',
       image: ['/assets/images/1.jpg'],
-      author: { '@type': 'Person', name: 'Anthony Smith' },
+      author: authorPerson('Anthony Smith'),
+      creator: authorPerson('Anthony Smith'),
       publisher: {
         '@type': 'Organization',
         name: 'Nutrilogix',
@@ -624,6 +660,7 @@ export default function BlogPost() {
         />
         <img src="/assets/images/1.jpg" alt="AI in Nutrition" className="post-cover" style={imgStyle} />
 
+        <AuthorByline />
         <div style={metaStyle}>
           <span className="badge">Technology</span>
           <span>Feb 28, 2026</span>
@@ -671,7 +708,8 @@ export default function BlogPost() {
       headline: "The Hidden Cost of Manual Food Logging (And Why It Keeps You Stuck)",
       description: 'Why manual food logging fails and how AI photo tracking solves the problem.',
       image: ['/assets/images/ai-blog-logging.jpg'],
-      author: { '@type': 'Person', name: 'Anthony Smith' },
+      author: authorPerson('Anthony Smith'),
+      creator: authorPerson('Anthony Smith'),
       publisher: {
         '@type': 'Organization',
         name: 'Nutrilogix',
@@ -694,6 +732,7 @@ export default function BlogPost() {
 
         <img src="/assets/images/ai-blog-logging.jpg" alt="Food Logging Frustration" className="post-cover" style={imgStyle} />
 
+        <AuthorByline />
         <div style={metaStyle}>
           <span className="badge">Nutrition Science</span>
           <span>Feb 19, 2026</span>
@@ -818,7 +857,8 @@ export default function BlogPost() {
       headline: 'Understanding Macros: A Beginner\'s Guide',
       description: 'Learn about the three main macronutrients - proteins, carbohydrates, and fats - and why they matter for your nutrition goals.',
       image: ['/assets/images/salmon.webp'],
-      author: { '@type': 'Person', name: 'Anthony Smith' },
+      author: authorPerson('Anthony Smith'),
+      creator: authorPerson('Anthony Smith'),
       publisher: {
         '@type': 'Organization',
         name: 'Nutrilogix',
@@ -840,6 +880,7 @@ export default function BlogPost() {
         />
         <img src="/assets/images/salmon.webp" alt="Macro-Balanced Meal" width="1600" height="1067" className="post-cover" style={imgStyle} />
 
+        <AuthorByline />
         <div style={metaStyle}>
           <span className="badge">Nutrition Basics</span>
           <span>Jan 20, 2026</span>
@@ -932,7 +973,8 @@ export default function BlogPost() {
       headline: '5 Simple Steps to Effective Meal Planning',
       description: 'Master the art of meal planning with these practical tips that will save you time, money, and decision fatigue.',
       image: ['/assets/images/egg.webp'],
-      author: { '@type': 'Person', name: 'Anthony Smith' },
+      author: authorPerson('Anthony Smith'),
+      creator: authorPerson('Anthony Smith'),
       publisher: {
         '@type': 'Organization',
         name: 'Nutrilogix',
@@ -954,6 +996,7 @@ export default function BlogPost() {
         />
         <img src="/assets/images/egg.webp" alt="Meal Planning" width="1600" height="1436" className="post-cover" style={imgStyle} />
 
+        <AuthorByline />
         <div style={metaStyle}>
           <span className="badge">Tips & Tricks</span>
           <span>Mar 12, 2026</span>
@@ -1068,7 +1111,8 @@ export default function BlogPost() {
       headline: 'Health Scores: Why Calories Alone Are Lying to You',
       description: 'How Nutrilogix\'s 0-100 Health Score reveals the real quality of your food and why it matters more than calorie counts.',
       image: ['https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&q=80'],
-      author: { '@type': 'Person', name: 'Anthony Smith' },
+      author: authorPerson('Anthony Smith'),
+      creator: authorPerson('Anthony Smith'),
       publisher: {
         '@type': 'Organization',
         name: 'Nutrilogix',
@@ -1091,6 +1135,7 @@ export default function BlogPost() {
 
         <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&q=80" alt="Healthy food spread" className="post-cover" style={imgStyle} />
 
+        <AuthorByline />
         <div style={metaStyle}>
           <span className="badge">Feature Deep Dive</span>
           <span>Mar 4, 2026</span>
