@@ -5,7 +5,10 @@ import TestFlightButton from '../components/TestFlightButton'
 import { SITE_ORIGIN } from '../seoHead.js'
 import { generatedPosts } from '../data/generatedPosts'
 import { postRedirects } from '../data/postRedirects'
+import { staticPosts } from '../data/staticPosts'
 import { formatPostDate, sourceLines } from '../formatDate'
+import { isPublished } from '../isPublished'
+import NotFound from './NotFound'
 
 const AUTHOR_ABOUT = 'https://anthonysdigital.net/about.html'
 
@@ -133,6 +136,10 @@ export default function BlogPost() {
 
   const redirectedSlug = postRedirects[slug]
   if (redirectedSlug) return <Navigate to={`/blog/${redirectedSlug}`} replace />
+
+  const listed = generatedPosts.find((post) => post.slug === slug)
+    || staticPosts.find((post) => post.slug === slug)
+  if (listed && !isPublished(listed)) return <NotFound />
 
   // Check generated posts first
   const generated = generatedPosts.find(p => p.slug === slug)

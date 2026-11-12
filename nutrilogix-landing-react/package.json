@@ -8,8 +8,8 @@
     "build": "vite build && node scripts/prerender.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "node --test scripts/legacy-hash.test.mjs scripts/generate-blog-post.test.mjs",
-    "postbuild": "node --test scripts/legacy-hash.test.mjs scripts/generate-blog-post.test.mjs && node scripts/verify-prerender.mjs"
+    "test": "node --test scripts/legacy-hash.test.mjs scripts/generate-blog-post.test.mjs scripts/is-published.test.mjs",
+    "postbuild": "node --test scripts/legacy-hash.test.mjs scripts/generate-blog-post.test.mjs scripts/is-published.test.mjs && node scripts/verify-prerender.mjs"
   },
   "dependencies": {
     "react": "^19.1.1",
