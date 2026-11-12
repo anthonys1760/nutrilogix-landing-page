@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - master
+  schedule:
+    # About 12:15 AM ET so a post dated today is live without another merge.
+    - cron: '15 5 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write

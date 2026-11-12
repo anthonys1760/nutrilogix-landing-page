@@ -1,24 +1,11 @@
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
-function todayISO() {
-  const today = new Date()
-  const month = String(today.getMonth() + 1).padStart(2, '0')
-  const day = String(today.getDate()).padStart(2, '0')
-  return `${today.getFullYear()}-${month}-${day}`
-}
-
-/** One display format: "Nov 10, 2026". Future dates are clamped so they are not shown. */
+/** One display format: "Nov 10, 2026". Unpublished posts are filtered before this runs. */
 export function formatPostDate(iso) {
   if (!iso || typeof iso !== 'string') return ''
   const match = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso)
   if (!match) return iso
-  let [, year, month, day] = match
-  if (`${year}-${month}-${day}` > todayISO()) {
-    const today = todayISO()
-    year = today.slice(0, 4)
-    month = today.slice(5, 7)
-    day = today.slice(8, 10)
-  }
+  const [, year, month, day] = match
   return `${MONTHS[Number(month) - 1]} ${Number(day)}, ${year}`
 }
 

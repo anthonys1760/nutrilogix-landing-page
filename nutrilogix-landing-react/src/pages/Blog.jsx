@@ -4,6 +4,7 @@ import SEO from '../components/SEO'
 import { generatedPosts } from '../data/generatedPosts'
 import { staticPosts } from '../data/staticPosts'
 import { formatPostDate } from '../formatDate'
+import { isPublished } from '../isPublished'
 
 const PAGE_SIZE = 12
 
@@ -20,6 +21,7 @@ function allPosts() {
   for (const post of generatedPosts) {
     if (!post.slug || seen.has(post.slug)) continue
     seen.add(post.slug)
+    if (!isPublished(post)) continue
     posts.push({
       slug: post.slug,
       title: post.title,
@@ -36,6 +38,7 @@ function allPosts() {
   for (const post of staticPosts) {
     if (seen.has(post.slug)) continue
     seen.add(post.slug)
+    if (!isPublished(post)) continue
     posts.push(post)
   }
   return posts.sort((a, b) => (b.dateISO || '').localeCompare(a.dateISO || '') || a.slug.localeCompare(b.slug))
