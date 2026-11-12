@@ -60,6 +60,7 @@ export default function Footer() {
       </div>
       <div className="container footer-bottom">
         <p>&copy; {new Date().getFullYear()} Nutrilogix. All rights reserved.</p>
+        <p className="footer-credit">Built by <a href="https://anthonysdigital.net/" rel="author">Anthony Smith</a></p>
       </div>
     </footer>
   );
