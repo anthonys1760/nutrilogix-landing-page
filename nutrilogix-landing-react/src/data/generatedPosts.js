@@ -4987,5 +4987,168 @@ export const generatedPosts = [
         "type": "cta"
       }
     ]
+  },
+  {
+    "slug": "holiday-party-logging",
+    "title": "Log a Holiday Party and Get Back on Track After Eating",
+    "excerpt": "A holiday party is one meal, not a ruined week. Here's how to log a buffet plate fast, account for drinks, and get back on track after holiday eating.",
+    "author": "Anthony Smith",
+    "authorInitial": "A",
+    "date": "Nov 19, 2026",
+    "dateISO": "2026-11-19",
+    "readTime": "7 min",
+    "category": "Tips & Tricks",
+    "keywords": "get back on track after holiday eating, track food at holiday parties, thanksgiving food logging, holiday party calories, buffet portion estimates, alcohol calories holiday, photo food logging, voice meal logging",
+    "image": "https://images.unsplash.com/photo-1547573854-74d2a71d0826?w=800&q=80",
+    "sources": [
+      "NIDDK. Food Portions: Choosing Just Enough for You. https://www.niddk.nih.gov/health-information/weight-management/just-enough-food-portions",
+      "CDC. About Standard Drink Sizes. https://www.cdc.gov/alcohol/standard-drink-sizes/",
+      "MedlinePlus. Lower-calorie choices for alcoholic drinks. https://medlineplus.gov/ency/patientinstructions/000732.htm",
+      "U.S. Department of Agriculture and U.S. Department of Health and Human Services. Dietary Guidelines for Americans, 2020-2025. https://www.dietaryguidelines.gov/sites/default/files/2020-12/Dietary_Guidelines_for_Americans_2020-2025.pdf",
+      "MedlinePlus. Protein in diet. https://medlineplus.gov/ency/article/002467.htm",
+      "MedlinePlus. Dietary Fiber. https://medlineplus.gov/dietaryfiber.html",
+      "CDC. About Water and Healthier Drinks. https://www.cdc.gov/healthy-weight-growth/water-healthy-drinks/index.html",
+      "CDC. About Sleep. https://www.cdc.gov/sleep/about/",
+      "USDA Agricultural Research Service. FoodData Central. https://fdc.nal.usda.gov/"
+    ],
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Thanksgiving week is a string of tables: the office potluck, Friendsgiving, Thursday dinner, leftover pie at 10 p.m. If you track food, the trap is hiding in a hallway tapping a database while everyone else talks. You do not have to spend the night in the app, and you do not have to pretend the plate never happened. Log it fast, then get back on track after holiday eating the next day."
+      },
+      {
+        "type": "heading",
+        "text": "A ten-minute plan before you go"
+      },
+      {
+        "type": "paragraph",
+        "text": "Buffets go sideways when you arrive hungry and try to rebuild the plate from memory at midnight. A short plan before you leave is enough."
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Eat a normal meal earlier.</strong> Skipping lunch to “save room” usually backfires. The <a href=\"https://www.niddk.nih.gov/health-information/weight-management/just-enough-food-portions\">National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)</a> notes that delaying or skipping meals may cause you to overeat later. Breakfast and lunch with some protein keep the party from being the first real food of the day.",
+          "<strong>Know the difference between a portion and a serving.</strong> NIDDK: a <em>portion</em> is how much you choose to eat at one time; a <em>serving</em> is the amount on a Nutrition Facts label. Those two often do not match, especially when someone else is plating. Picture one plate you will sit down with, not three grazing loops.",
+          "<strong>Open Nutrilogix once before you walk in.</strong> Confirm the camera or the mic works. If logging has felt like homework, <a href=\"/blog/hidden-cost-manual-logging\">The Hidden Cost of Manual Food Logging</a> is why database search dies at a party.",
+          "<strong>Decide on drinks before the punch bowl.</strong> If you drink, plan water between alcoholic drinks. If you do not, still hold a glass of water so you are not sipping whatever is nearest."
+        ]
+      },
+      {
+        "type": "callout",
+        "text": "<strong>You are logging a plate, not a personality.</strong> The pre-party plan makes the log fast. It is not a reason to skip the food you came for, and it is not a Thanksgiving spreadsheet."
+      },
+      {
+        "type": "heading",
+        "text": "Log fast at the party: photo or voice"
+      },
+      {
+        "type": "paragraph",
+        "text": "Manual entry is the slow path: search “green bean casserole,” guess a cup, hunt for gravy, forget the roll. Nutrilogix is built around the opposite loop. Take a photo of the plate. The app identifies foods and portions; you edit anything that looks off, then save. The site is clear that mixed dishes and portion size are estimates you can correct, not a lab measurement. A buffet is exactly that plate. Capture it, add the extra gravy or second biscuit if the photo missed them, and put the phone away."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you cannot snap a photo — low light, standing, mid-conversation — use voice logging. Say the plate the way you would tell a friend: “Turkey, stuffing, roasted carrots, mashed potatoes, and a glass of red wine.” Nutrilogix already treats natural speech as a log (“I had a chicken salad with avocado,” “two eggs and toast”). Tidy it later. You cannot rebuild a buffet from a blank screen at 1 a.m."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Photograph the plate on a table if you can. The estimate uses visual depth and reference points, so a clear overhead or three-quarter view beats a dim close-up.",
+          "Name drinks in the same voice note, or log them separately. Wine is easier to forget than turkey.",
+          "If you go back for dessert, take a second photo. Two short logs beat one fictional “I probably had pie.”",
+          "Save and rejoin the table. The habit you are protecting is consistency, not a perfect database row."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Estimate a buffet plate without a scale"
+      },
+      {
+        "type": "paragraph",
+        "text": "Nobody is weighing sweet potatoes at a holiday party. NIDDK’s portion guide is written for that: you choose how much to put on the plate, buffets often serve more than a label serving, and you do not have to measure every bite for the rest of your life. Their eating-out tips map onto a buffet: stop when you are full, share or take leftovers home when you can, and do not treat “all you can eat” as a dare. Build the plate once, sit down, and eat it. A second pass is a decision, not the default."
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Start with protein you can see</strong> — sliced turkey, ham, a bean salad, eggs. <a href=\"https://medlineplus.gov/ency/article/002467.htm\">MedlinePlus</a> notes that protein helps the body repair cells, and that beans, lentils, tofu, nuts, and dairy count. One ounce of most protein-rich foods is about 7 grams of protein (a large egg, an ounce of meat or poultry, or a half cup of cooked beans). You do not need a gram target at the party. You do want some protein so the plate is not only stuffing and rolls. <a href=\"/blog/understanding-macros\">Understanding Macros</a> is the everyday explainer.",
+          "<strong>Add vegetables before the extra starch.</strong> <a href=\"https://medlineplus.gov/dietaryfiber.html\">MedlinePlus on dietary fiber</a>: fiber is in plants (whole grains, nuts and seeds, fruit and vegetables), it adds bulk and helps you feel full faster, and most Americans do not eat enough. Add it slowly if your usual diet is low; a sudden jump can mean gas and cramps. A holiday salad is a gentle include, not a punishment course.",
+          "<strong>Log gravy and sauces.</strong> They sit on top of other food, so photo analysis often under-counts them. Name them in the voice note or add them when you edit.",
+          "<strong>Sit down.</strong> NIDDK recommends eating slowly so your brain can register fullness, which may take at least 15 minutes, and avoiding eating while you are busy with something else. A standing graze at the appetizer table is the portion problem in party clothes."
+        ]
+      },
+      {
+        "type": "image",
+        "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80",
+        "alt": "A dinner-party plate being set down at a shared table with wine glasses and bread"
+      },
+      {
+        "type": "heading",
+        "text": "Drinks and alcohol calories"
+      },
+      {
+        "type": "paragraph",
+        "text": "Holiday calories hide in glasses. The <a href=\"https://www.cdc.gov/alcohol/standard-drink-sizes/\">CDC’s standard drink sizes</a> are the right ruler, because a party “glass” is rarely a label serving. In the United States, one standard drink has 0.6 ounces (14 grams) of pure alcohol — about 12 ounces of 5% beer, 5 ounces of 12% wine, or 1.5 ounces of 80-proof spirits. A pint of beer is not one beer. A wide wine pour is often more than five ounces. A cocktail is the spirit plus everything else in the shaker."
+      },
+      {
+        "type": "paragraph",
+        "text": "<a href=\"https://medlineplus.gov/ency/patientinstructions/000732.htm\">MedlinePlus</a> lists typical calories: about 153 in 12 ounces of regular beer, about 125 in 5 ounces of red wine, about 121 in 5 ounces of white wine, and about 97–100 in a 1.5-ounce shot of 80-proof gin, rum, vodka, whiskey, or tequila. Mixers move the number fast — the same page puts a 9-ounce piña colada around 490 calories and a 4-ounce margarita around 170. Craft beer and higher-ABV pours tend to run higher than regular beer. For a specific bottle, use the label or <a href=\"https://fdc.nal.usda.gov/\">USDA FoodData Central</a>. Brands differ; that is why you look it up instead of inventing a number."
+      },
+      {
+        "type": "callout",
+        "text": "The <a href=\"https://www.dietaryguidelines.gov/sites/default/files/2020-12/Dietary_Guidelines_for_Americans_2020-2025.pdf\">Dietary Guidelines for Americans, 2020–2025</a> do not recommend that people who do not drink start drinking. For adults of legal drinking age who do drink, the guideline is 2 drinks or less in a day for men and 1 drink or less in a day for women, on days alcohol is consumed — not as a weekly average. Drinking less is better for health than drinking more. Some people should not drink at all, including anyone who is pregnant or might be pregnant. This article is not advice to drink."
+      },
+      {
+        "type": "paragraph",
+        "text": "MedlinePlus also suggests alternating alcoholic drinks with water and watching glass size. <a href=\"https://www.cdc.gov/healthy-weight-growth/water-healthy-drinks/index.html\">CDC guidance on water</a> is the same direction: water has no calories, replacing sugary drinks with water can lower calorie intake, and daily fluid needs vary by age, sex, and activity. There is no single party-night number to chase. Carry water anyway."
+      },
+      {
+        "type": "heading",
+        "text": "One meal does not derail the week"
+      },
+      {
+        "type": "paragraph",
+        "text": "The story that wrecks tracking is not the stuffing. It is the story that Thursday “ruined” everything, so Friday through Sunday no longer count. Energy balance is a stretch of days. One dinner is a data point, not a verdict. Save the plate, look at it once if you want, then stop."
+      },
+      {
+        "type": "paragraph",
+        "text": "Nutrilogix Health Scores rate a meal from 0 to 100 on food quality, processing level, and inflammatory ingredient alerts. A party plate will often score lower than a weeknight bowl. That is information, not a scolding. You do not need a 100 on every meal. The useful view is the 7-day rolling average and small improvements, not a perfect Thursday. <a href=\"/blog/health-scores-beyond-calories\">Health Scores: Why Calories Alone Are Lying to You</a> is the longer version."
+      },
+      {
+        "type": "heading",
+        "text": "The next day: protein, fiber, water, sleep, logging"
+      },
+      {
+        "type": "paragraph",
+        "text": "Getting back on track after holiday eating is a next-day schedule, not a cleanse. You do not need to “earn” Thursday. You need breakfast, water, and the same logging habit you use on a boring Tuesday."
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Protein at the first meal.</strong> MedlinePlus puts healthy-adult protein at 10% to 35% of calories (4 calories per gram). A 2,000-calorie pattern could include 100 grams of protein at 20% of calories — an illustration from that page, not a personal prescription. Use leftover turkey, eggs, yogurt, beans, or tofu.",
+          "<strong>Fiber from plants, at a normal pace.</strong> Fruit, vegetables, beans, whole grains. MedlinePlus: fiber helps you feel full faster and supports digestion, and most people fall short. Do not “make up for” the party with a sudden fiber overload.",
+          "<strong>Water, not a punishment drink.</strong> CDC: drinking water helps the body function, can prevent dehydration, and has no calories. Needs go up with activity, heat, or illness. After a salty late meal, water is the simple lever.",
+          "<strong>Sleep like it is part of the plan.</strong> <a href=\"https://www.cdc.gov/sleep/about/\">CDC sleep guidance</a> for adults 18–60 is 7 or more hours a day (7–9 at ages 61–64, 7–8 at 65 and older). Enough sleep is linked with staying at a healthy weight, mood, and metabolism. The same page says to avoid large meals and alcohol before bedtime when you can. Holiday weeks break that. The repair is a regular bedtime the next night, not a 5 a.m. alarm as penance.",
+          "<strong>Log breakfast the ordinary way.</strong> Photo or voice, then edit. The reset is the habit, not a deficit you force on Friday."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "After Thanksgiving, use the fridge you already have"
+      },
+      {
+        "type": "paragraph",
+        "text": "Thursday night is the party. Friday is leftover turkey and a clock. The food-safety version is in <a href=\"/blog/thanksgiving-leftovers-logged\">Thanksgiving Leftovers, Logged</a> — USDA leftover guidance and the 3-to-4-day fridge window. Scan the fridge, get macro-friendly recipes from what is already there, and log the meal when you cook it. Nutrilogix Fridge Scan is that loop: photograph the shelves, confirm ingredients, get recipes, tap Log Meal. The longer walkthrough is <a href=\"/blog/scan-your-fridge-ai-recipes\">Scan Your Fridge, Get AI Recipes</a>. Shopping lists can follow the meal plan and skip what is already in the fridge."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you only remember three things for the party: eat earlier in the day, photograph or speak the plate once, and treat drinks as food. If you only remember one thing for Friday: get back on track after holiday eating by doing the next normal meal, not by erasing Thursday."
+      },
+      {
+        "type": "paragraph",
+        "text": "This article is for general information only and is not medical advice."
+      },
+      {
+        "type": "cta"
+      }
+    ]
   }
 ]
