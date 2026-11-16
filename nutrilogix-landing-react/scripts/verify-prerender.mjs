@@ -115,6 +115,9 @@ for (const route of routes) {
     if (route.id === 'blog') {
       if (title !== 'Nutrilogix Blog - Nutrition Science & AI Tech') fail('blog index title changed')
     }
+    if (route.id?.startsWith('blog-page-')) {
+      if (!title.startsWith('Nutrilogix Blog - Page ')) fail(`${rel} paginated blog title missing`)
+    }
     if (route.id === 'privacy' && !title.startsWith('Privacy Policy')) fail('privacy title missing')
     if (route.id === 'terms' && !title.startsWith('Terms of Service')) fail('terms title missing')
   } else {

@@ -1341,7 +1341,8 @@ html.cookie-bar-open body {
 }
 
 .topic-filter,
-.blog-pagination button {
+.blog-pagination a,
+.blog-pagination span {
   min-height: 44px;
   min-width: 44px;
   padding: 0 14px;
@@ -1350,10 +1351,13 @@ html.cookie-bar-open body {
   background: var(--bg-card);
   color: var(--text-main);
   font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .topic-filter.is-active,
-.blog-pagination button.is-active {
+.blog-pagination a.is-active {
   background: #0DC68B;
   color: #0F1115;
   border-color: #0DC68B;
@@ -1367,9 +1371,41 @@ html.cookie-bar-open body {
   margin-top: 40px;
 }
 
-.blog-pagination button:disabled {
+.blog-pagination span.is-disabled {
   opacity: 0.45;
   cursor: not-allowed;
+}
+
+.related-posts {
+  max-width: 800px;
+  margin: 0 auto 80px;
+  padding: 32px 20px 0;
+  border-top: 1px solid var(--border-medium);
+}
+
+.related-posts h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.related-posts ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.related-posts li {
+  margin-bottom: 10px;
+}
+
+.related-posts a,
+.related-posts-index a {
+  color: var(--green-text);
+  text-decoration: underline;
+}
+
+.featured-blog-index {
+  text-align: center;
+  margin-top: 32px;
 }
 
 .post-sources {

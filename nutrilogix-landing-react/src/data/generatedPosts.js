@@ -305,7 +305,7 @@ export const generatedPosts = [
           "Target <strong>3–5 protein-containing meals per day</strong> rather than front- or back-loading into one or two large servings",
           "Prioritize <strong>leucine-rich protein sources</strong> — whey, eggs, chicken, beef, and fish are particularly potent MPS triggers",
           "Don't skip <strong>breakfast protein</strong> — research shows a high-protein breakfast reduces total daily calorie intake by 15–20% through improved satiety",
-          "For plant-based eaters, <strong>combine complementary proteins</strong> (rice + beans, oats + soy) to ensure complete essential amino acid delivery"
+          "For plant-based eaters, <strong><a href=\"/blog/plant-protein-vs-animal-protein-muscle-science\">combine complementary proteins</a></strong> (rice + beans, oats + soy) to ensure complete essential amino acid delivery"
         ]
       },
       {
@@ -455,10 +455,10 @@ export const generatedPosts = [
       {
         "type": "list",
         "items": [
-          "<strong>Prioritize protein at every meal:</strong> Aim for 30–40g per sitting to maximize both TEF and muscle protein synthesis. Chicken breast, eggs, Greek yogurt, and legumes all carry high thermic costs.",
+          "<strong>Prioritize protein at every meal:</strong> Aim for 30–40g per sitting to maximize both TEF and muscle protein synthesis. Chicken breast, eggs, Greek yogurt, and <a href=\"/blog/plant-protein-vs-animal-protein-muscle-science\">legumes</a> all carry high thermic costs.",
           "<strong>Be aware of dietary fat's minimal TEF:</strong> Fat is only 0–3% thermogenic, making calorie-dense, fat-heavy meals the least metabolically expensive macronutrient by a wide margin.",
           "<strong>Whole foods beat processed foods on TEF:</strong> A 2010 study in <em>Food & Nutrition Research</em> found that whole-food meals had a TEF roughly 50% higher than ultraprocessed meals of identical caloric content, due to the energy cost of breaking down intact food matrices.",
-          "<strong>Fiber adds additional metabolic cost:</strong> High-fiber carbohydrates — oats, legumes, vegetables — require more digestive energy than refined starches, adding modestly but consistently to your daily TEF.",
+          "<strong>Fiber adds additional metabolic cost:</strong> High-fiber carbohydrates — <a href=\"/blog/beta-glucan-oats-cholesterol-blood-sugar-science\">oats</a>, legumes, vegetables — require more digestive energy than refined starches, adding modestly but consistently to your daily TEF.",
           "<strong>Meal frequency matters less than composition:</strong> Despite popular belief, eating smaller, more frequent meals doesn't meaningfully raise daily TEF compared to fewer larger meals of the same macronutrient composition.",
           "<strong>Alcohol is thermogenic, not helpful:</strong> Alcohol has a thermic effect of about 20%, but it also suppresses fat oxidation and promotes fat storage through other hormonal mechanisms — so the high TEF is not a metabolic advantage.",
           "<strong>Mixed meals land near 10%:</strong> Most real-world meals fall in the 6–10% TEF range, with higher-protein plates tracking toward the upper bound."
@@ -1099,7 +1099,7 @@ export const generatedPosts = [
         "type": "list",
         "items": [
           "<strong>Legumes (lentils, chickpeas, black beans):</strong> Among the highest-fiber foods per serving at 10–16g per cooked cup, with an exceptional ratio of soluble to insoluble fiber. Lentils in particular are an elite prebiotic source, supporting robust SCFA production.",
-          "<strong>Oats:</strong> Rich in beta-glucan, a soluble fiber with the strongest evidence base for LDL cholesterol reduction and post-meal blood glucose blunting. One cup of cooked oats provides approximately 4g of fiber including 2g of beta-glucan.",
+          "<strong>Oats:</strong> Rich in <a href=\"/blog/beta-glucan-oats-cholesterol-blood-sugar-science\">beta-glucan</a>, a soluble fiber with the strongest evidence base for LDL cholesterol reduction and post-meal blood glucose blunting. One cup of cooked oats provides approximately 4g of fiber including 2g of beta-glucan.",
           "<strong>Vegetables (especially cruciferous and root):</strong> Broccoli, Brussels sprouts, carrots, and sweet potatoes combine insoluble fiber with prebiotic compounds. Cooking does not significantly reduce fiber content; it may actually increase accessibility of some fractions.",
           "<strong>Whole fruit (with skin):</strong> Apples, pears, and berries deliver both soluble pectin and insoluble cellulose. The intact whole fruit matrix delivers fiber alongside polyphenols that independently support gut microbiome diversity — benefits not replicated by juice.",
           "<strong>Seeds (flaxseed, chia):</strong> Gram for gram among the highest fiber sources available, with chia providing 10g per ounce. Both are rich in mucilaginous soluble fiber that forms a particularly effective viscous gel in the gut.",
@@ -1802,7 +1802,7 @@ export const generatedPosts = [
       },
       {
         "type": "paragraph",
-        "text": "Water participates directly in some of the most fundamental reactions in human biochemistry. <em>Hydrolysis</em> — the chemical process by which your body breaks down proteins, fats, and carbohydrates into their component molecules — literally requires water molecules as a reactant. The Krebs cycle, which generates the vast majority of cellular ATP, involves multiple water-consuming and water-producing reactions. Even <em>lipolysis</em>, the process by which stored triglycerides are released from fat cells as free fatty acids, is a hydrolytic reaction: it cannot proceed without adequate intracellular water. This isn't a metaphor for 'stay hydrated' — it is a literal biochemical description of why water deficiency impairs cellular energy production at the most fundamental level. A mildly dehydrated cell is, by definition, a less metabolically active one."
+        "text": "Water participates directly in some of the most fundamental reactions in human biochemistry. <em>Hydrolysis</em> — the chemical process by which your body <a href=\"/blog/thermic-effect-of-food-metabolism\">breaks down proteins, fats, and carbohydrates</a> into their component molecules — literally requires water molecules as a reactant. The Krebs cycle, which generates the vast majority of cellular ATP, involves multiple water-consuming and water-producing reactions. Even <em>lipolysis</em>, the process by which stored triglycerides are released from fat cells as free fatty acids, is a hydrolytic reaction: it cannot proceed without adequate intracellular water. This isn't a metaphor for 'stay hydrated' — it is a literal biochemical description of why water deficiency impairs cellular energy production at the most fundamental level. A mildly dehydrated cell is, by definition, a less metabolically active one."
       },
       {
         "type": "callout",
@@ -2618,7 +2618,7 @@ export const generatedPosts = [
       },
       {
         "type": "paragraph",
-        "text": "The glycemic index (GI) ranks foods on a scale from 0 to 100 based on how rapidly they raise blood glucose compared to pure glucose (score: 100). The test is conducted by feeding subjects 50 grams of <em>digestible carbohydrate</em> from the test food, then measuring blood glucose response over two hours. White bread scores approximately 75, boiled white rice 73, rolled oats 55, and lentils around 32. The critical limitation is embedded in that protocol: the GI always refers to a portion containing <strong>50 grams of digestible carbohydrate</strong> — regardless of how large that serving actually is in practice. For watermelon (GI ≈ 76), reaching 50 grams of carbohydrate requires eating roughly 800 grams — about five cups of diced fruit. Nobody eats five cups of watermelon at once. For white bread, 50 grams of carbohydrate is just 3–4 slices — an amount people genuinely consume in a single meal. The GI is a standardized laboratory metric designed for research comparison, not real-world dietary guidance without the correction that glycemic load provides."
+        "text": "The glycemic index (GI) ranks foods on a scale from 0 to 100 based on how rapidly they raise blood glucose compared to pure glucose (score: 100). The test is conducted by feeding subjects 50 grams of <em>digestible carbohydrate</em> from the test food, then measuring blood glucose response over two hours. White bread scores approximately 75, boiled white rice 73, <a href=\"/blog/beta-glucan-oats-cholesterol-blood-sugar-science\">rolled oats</a> 55, and lentils around 32. The critical limitation is embedded in that protocol: the GI always refers to a portion containing <strong>50 grams of digestible carbohydrate</strong> — regardless of how large that serving actually is in practice. For watermelon (GI ≈ 76), reaching 50 grams of carbohydrate requires eating roughly 800 grams — about five cups of diced fruit. Nobody eats five cups of watermelon at once. For white bread, 50 grams of carbohydrate is just 3–4 slices — an amount people genuinely consume in a single meal. The GI is a standardized laboratory metric designed for research comparison, not real-world dietary guidance without the correction that glycemic load provides."
       },
       {
         "type": "callout",
@@ -3107,7 +3107,7 @@ export const generatedPosts = [
       },
       {
         "type": "paragraph",
-        "text": "For muscle protein synthesis to be fully activated, most research suggests you need approximately <strong>2.5–3g of leucine per meal</strong>. A 30g serving of whey protein delivers roughly 3g of leucine automatically. To hit the same leucine threshold from plant sources, you typically need larger portions — around 40g of pea protein, 45g of rice protein, or strategically combining legumes with grains. This is the core 'quantity gap' between plant and animal protein: not that plant protein doesn't build muscle, but that you need more of it per serving to produce the same anabolic response. Plant-based athletes who struggle to build muscle are often under-consuming total protein, not failing because plant protein is inherently inferior."
+        "text": "For muscle protein synthesis to be fully activated, most research suggests you need approximately <strong>2.5–3g of leucine per meal</strong>. A 30g serving of whey protein delivers roughly 3g of leucine automatically. To hit the same <a href=\"/blog/protein-timing-muscle-fat-loss\">leucine threshold</a> from plant sources, you typically need larger portions — around 40g of pea protein, 45g of rice protein, or strategically combining legumes with grains. This is the core 'quantity gap' between plant and animal protein: not that plant protein doesn't build muscle, but that you need more of it per serving to produce the same anabolic response. Plant-based athletes who struggle to build muscle are often under-consuming total protein, not failing because plant protein is inherently inferior."
       },
       {
         "type": "list",
@@ -4832,7 +4832,7 @@ export const generatedPosts = [
       },
       {
         "type": "paragraph",
-        "text": "Beta-glucan is a polysaccharide — a chain of glucose molecules linked in a configuration that human digestive enzymes cannot break down. Found in the cell walls of oats, barley, certain mushrooms, and some yeasts, it belongs to the broader family of dietary fiber but stands out for one key property: it's highly <em>soluble</em>. When beta-glucan reaches the small intestine, it absorbs water and forms a dense, viscous gel. That gel is the mechanism behind nearly every health benefit attributed to oats."
+        "text": "Beta-glucan is a polysaccharide — a chain of glucose molecules linked in a configuration that human digestive enzymes cannot break down. Found in the cell walls of oats, barley, certain mushrooms, and some yeasts, it belongs to the broader family of <a href=\"/blog/dietary-fiber-gut-health-benefits\">dietary fiber</a> but stands out for one key property: it's highly <em>soluble</em>. When beta-glucan reaches the small intestine, it absorbs water and forms a dense, viscous gel. That gel is the mechanism behind nearly every health benefit attributed to oats."
       },
       {
         "type": "callout",
@@ -4868,7 +4868,7 @@ export const generatedPosts = [
       },
       {
         "type": "paragraph",
-        "text": "Beta-glucan's effects on blood glucose are as well-documented as its effects on cholesterol, though they receive considerably less attention. The same viscous gel that traps bile acids also slows gastric emptying and the absorption of carbohydrates into the bloodstream — blunting the post-meal blood glucose spike. Studies consistently show that adding beta-glucan to a meal reduces the postprandial glucose area-under-the-curve by 20–30% compared to equivalent carbohydrate loads without fiber. This isn't trivial: repeated blood sugar spikes are associated with insulin resistance, increased fat storage, and accelerated inflammation. By dampening each spike, oat-derived beta-glucan actively improves metabolic health with every meal that contains it."
+        "text": "Beta-glucan's effects on blood glucose are as well-documented as its effects on cholesterol, though they receive considerably less attention. The same viscous gel that traps bile acids also slows gastric emptying and the absorption of carbohydrates into the bloodstream — blunting the post-meal <a href=\"/blog/glycemic-index-vs-glycemic-load-blood-sugar\">blood glucose</a> spike. Studies consistently show that adding beta-glucan to a meal reduces the postprandial glucose area-under-the-curve by 20–30% compared to equivalent carbohydrate loads without fiber. This isn't trivial: repeated blood sugar spikes are associated with insulin resistance, increased fat storage, and accelerated inflammation. By dampening each spike, oat-derived beta-glucan actively improves metabolic health with every meal that contains it."
       },
       {
         "type": "callout",

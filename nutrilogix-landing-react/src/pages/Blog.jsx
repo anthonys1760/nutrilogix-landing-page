@@ -1,12 +1,8 @@
 import { useEffect, useMemo } from 'react'
-import { Link, useSearchParams } from 'react-router-dom'
+import { Link, Navigate, useParams, useSearchParams } from 'react-router-dom'
 import SEO from '../components/SEO'
-import { generatedPosts } from '../data/generatedPosts'
-import { staticPosts } from '../data/staticPosts'
 import { formatPostDate } from '../formatDate'
-import { isPublished } from '../isPublished'
-
-const PAGE_SIZE = 12
+import { PAGE_SIZE, blogPageCount, blogPagePath, listPublishedPosts } from '../posts'
 
 function localImageSize(src) {
   if (typeof src !== 'string') return {}
@@ -15,67 +11,46 @@ function localImageSize(src) {
   return {}
 }
 
-function allPosts() {
-  const seen = new Set()
-  const posts = []
-  for (const post of generatedPosts) {
-    if (!post.slug || seen.has(post.slug)) continue
-    seen.add(post.slug)
-    if (!isPublished(post)) continue
-    posts.push({
-      slug: post.slug,
-      title: post.title,
-      excerpt: post.excerpt,
-      image: post.image,
-      imageAlt: post.title,
-      category: post.category,
-      author: post.author,
-      authorInitial: post.authorInitial,
-      dateISO: post.dateISO,
-      readTime: post.readTime,
-    })
-  }
-  for (const post of staticPosts) {
-    if (seen.has(post.slug)) continue
-    seen.add(post.slug)
-    if (!isPublished(post)) continue
-    posts.push(post)
-  }
-  return posts.sort((a, b) => (b.dateISO || '').localeCompare(a.dateISO || '') || a.slug.localeCompare(b.slug))
-}
-
 export default function Blog() {
-  const posts = useMemo(() => allPosts(), [])
+  const posts = useMemo(() => listPublishedPosts(), [])
   const topics = useMemo(() => {
     return [...new Set(posts.map((post) => post.category).filter(Boolean))].sort()
   }, [posts])
-  const [params, setParams] = useSearchParams()
+  const { pageNumber } = useParams()
+  const [params] = useSearchParams()
   const topic = params.get('topic') || ''
-  const requested = Number.parseInt(params.get('page') || '1', 10)
+  const queryPage = params.get('page')
+  const requested = Number.parseInt(pageNumber || queryPage || '1', 10)
   const filtered = topic ? posts.filter((post) => post.category === topic) : posts
-  const pageCount = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE))
+  const pageCount = blogPageCount(filtered.length)
   const page = Number.isFinite(requested) ? Math.min(Math.max(requested, 1), pageCount) : 1
   const visible = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
+  const redirectTo = (!pageNumber && queryPage && Number.parseInt(queryPage, 10) > 1)
+    ? blogPagePath(page, topic)
+    : (pageNumber === '1' ? blogPagePath(1, topic) : null)
 
   useEffect(() => {
-    if (!params.get('page') && !params.get('topic')) return
+    if (redirectTo) return
+    if (!pageNumber && !params.get('topic')) return
     document.getElementById('blog-grid')?.scrollIntoView({
       behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
     })
-  }, [page, topic, params])
+  }, [page, topic, params, pageNumber, redirectTo])
 
-  const setQuery = (nextPage, nextTopic) => {
-    const next = {}
-    if (nextTopic) next.topic = nextTopic
-    if (nextPage > 1) next.page = String(nextPage)
-    setParams(next)
-  }
+  const title = page > 1
+    ? `Nutrilogix Blog - Page ${page}`
+    : 'Nutrilogix Blog - Nutrition Science & AI Tech'
+  const description = page > 1
+    ? `Page ${page} of Nutrilogix articles on nutrition tracking, AI food analysis, and healthy living.`
+    : 'Expert articles on nutrition tracking, AI food analysis, and healthy living tips.'
+
+  if (redirectTo) return <Navigate to={redirectTo} replace />
 
   return (
     <>
       <SEO
-        title="Nutrilogix Blog - Nutrition Science & AI Tech"
-        description="Expert articles on nutrition tracking, AI food analysis, and healthy living tips."
+        title={title}
+        description={description}
       />
       <section className="section bg-light" style={{ paddingBottom: '40px' }}>
         <div className="container section-header">
@@ -87,24 +62,22 @@ export default function Blog() {
       <section className="section" style={{ paddingTop: '20px' }}>
         <div className="container">
           <div className="topic-filters" role="group" aria-label="Filter posts by topic">
-            <button
-              type="button"
+            <Link
+              to={blogPagePath(1)}
               className={`topic-filter ${topic ? '' : 'is-active'}`}
-              aria-pressed={!topic}
-              onClick={() => setQuery(1, '')}
+              aria-current={!topic ? 'page' : undefined}
             >
               All
-            </button>
+            </Link>
             {topics.map((name) => (
-              <button
+              <Link
                 key={name}
-                type="button"
+                to={blogPagePath(1, name)}
                 className={`topic-filter ${topic === name ? 'is-active' : ''}`}
-                aria-pressed={topic === name}
-                onClick={() => setQuery(1, name)}
+                aria-current={topic === name ? 'page' : undefined}
               >
                 {name}
-              </button>
+              </Link>
             ))}
           </div>
 
@@ -129,26 +102,29 @@ export default function Blog() {
 
           {pageCount > 1 && (
             <nav className="blog-pagination" aria-label="Blog pages">
-              <button type="button" disabled={page <= 1} onClick={() => setQuery(page - 1, topic)}>
-                Previous
-              </button>
+              {page <= 1 ? (
+                <span className="is-disabled">Previous</span>
+              ) : (
+                <Link to={blogPagePath(page - 1, topic)}>Previous</Link>
+              )}
               {Array.from({ length: pageCount }, (_, index) => {
                 const number = index + 1
                 return (
-                  <button
+                  <Link
                     key={number}
-                    type="button"
+                    to={blogPagePath(number, topic)}
                     className={number === page ? 'is-active' : ''}
                     aria-current={number === page ? 'page' : undefined}
-                    onClick={() => setQuery(number, topic)}
                   >
                     {number}
-                  </button>
+                  </Link>
                 )
               })}
-              <button type="button" disabled={page >= pageCount} onClick={() => setQuery(page + 1, topic)}>
-                Next
-              </button>
+              {page >= pageCount ? (
+                <span className="is-disabled">Next</span>
+              ) : (
+                <Link to={blogPagePath(page + 1, topic)}>Next</Link>
+              )}
             </nav>
           )}
         </div>
