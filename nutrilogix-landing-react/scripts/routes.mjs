@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url'
 import { generatedPosts } from '../src/data/generatedPosts.js'
 import { staticPosts } from '../src/data/staticPosts.js'
 import { isPublished } from '../src/isPublished.js'
+import { blogPageCount, listPublishedPosts } from '../src/posts.js'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 
@@ -51,9 +52,19 @@ export function getPostRoutes() {
   return routes
 }
 
+export function getBlogPageRoutes() {
+  const pages = blogPageCount(listPublishedPosts().length)
+  const routes = []
+  for (let page = 2; page <= pages; page += 1) {
+    routes.push({ path: `/blog/page/${page}`, id: `blog-page-${page}`, kind: 'page' })
+  }
+  return routes
+}
+
 export function getAllRoutes() {
   return [
     ...STATIC_ROUTES.map((route) => ({ ...route, kind: 'page' })),
+    ...getBlogPageRoutes(),
     ...getPostRoutes(),
   ]
 }

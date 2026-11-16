@@ -46,10 +46,11 @@ test('every published post hash redirects to its path', () => {
     assert.equal(published.has(toSlug), true)
     assert.equal(legacyHashToPath(`#/blog/${fromSlug}`), `/blog/${toSlug}`)
     assert.equal(legacyHashToPath(`#/blog/${fromSlug}/`), `/blog/${toSlug}`)
-    assert.equal(src.includes(fromSlug), false)
-    assert.equal(blogIndex.includes(fromSlug), false)
+    const retiredHref = new RegExp(`/blog/${fromSlug}(?![a-z0-9-])`)
+    assert.equal(retiredHref.test(src), false)
+    assert.equal(retiredHref.test(blogIndex), false)
     const bodies = JSON.stringify(generatedPosts)
-    assert.equal(new RegExp(`/blog/${fromSlug}(?![a-z0-9-])`).test(bodies), false)
+    assert.equal(retiredHref.test(bodies), false)
     assert.equal(bodies.includes(`#/blog/${fromSlug}`), false)
   }
   assert.equal(

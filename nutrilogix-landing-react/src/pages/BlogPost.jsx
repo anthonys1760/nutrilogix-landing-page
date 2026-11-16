@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
+import RelatedPosts from '../components/RelatedPosts'
 import SEO from '../components/SEO'
 import TestFlightButton from '../components/TestFlightButton'
 import { SITE_ORIGIN } from '../seoHead.js'
@@ -141,6 +142,15 @@ export default function BlogPost() {
     || staticPosts.find((post) => post.slug === slug)
   if (listed && !isPublished(listed)) return <NotFound />
 
+  return (
+    <>
+      <ArticleBody slug={slug} />
+      {listed ? <RelatedPosts slug={slug} /> : null}
+    </>
+  )
+}
+
+function ArticleBody({ slug }) {
   // Check generated posts first
   const generated = generatedPosts.find(p => p.slug === slug)
   if (generated) return <GeneratedPostRenderer post={generated} />
@@ -413,7 +423,7 @@ export default function BlogPost() {
 
           <h3 style={{ fontSize: '1.4rem', marginTop: '30px', marginBottom: '16px' }}>2. Fiber & Volume</h3>
           <p style={{marginBottom: '24px'}}>
-             Fiber slows down stomach emptying and expands in your gut. High-volume foods (like leafy greens) trigger physical stretch receptors in your stomach, signaling fullness without overloading on calories.
+             <a href="/blog/dietary-fiber-gut-health-benefits">Fiber</a> slows down stomach emptying and expands in your gut. High-volume foods (like leafy greens) trigger physical stretch receptors in your stomach, signaling fullness without overloading on calories.
           </p>
 
           <h3 style={{ fontSize: '1.4rem', marginTop: '30px', marginBottom: '16px' }}>3. Food Texture</h3>
@@ -912,7 +922,7 @@ export default function BlogPost() {
 
           <h3 style={{ fontSize: '1.4rem', marginTop: '30px', marginBottom: '16px' }}>1. Protein (4 calories per gram)</h3>
           <p style={{marginBottom: '24px'}}>
-            Protein is the building block of muscle, bone, skin, and virtually every tissue in your body. It's also the most satiating macronutrient, meaning it keeps you feeling full longer. When you eat protein, your body works harder to digest it (thermic effect), which also burns more calories.
+            Protein is the building block of muscle, bone, skin, and virtually every tissue in your body. It's also the most satiating macronutrient, meaning it keeps you feeling full longer. When you eat protein, your body works harder to digest it (<a href="/blog/thermic-effect-of-food-metabolism">thermic effect</a>), which also burns more calories.
           </p>
           <p style={{marginBottom: '24px'}}>
             <strong>Good sources:</strong> Chicken, fish, eggs, Greek yogurt, lean beef, legumes, tofu
@@ -1171,7 +1181,7 @@ export default function BlogPost() {
             <li style={{marginBottom: '12px'}}><strong>Processing level:</strong> Ultra-processed foods are digested faster, spike blood sugar, and fail to trigger satiety hormones—even at the same calorie count as whole foods.</li>
             <li style={{marginBottom: '12px'}}><strong>Nutrient density:</strong> A calorie of spinach delivers vitamins, minerals, and antioxidants. A calorie of soda delivers nothing.</li>
             <li style={{marginBottom: '12px'}}><strong>Inflammatory ingredients:</strong> Seed oils, artificial sweeteners, and certain emulsifiers can trigger low-grade inflammation that disrupts metabolism over time.</li>
-            <li style={{marginBottom: '12px'}}><strong>Thermic effect:</strong> Your body burns more calories digesting protein and whole foods than it does processing refined carbs.</li>
+            <li style={{marginBottom: '12px'}}><strong><a href="/blog/thermic-effect-of-food-metabolism">Thermic effect</a>:</strong> Your body burns more calories digesting protein and whole foods than it does processing refined carbs.</li>
           </ul>
 
           <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1200&q=80" alt="Colorful healthy salad bowl" style={{ width: '100%', borderRadius: '12px', margin: '32px 0', height: '300px', objectFit: 'cover' }} />

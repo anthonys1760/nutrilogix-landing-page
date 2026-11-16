@@ -1,13 +1,16 @@
 import React, { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import SEO from '../components/SEO'
 import Icon from '../components/Icons'
 import TestFlightButton, { AndroidNotifyLink } from '../components/TestFlightButton'
 import WaitlistForm from '../components/WaitlistForm'
+import { formatPostDate } from '../formatDate'
+import { featuredPosts } from '../posts'
 import { OFFER_LINE, OFFER_PILL } from '../siteCopy'
 
 export default function Home() {
   const location = useLocation();
+  const featured = featuredPosts()
 
   const scrollToSignup = (e) => {
     if (e) e.preventDefault();
@@ -497,6 +500,34 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Featured blog */}
+      <section className="section" aria-labelledby="featured-blog-heading">
+        <div className="container">
+          <div className="section-header reveal">
+            <h2 id="featured-blog-heading">From the <span className="text-highlight">blog</span>.</h2>
+            <p>Nutrition science we publish for anyone tracking food with Nutrilogix.</p>
+          </div>
+          <div className="features-grid">
+            {featured.map((post, index) => (
+              <article key={post.slug} className={`feature-card reveal reveal-delay-${(index % 3) + 1}`} style={{ padding: 0, overflow: 'hidden' }}>
+                <Link to={`/blog/${post.slug}`} style={{ display: 'block' }}>
+                  <img src={post.image} alt={post.imageAlt || post.title} loading="lazy" style={{ width: '100%', height: '180px', objectFit: 'cover' }} />
+                  <div style={{ padding: '24px' }}>
+                    <span className="badge" style={{ marginBottom: '12px' }}>{post.category}</span>
+                    <h3 className="blog-card-title">{post.title}</h3>
+                    <p style={{ fontSize: '0.95rem', marginBottom: '16px' }}>{post.excerpt}</p>
+                    <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{formatPostDate(post.dateISO)} • {post.readTime} read</span>
+                  </div>
+                </Link>
+              </article>
+            ))}
+          </div>
+          <p className="featured-blog-index">
+            <Link to="/blog" className="btn btn-secondary">Read the Nutrilogix blog</Link>
+          </p>
         </div>
       </section>
 
