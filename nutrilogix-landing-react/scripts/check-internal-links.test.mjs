@@ -27,3 +27,16 @@ test('holiday-party-logging is allowed once its publish day arrives', () => {
   assert.deepEqual(unpublishedBlogLinkTargets(html, onDaySlugs), [])
   assert.ok(onDaySlugs.has('holiday-party-logging'))
 })
+
+test('how-does-water-help-with-metabolism is unpublished until Dec 3, 2026', () => {
+  const before = new Date('2026-12-02T18:00:00.000Z')
+  const onDay = new Date('2026-12-03T17:00:00.000Z')
+  const beforeSlugs = new Set(listPublishedPosts(before).map((post) => post.slug))
+  const onDaySlugs = new Set(listPublishedPosts(onDay).map((post) => post.slug))
+  const html = '<a href="/blog/how-does-water-help-with-metabolism">Water and metabolism</a>'
+
+  assert.deepEqual(unpublishedBlogLinkTargets(html, beforeSlugs), ['how-does-water-help-with-metabolism'])
+  assert.deepEqual(unpublishedBlogLinkTargets(html, onDaySlugs), [])
+  assert.equal(beforeSlugs.has('how-does-water-help-with-metabolism'), false)
+  assert.ok(onDaySlugs.has('how-does-water-help-with-metabolism'))
+})

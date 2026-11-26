@@ -18,10 +18,23 @@ const future = new Date('2026-01-01T18:00:00.000Z')
 test('listPublishedPosts excludes future-dated posts', () => {
   const published = listPublishedPosts(now)
   assert.equal(published.some((post) => post.slug === 'holiday-party-logging'), false)
+  assert.equal(published.some((post) => post.slug === 'how-does-water-help-with-metabolism'), false)
   assert.ok(published.length >= 60)
   const early = listPublishedPosts(future)
   assert.ok(early.length < published.length)
   assert.equal(early.every((post) => isPublished(post, future)), true)
+})
+
+test('how-does-water-help-with-metabolism publishes on its dateISO, not before', () => {
+  const before = new Date('2026-12-02T18:00:00.000Z')
+  const onDay = new Date('2026-12-03T17:00:00.000Z')
+  assert.equal(listPublishedPosts(before).some((post) => post.slug === 'how-does-water-help-with-metabolism'), false)
+  assert.equal(listPublishedPosts(onDay).some((post) => post.slug === 'how-does-water-help-with-metabolism'), true)
+  const water = generatedPosts.find((post) => post.slug === 'how-does-water-help-with-metabolism')
+  assert.ok(water)
+  assert.equal(water.dateISO, '2026-12-03')
+  assert.equal(isPublished(water, before), false)
+  assert.equal(isPublished(water, onDay), true)
 })
 
 test('related posts are published, 2–3 items, and skip the current slug', () => {
